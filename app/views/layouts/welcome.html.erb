@@ -76,14 +76,15 @@
 
     var fillSlide = function(id, observation){
       //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
-      var capped_desc = "&nbsp";
+      var capped_desc = "Algo...";
       if(observation.description){
       	capped_desc = observation.description.length > 40 ? observation.description.substring(0, 37) + "..." : observation.description.substring(0, observation.description.length);
       }
       $("#item_" + id ).children("div.carousel-caption").children("p").text(capped_desc);
       $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
       $("#item_" + id ).children("div.carousel-caption").children("a").attr("href","/observations/" + observation.id);
-      $("#item_" + id ).children("div.carousel-caption").children("a").text(observation.species_guess);
+      var formatted_sp_guess = observation.species_guess || "Algo...";
+      $("#item_" + id ).children("div.carousel-caption").children("a").text(formatted_sp_guess);
     }
 
     var truncate = function(str,n){
