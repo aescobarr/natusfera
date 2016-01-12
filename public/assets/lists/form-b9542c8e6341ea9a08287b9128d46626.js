@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#taxon_input_1").simpleTaxonSelector(),$("#optionscol .type_fields").hide(),$("#typescol input:checked").each(function(){$("#"+$(this).val().toLowerCase()+"_fields").show()}),$("#typescol input").click(function(){$("#"+$(this).val().toLowerCase()+"_fields").toggle()})});

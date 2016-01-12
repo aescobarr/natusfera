@@ -1,0 +1,7 @@
+#working gmail account for development purposes
+:address: smtp.gmail.com
+:port: 587
+:user_name: inat.developer@gmail.com
+:domain: inat.developer@gmail.com
+:password: 9hswTomHlFZaqcJZX202
+:authentication: :plain

@@ -1,0 +1,581 @@
+GIT
+  remote: git://github.com/JayTeeSF/translate.git
+  revision: 164f9ef6c51ca238c92ae4bb32d098693558f363
+  specs:
+    translate-rails3 (0.2.3)
+      ya2yaml (~> 0.30)
+
+GIT
+  remote: git://github.com/alno/irwi.git
+  revision: df0c21c14b330c6e5aef60e343593d9dcf92f99e
+  specs:
+    irwi (0.4.2)
+      actionpack (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      diff-lcs (>= 1.1.2)
+      rails_autolink (>= 1.0)
+
+GIT
+  remote: git://github.com/dlabare/preferences.git
+  revision: 8142b046f7876ed6a5e5325f7c710ef1f8482d26
+  specs:
+    preferences (0.4.2)
+
+GIT
+  remote: git://github.com/eknoop/xmp.git
+  revision: b07bd072239a84c7b8c2967c3321066477e03a88
+  specs:
+    xmp (0.2.0)
+      nokogiri (~> 1.5.0)
+
+GIT
+  remote: git://github.com/fnando/i18n-js.git
+  revision: fb9bdfadd6b8b5b03aad796a9b5ca5ca99c9aae7
+  specs:
+    i18n-js (3.0.0.rc8)
+      i18n (~> 0.6)
+
+GIT
+  remote: git://github.com/jrgifford/delayed_paperclip.git
+  revision: 223a265e17f1efae14bfec9e3b649527ee77f90c
+  specs:
+    delayed_paperclip (2.9.0)
+      paperclip (>= 3.3)
+
+GIT
+  remote: git://github.com/kueda/flickraw.git
+  revision: 35cc21b0f1b6b1af3d10b19d53ea46dd2e5316ea
+  branch: ssl-cert
+  specs:
+    flickraw (0.9.8)
+
+GIT
+  remote: git://github.com/kueda/georuby.git
+  revision: 00a95123977726492a4049eb1c36f98c372cd714
+  specs:
+    georuby (2.0.0)
+
+GIT
+  remote: git://github.com/kueda/rack-google-analytics.git
+  revision: 92f9fe2f699a429b194a4c0ed18a5089e03454f8
+  branch: eval-blocks-per-request
+  specs:
+    rack-google-analytics (1.2.0)
+      actionpack
+      activesupport
+
+GIT
+  remote: git://github.com/kueda/riparian.git
+  revision: 36eba5f4d9a96b4f0a7fc91fd9ced55213380c09
+  specs:
+    riparian (0.4.0)
+      activesupport (> 3.0.0)
+      delayed_job
+      paperclip
+      rails (> 3.0.0)
+      rdoc
+
+GIT
+  remote: git://github.com/kueda/spatial_adapter.git
+  revision: 524de45a8d218a217471b3f22bf7fe6a624a2156
+  specs:
+    spatial_adapter (1.3.1)
+      activerecord (>= 2.2.2)
+      georuby (>= 1.3.0)
+
+GIT
+  remote: git://github.com/pleary/gdata.git
+  revision: 85805f4f077357ceafce89c34073fa163944d7d4
+  specs:
+    gdata (1.1.2)
+
+GIT
+  remote: git://github.com/samoli/acts_as_taggable_on_steroids.git
+  revision: de68035542546645998fb6a806aa55b182c5c037
+  specs:
+    bborn-acts_as_taggable_on_steroids (2.1)
+      rails (>= 3.1.2)
+
+GIT
+  remote: https://github.com/37signals/mail_view.git
+  revision: 50831ad31c6f9042469a33dab1394bd2a4042fd8
+  specs:
+    mail_view (2.0.4)
+      tilt
+
+GIT
+  remote: https://github.com/kueda/mobile-fu.git
+  revision: 0c8b184cbef00c17e47e0c7947575d3b95cdc66d
+  specs:
+    mobile-fu (1.1.3)
+      rack-mobile-detect
+      rails
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    aasm (4.0.8)
+    actionmailer (3.2.20)
+      actionpack (= 3.2.20)
+      mail (~> 2.5.4)
+    actionpack (3.2.20)
+      activemodel (= 3.2.20)
+      activesupport (= 3.2.20)
+      builder (~> 3.0.0)
+      erubis (~> 2.7.0)
+      journey (~> 1.0.4)
+      rack (~> 1.4.5)
+      rack-cache (~> 1.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.2.1)
+    activemodel (3.2.20)
+      activesupport (= 3.2.20)
+      builder (~> 3.0.0)
+    activerecord (3.2.20)
+      activemodel (= 3.2.20)
+      activesupport (= 3.2.20)
+      arel (~> 3.0.2)
+      tzinfo (~> 0.3.29)
+    activeresource (3.2.20)
+      activemodel (= 3.2.20)
+      activesupport (= 3.2.20)
+    activesupport (3.2.20)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
+    addressable (2.3.7)
+    airbrake (4.1.0)
+      builder
+      multi_json
+    akami (1.2.2)
+      gyoku (>= 0.4.0)
+      nokogiri
+    ancestry (2.0.0)
+      activerecord (>= 3.0.0)
+    apipie-rails (0.3.1)
+      json
+    arel (3.0.3)
+    autoparse (0.3.3)
+      addressable (>= 2.3.1)
+      extlib (>= 0.9.15)
+      multi_json (>= 1.0.0)
+    aws-sdk (1.11.2)
+      json (~> 1.4)
+      nokogiri (< 1.6.0)
+      uuidtools (~> 2.1)
+    bcrypt (3.1.10)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
+    bluecloth (2.2.0)
+    builder (3.0.4)
+    capistrano (2.15.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    chronic (0.10.2)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.5)
+      climate_control (>= 0.0.3, < 1.0)
+    cocoon (1.2.6)
+    daemon-spawn (0.4.2)
+    daemons (1.1.9)
+    database_cleaner (1.0.1)
+    dbf (2.0.8)
+      fastercsv (~> 1.5.4)
+    delayed_job (4.0.6)
+      activesupport (>= 3.0, < 5.0)
+    delayed_job_active_record (4.0.3)
+      activerecord (>= 3.0, < 5.0)
+      delayed_job (>= 3.0, < 4.1)
+    devise (2.2.4)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 3.1)
+      warden (~> 1.2.1)
+    devise-encryptable (0.1.2)
+      devise (>= 2.1.0)
+    devise_suspendable (0.6.1)
+      devise
+      rails (>= 3.0.4)
+      warden
+    diff-lcs (1.2.4)
+    diffy (3.0.7)
+    docile (1.1.5)
+    doorkeeper (0.6.7)
+      railties (~> 3.1)
+    dynamic_form (1.1.4)
+    erubis (2.7.0)
+    execjs (2.3.0)
+    exifr (1.2.0)
+    extlib (0.9.16)
+    faker (1.1.2)
+      i18n (~> 0.5)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    fastercsv (1.5.5)
+    friendly_id (4.0.10.1)
+      activerecord (>= 3.0, < 4.0)
+    geocoder (1.2.7)
+    geoplanet (0.2.7)
+      json (>= 1.1.3)
+      rest-client (>= 0.9)
+    google-api-client (0.8.2)
+      activesupport (>= 3.2)
+      addressable (~> 2.3)
+      autoparse (~> 0.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      launchy (~> 2.4)
+      multi_json (~> 1.10)
+      retriable (~> 1.4)
+      signet (~> 0.6)
+    gyoku (1.2.2)
+      builder (>= 2.1.2)
+    haml (4.0.6)
+      tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
+    hashie (3.4.0)
+    highline (1.6.21)
+    hike (1.2.3)
+    htmlentities (4.3.3)
+    httmultiparty (0.3.16)
+      httparty (>= 0.7.3)
+      mimemagic
+      multipart-post
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
+    httpi (2.3.0)
+      rack
+    i18n (0.7.0)
+    journey (1.0.4)
+    jquery-rails (3.1.2)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+    json (1.7.7)
+    jwt (1.2.1)
+    koala (1.11.1)
+      addressable
+      faraday
+      multi_json
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    macaddr (1.7.1)
+      systemu (~> 2.6.2)
+    machinist (2.0)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    memcache-client (1.8.5)
+    metaclass (0.0.4)
+    mime-types (1.25.1)
+    mimemagic (0.2.1)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+    multi_json (1.10.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    netrc (0.10.2)
+    newrelic_rpm (3.9.1.236)
+    nokogiri (1.5.11)
+    nori (2.4.0)
+    oauth (0.4.7)
+    oauth2 (0.9.4)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
+    objectify-xml (0.2.3)
+      activesupport
+      nokogiri
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
+    omniauth-facebook (1.6.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-flickr (0.0.15)
+      omniauth-oauth (~> 1.0)
+    omniauth-google-oauth2 (0.2.6)
+      omniauth (> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.1.2)
+      faraday (>= 0.8, < 0.10)
+      multi_json (~> 1.3)
+      oauth2 (~> 0.9.3)
+      omniauth (~> 1.2)
+    omniauth-openid (1.0.1)
+      omniauth (~> 1.0)
+      rack-openid (~> 1.3.1)
+    omniauth-soundcloud (1.0.1)
+      omniauth-oauth2 (~> 1.1.0)
+    omniauth-twitter (1.1.0)
+      multi_json (~> 1.3)
+      omniauth-oauth (~> 1.0)
+    orm_adapter (0.5.0)
+    paperclip (3.4.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
+    pg (0.18.1)
+    polyglot (0.3.5)
+    rack (1.4.5)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-mobile-detect (0.4.0)
+      rack
+    rack-openid (1.3.1)
+      rack (>= 1.1.0)
+      ruby-openid (>= 2.1.8)
+    rack-ssl (1.3.4)
+      rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails (3.2.20)
+      actionmailer (= 3.2.20)
+      actionpack (= 3.2.20)
+      activerecord (= 3.2.20)
+      activeresource (= 3.2.20)
+      activesupport (= 3.2.20)
+      bundler (~> 1.0)
+      railties (= 3.2.20)
+    rails_autolink (1.1.6)
+      rails (> 3.1)
+    railties (3.2.20)
+      actionpack (= 3.2.20)
+      activesupport (= 3.2.20)
+      rack-ssl (~> 1.3.2)
+      rake (>= 0.8.7)
+      rdoc (~> 3.4)
+      thor (>= 0.14.6, < 2.0)
+    rake (0.8.7)
+    rakismet (1.5.0)
+    rdoc (3.12.2)
+      json (~> 1.4)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    retriable (1.4.1)
+    rgeo (0.3.20)
+    riddle (1.5.11)
+    right_aws (3.1.0)
+      right_http_connection (>= 1.2.5)
+    right_http_connection (1.5.0)
+    rinku (1.7.3)
+    rspec (2.13.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-html-matchers (0.4.3)
+      nokogiri (>= 1.4.4)
+      rspec (>= 2.0.0)
+    rspec-mocks (2.13.1)
+    rspec-rails (2.13.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    ruby-openid (2.6.0)
+    rvm-capistrano (1.5.6)
+      capistrano (~> 2.15.4)
+    sass (3.2.5)
+    sass-rails (3.2.6)
+      railties (~> 3.2.0)
+      sass (>= 3.1.10)
+      tilt (~> 1.3)
+    savon (2.9.0)
+      akami (~> 1.2)
+      builder (>= 2.1.2)
+      gyoku (~> 1.2)
+      httpi (~> 2.3)
+      nokogiri (>= 1.4.0)
+      nori (~> 2.4)
+      uuid (~> 2.3.7)
+      wasabi (= 3.3.0)
+    signet (0.6.0)
+      addressable (~> 2.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      jwt (~> 1.0)
+      multi_json (~> 1.10)
+    simple_oauth (0.3.1)
+    simplecov (0.9.1)
+      docile (~> 1.1.0)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
+    soundcloud (0.3.1)
+      hashie
+      httmultiparty (>= 0.3)
+      httparty (>= 0.7.3)
+    sprockets (2.2.3)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    statsd-ruby (1.2.1)
+    systemu (2.6.4)
+    thinking-sphinx (2.0.10)
+      activerecord (>= 3.0.3)
+      builder (>= 2.1.2)
+      riddle (>= 1.5.0)
+    thor (0.19.1)
+    tilt (1.4.1)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
+    trollop (2.1.1)
+    ts-delayed-delta (1.1.3)
+      delayed_job (>= 2.0.4)
+      thinking-sphinx (>= 1.3.6)
+    turbo-sprockets-rails3 (0.3.14)
+      railties (> 3.2.8, < 4.0.0)
+      sprockets (>= 2.2.0)
+    twitter (4.8.1)
+      faraday (~> 0.8, < 0.10)
+      multi_json (~> 1.0)
+      simple_oauth (~> 0.2)
+    tzinfo (0.3.42)
+    uglifier (2.2.1)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+    utf8-cleaner (0.0.9)
+    uuid (2.3.7)
+      macaddr (~> 1.0)
+    uuidtools (2.1.5)
+    warden (1.2.3)
+      rack (>= 1.0)
+    wasabi (3.3.0)
+      httpi (~> 2.0)
+      mime-types (< 2.0.0)
+      nokogiri (>= 1.4.0)
+    watu_table_builder (0.3.0)
+    whenever (0.9.4)
+      chronic (>= 0.6.3)
+    wicked_pdf (0.11.0)
+      rails
+    will_paginate (3.0.7)
+    ya2yaml (0.31)
+    yui-compressor (0.12.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aasm
+  addressable
+  airbrake
+  ancestry (= 2.0.0)
+  apipie-rails
+  aws-sdk (= 1.11.2)
+  bborn-acts_as_taggable_on_steroids!
+  bluecloth
+  capistrano
+  chronic
+  cocoon
+  daemon-spawn
+  daemons
+  database_cleaner
+  dbf
+  delayed_job
+  delayed_job_active_record
+  delayed_paperclip!
+  devise (= 2.2.4)
+  devise-encryptable (= 0.1.2)
+  devise_suspendable (= 0.6.1)
+  diffy
+  doorkeeper (~> 0.6.7)
+  dynamic_form
+  exifr
+  faker
+  flickraw (~> 0.9.8)!
+  friendly_id (~> 4.0.1)
+  gdata!
+  geocoder
+  geoplanet
+  georuby!
+  google-api-client
+  haml
+  haml-rails
+  htmlentities
+  i18n-js!
+  irwi!
+  jquery-rails
+  json (~> 1.7.7)
+  koala
+  machinist
+  mail_view!
+  memcache-client
+  mobile-fu!
+  mocha
+  newrelic_rpm
+  nokogiri
+  objectify-xml
+  omniauth-facebook
+  omniauth-flickr
+  omniauth-google-oauth2
+  omniauth-openid
+  omniauth-soundcloud
+  omniauth-twitter
+  paperclip (= 3.4.2)
+  pg
+  preferences!
+  rack-google-analytics!
+  rails (~> 3.2.20)
+  rake (= 0.8.7)
+  rakismet
+  rest-client
+  rgeo
+  right_aws
+  right_http_connection
+  rinku
+  riparian!
+  rspec-html-matchers
+  rspec-rails
+  rvm-capistrano
+  sass (= 3.2.5)
+  sass-rails
+  savon
+  simplecov
+  soundcloud
+  spatial_adapter!
+  statsd-ruby
+  thinking-sphinx (= 2.0.10)
+  translate-rails3!
+  trollop
+  ts-delayed-delta (= 1.1.3)
+  turbo-sprockets-rails3
+  twitter
+  uglifier
+  utf8-cleaner
+  watu_table_builder
+  whenever
+  wicked_pdf
+  will_paginate
+  xmp!
+  ya2yaml
+  yui-compressor
