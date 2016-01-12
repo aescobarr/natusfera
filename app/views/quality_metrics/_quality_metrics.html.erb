@@ -1,0 +1,112 @@
+<%- 
+  o = quality_metrics || @observation
+  quality_metrics = @quality_metrics || []
+  user_quality_metrics = @user_quality_metrics || []
+-%>
+  
+<div class="details" style="<%= session[:hide_quality_metrics] ? 'display:none' : nil %>">
+  <table class="quality_assessment">
+    <tbody>
+      <tr>
+        <td> <%= t(:community_supported_id) %></td>
+        <td>
+          <% if o.community_supported_id? %>
+            <span class="good"><%=t :yes %></span>
+          <% else %>
+            <%=t :no %>
+          <% end -%>
+          <div class="small meta">
+            <%= o.num_identification_agreements == 1 ? t(:n_person_agrees, :amount => o.num_identification_agreements) : t(:n_people_agrees, :amount=>"#{o.num_identification_agreements}")  %>
+          </div>
+          <div class="small meta">
+            <%= o.num_identification_disagreements == 1 ? t(:n_person_disagrees, :amount => o.num_identification_disagreements) : t(:n_people_disagrees, :amount=>"#{o.num_identification_disagreements}")  %>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><%= t(:observation_date?) %></td>
+        <td>
+          <%= o.observed_on? ? "<span class=\"good\">#{t(:yes)}</span>".html_safe : t(:no) %>
+        </td>
+      </tr>
+
+      <tr>
+        <td><%= t(:georeferenced) %></td>
+        <td>
+          <%= o.georeferenced? ? "<span class=\"good\">#{t(:yes)}</span>".html_safe : t(:no) %>
+        </td>
+      </tr>
+
+      <tr>
+        <td> <%= t(:photos_or_sounds?) %></td>
+        <td>
+          <%= (o.photos? || o.sounds?) ? "<span class=\"good\">#{t(:yes)}</span>".html_safe : t(:no) %>
+        </td>
+      </tr>
+
+      <% for metric, question in QualityMetric::METRIC_QUESTIONS  %>
+        <%= render :partial => 'quality_metrics/quality_metric_row', :locals => {
+          :metric => metric, 
+          :question => question, 
+          :existing_quality_metrics => quality_metrics,
+          :user_quality_metric => user_quality_metrics.detect{|qm| qm.metric == metric},
+          :observation => o} %>
+      <% end %>
+
+      <tr>
+        <td> <%= t(:appropriate?) %></td>
+        <td>
+          <% if o.appropriate? -%>
+            <span class="good"><%=t :yes %></span>
+          <% else %>
+            <%= t(:no) %>
+            <% if o.flagged? -%>
+              <div class="small meta">
+                <%= link_to t(:view_observationflags), observation_flags_path(o) %>
+              </div>
+            <% end -%>
+            <% if @flagged_photos -%>
+              <div class="small meta">
+                <%=t :view_flags_for_x_html, :x => commas_and(@flagged_photos.map{|p| link_to("#{t :photo} #{p.id}", p.becomes(Photo))}) %>
+              </div>
+            <% end -%>
+          <% end -%>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><%= t(:quality_grade) %></td>
+        <td>
+          <% if o.research_grade? -%>
+            <span class="research_grade_notice"><%=t o.quality_grade %></span>
+          <% else %>
+            <%=t o.quality_grade %>
+          <% end -%>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<div class="summary inlineblock" style="<%= session[:hide_quality_metrics] ? nil : 'display:none' %>">
+  <label><%= t(:quality_grade_colon) %></label>
+  <% if o.research_grade? -%>
+    <span class="research_grade_notice"><%=t o.quality_grade %></span>
+  <% else %>
+    <%=t o.quality_grade %>
+  <% end -%>
+</div>
+
+<span class="button">
+  <%= link_to_function t(:details), "$(this).parent().siblings('.summary').hide().siblings('.details').slideDown(); $(this).hide().next().show(); updateSession({hide_quality_metrics: false})", 
+    :style => session[:hide_quality_metrics] ? nil : "display:none" %>
+  <%= link_to_function t(:hide_details), "$(this).parent().siblings('.summary').show().siblings('.details').slideUp();   $(this).hide().prev().show(); updateSession({hide_quality_metrics: true})",
+    :style => session[:hide_quality_metrics] ? "display:none" : nil %>
+</span>
+
+<div id="quality_tip" style="display:none">
+  <%= render :partial => 'quality_metrics/quality_assessment_help' %>
+</div>
+

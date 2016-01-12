@@ -1,0 +1,1 @@
+$.fn.check=function(){this.each(function(){this.checked=!0})},$.fn.uncheck=function(){this.each(function(){this.checked=!1})},$.fn.toggleCheck=function(){this.each(function(){this.checked=this.checked?!1:!0})};

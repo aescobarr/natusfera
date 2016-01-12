@@ -1,0 +1,34 @@
+<%- content_for(:title) do -%>
+  <%= t(:your_picasa_account) %>
+<%- end -%>
+<h2> <%= t(:your_picasa_account_info) %> </h2>
+
+<div class="column span-13">
+  <% if @picasa_identity -%>
+    <div class="clear photos">
+      <% for photo in @picasa_photos %>
+        <%- next unless photo.url('72c') %>
+        <%= image_tag photo.url('72c') %>
+      <% end %>
+    </div>
+
+    <p>
+    <%= t(:youve_linked_your_inaturalist_picasa_account, :site_name => SITE_NAME) %>
+    </p>
+  <% else %>
+    <p>
+     <%= t(:you_havent_linked_your_inaturalist_picasa_account, :site_name => SITE_NAME_SHORT) %></p>
+    <p class="description">
+      <%= t(:to_include_your_picassa_with_inat, :site_name => SITE_NAME_SHORT) %>
+    </p>
+  <% end -%>
+</div>
+
+<div class="last column span-11">
+  <% if @picasa_identity -%>
+    <%= link_to t(:unlink_your_picasa_account), {:action => "unlink"}, :class => "delete button", 
+      :method => :delete, :confirm => t(:are_you_sure_unlink_picasa) %>
+  <% else %>
+    <%= link_to t(:link_your_picasa_account), @auth_url, :class => "default button" %>
+  <% end -%>
+</div>

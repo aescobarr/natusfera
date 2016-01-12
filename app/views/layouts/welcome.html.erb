@@ -1,0 +1,581 @@
+<html>
+<head>	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<%= stylesheet_link_tag 'new_welcome' %> 
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- Google maps include -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
+	<%= javascript_include_tag 'isotope.pkgd.min' %>
+<script>
+	function toggleHeaderSubnav(link) {
+	  if ($(link).parents('.subnavtab').hasClass('open')) {
+	    closeHeaderSubnav(link);
+	  } else {
+	    openHeaderSubnav(link);
+	  }
+	}
+
+	function openHeaderSubnav(link) {
+	  $('.subnav').hide();
+	  $('.subnavtab').removeClass('open');
+	  $(link).parents('.subnavtab').addClass('open');
+	  $(link).parents('li').find('.subnav').show();
+	  $(document).click(subnavClickOff);
+	}
+
+	function closeHeaderSubnav(link) {
+	  $(link).parents('.subnavtab').removeClass('open');
+	  $(link).parents('li').find('.subnav').hide();
+	  $(document).unbind('click', subnavClickOff);
+	}
+
+	function subnavClickOff(e) {
+	  if ($(e.target).parents('.subnavwrapper').length == 0) {
+	    $('.subnav').hide();
+	    $('.subnavtab').removeClass('open');
+	  }
+	}
+</script>
+<script>
+	$(document).ready(function(){
+    window.observations = <%=json_escape @observations.to_json(:include => { :observation_photos => { :include => { :photo => { :except => :metadata } } } }).html_safe %>;
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+
+    var features = [];
+    if(observations){
+      for(var i = 0; i < observations.length; i++){
+        var obs_n = observations[i];
+        var marker = new google.maps.Marker({
+          position: {lat: parseFloat(obs_n.latitude), lng: parseFloat(obs_n.longitude)},
+          icon: "<%= image_url("mapMarkers/natusfera-marker.png") %>"
+        });
+        features.push({ marker: marker, observation: obs_n  });
+      } 
+    }
+          
+    var getItemId = function(id){
+      return parseInt(id.substring(id.indexOf("_")+1));
+    };
+
+    var clearMarkers = function(){
+      for(var i = 0; i < features.length; i++){
+        features[i].marker.setMap(null);
+      }
+    };
+    var setCurrentMarker = function(marker){
+      clearMarkers();
+      marker.setMap(map);
+      map.panTo(marker.getPosition());            
+    };
+
+    var fillSlide = function(id, observation){
+      //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
+      var capped_desc = "&nbsp";
+      if(observation.description){
+      	capped_desc = observation.description.length > 40 ? observation.description.substring(0, 37) + "..." : observation.description.substring(0, observation.description.length);
+      }
+      $("#item_" + id ).children("div.carousel-caption").children("p").text(capped_desc);
+      $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
+      $("#item_" + id ).children("div.carousel-caption").children("a").attr("href","/observations/" + observation.id);
+      $("#item_" + id ).children("div.carousel-caption").children("a").text(observation.species_guess);
+    }
+
+    var truncate = function(str,n){
+      return (str.length > n) ? str.substr(0,n-1)+'&hellip;' : this;
+    };
+
+    // Activate Carousel
+    $('#obsCarousel').carousel();
+
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+      $("#obsCarousel").carousel(0);
+  	});
+    $(".item2").click(function(){
+      $("#obsCarousel").carousel(1);
+	  });
+	  $(".item3").click(function(){
+      $("#obsCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+	    $("#obsCarousel").carousel(3);
+    });
+    $('#obsCarousel').on('slide.bs.carousel', function (e) {
+      var id = getItemId(e.relatedTarget.id);
+      setCurrentMarker(features[id].marker);
+      fillSlide(id,features[id].observation);
+    });
+		
+    // Enable Carousel Controls
+    $(".left").click(function(){
+      $("#obsCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+      $("#obsCarousel").carousel("next");
+    });
+	  var $grid = $('.grid').isotope({
+	    itemSelector: '.grid-item',
+	    masonry: {
+	      columnWidth: 285
+	    }
+	  });
+	  $(".observations-button").click(function(){
+      $grid.isotope({ filter: '.observaciones' });
+	  });	
+	  $(".especies-button").click(function(){
+	    $grid.isotope({ filter: '.especies' });
+    });	
+    $(".proyectos-button").click(function(){
+      $grid.isotope({ filter: '.proyectos' });
+    });	
+    $(".todo-button").click(function(){
+      $grid.isotope({ filter: '*' });
+    });	
+    $(".lugares-button").click(function(){
+      $grid.isotope({ filter: '.lugares' });
+    });	
+    $(".gente-button").click(function(){
+      $grid.isotope({ filter: '.gente' });
+    });
+    $(".func-button").click(function(){
+      $grid.isotope({ filter: '.func' });
+    });
+
+    //init slide 0
+    setCurrentMarker(features[0].marker);
+    fillSlide(0,features[0].observation);
+
+    $grid.isotope({ filter: '.func' });
+
+  });
+
+</script>
+</head>
+<body class="browser">
+  <% unless @headless -%>
+    <% cache(:controller => 'welcome', :action => 'header', :for => logged_in? ? current_user.id : nil, :version => ApplicationController::HEADER_VERSION, :site_name => @site ? @site.name : SITE_NAME) do %>
+    <%= render :partial => 'shared/header' %>
+    <% end %>
+  <% end -%>
+
+<div class="container">
+	<div id="banner" class="row">		
+		<img src="/assets/natusfera_banner_3.jpg">
+	</div>
+	<div class="row">	
+		<div id="slider-container" class="col-md-6 nopadding">
+			<div id="obsCarousel" class="carousel slide" data-ride="carousel">		
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#obsCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#obsCarousel" data-slide-to="1"></li>
+			<li data-target="#obsCarousel" data-slide-to="2"></li>
+			<li data-target="#obsCarousel" data-slide-to="3"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div id="item_0" class="item active">
+			  <img src="">
+			  <div class="carousel-caption">
+				<!--<h3></h3>-->
+				<a></a>
+				<p></p>
+			  </div>
+			</div>
+
+			<div id="item_1" class="item">
+			  <img src="">
+			  <div class="carousel-caption">
+				<!--<h3></h3>-->
+				<a></a>
+				<p></p>
+			  </div>
+			</div>
+
+			<div id="item_2" class="item">
+			  <img src="">
+			  <div class="carousel-caption">
+				<!--<h3></h3>-->
+				<a></a>
+				<p></p>
+			  </div>
+			</div>
+
+			<div id="item_3" class="item">
+			  <img src="">
+			  <div class="carousel-caption">
+				<!--<h3></h3>-->
+				<a></a>
+				<p></p>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#obsCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only"><% t :previous %></span>
+		  </a>
+		  <a class="right carousel-control" href="#obsCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only"><% t :next %></span>
+		  </a>
+		</div>
+		</div>
+		<div id="map-container" class="col-md-6 nopadding">
+			<div id="map"></div>
+		</div>
+	</div>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>			  
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapsible-1">
+			  <ul class="nav navbar-nav">
+				<li>
+					<a class="func-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Funcionalidad</h4>
+						<p class="list-group-item-text">¿Que funciones ofrece natusfera?</p>
+					</a>
+				</li>			
+				<li>
+					<a class="observations-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Observaciones</h4>
+						<p class="list-group-item-text">Algunas de las observaciones aportadas por usuarios</p>
+					</a>
+				</li>				
+
+				<li>
+					<a class="especies-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Especies</h4>
+						<p class="list-group-item-text">La riqueza del mundo natural</p>
+					</a>
+				</li>
+				<li>
+					<a class="proyectos-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Proyectos</h4>
+						<p class="list-group-item-text">Grupos de observaciones con un objetivo común</p>
+					</a>
+				</li>
+				<!--<li>
+					<a class="lugares-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Lugares</h4>
+						<p class="list-group-item-text">Las mejores montañas para la investigación</p>
+					</a>
+				</li>-->
+				<li>
+					<a class="gente-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Gente</h4>
+						<p class="list-group-item-text">Conoce a nuestros usuarios</p>
+					</a>
+				</li>
+				<!--<li>
+					<a class="todo-button" href="#navbar-collapsible-1">
+						<h4 class="list-group-item-heading">Todo</h4>
+						<p class="list-group-item-text">Muestralo todo</p>
+					</a>
+				</li>-->
+			  </ul>
+		</div>
+	</nav>	
+	<!-- Inici grid -->
+	<div class="grid">
+          <div class="row">
+            <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+                <%= image_tag("register.jpg") %>
+                <h4>Lleve un registro</h4>
+                <p>Registre sus observaciones naturales y mantenga listas de organismos, todo en la nube.</p>
+              </div>
+            </div>
+            <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+                <%= image_tag("identify.jpg") %>
+                <h4>Identifique</h4>
+                <p>Conecte con otros usuarios que le ayudaran a identificar los organismos que observe.</p>
+              </div>
+            </div>
+           <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+                <%= image_tag("learn.jpg") %>
+                <h4>Aprenda acerca de la naturaleza</h4>
+                <p>Aumente sus conocimientos al hablar con otros naturalistas y ayudar a otros.</p>
+              </div>
+            </div>
+           <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+                <%= image_tag("data.jpg") %>
+                <h4>Cree datos utiles</h4>
+                <p>Ayude a cientificos a entender en que lugares se encuentran los organismos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+                <%= image_tag("ci_sc.jpg") %>
+                <h4>Conviertase en ciudadano cientifico</h4>
+                <p>Contribuya a proyectos que le interesen, o cree sus propios proyectos.</p>
+              </div>
+            </div>
+            <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+                <%= image_tag("bioblitz.jpg") %>
+                <h4>Organice bioblitz</h4>
+                <p>Mantenga eventos donde la gente registra tantas observaciones como le es posible.</p>
+              </div>
+            </div>
+           <!--<div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+              </div>
+            </div>
+           <div class="grid-item func">
+              <div class="inner-grid-wrapper-small">
+              </div>
+            </div>-->
+          </div>
+		<div class="row">
+      <% for taxon in Taxon::ICONIC_TAXA %>
+			<div class="grid-item especies">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<span><%= taxon_image(taxon, :size => "small", :class => "taxonimage") %></span>
+						<%= link_to t("all_taxa.#{Taxon::ICONIC_TAXON_NAMES[taxon.name].gsub(' ','_').gsub('-','_').downcase}", :default=>Taxon::ICONIC_TAXON_NAMES[taxon.name]), taxon_path(taxon), :class => "label-species" %>
+						<% if taxon.photos.exists? %>
+							<span><%= t :photo %>: <%= link_to taxon.photos.first.attribution, taxon.photos.first.native_page_url,:class => "photo_caption" %></span>
+						<% end %>
+					</div>
+				</div>				
+			</div>
+      <% end %>
+			<!--div class="grid-item proyectos">
+				<div class="inner-grid-wrapper-large">
+					<div class="section-label">
+						<a class="label-proyectos" href="#">Proyectos</a>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item guias">
+				<div class="inner-grid-wrapper-small">
+					<div class="guide-wrapper">
+						<p class="guide-header">Guias</p>
+						<h4 class="guide-title">Las mejores rutas para investigar el medio ambiente</h4>
+						<p class="guide-body">Light a bonfire in the garden, and step barvely into your best-dressed decade</p>
+						<div class="guide-more-link very-round-border"><a href="#">Leer más</a></div>
+					</div>
+				</div>
+			</div>-->		
+		</div>
+		<div class="row">
+      <% for observation in @sample_observations %>
+        <div class="grid-item observaciones">
+          <div class="inner-grid-wrapper-small">
+            <div class="section-label">
+              <span><img src="<%= observation.observation_photos[0].photo.small_url  %>"></span>
+              <%= link_to observation.species_guess.html_safe, observation_path(observation), class: "label-observaciones" %>
+              <!--p><%#= truncate(observation.description.html_safe, length: 40) %></p-->
+              <span><%=t :observer %>: <%= link_to observation.user.login, observations_by_login_url(observation.user.login), :class => "observer_caption" %></span>
+            </div>
+          </div>
+        </div>
+      <% end %>
+			<!--<div class="grid-item observaciones">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-observaciones" href="#">Observaciones</a>
+<span style="position: relative;display: block;width: 240px;height: 180px;overflow: hidden"><img style="position: absolute;left: -10px" src="http://158.109.62.1:3000/attachments/local_photos/files/48/small/dsc01322-181025.jpg"></span>
+<h4>Some observation</h4>
+<p>Some description</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item observaciones">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-observaciones" href="#">Observaciones</a>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item observaciones">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-observaciones" href="#">Observaciones</a>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item observaciones">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-observaciones" href="#">Observaciones</a>
+					</div>
+				</div>
+			</div>-->
+
+			<!--div class="grid-item proyectos">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-proyectos" href="#">Proyectos</a>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item guias">
+			  	<div class="inner-grid-wrapper-small">
+					<div class="guide-wrapper">
+						<p class="guide-header">Guias</p>
+						<h4 class="guide-title">Materiales principales para la investigación</h4>
+						<p class="guide-body">Will Hersey recalls a disastrous encounter with holiest man alive</p>
+						<div class="guide-more-link very-round-border"><a href="#">Leer más</a></div>
+					</div>
+				</div>
+			</div>		
+			<div class="grid-item observaciones">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-observaciones" href="#">Observaciones</a>
+					</div>
+				</div>
+			</div-->		
+		</div>
+                <div class="row">
+                  <!--<div class="grid-item proyectos">
+		    <div class="inner-grid-wrapper-small">
+		      <div class="section-label">
+			  <a class="label-proyectos" href="#">Proyectos</a>
+		      </div>
+		    </div>
+		  </div>-->
+                  <% for project in @sample_projects %>
+                    <div class="grid-item proyectos">
+                      <div class="inner-grid-wrapper-small">
+                        <div class="section-label">
+                          <span><%= image_tag project.icon.url(:span2), :id => "iconimg", :class => "project_picture" %></span>
+                          <%= link_to truncate(project.title.html_safe, length:40), project_path(project), class: "label-observaciones" %>
+                          <span>
+                            <%= t :owner %>: <%= link_to project.user.login, projects_by_login_url(project.user.login), :class => "photo_caption" %>
+                            <% if project.child? %>                          	
+                              <br><%= t :subproject %> <%= t :of %>: <%= link_to truncate(project.parent.title, length: 40), project_path(project.parent), :class => "photo_caption" %>                            
+                        	<% end %>
+                          </span>                          
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+                </div>
+		<div class="row">
+                  <% for user in @sample_users %>
+                    <div class="grid-item gente">
+                      <div class="inner-grid-wrapper-small">
+                        <div class="section-label">
+                        	<% if user.icon_file_name? %>
+                        		<span class="fullframe"><%= user_image(user, :size => "medium") %></span>
+                          <% else %>
+                          	<span class="fullframe"><%= user_image(user, :size => "medium", :class => "homegriduser") %></span>
+                          <% end %>                          
+                          <%= link_to truncate(user.login.html_safe, length:40), user_path(user), class: "label-gente" %>
+                          <% if user.description? %>
+                          	<p><%= truncate(user.description.html_safe, length:100) %></p>
+                          <% else %>
+                          	<p><%= t(:user_is_a_naturalist, :user => user.login) %></p>
+                          <% end %>
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+			<div class="grid-item lugares">
+				<div class="inner-grid-wrapper-small">
+					<div class="section-label">
+						<a class="label-lugares" href="#">Lugares</a>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item">
+				<div class="inner-grid-wrapper-small">
+				</div>
+			</div>		
+			<div class="grid-item">
+				<div class="inner-grid-wrapper-small">
+				</div>
+			</div>		
+		</div>		
+	</div> <!-- Fi grid -->
+	<div class="row">
+		<div class="col-md-12 section-end"></div>
+	</div>
+	<!--Pre-footer-->
+	<div class="row">
+		<div class="col-md-12">
+			<img class="pre-footer" src="/assets/como_funciona.jpg" alt="Como funciona?">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 section-end-post"></div>
+	</div>
+	<div class="row legal">
+		<div class="col-md-2 no-right-separator">
+			<img src="/assets/natusfera_legal_2.jpg">
+			<span><%= t :powered_by_inaturalist_open_source_software_html %></span>
+		</div>
+		<div class="col-md-2">
+			<ul class="list-group">				
+				<li class="list-group-item">
+					<%= link_to t(:observations).upcase, observations_path %>
+				</li>
+				<li class="list-group-item">					
+					<%= link_to t(:species).upcase, taxa_path %>
+				</li>
+				<li class="list-group-item">					
+					<%= link_to t(:projects).upcase, projects_path %>					
+				</li>
+				<li class="list-group-item">					
+					<%= link_to t(:places).upcase, places_path %>
+				</li>
+				<li class="list-group-item">					
+					<%= link_to t(:guides).upcase, guides_path %>
+				</li>
+				<li class="list-group-item">					
+					<%= link_to t(:people).upcase, people_path %>
+				</li>				
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<!--<ul class="list-group">
+				<li class="list-group-item"><a href="#">Sobre nosotros</a></li>
+				<li class="list-group-item"><a href="#">Contacto</a></li>
+				<li class="list-group-item"><a href="#">Terminos</a></li>
+				<li class="list-group-item"><a href="#">Privacidad</a></li>				
+			</ul>-->
+		</div>
+		<div class="col-md-2">
+			<!--<ul class="list-group">
+				<li class="list-group-item">SIGUENOS</li>
+				<li class="list-group-item"><a href="#">Facebook</a></li>
+				<li class="list-group-item"><a href="#">Twitter</a></li>
+				<li class="list-group-item"><a href="#">Instagram</a></li>
+				<li class="list-group-item"><a href="#">RSS</a></li>				
+			</ul>-->
+		</div>
+		<div class="col-md-4">			
+			<!--<div class="input-group">
+				<input type="text" class="form-control" placeholder="SUSCRIBETE A NUESTRAS NOTICIAS...">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+					</span>
+				</div>
+			</div>-->
+	</div>	
+</div>
+</body>
+</html>
