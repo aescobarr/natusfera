@@ -1,4 +1,4 @@
 h2. Natusfera
 
-Based on iNaturalist software
+Based on <a href="https://github.com/inaturalist/inaturalist">iNaturalist</a> open source software
 
