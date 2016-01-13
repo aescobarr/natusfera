@@ -1,0 +1,57 @@
+# Logfile created on 2016-01-13 14:03:09 +0000 by logger.rb/31641
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Starting the New Relic agent in "production" environment.
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] WARN : No configuration file found. Working directory = /home/natura/natusfera/script
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] WARN : Looked in these locations (based on defaults): /home/natura/natusfera/script/config/newrelic.yml, /home/natura/natusfera/script/newrelic.yml, /home/natura/natusfera/config/newrelic.yml, /home/natura/natusfera/newrelic.yml, /home/natura/.newrelic/newrelic.yml, /home/natura/newrelic.yml
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing Net instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing MemCache instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing ActiveRecord instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing Rails 3+ middleware instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing deferred Rack instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing Rack::Builder middleware instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing Rails 3 Error instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing Rails 3 Controller instrumentation
+[01/13/16 14:03:09 +0000 gbif-inatura (23490)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/13/16 14:03:10 +0000 gbif-inatura (23490)] INFO : Finished instrumentation
+[01/13/16 14:03:32 +0000 gbif-inatura (23522)] INFO : Starting the New Relic agent in "production" environment.
+[01/13/16 14:03:32 +0000 gbif-inatura (23522)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/13/16 14:03:32 +0000 gbif-inatura (23522)] WARN : No configuration file found. Working directory = /home/natura/natusfera/script
+[01/13/16 14:03:32 +0000 gbif-inatura (23522)] WARN : Looked in these locations (based on defaults): /home/natura/natusfera/script/config/newrelic.yml, /home/natura/natusfera/script/newrelic.yml, /home/natura/natusfera/config/newrelic.yml, /home/natura/natusfera/newrelic.yml, /home/natura/.newrelic/newrelic.yml, /home/natura/newrelic.yml
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing Net instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing MemCache instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing ActiveRecord instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing Rails 3+ middleware instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing deferred Rack instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing Rack::Builder middleware instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing Rails 3 Error instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing Rails 3 Controller instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/13/16 14:03:33 +0000 gbif-inatura (23522)] INFO : Finished instrumentation
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] INFO : Installing DelayedJob instrumentation [part 2/2]
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] INFO : Starting the New Relic agent in "production" environment.
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] WARN : No configuration file found. Working directory = /home/natura/natusfera
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] WARN : Looked in these locations (based on defaults): /home/natura/natusfera/config/newrelic.yml, /home/natura/natusfera/newrelic.yml, /home/natura/natusfera/config/newrelic.yml, /home/natura/natusfera/newrelic.yml, /home/natura/.newrelic/newrelic.yml, /home/natura/newrelic.yml
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] INFO : Environment: production
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] INFO : Dispatcher: delayed_job
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] INFO : Application: production
+[01/13/16 14:03:37 +0000 gbif-inatura (23566)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'production'.
+[01/13/16 14:03:44 +0000 gbif-inatura (23566)] ERROR : Invalid license key, please contact support@newrelic.com
+[01/13/16 14:03:44 +0000 gbif-inatura (23566)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[01/13/16 14:03:53 +0000 gbif-inatura (23571)] INFO : Starting the New Relic agent in "production" environment.
+[01/13/16 14:03:53 +0000 gbif-inatura (23571)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/13/16 14:03:53 +0000 gbif-inatura (23571)] WARN : No configuration file found. Working directory = /home/natura/natusfera/script
+[01/13/16 14:03:53 +0000 gbif-inatura (23571)] WARN : Looked in these locations (based on defaults): /home/natura/natusfera/script/config/newrelic.yml, /home/natura/natusfera/script/newrelic.yml, /home/natura/natusfera/config/newrelic.yml, /home/natura/natusfera/newrelic.yml, /home/natura/.newrelic/newrelic.yml, /home/natura/newrelic.yml
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing Net instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing MemCache instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing ActiveRecord instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing Rails 3+ middleware instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing deferred Rack instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing Rack::Builder middleware instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing Rails 3 Error instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing Rails 3 Controller instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/13/16 14:03:54 +0000 gbif-inatura (23571)] INFO : Finished instrumentation
