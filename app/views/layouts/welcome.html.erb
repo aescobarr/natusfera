@@ -568,14 +568,21 @@
 				<li class="list-group-item"><a href="#">RSS</a></li>				
 			</ul>-->
 		</div>
-		<div class="col-md-4">			
-			<!--<div class="input-group">
+		<div class="col-md-4">
+			<div class="input-group">
 				<input type="text" class="form-control" placeholder="SUSCRIBETE A NUESTRAS NOTICIAS...">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
-					</span>
-				</div>
-			</div>-->
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+				</span>
+			</div>			
+			<div class="app_group">
+				<% if CONFIG.iphone_app_url %>
+					<a href="<%= CONFIG.iphone_app_url %>"><img src="<%= asset_path("apple_app_store.png") %>"></a>
+				<% end %>
+				<% if CONFIG.android_app_url %>
+	    		<a href="<%= CONFIG.android_app_url %>"><img src="<%= asset_path("android_market.png") %>"></a>
+	    	<% end %>
+    	</div>
 	</div>	
 </div>
 </body>

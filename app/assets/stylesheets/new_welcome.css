@@ -985,8 +985,17 @@ div.row.legal div.col-md-2{
 	margin-bottom: 30px;
 }
 
+div.row.legal div.col-md-4{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 div.row.legal div.col-md-4 div.input-group{
 	margin-top: 40px;	
+}
+
+div.app_group{
+    margin-top: 20px;
 }
 
 div.row.legal div.col-md-4 div.input-group span.input-group-btn button.btn.btn-default{
