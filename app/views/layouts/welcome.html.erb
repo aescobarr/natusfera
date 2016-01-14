@@ -76,7 +76,7 @@
 
     var fillSlide = function(id, observation){
       //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
-      var capped_desc = "Algo...";
+      var capped_desc = "...";
       if(observation.description){
       	capped_desc = observation.description.length > 40 ? observation.description.substring(0, 37) + "..." : observation.description.substring(0, observation.description.length);
       }
