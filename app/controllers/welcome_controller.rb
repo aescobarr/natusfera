@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController 
-  layout "welcome"
+
   MOBILIZED = [:index]
   before_filter :unmobilized, :except => MOBILIZED
   before_filter :mobilized, :only => MOBILIZED
