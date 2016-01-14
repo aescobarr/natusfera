@@ -386,7 +386,7 @@
           <div class="inner-grid-wrapper-small">
             <div class="section-label">
               <span><img src="<%= observation.observation_photos[0].photo.small_url  %>"></span>
-              <% if observation.species_guess %>
+              <% if observation.species_guess.blank? %>
               	<%= link_to observation.species_guess.html_safe, observation_path(observation), class: "label-observaciones" %>
             	<% else %>
             		<%= link_to "#{t(:something)}...", observation_path(observation), class: "label-observaciones" %>
