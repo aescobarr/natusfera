@@ -31,6 +31,7 @@ public/places
 public/taxa
 public/attachments
 public/guides
+public/assets/
 .rvmrc
 .ruby-gemset
 .ruby-version
