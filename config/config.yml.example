@@ -166,6 +166,13 @@ base: &base
     #     admin_ids: [1,2]
     #     namespace: appname # your facebook app's namespace, used for open graph tags
 
+    # google maps stuff
+    # google:
+    #  client_id: 
+    #  secret: 
+    #  simple_key: this is used for static map images in mobile views
+
+
     # twitter:
     #     key: 09af09af09af09af09af09af09af09af09af09af
     #     secret: 09af09af09af09af09af09af09af09af09af09af
