@@ -1006,3 +1006,132 @@ div.row.legal div.col-md-4 div.input-group span.input-group-btn button.btn.btn-d
 div.row.legal div.col-md-2.no-right-separator span{
     color:white;
 }
+
+########################
+
+.observations.infowindow {
+    margin: 0;
+}
+
+.observations.mini .observation::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.observations.infowindow .observation {
+    border: 0 none;
+    margin: 0;
+    max-height: 300px;
+    padding: 0;
+    width: 400px;
+}
+.observations.mini .observation {    
+    position: relative;
+}
+
+.observations.mini.infowindow .observation[data-iconic-taxon-name] .icon {
+    top: 3px;
+}
+.observations.mini .icon {
+    left: 5px;
+    position: absolute;      
+}
+
+
+.observations .mini .photos .attribute {
+    max-width: 80px;
+}
+.observations .mini .photos {
+    float: right;
+    margin-left: 4px;
+}
+
+.gm-style .observations.infowindow .species_guess {
+    font-size: 14px;
+}
+.observations.mini .species_guess {
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+.observations.mini .observed_on, .observations.mini .created_at, .observations.mini .species_guess, .observations.mini .tags, .observations.mini .place, .observations.mini .user, .observations.mini .actions, .observations.mini .curator_ident {
+    padding-left: 30px;
+}
+
+.observations.mini.compact.infowindow .observation .user, .observations.mini.compact.infowindow .observation .observed_on, .observations.mini.compact.infowindow .observation .created_at, .observations.mini.compact.infowindow .observation .details, .observations.mini.compact.infowindow .observation .tags, .observations.mini.compact.infowindow .observation .actions {
+    padding-left: 0;
+}
+
+.observations.mini .user, .observations.mini .observed_on, .observations.mini .created_at, .observations.mini .tags, .observations.mini .place {
+    font-size: 100%;    
+    position: relative;
+}
+
+.observations.mini.compact.infowindow .observation .user, .observations.mini.compact.infowindow .observation .observed_on, .observations.mini.compact.infowindow .observation .created_at, .observations.mini.compact.infowindow .observation .details, .observations.mini.compact.infowindow .observation .tags, .observations.mini.compact.infowindow .observation .actions {
+    padding-left: 0;
+}
+.observations.mini.compact .observation .user, .observations.mini.compact .observation .observed_on, .observations.mini.compact .observation .created_at {
+    padding-left: 30px;
+}
+.observations.mini .user, .observations.mini .observed_on, .observations.mini .created_at, .observations.mini .tags, .observations.mini .place {
+    font-size: 100%; 
+    position: relative;
+}
+
+.observations.mini.compact .observation .othernames, .observations.mini.compact .observation .photo, .observations.mini.compact .observation .time, .observations.mini.compact .observation .place {
+    display: none !important;
+}
+.observations.mini .user, .observations.mini .observed_on, .observations.mini .created_at, .observations.mini .tags, .observations.mini .place {
+    font-size: 100%;
+    padding-left: 85px;
+    position: relative;
+}
+
+.observations.mini.compact.infowindow .observation .user, .observations.mini.compact.infowindow .observation .observed_on, .observations.mini.compact.infowindow .observation .created_at, .observations.mini.compact.infowindow .observation .details, .observations.mini.compact.infowindow .observation .tags, .observations.mini.compact.infowindow .observation .actions {
+    padding-left: 0;
+}
+
+.observations.mini .user, .observations.mini .observed_on, .observations.mini .created_at, .observations.mini .tags, .observations.mini .place {
+    font-size: 100%; 
+    position: relative;
+}
+
+.observations.mini.compact.infowindow .observation .user, .observations.mini.compact.infowindow .observation .observed_on, .observations.mini.compact.infowindow .observation .created_at, .observations.mini.compact.infowindow .observation .details, .observations.mini.compact.infowindow .observation .tags, .observations.mini.compact.infowindow .observation .actions {
+    padding-left: 0;
+}
+.observations.infowindow .details, .observations.infowindow .tags {
+    display: block;
+    margin-top: 5px;
+}
+.observations.mini .user, .observations.mini .observed_on, .observations.mini .created_at, .observations.mini .tags, .observations.mini .place {
+    font-size: 100%; 
+    position: relative;
+}
+
+.observations.mini.compact.infowindow .observation .user, .observations.mini.compact.infowindow .observation .observed_on, .observations.mini.compact.infowindow .observation .created_at, .observations.mini.compact.infowindow .observation .details, .observations.mini.compact.infowindow .observation .tags, .observations.mini.compact.infowindow .observation .actions {
+    padding-left: 0;
+}
+.observations.mini.compact .actions, .observations.mini.infowindow .actions {
+    margin-top: 5px;
+}
+
+.observations.mini .icon img {
+    max-width: 20px;
+}
+.gm-style img {
+    max-width: none;
+}
+img, p img {
+    float: none;
+    margin: 0;
+}
+.attribute h4.label{
+    font-size: 10px;
+    color: #009933;
+}
+
+.observations h4 {
+    display: none;
+    margin: 0;
+}
