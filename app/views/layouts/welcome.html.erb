@@ -64,7 +64,7 @@
       } 
     }
 
-    var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
+    var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;    
 
 	  var tilejson = {
 			tiles : [tile_server_url + "/observations/points/{z}/{x}/{y}.png?"],
@@ -87,19 +87,19 @@
           if(o.data['latitude']){
             var latLng = new google.maps.LatLng(o.data['latitude'],o.data['longitude']);
             $.ajax({
-              url:  '/observations/' + o.data['id'] + '.html?partial=cached_component',
+              url:  '/observations/' + o.data['id'] + '.html?partial=cached_component',              
               type: 'GET',
               dataType: 'html',
               beforeSend: function() {
                 var iw = getInfoWindow();
-                iw.position = latLng;
-                iw.content = $('<div class="loading status">Loading...</div>').get(0);
+                iw.position = latLng;                
+                iw.setContent($('<div class="loading status">Loading...</div>').get(0));
                 iw.open(map);                
               },
               success: function(data) {
                 var iw = getInfoWindow()
-                iw.position = latLng;
-                iw.content = $('<div class="compact mini infowindow observations"></div>').append(data).get(0);
+                iw.position = latLng;                
+                iw.setContent($('<div class="compact mini infowindow observations"></div>').append(data).get(0));
                 iw.open(map);
                 // make sure the InfoWindow has focus
                 $(iw).focus();                
