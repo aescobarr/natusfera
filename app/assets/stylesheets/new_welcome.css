@@ -1135,3 +1135,7 @@ img, p img {
     display: none;
     margin: 0;
 }
+
+.attribute a {
+    color: #82b71f;
+}
