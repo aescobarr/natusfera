@@ -64,8 +64,8 @@
       } 
     }
 
-    //var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
-    var tile_server_url = "http://193.146.75.173:4000";
+    var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
+    //var tile_server_url = "http://193.146.75.173:4000";
 
 	  var tilejson = {
 			tiles : [tile_server_url + "/observations/points/{z}/{x}/{y}.png?"],
@@ -88,8 +88,8 @@
           if(o.data['latitude']){
             var latLng = new google.maps.LatLng(o.data['latitude'],o.data['longitude']);
             $.ajax({
-              //url:  '/observations/' + o.data['id'] + '.html?partial=cached_component',              
-              url:  '/observations/132.html?partial=cached_component',
+              url:  '/observations/' + o.data['id'] + '.html?partial=cached_component',              
+              //url:  '/observations/132.html?partial=cached_component',
               type: 'GET',
               dataType: 'html',
               beforeSend: function() {
