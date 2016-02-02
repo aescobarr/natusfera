@@ -1,1 +1,0 @@
-IE7.CSS.addFix(/opacity\s*:\s*([\d.]+)/,function(match,value){return"zoom:1;filter:Alpha(opacity="+(100*value||1)+")"});var IMAGE=/^image/i;IE7.HTML.addRecalc("object",function(element){return IMAGE.test(element.type)?(element.body.style.cssText="margin:0;padding:0;border:none;overflow:hidden",element):void 0});
