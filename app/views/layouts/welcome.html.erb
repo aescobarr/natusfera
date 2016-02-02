@@ -8,6 +8,7 @@
         <!-- Google maps include -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
 	<%= javascript_include_tag 'isotope.pkgd.min' %>
+	<%= javascript_include_tag 'wax.g' %>
 <script>
 	function toggleHeaderSubnav(link) {
 	  if ($(link).parents('.subnavtab').hasClass('open')) {
@@ -42,11 +43,15 @@
 	$(document).ready(function(){
     window.observations = <%=json_escape @observations.to_json(:include => { :observation_photos => { :include => { :photo => { :except => :metadata } } } }).html_safe %>;
 
+    var infoWindow;
+
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -34.397, lng: 150.644},
-      zoom: 8
+      zoom: 9,
+      maxZoom: 13,
+      minZoom: 9
     });
-
+    
     var features = [];
     if(observations){
       for(var i = 0; i < observations.length; i++){
@@ -58,6 +63,60 @@
         features.push({ marker: marker, observation: obs_n  });
       } 
     }
+
+    var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
+
+	  var tilejson = {
+			tiles : [tile_server_url + "/observations/points/{z}/{x}/{y}.png?"],
+			grids: [tile_server_url + "/observations/points/{z}/{x}/{y}.grid.json?&interactivity=id,taxon_id,species_guess,latitude,longitude,positional_accuracy,captive,quality_grade,iconic_taxon_id"],
+			template : "{{species_guess}}",
+			interactivity : "id,taxon_id,species_guess,latitude,longitude,positional_accuracy,captive,quality_grade,iconic_taxon_id"	
+		};
+
+		var interactionlayer = new wax.g.connector( tilejson );
+
+		map.overlayMapTypes.push(interactionlayer);
+
+    wax.g.interaction().map(map).tilejson(tilejson)
+    .on({
+      on: function(o) {
+        document.body.style.cursor = 'pointer'
+        if (o.e.type == 'click') {
+          // if the click is anywhere within the InfoWindow, don't act on it
+          if($('.gm-style-iw').parent().find(o.e.target).length > 0) { return false; }
+          if(o.data['latitude']){
+            var latLng = new google.maps.LatLng(o.data['latitude'],o.data['longitude']);
+            $.ajax({
+              url:  '/observations/' + o.data['id'] + '.html?partial=cached_component',
+              type: 'GET',
+              dataType: 'html',
+              beforeSend: function() {
+                var iw = getInfoWindow();
+                iw.position = latLng;
+                iw.content = $('<div class="loading status">Loading...</div>').get(0);
+                iw.open(map);                
+              },
+              success: function(data) {
+                var iw = getInfoWindow()
+                iw.position = latLng;
+                iw.content = $('<div class="compact mini infowindow observations"></div>').append(data).get(0);
+                iw.open(map);
+                // make sure the InfoWindow has focus
+                $(iw).focus();                
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                console.log(textStatus);
+              }
+            });
+          }
+        } else if (o.e.type == 'mousemove') {
+          map.setOptions({ draggableCursor: 'pointer' });
+        }
+      },
+      off: function(o) {
+        map.setOptions({ draggableCursor: 'url(http://maps.google.com/mapfiles/openhand.cur), move' });
+      }
+    });
           
     var getItemId = function(id){
       return parseInt(id.substring(id.indexOf("_")+1));
@@ -91,8 +150,18 @@
       return (str.length > n) ? str.substr(0,n-1)+'&hellip;' : this;
     };
 
+    var getInfoWindow = function() {
+  		if (!infoWindow) {
+    		infoWindow = new google.maps.InfoWindow({
+       	content: $('<div class="loading status">Loading...</div>').get(0),
+       	position: new google.maps.LatLng(0,0)
+    	})
+  	}
+  		return infoWindow;
+		}
+
     // Activate Carousel
-    $('#obsCarousel').carousel();
+    $('#obsCarousel').carousel({interval:30000});
 
     // Enable Carousel Indicators
     $(".item1").click(function(){
