@@ -9,6 +9,8 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
 	<%= javascript_include_tag 'isotope.pkgd.min' %>
 	<%= javascript_include_tag 'wax.g' %>
+  <%= javascript_include_tag "i18n" %>
+  <%= javascript_include_tag "translations" %>
 <script>
 	function toggleHeaderSubnav(link) {
 	  if ($(link).parents('.subnavtab').hasClass('open')) {
@@ -319,27 +321,27 @@
 			  <ul class="nav navbar-nav">
 				<li>
 					<a class="func-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Funcionalidad</h4>
-						<p class="list-group-item-text">¿Que funciones ofrece natusfera?</p>
+						<h4 class="list-group-item-heading"><%= t('views.welcome.index.funcion') %></h4>
+						<p class="list-group-item-text"><%= t('views.welcome.index.funcion_l') %></p>
 					</a>
 				</li>			
 				<li>
 					<a class="observations-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Observaciones</h4>
-						<p class="list-group-item-text">Algunas de las observaciones aportadas por usuarios</p>
+						<h4 class="list-group-item-heading"><%= t('observations') %></h4>
+						<p class="list-group-item-text"><%= t('views.welcome.index.observ_l') %></p>
 					</a>
 				</li>				
 
 				<li>
 					<a class="especies-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Especies</h4>
-						<p class="list-group-item-text">La riqueza del mundo natural</p>
+						<h4 class="list-group-item-heading"><%= t('species') %></h4>
+						<p class="list-group-item-text"><%= t('views.welcome.index.especies_l') %></p>
 					</a>
 				</li>
 				<li>
 					<a class="proyectos-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Proyectos</h4>
-						<p class="list-group-item-text">Grupos de observaciones con un objetivo común</p>
+						<h4 class="list-group-item-heading"><%= t('projects') %></h4>
+						<p class="list-group-item-text"><%= t('views.welcome.index.project_l') %></p>
 					</a>
 				</li>
 				<!--<li>
@@ -350,8 +352,8 @@
 				</li>-->
 				<li>
 					<a class="gente-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Gente</h4>
-						<p class="list-group-item-text">Conoce a nuestros usuarios</p>
+						<h4 class="list-group-item-heading"><%= t('people') %></h4>
+						<p class="list-group-item-text"><%= t('views.welcome.index.people_l') %></p>
 					</a>
 				</li>
 				<!--<li>
@@ -369,29 +371,29 @@
             <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("register.jpg") %>
-                <h4>Lleve un registro</h4>
-                <p>Registre sus observaciones naturales y mantenga listas de organismos, todo en la nube.</p>
+                <h4><%= t('views.welcome.index.manten_un_registro') %></h4>
+                <p><%= t('views.welcome.index.manten_un_registro_l') %></p>
               </div>
             </div>
             <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("identify.jpg") %>
-                <h4>Identifique</h4>
-                <p>Conecte con otros usuarios que le ayudaran a identificar los organismos que observe.</p>
+                <h4><%= t('views.welcome.index.identifique') %></h4>
+                <p><%= t('views.welcome.index.identifique_l') %></p>
               </div>
             </div>
            <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("learn.jpg") %>
-                <h4>Aprenda acerca de la naturaleza</h4>
-                <p>Aumente sus conocimientos al hablar con otros naturalistas y ayudar a otros.</p>
+                <h4><%= t('views.welcome.index.aprenda') %></h4>
+                <p><%= t('views.welcome.index.aprenda_l') %></p>
               </div>
             </div>
            <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("data.jpg") %>
-                <h4>Cree datos utiles</h4>
-                <p>Ayude a cientificos a entender en que lugares se encuentran los organismos.</p>
+                <h4><%= t('views.welcome.index.cree') %></h4>
+                <p><%= t('views.welcome.index.cree_l') %></p>
               </div>
             </div>
           </div>
@@ -399,15 +401,15 @@
             <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("ci_sc.jpg") %>
-                <h4>Conviertase en ciudadano cientifico</h4>
-                <p>Contribuya a proyectos que le interesen, o cree sus propios proyectos.</p>
+                <h4><%= t('views.welcome.index.convierte') %></h4>
+                <p><%= t('views.welcome.index.convierte_l') %></p>
               </div>
             </div>
             <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("bioblitz.jpg") %>
-                <h4>Organice bioblitz</h4>
-                <p>Mantenga eventos donde la gente registra tantas observaciones como le es posible.</p>
+                <h4><%= t('views.welcome.index.bioblitz') %></h4>
+                <p><%= t('views.welcome.index.bioblitz_l') %></p>
               </div>
             </div>
            <!--<div class="grid-item func">

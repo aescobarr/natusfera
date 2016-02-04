@@ -3944,6 +3944,24 @@ en:
           to %{image}, where you can <strong>record</strong> what you see in nature, 
           <strong>meet</strong> other nature lovers, 
           and <strong>learn</strong> about the natural world.
+        manten_un_registro: Keep track
+        manten_un_registro_l: Keep your natural observations and taxon lists, in the cloud!
+        identifique: Identify
+        identifique_l: Connect with other users to get help identifying what you see
+        aprenda: Learn about nature
+        aprenda_l: Increase your knowledge talking to other naturalists
+        cree: Create useful data
+        cree_l: Help scientists find out where different taxa occur
+        convierte: Become a citizen scientist
+        convierte_l: Collaborate in interesting projects, or create your own
+        bioblitz: Organize bioblitz
+        bioblitz_l: Events where people log as much observations as possible
+        funcion: Functionality
+        funcion_l: What does Natusfera offer?
+        observ_l: Some observations from our users
+        especies_l: The diversity of the natural world
+        project_l: Observation groups with common goals
+        people_l: Meet our users
     wiki_pages:
       form:
         save_and_edit_to_add_attachments: Save and edit to add attachments
