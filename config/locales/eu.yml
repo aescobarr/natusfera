@@ -3422,6 +3422,24 @@ eu:
           hau erabiltzera gonbidatzen zaitu eta bertan naturan behatutakoa partekatu,
           naturatik ikasi eta informazioa beste naturalista batzuekin partekatu ahal
           izango duzu.
+        manten_un_registro: Mantén un registro
+        manten_un_registro_l: Registra tus observaciones naturales y guarda listas de organismos en la nube
+        identifique: Identifica
+        identifique_l: Conecta con otros usuarios que te ayudarán a identificar lo que veas
+        aprenda: Aprende acerca de la naturaleza
+        aprenda_l: Aumenta tus conocimientos hablando con otros naturalistas
+        cree: Crea datos útiles
+        cree_l: Ayuda a los científicos a obtener datos sobre distribución de especies
+        convierte: Conviértete en un ciudadano científico
+        convierte_l: Contribuye a proyectos que te interesen, o crea los tuyos propios
+        bioblitz: Organiza bioblitz
+        bioblitz_l: Eventos donde los usuarios registran tantas observaciones como les es posible
+        funcion: Funcionalidad
+        funcion_l: ¿Qué funciones ofrece Natusfera?
+        observ_l: Algunas observaciones aportadas por nuestros usuarios
+        especies_l: La riqueza del mundo natural
+        project_l: Grupos de observaciones con un objetivo común
+        people_l: Conoce a nuestros usuarios
   date:
     abbr_day_names:
       - ig.

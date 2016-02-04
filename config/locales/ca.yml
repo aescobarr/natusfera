@@ -3461,6 +3461,24 @@ ca:
           %{image} et convida a utilitzar aquest portal d'informació sobre biodiversitat
           on podràs compartir el que observes en la natura, aprendre de la natura i
           intercanviar informació amb altres naturalistes.
+        manten_un_registro: Desa un registre
+        manten_un_registro_l: Registra les teves observacions naturals i desa llistes d'organismes al núvol
+        identifique: Identifica
+        identifique_l: Connecta amb d'altres usuaris que t'ajudaran a identificar el que vegis
+        aprenda: Aprèn sobre la natura
+        aprenda_l: Augmenta els teus coneixements parlant amb altres naturalistes
+        cree: Crea dades útils
+        cree_l: Ajuda els científics a entendre on viuen diferents organismes
+        convierte: Torna't en un ciutadà científic
+        convierte_l: Contribueix a projectes que t'interessin, o bé crea els teus
+        bioblitz: Organitza bioblitz
+        bioblitz_l: Events on la gent enregistra tantes observacions com li és possible
+        funcion: Funcionalitat
+        funcion_l: Quina funcionalitat ofereix Natusfera?
+        observ_l: Algunes observacions aportades pels nostres usuaris
+        especies_l: La riquesa del món natural
+        project_l: Grups d'observacions amb un objectiu comú
+        people_l: Coneix els nostres usuaris
   date:
     abbr_day_names:
     - dg.
