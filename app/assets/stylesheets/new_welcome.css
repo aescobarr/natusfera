@@ -954,7 +954,7 @@ div.row.legal ul.list-group li.list-group-item{
 	
 }
 
-div.row.legal div.col-md-2 ul.list-group li.list-group-item{
+div.row.legal div.col-md-3 ul.list-group li.list-group-item{
 	font-family: 'Myriad Pro Bold';
 	color: #fff;
 }
@@ -964,23 +964,23 @@ div.row.legal div.col-md-2 ul.list-group li.list-group-item{
 	color: #fff;
 }*/
 
-div.row.legal div.col-md-2 ul.list-group li.list-group-item a{
+div.row.legal div.col-md-3 ul.list-group li.list-group-item a{
 	font-family: 'Myriad Pro Bold';
 	color: #fff;
 }
 	
-div.row.legal div.col-md-2{
+div.row.legal div.col-md-3{
 	border-right-width: 1px;
 	border-right-color: #fff;
 	border-style: solid;
 	height: 320px;
 }
 
-div.row.legal div.col-md-2.no-right-separator{
+div.row.legal div.col-md-3.no-right-separator{
 	border-style: none;
 }
 
-div.row.legal div.col-md-2{
+div.row.legal div.col-md-3{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -1003,8 +1003,12 @@ div.row.legal div.col-md-4 div.input-group span.input-group-btn button.btn.btn-d
 	padding-bottom: 9px;
 }
 
-div.row.legal div.col-md-2.no-right-separator span{
+div.row.legal div.col-md-3.no-right-separator span{
     color:white;
+}
+
+div.row.legal div.col-md-3.no-right-separator img{
+    width: 263px;
 }
 
 ########################
@@ -1138,4 +1142,24 @@ img, p img {
 
 .attribute a {
     color: #82b71f;
+}
+
+div.grid-item.func div.inner-grid-wrapper-small a img {
+    margin-top: 100px;
+    width: 210px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.grid-item.func div.inner-grid-wrapper-small.applink{
+    background-color: #82b71f;
+    color: #82b71f;
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(130, 183, 31, 0.5) 100%);    
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(130, 183, 31, 0.5) 100%);    
 }
