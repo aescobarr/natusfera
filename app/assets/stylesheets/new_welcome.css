@@ -1157,9 +1157,9 @@ div.grid-item.func div.inner-grid-wrapper-small.applink{
 }
 
 .carousel-control.right {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(130, 183, 31, 0.5) 100%);    
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(91, 90, 95, 0.5) 100%);    
 }
 
 .carousel-control.left {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(130, 183, 31, 0.5) 100%);    
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(91, 90, 95, 0.5) 100%);    
 }
