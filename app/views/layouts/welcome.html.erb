@@ -164,6 +164,16 @@
   		return infoWindow;
 		}
 
+    var setLocaleCookie = function(locale_string) {
+      document.cookie = "locale=" + locale_string;
+    }
+
+    $('#locale_eu').click( function() { setLocaleCookie('eu'); } );
+    $('#locale_es').click( function() { setLocaleCookie('es'); } );
+    $('#locale_ca').click( function() { setLocaleCookie('ca'); } );      
+    $('#locale_gl').click( function() { setLocaleCookie('gl'); } );
+    $('#locale_en').click( function() { setLocaleCookie('en'); } );
+
     // Activate Carousel
     $('#obsCarousel').carousel({interval:false});
 
@@ -242,6 +252,24 @@
 	<div id="banner" class="row">		
 		<img src="/assets/natusfera_banner_3.jpg">
 	</div>
+  <div class="row">
+    <ul style="width:100%;" class="nav navbar-nav lang">
+      <li style="width:20%;">        
+        <a style="padding-left:100px;" id="locale_ca" href="/">Català</a>
+      </li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_en" href="/">English</a></li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_es" href="/">Español</a></li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_eu" href="/">Euskera</a></li>            
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_gl" href="/">Galego</a></li>      
+    </ul>  
+  </div>
+  <!--<ul> 
+    <#% I18n.available_locales.each do |locale| %>
+      <#% unless locale == I18n.locale %>
+        <li><#%= link_to I18n.t("meta.language_name", :locale => locale.to_sym) %></li>
+      <#% end  %>                            
+    <#% end  %>
+  </ul>-->
 	<div class="row">	
 		<div id="slider-container" class="col-md-6 nopadding">
 			<div id="obsCarousel" class="carousel slide" data-ride="carousel">		
@@ -447,8 +475,16 @@
 						<% end %>
 					</div>
 				</div>				
-			</div>
+			</div>      
       <% end %>
+      <div class="grid-item especies">
+        <div class="inner-grid-wrapper-small">
+          <div class="section-label">
+            <span><%= image_tag ("species_more.png") %></span>
+            <%= link_to t(:species).upcase, taxa_path, :class => "label-species" %>
+          </div>
+        </div>        
+      </div>
 			<!--div class="grid-item proyectos">
 				<div class="inner-grid-wrapper-large">
 					<div class="section-label">
@@ -484,6 +520,14 @@
           </div>
         </div>
       <% end %>
+      <div class="grid-item observaciones">
+        <div class="inner-grid-wrapper-small">
+          <div class="section-label">
+            <span><%= image_tag ("observations_more.png") %></span>
+            <%= link_to t(:observations).upcase, observations_path, :class => "label-observaciones" %>
+          </div>
+        </div>
+      </div>
 			<!--<div class="grid-item observaciones">
 				<div class="inner-grid-wrapper-small">
 					<div class="section-label">
@@ -541,67 +585,61 @@
 				</div>
 			</div-->		
 		</div>
-                <div class="row">
-                  <!--<div class="grid-item proyectos">
-		    <div class="inner-grid-wrapper-small">
-		      <div class="section-label">
-			  <a class="label-proyectos" href="#">Proyectos</a>
-		      </div>
-		    </div>
-		  </div>-->
-                  <% for project in @sample_projects %>
-                    <div class="grid-item proyectos">
-                      <div class="inner-grid-wrapper-small">
-                        <div class="section-label">
-                          <span><%= image_tag project.icon.url(:span2), :id => "iconimg", :class => "project_picture" %></span>
-                          <%= link_to truncate(project.title.html_safe, length:40), project_path(project), class: "label-observaciones" %>
-                          <span>
-                            <%= t :owner %>: <%= link_to project.user.login, projects_by_login_url(project.user.login), :class => "photo_caption" %>
-                            <% if project.child? %>                          	
-                              <br><%= t :subproject %> <%= t :of %>: <%= link_to truncate(project.parent.title, length: 40), project_path(project.parent), :class => "photo_caption" %>                            
-                        	<% end %>
-                          </span>                          
-                        </div>
-                      </div>
-                    </div>
-                  <% end %>
-                </div>
+      <div class="row">
+        <% for project in @sample_projects %>
+          <div class="grid-item proyectos">
+            <div class="inner-grid-wrapper-small">
+              <div class="section-label">
+                <span><%= image_tag project.icon.url(:span2), :id => "iconimg", :class => "project_picture" %></span>
+                <%= link_to truncate(project.title.html_safe, length:40), project_path(project), class: "label-proyectos" %>
+                <span>
+                  <%= t :owner %>: <%= link_to project.user.login, projects_by_login_url(project.user.login), :class => "photo_caption" %>
+                  <% if project.child? %>                          	
+                    <br><%= t :subproject %> <%= t :of %>: <%= link_to truncate(project.parent.title, length: 40), project_path(project.parent), :class => "photo_caption" %>                            
+              	<% end %>
+                </span>                          
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <div class="grid-item proyectos">
+            <div class="inner-grid-wrapper-small">
+              <div class="section-label">
+                <span><%= image_tag ("projects_more.png") %></span>
+                <%= link_to t(:projects).upcase, projects_path, :class => "label-proyectos" %>
+              </div>
+            </div>
+          </div>
+      </div>
 		<div class="row">
-                  <% for user in @sample_users %>
-                    <div class="grid-item gente">
-                      <div class="inner-grid-wrapper-small">
-                        <div class="section-label">
-                        	<% if user.icon_file_name? %>
-                        		<span class="fullframe"><%= user_image(user, :size => "medium") %></span>
-                          <% else %>
-                          	<span class="fullframe"><%= user_image(user, :size => "medium", :class => "homegriduser") %></span>
-                          <% end %>                          
-                          <%= link_to truncate(user.login.html_safe, length:40), user_path(user), class: "label-gente" %>
-                          <% if user.description? %>
-                          	<p><%= truncate(user.description.html_safe, length:100) %></p>
-                          <% else %>
-                          	<p><%= t(:user_is_a_naturalist, :user => user.login) %></p>
-                          <% end %>
-                        </div>
-                      </div>
-                    </div>
-                  <% end %>
-			<div class="grid-item lugares">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-lugares" href="#">Lugares</a>
-					</div>
-				</div>
-			</div>
-			<div class="grid-item">
-				<div class="inner-grid-wrapper-small">
-				</div>
-			</div>		
-			<div class="grid-item">
-				<div class="inner-grid-wrapper-small">
-				</div>
-			</div>		
-		</div>		
+        <% for user in @sample_users %>
+          <div class="grid-item gente">
+            <div class="inner-grid-wrapper-small">
+              <div class="section-label">
+              	<% if user.icon_file_name? %>
+              		<span class="fullframe"><%= user_image(user, :size => "medium") %></span>
+                <% else %>
+                	<span class="fullframe"><%= user_image(user, :size => "medium", :class => "homegriduser") %></span>
+                <% end %>                          
+                <%= link_to truncate(user.login.html_safe, length:40), user_path(user), class: "label-gente" %>
+                <% if user.description? %>
+                	<p><%= truncate(user.description.html_safe, length:100) %></p>
+                <% else %>
+                	<p><%= t(:user_is_a_naturalist, :user => user.login) %></p>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <% end %>			
+        <div class="grid-item gente">
+          <div class="inner-grid-wrapper-small">
+            <div class="section-label">
+              <span><%= image_tag ("people_more.png") %></span>
+              <%= link_to t(:people).upcase, people_path, :class => "label-gente" %>
+            </div>
+          </div>
+        </div>
+		</div>
 	</div> <!-- Fi grid -->
 	<div class="row">
 		<div class="col-md-12 section-end"></div>
