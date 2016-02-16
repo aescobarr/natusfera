@@ -806,7 +806,7 @@ iNaturalist.OverlayControl.prototype.addWindshaftOverlayControl = function( laye
   checkbox
     .attr("id", id)
     .attr("name", title)
-    .attr("checked", ! options.disabled);
+    .attr("checked", ! options.disabled);    
   li.append( checkbox, label );
   checkbox.click( function( ) {
     var checked = this.checked;
@@ -814,6 +814,11 @@ iNaturalist.OverlayControl.prototype.addWindshaftOverlayControl = function( laye
       map.overlayMapTypes.setAt( layerData.layerID - 1, checked ? layerData.layer : null);
     });
   })
+  if(options.disabled){
+    _.each( layers, function( layerData ) {
+      map.overlayMapTypes.setAt( layerData.layerID - 1, null);
+    });
+  }
   if( description ) {
     li.append($("<div/>").addClass("small meta").html( description ));
   }
@@ -821,7 +826,7 @@ iNaturalist.OverlayControl.prototype.addWindshaftOverlayControl = function( laye
   if( ! map._overlayControlDisplayed ) {
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(map._overlayControl.div);
     map._overlayControlDisplayed = true;
-  }
+  }  
 };
 
 iNaturalist.OverlayControl.prototype.addOverlay = function(lyr) {
@@ -915,6 +920,45 @@ google.maps.Map.prototype.addLayerAndControl = function( tilejson, options ) {
   return layerID;
 };
 
+google.maps.Map.prototype.addiNatObservationsLayer = function(options) {
+  this.setTilt(0);
+  var options = options || { },      
+      iNatObsTileUrl = "http://tiles.inaturalist.org/points/{z}/{x}/{y}.png";
+  var tilejson = { tiles: [ iNatObsTileUrl ] };
+  return this.addLayerAndControl( tilejson, options );
+  // prevent the tilt feature, which cannot overlay tiles at higher zooms
+  /*this.setTilt( 0 );  
+  var options = options || { },
+      iNatObsTileUrl = "http://tiles.inaturalist.org/points/{z}/{x}/{y}.png";
+  //interact_url: 'http://www.inaturalist.org'  
+  // these are the parameters that will be sent to the windshaft API
+  var pointParamKeys = [ 'taxon_id', 'user_id', 'place_id',
+    'project_id', 'ttl', 'color', 'opacity', 'border_opacity','observation_id' ];      
+  var pointParams = { };
+  _.each( options, function( value, key ) {    
+    pointKey = key.replace("point_", "");    
+    if( _.contains( pointParamKeys, pointKey ) ) {
+      pointParams[ pointKey ] = value;
+    }
+  });
+  // build the proper paramater string for HTTP GET  
+  if( pointParams ) {
+    iNatObsTileUrl += "?" + $.param( pointParams );
+  }
+  // add a layer to the map for the grid  
+  pointLayer = this.addTileLayer( iNatObsTileUrl, {
+    interactivity: 'id,taxon_id,species_guess,latitude,longitude,positional_accuracy,captive,quality_grade,iconic_taxon_id',
+    disabled: options.disabled,
+    interact_url : 'http://www.inaturalist.org'
+  })
+  // add a toggle for this layer to the overlay control, if it exists
+  if( this._overlayControl ) {
+    this._overlayControl.addWindshaftOverlayControl(
+      [ pointLayer ], options
+    );
+  }*/
+};
+
 google.maps.Map.prototype.addObservationsLayer = function(options) {
   // prevent the tilt feature, which cannot overlay tiles at higher zooms
   this.setTilt( 0 );
@@ -1003,7 +1047,7 @@ google.maps.Map.prototype.addTileLayer = function(tileURL, options) {
   }
   // add a utfgrid data layer and custom JS events to catch interactivity
   if( options.interactivity ) {
-    this.addTileInteractivity( tilejson );
+    this.addTileInteractivity( tilejson, options );
   }
   // return the layer and index of this layer in the current stack
   return { layer: layer, layerID: layerID };
@@ -1015,8 +1059,8 @@ google.maps.Map.prototype.interactivityURL = function( tileURL, interactivity ) 
   return utfgridURL + "interactivity=" + interactivity;
 };
 
-google.maps.Map.prototype.addTileInteractivity = function( tilejson ) {
-  var map = this;
+google.maps.Map.prototype.addTileInteractivity = function( tilejson, options ) {
+  var map = this;  
   wax.g
     .interaction()
     .map(map)
@@ -1030,7 +1074,7 @@ google.maps.Map.prototype.addTileInteractivity = function( tilejson ) {
           if(o.data['latitude']){
             var latLng = new google.maps.LatLng(o.data['latitude'],o.data['longitude']);
             $.ajax({
-              url:  '/observations/' + o.data['id'] + '.html?partial=cached_component',
+              url: options.interact_url ? options.interact_url + '/observations/' + o.data['id'] + '.html?partial=cached_component' : '/observations/' + o.data['id'] + '.html?partial=cached_component',
               type: 'GET',
               dataType: 'html',
               beforeSend: function() {

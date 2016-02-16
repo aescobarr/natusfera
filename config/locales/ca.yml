@@ -1436,6 +1436,15 @@ ca:
     el diari del projecte.
   manually_create_new_place: Crea un nou lloc manualment
   map: Mapa
+  maps:
+    overlays:
+      all_observations: Totes les observacions
+      every_publicly_visible_observation: Totes les observacions públiques i visibles de Natusfera
+      featured_observations: Observacions representades
+      place_boundary: Límit de lloc
+      taxon_range: Rang de tàxon
+      inat_observations_label: Observacions iNat
+      inat_observations_description: Observacions extretes de iNaturalist
   map_for: Mapa per a
   maptype_for_places: google.maps.MapTypeId.TERRAIN
   matching_species_will_shown_up_here: Les espècies que trobis es mostraran aquí.

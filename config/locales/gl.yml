@@ -1433,6 +1433,15 @@ gl:
     diario do proxecto.
   manually_create_new_place: Crear un Lugar novo manualmente
   map: Mapa
+  maps:
+    overlays:
+      all_observations: Todas las observaciones
+      every_publicly_visible_observation: Todas las observaciones públicas y visibles de Natusfera
+      featured_observations: Observaciones representadas
+      place_boundary: Límite de lugar
+      taxon_range: Rango de taxon
+      inat_observations_label: Observaciones iNat
+      inat_observations_description: Observacions extraídas de iNaturalist
   map_for: Mapa para
   maptype_for_places: google.maps.MapTypeId.TERRAIN
   matching_species_will_shown_up_here: As especies que atopes mostraranse aquí. O

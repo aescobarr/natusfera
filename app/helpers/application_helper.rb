@@ -588,7 +588,9 @@ module ApplicationHelper
       "taxon_range_layer_label" => I18n.t("maps.overlays.taxon_range"),
       "all_layer_label" => I18n.t("maps.overlays.all_observations"),
       "all_layer_description" => I18n.t("maps.overlays.every_publicly_visible_observation"),
-      "featured_layer_label" => I18n.t("maps.overlays.featured_observations")
+      "featured_layer_label" => I18n.t("maps.overlays.featured_observations"),
+      "inat_layer_label" => I18n.t("maps.overlays.inat_observations_label"),
+      "inat_layer_description" => I18n.t("maps.overlays.inat_observations_description")
     }
     if options[:taxon]
       map_tag_attrs["taxon-range-layer-description"] = options[:taxon].to_styled_s
