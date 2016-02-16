@@ -1483,10 +1483,12 @@ en:
   maps:
     overlays:
       all_observations: All observations
-      every_publicly_visible_observation: Every publicly visible observation created in the iNaturalist network
+      every_publicly_visible_observation: Every publicly visible observation created in Natusfera
       featured_observations: Featured observations
       place_boundary: Place boundary
       taxon_range: Taxon range
+      inat_observations_label: iNat observations
+      inat_observations_description: All observations featured in iNaturalist
   map_tooltip: Show map view
   map_for: Map for
   maptype_for_places: 'google.maps.MapTypeId.TERRAIN'

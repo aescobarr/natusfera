@@ -39,6 +39,8 @@ inatTaxonMap.setup = function ( elt, options ) {
   options.taxonRangeLayerDescription = options.taxonRangeLayerDescription || $(elt).data('taxon-range-layer-description');
   options.allLayerLabel = options.allLayerLabel || $(elt).data('all-layer-label');
   options.allLayerDescription = options.allLayerDescription || $(elt).data('all-layer-description');
+  options.iNatLayerLabel = options.iNatLayerLabel || $(elt).data('inat-layer-label');
+  options.iNatLayerDescription = options.iNatLayerDescription || $(elt).data('inat-layer-description');
   // turn the observations JSON into proper JavaScript objects
   if( options.observations ) {
     options.observations = _.map( options.observations, function( observation ) {
@@ -106,6 +108,9 @@ inatTaxonMap.setupGoogle = function( elt ) {
   // Place Geometry
   if (options.place) {
     map.addPlaceLayer({ place: options.place, title: options.placeLayerLabel });
+  }
+  if (options.iNatObservations) {
+    map.addiNatObservationsLayer({disabled:true,title:options.iNatLayerLabel,description:options.iNatLayerDescription});
   }
   var windshaftOptions = { };
   if( options.taxon ) {
