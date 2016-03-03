@@ -25,7 +25,12 @@ class WelcomeController < ApplicationController
         end
         @page = WikiPage.find_by_path(CONFIG.home_page_wiki_path) if CONFIG.home_page_wiki_path
         @google_webmaster_verification = @site.google_webmaster_verification if @site
-        @sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
+        #@sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
+        begin
+          @sample_observations = Observation.find([395, 394, 393, 382])
+        rescue ActiveRecord::RecordNotFound
+          @sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
+        end
         @sample_projects = Project.order("RANDOM()").limit(4)
         @sample_users = User.order("RANDOM()").limit(4)
       end
