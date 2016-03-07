@@ -131,10 +131,12 @@ class Emailer < ActionMailer::Base
   end
 
   # Send the user an email saying the bulk user import was successful.
-  def bulk_users_success(user, filename)
+  def bulk_users_success(user, filename, credentials_list)
     @user = user
     # @subject << "The bulk import of #{filename} has been completed successfully."
     @subject = "#{subject_prefix} #{t(:bulk_import_of_filename_is_complete, :filename => filename)}"
+    @subject << "\n"
+    @subject << credentials_list
     @filename = filename
     mail(set_site_specific_opts.merge(
         :to => "#{user.name} <#{user.email}>", :subject => @subject
