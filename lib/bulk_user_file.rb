@@ -121,13 +121,13 @@ class BulkUserFile < Struct.new(:users_file, :user)
     long_pwd = elongate_password(t_login)
     u=User.new(
         :login => t_login,
-        :email => row[1],
-        :name => row[0],
-        :time_zone => row[2],
-        :locale => row[3],
+        :email => row[1].strip!,
+        :name => row[0].strip!,
+        :time_zone => row[2].strip!,
+        :locale => row[3].strip!,
         :password => long_pwd
     )
-    @name_login_password.push({:name => u.name,:login => u.t_login, :password => long_pwd})
+    @name_login_password.push({:name => u.name,:login => t_login, :password => long_pwd})
     u
   end
 
@@ -158,24 +158,31 @@ class BulkUserFile < Struct.new(:users_file, :user)
     field_options = {}
     errors = {}
     exception.errors.each do |e|
-      if e.errors.is_a?(ActiveModel::Errors)
-        e.errors.each do |field, error|
-          errors[field] ||= {}
-          full_error = e.errors.full_message(field, error)
-          errors[field][full_error] ||= []
-          errors[field][full_error] << e.row_count
-        end
-      elsif !e.tag.nil?
-        e.errors.each do |error|
-          errors[e.tag] ||= {}
-          errors[e.tag][error] ||= []
-          errors[e.tag][error] << e.row_count
-        end
-      else
-        e.errors.each do |error|
-          errors['base'] ||= {}
-          errors['base'][error] ||= []
-          errors['base'][error] << e.row_count
+      unless e.is_a?(String)
+        if e.errors.is_a?(ActiveModel::Errors)
+          e.errors.each do |field, error|
+            errors[field] ||= {}
+            full_error = e.errors.full_message(field, error)
+            errors[field][full_error] ||= []
+            errors[field][full_error] << e.row_count
+          end
+        elsif e.is_a?(ActiveRecord::RecordInvalid)
+          e.record.errors.each do |field, error|
+            full_error = e.record.errors.full_message(field, error)
+            errors[field][full_error] ||= []
+          end
+        elsif !e.tag.nil?
+          e.errors.each do |error|
+            errors[e.tag] ||= {}
+            errors[e.tag][error] ||= []
+            errors[e.tag][error] << e.row_count
+          end
+        else
+          e.errors.each do |error|
+            errors['base'] ||= {}
+            errors['base'][error] ||= []
+            errors['base'][error] << e.row_count
+          end
         end
       end
     end
