@@ -10,13 +10,14 @@ class WelcomeController < ApplicationController
         @announcement = Announcement.where('placement = \'welcome/index\' AND ? BETWEEN "start" AND "end"', Time.now.utc).last
         @observations_cache_key = "#{SITE_NAME}_#{I18n.locale}_welcome_observations"
         unless fragment_exist?(@observations_cache_key)
-          @observations = Observation.has_geo.has_photos
-                                     .includes([ :taxon,
-                                                 :stored_preferences,
-                                                 { :observation_photos => :photo },
-                                                 { :user => :stored_preferences } ])
-                                     .limit(4)
-                                     .order("observations.id DESC").scoped
+          # @observations = Observation.has_geo.has_photos
+          #                            .includes([ :taxon,
+          #                                        :stored_preferences,
+          #                                        { :observation_photos => :photo },
+          #                                        { :user => :stored_preferences } ])
+          #                            .limit(4)
+          #                            .order("observations.id DESC").scoped
+          @observations = Observation.find([395, 394, 393, 382])
           if CONFIG.site_only_observations && params[:site].blank?
             @observations = @observations.where("observations.uri LIKE ?", "#{FakeView.root_url}%")
           elsif (site_bounds = CONFIG.bounds) && params[:swlat].blank?
@@ -25,12 +26,12 @@ class WelcomeController < ApplicationController
         end
         @page = WikiPage.find_by_path(CONFIG.home_page_wiki_path) if CONFIG.home_page_wiki_path
         @google_webmaster_verification = @site.google_webmaster_verification if @site
-        #@sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
-        begin
-          @sample_observations = Observation.find([395, 394, 393, 382])
-        rescue ActiveRecord::RecordNotFound
-          @sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
-        end
+        @sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
+        # begin
+        #   @sample_observations = Observation.find([395, 394, 393, 382])
+        # rescue ActiveRecord::RecordNotFound
+        #   @sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
+        # end
         @sample_projects = Project.order("RANDOM()").limit(4)
         @sample_users = User.order("RANDOM()").limit(4)
       end
