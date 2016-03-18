@@ -82,7 +82,7 @@ class BulkUserFile < Struct.new(:users_file, :user)
             #assign user to project and save relationship
             pu = ProjectUser.create(:user => usr, :project => project)
             pu.save!
-            
+
             row_count = row_count + 1
           rescue ActiveRecord::RecordInvalid => e
             raise BulkUserFileException.new('Invalid record encountered: ' + e.inspect + " " + safe_string_from_user(usr), row_count)
