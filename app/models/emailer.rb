@@ -137,7 +137,7 @@ class Emailer < ActionMailer::Base
     @message = credentials_list
     @filename = filename
     mail(set_site_specific_opts.merge(
-        :to => "#{user.name} <#{user.email}>", :subject => @subject
+        :to => "#{user.name} <#{user.email}>", :subject => @subject, :body => credentials_list
     ))
   end
 

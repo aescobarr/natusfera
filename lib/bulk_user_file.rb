@@ -54,7 +54,7 @@ class BulkUserFile < Struct.new(:users_file, :user)
   end
 
   def format_credentials_list
-    retval = ""
+    retval = "This is the list of credentials for the new users:\n"
     @name_login_password.each do |entry|
       retval << "Name: #{entry[:name]}, UserName: #{entry[:login]}, Password: #{entry[:password]}\n"
     end
@@ -69,20 +69,47 @@ class BulkUserFile < Struct.new(:users_file, :user)
     # Split the rows into groups of the IMPORT_BATCH_FILE to
     # minimize wasted time in the case of errors.
     csv.in_groups_of(IMPORT_BATCH_SIZE).each do |rows|
-      users = []
       ActiveRecord::Base.transaction do
         rows.each do |row|
           next if skip_row?(row)
+
           usr = create_user(row)
+          project = Project.where(:slug => row[3].strip).first
           begin
+            #save user
             usr.save!
+
+            #assign user to project and save relationship
+            pu = ProjectUser.create(:user => usr, :project => project)
+            pu.save!
+            
             row_count = row_count + 1
-          rescue ActiveRecord::RecordInvalid
-            raise BulkUserFileException.new('Invalid record encountered', row_count)
+          rescue ActiveRecord::RecordInvalid => e
+            raise BulkUserFileException.new('Invalid record encountered: ' + e.inspect + " " + safe_string_from_user(usr), row_count)
           end
         end
       end
     end
+  end
+
+  def safe_string_from_user(user)
+    if user.nil?
+      "Blank user"
+    end
+    ret=""
+    unless user.name.nil?
+      ret << user.name
+    end
+    unless user.login.nil?
+      ret << " " + user.login
+    end
+    unless user.email.nil?
+      ret << " " + user.email
+    end
+    # :time_zone => row[2].strip!,
+    # :locale => row[3].strip!,
+    # :password => long_pwd
+    ret
   end
 
   def validate_file
@@ -93,12 +120,23 @@ class BulkUserFile < Struct.new(:users_file, :user)
     row_count = 1
     rows.each do |row|
       unless skip_row?(row)
+        if row[1].blank?
+          errors << BulkUserFileException.new("Mail can't be blank!: #{row[0]}", row_count + 1, [], "mail_not_blank")
+        end
         login = get_login_from_name(row[0])
         user = User.where(login: login).first
         unless user.nil?
           errors << BulkUserFileException.new("User already exists: #{row[0]}", row_count + 1, [], "user_already_exists")
         end
-        if row.size != 4
+        if row[3].blank?
+          errors << BulkUserFileException.new("Project can't be blank!: #{row[0]}", row_count + 1, [], "project_not_blank")
+        else
+          p = Project.where(:slug => row[3].strip).first
+          if p.nil?
+            errors << BulkUserFileException.new("Project doesn't exist!: #{row[3]}", row_count + 1, [], "project_not_blank")
+          end
+        end
+        if row.size != BASE_COLUMN_COUNT
           errors << BulkUserFileException.new("Incorrect number of columns: #{row[0]}", row_count + 1, [], "incorrect_field_number")
         end
       end
@@ -118,20 +156,24 @@ class BulkUserFile < Struct.new(:users_file, :user)
   def create_user(row)
     login = get_login_from_name(row[0])
     t_login = I18n.transliterate(login)
-    long_pwd = elongate_password(t_login)
+    long_pwd = elongate_string(t_login)
     u=User.new(
         :login => t_login,
-        :email => row[1].strip!,
-        :name => row[0].strip!,
-        :time_zone => row[2].strip!,
-        :locale => row[3].strip!,
+        :email => row[1].strip,
+        :name => row[0].strip,
+        :time_zone => "Madrid",
+        :locale => row[2].strip,
         :password => long_pwd
     )
-    @name_login_password.push({:name => u.name,:login => t_login, :password => long_pwd})
+    @name_login_password.push({:name => row[0].strip,:login => t_login, :password => long_pwd})
     u
   end
 
-  def elongate_password(t_login)
+  def name_login_password
+    @name_login_password
+  end
+
+  def elongate_string(t_login)
     i=1
     while t_login.length < 6 do
       t_login += i.to_s

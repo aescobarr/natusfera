@@ -1,0 +1,21 @@
+<p><%= @message %></p>
+
+<% unless @errors.nil? %>
+    <% @errors.each do |field, errors| %>
+        <ul>
+          <% errors.each do |error, rows|  %>
+              <li>
+                <%= error %>
+                <ul><li><%=t :row_singular_or_plural %>: <%= rows.join(', ') %></li></ul>
+              </li>
+          <% end %>
+          <% unless @field_options[field].blank? %>
+              <li><%=t :valid_options_are %>: <%= @field_options[field] %></li>
+          <% end %>
+        </ul>
+    <% end %>
+<% end %>
+
+<p><%=t :please_fix_your_csv_and_try_again %></p>
+
+<%= render 'footer' %>
