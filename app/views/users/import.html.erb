@@ -21,11 +21,6 @@
   <div class="column span-12">
     <h2><%=t :import_users %></h2>
   </div>
-  <div class="column span-24">
-    <p class="description">
-      <%=t :got_your_data_somewhere_else? %>
-    </p>
-  </div>
 </div>
 
 <div class="column span-24">
@@ -61,41 +56,33 @@
         <h3><%= raw t(:rules_and_formatting) %></h3>
         <ol>
           <li><%=t :you_must_have_a_header_row %></li>
-          <li><%=t :only_files_with_10000_rows_at_a_time %></li>
           <li><%=t :use_well_formed_csv %> </li>
           <li><%=t :dont_use_double_quotes %> </li>
-          <% if CONFIG.coordinate_systems -%>
-              <li><%=t :only_one_coordinate_system_per_file %></li>
-          <% end -%>
           <li>
             <p class="ui"><%=t :we_can_only_understand_csv_in %>:</p>
             <table cellspacing="0" border="0" cellpadding="0">
               <tr>
-                <th><%=t :taxon_name %></th>
-                <th><%=t :date_observed %></th>
-                <th><%=t :description %></th>
-                <th><%=t :place_name %></th>
-                <th><%=t :latitude_slash_y_coord_slash_northing %></th>
-                <th><%=t :longitude_slash_x_coord_slash_easting %></th>
-                <th><%=t :tags %></th>
-                <th><%=t :geoprivacy %></th>
+                <th><%=t :user_name %></th>
+                <th><%=t :email %></th>
+                <th><%=t :import_users_locale %>*</th>
+                <th><%=t :import_project_slug %>**</th>
               </tr>
               <tr>
                 <td>text</td>
-                <td>YYYY-MM-DD HH:MM</td>
-                <td>text (if it contains commas, enclose in double quotes)</td>
+                <td>email</td>
                 <td>text</td>
-                <td>dd.dddd</td>
-                <td>dd.dddd</td>
-                <td>tag1,tag2</td>
-                <td>obscured</td>
+                <td>text</td>
               </tr>
             </table>
 
             <p class="ui"><%=t :here_are_3_examples %>:</p>
-            <code>Anna's Hummingbird,2008-03-03 2:54pm,"An aggressive male dive-bombed my head, so I took cover.","Tilden Regional Park, Berkeley, CA, USA",37.8953,-122.249,"attack, danger",obscured
-              Sharp-tailed Snake,2007-08-20,"Beautiful little creature","Leona Canyon Regional Park, Oakland, CA, USA",37.7454,-122.111,"cute, snakes"
-              Golden Eagle,,"I'm not really sure when or where this was",,,,"mysterious",private</code>
+            <code>
+              "Díaz Delgado, Susana",sdiaz_88@gmail.es,ca,projecte-col-legi-cami
+              "Pérez García, Luis",lperez@yahoo.es,es,vegetacio-de-l-entorn-de-l-ins-princep-de-girona
+              "Aceveda Garrido, Mª Luisa",mlacev@outlook.com,gl,cpifp-lorenzo-milani-2015-16-ano-internacional-unesco-de-leguminosas-y-camelidos
+            </code>
+            <p class="ui">* <%=t :import_users_locale_explain %></p>
+            <p class="ui">** <%=t :import_users_project_slug_explain %></p>
           </li>
         </ol>
       </div>
