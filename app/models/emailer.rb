@@ -117,6 +117,30 @@ class Emailer < ActionMailer::Base
     ))
   end
 
+  # Send the user an email saying the bulk user load encountered
+  # an error.
+  def bulk_users_error(user, filename, error_details)
+    @user = user
+    @subject = "#{subject_prefix} #{t :were_sorry_but_your_bulk_import_of_filename_has_failed, :filename => filename}"
+    @message       = error_details[:reason]
+    @errors        = error_details[:errors]
+    @field_options = error_details[:field_options]
+    mail(set_site_specific_opts.merge(
+        :to => "#{user.name} <#{user.email}>", :subject => @subject
+    ))
+  end
+
+  # Send the user an email saying the bulk user import was successful.
+  def bulk_users_success(user, filename, credentials_list)
+    @user = user
+    @subject = "#{subject_prefix} #{t(:bulk_import_of_filename_is_complete, :filename => filename)}"
+    @message = credentials_list
+    @filename = filename
+    mail(set_site_specific_opts.merge(
+        :to => "#{user.name} <#{user.email}>", :subject => @subject, :body => credentials_list
+    ))
+  end
+
   # Send the user an email saying the bulk observation import was successful.
   def bulk_observation_success(user, filename)
     @user = user
