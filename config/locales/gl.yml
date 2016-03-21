@@ -1128,6 +1128,14 @@ gl:
     nomes
   ignore: Ignorar
   import: Importar
+  import_users: Importar usuarios
+  upload_a_csv_file_with_user: Cargando os usuarios de ficheiro CSV
+  you_must_have_a_header_row: Debe haber unha liña con nomes de columna
+  use_well_formed_csv: Use CSV con boa estrutura. O texto comas e apóstrofos debe ser colocado entre comiñas dobres.
+  import_users_locale: Código de idioma
+  import_project_slug: Código do proxecto
+  import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
+  import_users_project_slug_explain: Código de proxecto tal como consta no enderezo do seu navegador cando visitou a páxina do proxecto
   import_all_photos_as_observations: Importar todas as fotos como observacións
   import_as_an_observation: Importar como unha observación
   import_as_another_observation: Importar como outra observación?

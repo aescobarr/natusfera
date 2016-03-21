@@ -1,7 +1,8 @@
 #encoding: utf-8
-class UsersController < ApplicationController  
+class UsersController < ApplicationController
+
   doorkeeper_for :create, :update, :edit, :dashboard, :new_updates, :search, :if => lambda { authenticate_with_oauth? }
-  before_filter :authenticate_user!, 
+  before_filter :authenticate_user!,
     :unless => lambda { authenticated_with_oauth? },
     :except => [:index, :show, :new, :create, :activate, :relationships, :search]
   load_only = [ :suspend, :unsuspend, :destroy, :purge,
@@ -10,13 +11,13 @@ class UsersController < ApplicationController
   blocks_spam :only => load_only, :instance => :user
   before_filter :ensure_user_is_current_user_or_admin, :only => [:update, :destroy]
   before_filter :admin_required, :only => [:curation]
-  before_filter :curator_required, :only => [:suspend, :unsuspend]
+  before_filter :curator_required, :only => [:suspend, :unsuspend, :import]
   before_filter :return_here, :only => [:index, :show, :relationships, :dashboard, :curation]
-  
+
   MOBILIZED = [:show, :dashboard, :new, :create]
   before_filter :unmobilized, :except => MOBILIZED
   before_filter :mobilized, :only => MOBILIZED
-  
+
   caches_action :dashboard,
     :expires_in => 1.hour,
     :cache_path => Proc.new {|c| c.send(:home_url, :user_id => c.instance_variable_get("@current_user").id)},

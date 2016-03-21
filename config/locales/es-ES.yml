@@ -1200,6 +1200,14 @@ es:
   if_your_search_comes_up: "Si tu búsqueda no da resultados, introduce más detalles en los campos de búsqueda para repetirla a través de nuestros proveedores externos de nombres"
   ignore: Ignorar
   import: Importar
+  import_users: Importar usuarios
+  upload_a_csv_file_with_user: Carga de usuarios desde fichero csv
+  you_must_have_a_header_row: Debe haber una primera fila con nombres de columna
+  use_well_formed_csv: Usa csv con buena estructura. El texto con comas y apóstrofes debe encerrarse en comillas dobles.
+  import_users_locale: Código de idioma
+  import_project_slug: Código del proyecto
+  import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
+  import_users_project_slug_explain: Código del proyecto tal y como aparece en la dirección del navegador cuando visitamos la página del proyecto
   import_all_photos_as_observations: "Importar todas las fotos como observaciones"
   import_as_an_observation: "Importar como una observación"
   import_as_another_observation: "¿Importar como otra observación?"

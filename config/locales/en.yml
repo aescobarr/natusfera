@@ -1199,6 +1199,12 @@ en:
   ignore: ignore
   image_must_be_exactly: image must be exactly 950px wide and at most 400px tall
   import: Import
+  import_users: Import users
+  upload_a_csv_file_with_user: User upload from csv file
+  import_users_locale: Language code
+  import_project_slug: Project slug
+  import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
+  import_users_project_slug_explain: Project slug as it appears on the browser address box when we visit the project page
   import_all_photos_as_observations: Import all photos as observations 
   import_as_an_observation: Import as an observation
   import_as_another_observation: Import as another observation?

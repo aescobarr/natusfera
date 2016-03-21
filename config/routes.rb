@@ -116,6 +116,8 @@ Inaturalist::Application.routes.draw do
   match '/users/curation' => 'users#curation', :as => :curate_users
   match '/users/updates_count' => 'users#updates_count', :as => :updates_count
   match '/users/new_updates' => 'users#new_updates', :as => :new_updates
+  match '/userimporter/import' => 'userimporter#import', :as => :import_users
+  match '/userimporter' => 'userimporter#new_batch_csv', :as => :new_user_bulk_csv
   
   resources :users, :except => [:new, :create]
   # resource :session

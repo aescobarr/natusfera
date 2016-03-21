@@ -13,14 +13,21 @@ Inaturalist::Application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.delivery_method = :test
+  # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # config.action_mailer.delivery_method = :test
 
   # # Uncomment to test mail delivery
   # smtp_config_path = File.open("#{Rails.root}/config/smtp.yml")
   # ActionMailer::Base.smtp_settings = YAML.load(smtp_config_path).symbolize_keys
-  # config.action_mailer.delivery_method = :smtp  
+  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { :host => URI.parse(CONFIG.site_url).host }
+  smtp_config_path = File.open("#{Rails.root}/config/smtp.yml")
+  ActionMailer::Base.smtp_settings = YAML.load(smtp_config_path).symbolize_keys
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => "utf-8"
+
 
   # Uncomment these to test caching
   # config.action_controller.perform_caching             = true
