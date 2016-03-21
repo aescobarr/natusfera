@@ -18,11 +18,11 @@ class WelcomeController < ApplicationController
           #                            .limit(4)
           #                            .order("observations.id DESC").scoped
           @observations = Observation.find([395, 394, 393, 382])
-          if CONFIG.site_only_observations && params[:site].blank?
-            @observations = @observations.where("observations.uri LIKE ?", "#{FakeView.root_url}%")
-          elsif (site_bounds = CONFIG.bounds) && params[:swlat].blank?
-            @observations = @observations.in_bounding_box(site_bounds['swlat'], site_bounds['swlng'], site_bounds['nelat'], site_bounds['nelng'])
-          end
+          #if CONFIG.site_only_observations && params[:site].blank?
+          #  @observations = @observations.where("observations.uri LIKE ?", "#{FakeView.root_url}%")
+          #elsif (site_bounds = CONFIG.bounds) && params[:swlat].blank?
+          #  @observations = @observations.in_bounding_box(site_bounds['swlat'], site_bounds['swlng'], site_bounds['nelat'], site_bounds['nelng'])
+          #end
         end
         @page = WikiPage.find_by_path(CONFIG.home_page_wiki_path) if CONFIG.home_page_wiki_path
         @google_webmaster_verification = @site.google_webmaster_verification if @site
