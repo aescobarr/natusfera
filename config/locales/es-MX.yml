@@ -1162,6 +1162,14 @@ es-MX:
   image_must_be_exactly: del proyecto debe ser exactamente de 950px de ancho y a lo
     más de 400px de altura
   import: Importa
+  import_users: Importa usuarios
+  upload_a_csv_file_with_user: Carga de usuarios desde fichero csv
+  use_well_formed_csv: Usa csv con buena estructura. El texto con comas y apóstrofes debe encerrarse en comillas dobles.
+  you_must_have_a_header_row: Debe haber una primera fila con nombres de columna
+  import_users_locale: Código de idioma
+  import_project_slug: Código del proyecto
+  import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
+  import_users_project_slug_explain: Código del proyecto tal y como aparece en la dirección del navegador cuando visitamos la página del proyecto
   import_all_photos_as_observations: Importa todas las fotos como observaciones
   import_as_an_observation: Importa como una observación
   import_as_another_observation: ¿La importas como otra observación?

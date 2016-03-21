@@ -1131,6 +1131,14 @@ ca:
     als camps de cerca per repetir-la a través dels nostres proveïdors de noms externs
   ignore: Ignora
   import: Importa
+  import_users: Importa usuaris
+  upload_a_csv_file_with_user: Càrrega d'usuaris des de fitxer csv
+  you_must_have_a_header_row: Cal tenir una fila amb noms de columna
+  use_well_formed_csv: Usa csv amb bona estructura. El text amb comes i apòstrofs s'ha de tancar amb dobles cometes.
+  import_users_locale: Codi idioma
+  import_project_slug: Codi del projecte
+  import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
+  import_users_project_slug_explain: Codi del projecte tal i com apareix a la barra de navegació de l'explorador quan visitem el projecte
   import_all_photos_as_observations: Importa totes les fotos com a observacions
   import_as_an_observation: Importa com una observació
   import_as_another_observation: Vols importar com una altra observació?

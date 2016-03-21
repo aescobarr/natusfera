@@ -1124,7 +1124,16 @@ eu:
     gehiago bilaketa-eremuetan izenen gure kanpoko hornitzaileen bidez bilaketa errepikatzeko
   ignore: Ezikusi
   import: Inportatu
+  import_users: Inportatu erabiltzaile
+  upload_a_csv_file_with_user: Csv fitxategi batetik erabiltzaile kargatzen
+  you_must_have_a_header_row: Badira zutabe izenak dituzten ilara bat izan behar du
+  use_well_formed_csv: Erabili egitura onekin csv. Koma eta adartxo batekin testua komatxo artean egon behar.
+  import_project_slug: Proiektuaren lotura
+  import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
+  import_users_project_slug_explain: Project kodea dirudielako gisa nabigatzailean helbidea hasi denean Proiektuaren orrialdea bisitatu dugu
   import_all_photos_as_observations: Argazki guztiak ohar gisa inportatu
+  import_users_locale: Hizkuntza kodea
+  import_project_slug: Código del proyecto
   import_as_an_observation: Ohar gisa inportatu
   import_as_another_observation: Beste ohar baten gisa inportatu?
   import_date_time_location_taxonomic: Argazki honen data, ordua, kokapena, deskribapena
