@@ -81,6 +81,8 @@ base: &base
 
     developers_url: /pages/developers
 
+    import_help_url: /pages/userimport
+
     # twitter_url: http://twitter.com/inaturalist
     # facebook_url: http://www.facebook.com/pages/iNaturalistorg/63336575498
     # iphone_app_url: http://itunes.apple.com/us/app/inaturalist/id421397028?mt=8
