@@ -33,7 +33,8 @@ class PlacesController < ApplicationController
           places.map{|p| p.id}
         end
         place_ids = place_ids.sort_by{rand}[0..4]
-        @places = Place.all(:conditions => ["id in (?)", place_ids])
+        #@places = Place.all(:conditions => ["id in (?)", place_ids])
+        @places = Place.all()
       end
       
       format.json do
