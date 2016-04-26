@@ -892,12 +892,16 @@ google.maps.Map.prototype.addPlaceLayer = function( options ) {
   }else{
     p_id = options.place.id;
   }
+  var name = 'Place';
+  if(options.place && options.place.name){
+    name = options.place.name;
+  }
   var options = options || { },
       tiles_url = options.tiles_url || <%= CONFIG.tile_servers.windshaft.inspect %>,
       placeTileUrl = tiles_url + "/places/" + p_id + "/{z}/{x}/{y}.png";
   var tilejson = { tiles: [ placeTileUrl ] };
   return this.addLayerAndControl( tilejson, _.extend(options, {
-    description: options.place.name
+    description: name
   }));
   return this.addLayerAndControl( tilejson );
 }
