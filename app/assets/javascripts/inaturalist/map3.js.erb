@@ -888,7 +888,11 @@ google.maps.Map.prototype.addPlaceLayer = function( options ) {
   this.setTilt(0);
   var options = options || { },
       tiles_url = options.tiles_url || <%= CONFIG.tile_servers.windshaft.inspect %>,
-      placeTileUrl = tiles_url + "/places/" + options.place.id + "/{z}/{x}/{y}.png";
+      if(options.place_id){
+        placeTileUrl = tiles_url + "/places/" + options.place_id + "/{z}/{x}/{y}.png";
+      }else{
+    placeTileUrl = tiles_url + "/places/" + options.place.id + "/{z}/{x}/{y}.png";
+      }
   var tilejson = { tiles: [ placeTileUrl ] };
   return this.addLayerAndControl( tilejson, _.extend(options, {
     description: options.place.name
