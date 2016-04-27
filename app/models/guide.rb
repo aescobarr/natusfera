@@ -18,28 +18,31 @@ class Guide < ActiveRecord::Base
   has_attached_file :icon, 
     :styles => { :medium => "500x500>", :thumb => "48x48#", :mini => "16x16#", :span2 => "70x70#", :small_square => "200x200#" },
     :default_url => "/attachment_defaults/:class/icons/:style.png",
-    :storage => :s3,
-    :s3_credentials => "#{Rails.root}/config/s3.yml",
-    :s3_host_alias => CONFIG.s3_bucket,
-    :bucket => CONFIG.s3_bucket,
-    :path => "guides/:id-:style.:extension",
-    :url => ":s3_alias_url"
+    #:storage => :s3,
+    #:s3_credentials => "#{Rails.root}/config/s3.yml",
+    #:s3_host_alias => CONFIG.s3_bucket,
+    #:bucket => CONFIG.s3_bucket,
+    :path => ":rails_root/public/attachments/:class/:attachment/:id/:style/:basename.:extension",
+    #:path => "guides/:id-:style.:extension",
+    #:url => ":s3_alias_url"
+    #:url => "#{ CONFIG.attachments_host }/attachments/:class/:attachment/:id/:style/:basename.:extension"
+    :url => "#{ CONFIG.attachments_host }/attachments/:class/:attachment/:id/:style/:basename.:extension"
 
-  if Rails.env.production?
-    has_attached_file :ngz,
-      :storage => :s3,
-      :s3_credentials => "#{Rails.root}/config/s3.yml",
-      :s3_host_alias => CONFIG.s3_bucket,
-      :bucket => CONFIG.s3_bucket,
-      :path => "guides/:id.ngz",
-      :url => ":s3_alias_url",
-      :default_url => ""
-  else
+  # if Rails.env.production?
+  #   has_attached_file :ngz,
+  #     :storage => :s3,
+  #     :s3_credentials => "#{Rails.root}/config/s3.yml",
+  #     :s3_host_alias => CONFIG.s3_bucket,
+  #     :bucket => CONFIG.s3_bucket,
+  #     :path => "guides/:id.ngz",
+  #     :url => ":s3_alias_url",
+  #     :default_url => ""
+  # else
     has_attached_file :ngz,
       :path => ":rails_root/public/attachments/:class/:id.ngz",
       :url => "#{ CONFIG.attachments_host }/attachments/:class/:id.ngz",
       :default_url => ""
-  end
+  #end
   
   validates_attachment_content_type :icon, :content_type => [/jpe?g/i, /png/i, /gif/i, /octet-stream/], 
     :message => "must be JPG, PNG, or GIF"
