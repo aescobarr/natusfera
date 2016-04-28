@@ -19,7 +19,7 @@
     <% if logged_in? -%>
       <div class="right inline smallbuttons buttonrow">
         <%= link_to t(:invite_someone_to, :name => SITE_NAME_SHORT), emailer_invite_path, :class => "inter" %>
-        <% if current_user.is_curator? -%>
+        <% if current_user.is_user_loader? || current_user.is_curator? -%>
           <%= link_to t(:import_users), import_users_path, :class => "inter" %>
         <% end %>
         <span class="meta inter"><%= t :or %></span>
