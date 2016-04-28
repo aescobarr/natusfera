@@ -312,6 +312,10 @@ class User < ActiveRecord::Base
   def is_curator?
     has_role?(:curator)
   end
+
+  def is_user_loader?
+    has_role?(:bulk_user_creator)
+  end
   
   def is_admin?
     has_role?(:admin)
