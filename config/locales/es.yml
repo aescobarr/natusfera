@@ -477,7 +477,7 @@ es:
   back_to_this: Regresa a %{place}
   back_to_viewing: Regresa a ver <i>%{taxon}</i>
   back_to_x: Regresa a %{noun}
-  back_to_x_assessment: Regresa a las evaluaciones del %{proyecto}
+  back_to_x_assessment: Regresa a las evaluaciones del %{project}
   back_to_x_history: Regresa a la historia de %{x}
   back_to_x_journal: Regresa al diario de %{user}
   back_to_x_observations: Regresa a las observaciones de %{user}
@@ -3283,7 +3283,7 @@ es:
   user_hasnt: '%{user} no ha'
   user_invite_observation_to_project: '%{user} desea invitar su observación "%{observation}"
     al proyecto %{project}.'
-  user_invited_you_to_join_project: '%{user} invitado a unirse a %{proyecto}'
+  user_invited_you_to_join_project: '%{user} invitado a unirse a %{project}'
   user_invited_you_to_join_html: '%{user} te invito a unirse'
   user_invited_you_to_join_this_project_on_date_html: '%{user} te invito a unirte
     a este proyecto en %{fecha}'
