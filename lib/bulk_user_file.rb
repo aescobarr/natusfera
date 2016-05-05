@@ -44,7 +44,8 @@ class BulkUserFile < Struct.new(:users_file, :user)
       import_file
       credentials_list = format_credentials_list
       Emailer.delay.bulk_users_success(@user, File.basename(@users_file), credentials_list)
-    rescue BulkUserFileException => e
+
+    rescue BulkUserFileException,CSV::MalformedCSVError => e
       # Collate the errors into a hash for emailing
       error_details = collate_errors(e)
 
