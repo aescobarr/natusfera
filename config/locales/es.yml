@@ -1428,7 +1428,7 @@ es:
   invite_more: Invitar más gente
   invite_observations: Invita a observaciones para tu proyecto
   invite_people: Invita gente
-  invite_people_to_project: Invitar gente al %{proyecto}
+  invite_people_to_project: Invitar gente al %{project}
   invite_photos_from_other_sites: Invitar las fotos de otros sitios
   invite_photos_to: Invita fotos para %{site_name}
   invite_photos_to_raquo_html: Invita a alguien con fotos de <nobr>%{site_name} &raquo;</nobr>
