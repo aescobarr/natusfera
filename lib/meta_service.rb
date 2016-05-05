@@ -46,15 +46,31 @@ class MetaService
     request_uri = URI.parse(uri)
     response = nil
     begin
-      timed_out = Timeout::timeout(@timeout) do
-        response = Net::HTTP.start(request_uri.host) do |http|
-          http.get("#{request_uri.path}?#{request_uri.query}", 'User-Agent' => "#{self.class}/#{SERVICE_VERSION}")
-        end
-      end
+      # timed_out = Timeout::timeout(@timeout) do
+      #   response = Net::HTTP.start(request_uri.host) do |http|
+      #     http.get("#{request_uri.path}?#{request_uri.query}", 'User-Agent' => "#{self.class}/#{SERVICE_VERSION}")
+      #   end
+      # end
+      options = {}
+      options[:request_uri] = request_uri
+      options[:user_agent] = "#{self.class}/#{SERVICE_VERSION}"
+      response = fetch_with_redirects(options,3)
     rescue Timeout::Error
       raise Timeout::Error, "#{@service_name} didn't respond within #{@timeout} seconds."
     end
     Nokogiri::XML(response.body)
+  end
+
+  def fetch_with_redirects(options, attempts = 3)
+    # using SSL if we have an https URL
+    http = Net::HTTP.new(options[:request_uri].host, options[:request_uri].port)
+    http.use_ssl = (options[:request_uri].scheme == "https")
+    response = http.get("#{options[:request_uri].path}?#{options[:request_uri].query}", "User-Agent" => options[:user_agent])
+    if response.is_a?(Net::HTTPRedirection) && attempts > 0
+      options[:request_uri] = URI.parse(response["location"])
+      return fetch_with_redirects(options, attempts - 1)
+    end
+    response
   end
 
   def method_missing(method, *args)
