@@ -326,7 +326,8 @@ FROM projects JOIN places ON projects.place_id = places.id", :as => :place_ids, 
     columns += ofv_columns
     CSV.open(path, 'w') do |csv|
       csv << columns
-      self.project_observations.includes(:observation => [:taxon, {:observation_field_values => :observation_field}]).find_each do |project_observation|
+      self.project_observations_lineage.includes(:observation => [:taxon, {:observation_field_values => :observation_field}]).find_each do |project_observation|
+      #self.project_observations.includes(:observation => [:taxon, {:observation_field_values => :observation_field}]).find_each do |project_observation|
         csv << columns.map {|column| project_observation.to_csv_column(column, :project => self)}
       end
     end
