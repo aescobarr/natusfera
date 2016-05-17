@@ -82,7 +82,7 @@
       <h3 class="inlineblock"><%=t :recently_active_projects_from_everywhere %></h3>
       (<%= link_to t(:view_projects_from_place, :place => t(@site_place.name, :default => @site_place.name)), url_for_params(:everywhere => false) %>)
     <% else %>
-      <h3><%= t(:recently_active).titleize %></h3>
+      <h3><%= t(:recently_active) %></h3>
     <% end -%>
   </div>
   <% if @projects.blank? -%>
@@ -108,7 +108,7 @@
       <h3 class="inlineblock"><%=t :recently_created_projects_from_everywhere %></h3>
       (<%= link_to t(:view_projects_from_place, :place => t(@site_place.name, :default => @site_place.name)), url_for_params(:everywhere => false) %>)
     <% else %>
-      <h3><%= t(:recently_created).titleize %></h3>
+      <h3><%= t(:recently_created) %></h3>
     <% end -%>
   </div>
   <% if @created.blank? -%>

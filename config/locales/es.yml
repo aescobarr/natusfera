@@ -92,7 +92,7 @@ es:
   about_licenses: Sobre las licencias
   about_licensing: Sobre las licencias
   about_life!: '!Sobre la vida!'
-  about_places: Sobre Lugares
+  about_places: Sobre lugares
   about_the_cc_licenses: Sobre las licencias de Creative Commons
   about_the_quality_assessment: Sobre la calidad de los datos
   about_the_taxobox_raquo: Sobre la ficha de taxón &raquo;
@@ -342,7 +342,7 @@ es:
     tu cuenta desde ahí. ¡De otra forma %{site_name} no puede darse cuenta de que
     ambas cuentas están conectadas y en lugar de eso tratará de crear una nueva cuenta
     para ti!'
-  android: Androide
+  android: Android
   animals: Animales
   announcement_was_successfully_created: El aviso fue creado exitosamente.
   announcement_was_successfully_updated: El aviso fue actualizado exitosamente.
@@ -477,7 +477,7 @@ es:
   back_to_this: Regresa a %{place}
   back_to_viewing: Regresa a ver <i>%{taxon}</i>
   back_to_x: Regresa a %{noun}
-  back_to_x_assessment: Regresa a las evaluaciones del %{project}
+  back_to_x_assessment: Regresa a las evaluaciones del %{proyecto}
   back_to_x_history: Regresa a la historia de %{x}
   back_to_x_journal: Regresa al diario de %{user}
   back_to_x_observations: Regresa a las observaciones de %{user}
@@ -504,7 +504,7 @@ es:
   blue: azul
   blue_icons_represent_political_units: Los íconos azules representan unidades políticas
     como países, estados y afines, mientras que los íconos verdes representan diferentes
-    tipos de espacios abiertos parques y reservas. Si haces un acercamiento, podrás
+    tipos de espacios abiertos, parques y reservas. Si haces un acercamiento, podrás
     ver lugares más pequeños.
   body: Cuerpo
   breadcrumbs: Breadcrumbs
@@ -1410,7 +1410,7 @@ es:
   inaturalist_places: Lugares %{site_name}
   inaturalist_places_are_way_record_what_lives_where: Lugares %{site_name} es una
     forma de registrar qué vive dónde. Si usted busca una especie en particular, sabrá
-    dónde buscar. Cada lugar tiene una lista de verificación para regisrar todas las
+    dónde buscar. Cada lugar tiene una lista de verificación para registrar todas las
     especies que se encuentran allí, para que pueda también ser útil para buscar cosas
     que usted encontró en sitios particulares.
   info: Información
@@ -1428,7 +1428,7 @@ es:
   invite_more: Invitar más gente
   invite_observations: Invita a observaciones para tu proyecto
   invite_people: Invita gente
-  invite_people_to_project: Invitar gente al %{project}
+  invite_people_to_project: Invitar gente al %{proyecto}
   invite_photos_from_other_sites: Invitar las fotos de otros sitios
   invite_photos_to: Invita fotos para %{site_name}
   invite_photos_to_raquo_html: Invita a alguien con fotos de <nobr>%{site_name} &raquo;</nobr>
@@ -2427,8 +2427,8 @@ es:
   project_was_successfully_updated: El proyecto fue actualizado satisfactoriamente.
   project_x_was_delete: El proyecto %{project} fue eliminado
   projects: Proyectos
-  projects_description: Los proyectos son una forma de agrupar sus observaciones con
-    otras personas en %{site_name}.  Ya sea que a usted le interese comenzar un proyecto
+  projects_description: Los proyectos son una forma de agrupar en %{site_name} sus observaciones con las de
+    otras personas.  Ya sea que a usted le interese comenzar un proyecto
     científico ciudadano o solamente mantener registros de las aves de un parque cercano
     con su club de observación local, la forma de hacerlo es con Proyectos.
   projects_from_place: Proyectos de %{place}
@@ -2488,7 +2488,7 @@ es:
   recent_atom_observations_by: Observaciones recientes por %{login} (Atom)
   recent_observations_by: Observaciones recientes por %{login}
   recent_updates: Actualizaciones recientes
-  recently_active: Activo recientemente
+  recently_active: Activos recientemente
   recently_active_projects_from_everywhere: Recientemente proyectos activos de todas
     partes
   recently_active_projects_from_place: Recientemente proyectos activos de %{place}
@@ -3035,11 +3035,11 @@ es:
     de suspendidos
   the_world_is_full_of_interesting_places: El mundo está lleno de lugares interesantes,
     cada uno lleno de formas de vida raras y maravillosas. ¡Algunas están en el otro
-    lado del mundo, mientras que otras están a la vuelta de la esquinaLugares %{site_name}
+    lado del mundo, mientras que otras están a la vuelta de la esquina.Lugares %{site_name}
     le permite buscar vida de todas partes del planeta. ¡Comience a explorar!
   the_world_is_full_of_interesting_places_short: El mundo está lleno de lugares interesantes,
     cada uno lleno de formas de vida raras y maravillosas. ¡Algunas están en el otro
-    lado del mundo, mientras que otras están a la vuelta de la esquina
+    lado del mundo, mientras que otras están a la vuelta de la esquina.
   there_are_x_synonyms_html:
     one: Hay <span class='count'>1</span> sinónimo</span>
     other: Hay <span class='count'>%{count}</span> sinónimos</span>
@@ -3283,7 +3283,7 @@ es:
   user_hasnt: '%{user} no ha'
   user_invite_observation_to_project: '%{user} desea invitar su observación "%{observation}"
     al proyecto %{project}.'
-  user_invited_you_to_join_project: '%{user} invitado a unirse a %{project}'
+  user_invited_you_to_join_project: '%{user} invitado a unirse a %{proyecto}'
   user_invited_you_to_join_html: '%{user} te invito a unirse'
   user_invited_you_to_join_this_project_on_date_html: '%{user} te invito a unirte
     a este proyecto en %{fecha}'
@@ -3362,7 +3362,7 @@ es:
   view_original_ccD_photo: Ver foto original copiada en Flickr por %{owner}
   view_other_taxa: Ver otros <nobr> %{taxon_name} &raquo;</nobr>
   view_photos_ranges_observations_more: ¡Ve fotos, distribuciones de especies, observaciones
-    de %{site_name} y más. Hemos recopilado información de muchas fuentes diferentes
+    de %{site_name} y más! Hemos recopilado información de muchas fuentes diferentes
     y las hemos combinado para proporcionar un breve resumen de cada especie en cada
     lugar.
   view_place: Ver lugar
@@ -3672,13 +3672,13 @@ es:
   youve_seen_it_want_to: ¡Lo ha visto¿Desea
   zoom_to_taxon_name: Acercar a %{taxonname}
   zoom_to_x: Ir a %{x}
-  your_dashboard_helps_you: El tablero te ayuda a dar seguimiento a lo que está haciendo
-    la gente en NaturaLista. Para seguir actualizaciones de alguien, selecciona el
-    ´Seguira [nombre] en el encabezado cuando veas sus observaciones o su perfil.
-  here_are_some_things_you_can_do_in_the_meantime: Aquí hay algunas cosas que usted
+  your_dashboard_helps_you: El tablero le ayuda a hacer un seguimiento de lo que está haciendo
+    la gente en Natusfera. Para seguir las actualizaciones de alguien, seleccione 
+    "seguir a [nombre]" en el encabezado cuando veas sus observaciones o su perfil.
+  here_are_some_things_you_can_do_in_the_meantime: Aquí hay algunas cosas que 
     puede hacer mientras tanto
-  none_of_the_people_you_follow_have_any_updates_yet: ¡Ninguna de las personas que
-    siguen han hecho ninguna actualización todavía!
+  none_of_the_people_you_follow_have_any_updates_yet: ¡Todavía ninguna de las personas que
+    sigue han hecho alguna actualización!
   views:
     views: Visualizaciones
     custom_projects:
@@ -4397,7 +4397,7 @@ es:
         cree: Crea datos útiles
         cree_l: Ayuda a los científicos a obtener datos sobre distribución de especies
         convierte: Conviértete en un ciudadano científico
-        convierte_l: Contribuye a proyectos que te interesen, o crea los tuyos propios
+        convierte_l: Contribuye con proyectos que te interesen o crea los tuyos propios
         bioblitz: Organiza bioblitz
         bioblitz_l: Eventos donde los usuarios registran tantas observaciones como les es posible
         funcion: Funcionalidad
