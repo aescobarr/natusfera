@@ -2428,9 +2428,9 @@ es:
   project_x_was_delete: El proyecto %{project} fue eliminado
   projects: Proyectos
   projects_description: Los proyectos son una forma de agrupar en %{site_name} sus observaciones con las de
-    otras personas.  Ya sea que a usted le interese comenzar un proyecto
-    científico ciudadano o solamente mantener registros de las aves de un parque cercano
-    con su club de observación local, la forma de hacerlo es con Proyectos.
+    otras personas.  Si te interesa comenzar un proyecto
+    científico ciudadano o simplemente mantener registros de las aves de un parque cercano
+    con tu club de observación local, la forma de hacerlo es con Proyectos.
   projects_from_place: Proyectos de %{place}
   projects_in_x: Proyectos en %{x}
   projects_you_admin: Proyectos que usted administra
@@ -3035,7 +3035,7 @@ es:
     de suspendidos
   the_world_is_full_of_interesting_places: El mundo está lleno de lugares interesantes,
     cada uno lleno de formas de vida raras y maravillosas. ¡Algunas están en el otro
-    lado del mundo, mientras que otras están a la vuelta de la esquina.Lugares %{site_name}
+    lado del mundo, mientras que otras están a la vuelta de la esquina! Lugares %{site_name}
     le permite buscar vida de todas partes del planeta. ¡Comience a explorar!
   the_world_is_full_of_interesting_places_short: El mundo está lleno de lugares interesantes,
     cada uno lleno de formas de vida raras y maravillosas. ¡Algunas están en el otro
@@ -3361,7 +3361,7 @@ es:
   view_original_by: Ver original %{by} en %{photo}
   view_original_ccD_photo: Ver foto original copiada en Flickr por %{owner}
   view_other_taxa: Ver otros <nobr> %{taxon_name} &raquo;</nobr>
-  view_photos_ranges_observations_more: ¡Ve fotos, distribuciones de especies, observaciones
+  view_photos_ranges_observations_more: ¡Mira fotos, distribuciones de especies, observaciones
     de %{site_name} y más! Hemos recopilado información de muchas fuentes diferentes
     y las hemos combinado para proporcionar un breve resumen de cada especie en cada
     lugar.

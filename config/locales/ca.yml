@@ -82,6 +82,7 @@ ca:
   about_x: Sobre %{x}
   acc: Exactitud (metres)
   accept: accepta
+  account: Compte
   accuracy: Exactitud
   accuracy_meters: Exactitud (metres)
   accuracy_of_the_coordinates: Exactitud de les coordenades en metres. Les pots canviar
@@ -127,7 +128,7 @@ ca:
   add_edit_more_fields: Afegeix/edita més camps
   add_description: Afegeix %{description_name}
   add_from_your_observations: Afegeix des de les teves observacions
-  add_higher_level_taxon: Afegeix un tàxon de més alt nivell (per exemple "ocells")
+  add_higher_level_taxon: Afegeix un tàxon de més alt nivell (per exemple "Mammalia")
   add_id: Afegeix identificador
   add_it_to_place_raquo: Afegeix a un lloc »
   add_more_photos: Afegeix més fotos
@@ -152,7 +153,7 @@ ca:
   add_observations_of_taxa_youve_added: Afegeix observacions dels tàxons que ja has
     agregat a una llista.  Encara hi treballem
   add_observations_project: Afegeix observacions a aquest projecte
-  add_one: Afegeix-ne un!
+  add_one: Afegeix-ne una!
   add_photos: Afegeix fotos
   add_photos_to_this_observation: Afegeix fotos a aquesta observació
   add_several_observations_at_once: Afegeix diverses observacions d'una tirada
@@ -182,7 +183,7 @@ ca:
   added_an: Afegeixo una
   added_as_a_part_of: Afegit com a part d'un
   added_by: Afegit per
-  added_identifications_to: no has afegit identificacions a les observacions de ningú.
+  added_identifications_to: has afegit identificacions a les observacions de ningú.
   added_on: Afegit el
   added_to: Afegit per a
   adding: Afegint...
@@ -191,7 +192,7 @@ ca:
   additional_range: Distribució addicional
   additional_range_data_from_an_unknown_source: D"Dades de distribució addicional
     de font desconeguda"
-  admin: administrador
+  admin: Administrador
   admin_any_projects: administres cap projecte
   admin_tools: Eines administratives
   agree: d'acord
@@ -229,7 +230,7 @@ ca:
     arachnids: Aranyes, alacrans i parents
     fungi: Fongs
     chromista: Algues brunes i parents
-    protozoans: Protozou
+    protozoans: Protozous
     other_animals: Altres animals
     life: Vida
     x_plantae:
@@ -280,7 +281,7 @@ ca:
   all_your_observations_will_default_to_this_time_zone: Totes les teves observacions
     es faran en aquesta zona horària tret que ho especifiquis altrament.
   all_your_projects: Tots els teus projectes
-  allow_any: permet-ne alguna
+  allow_any: inclou totes les observacions
   allowed_establish_means_values: Valors permesos per als mitjans d'establiment
   allowed_html: Etiquetes permeses d'HTML
   allowed_occurrence_status_values: Valors permesos per als estats d'ocurrència
@@ -298,11 +299,11 @@ ca:
     Si no acaba en
   and_help_the_inaturalist_community_grow: i ajudar que la comunitat %{site_name}
     creixi.
-  and_make_some_new: i en facis de nous
+  and_make_some_new: i fes-ne de nous buscant
   and_other_taxa: '& altres tàxons'
-  and_un_license_all_your_observations: y quita la licencia de todas tus observaciones
+  and_un_license_all_your_observations: i treu la llicència de totes les teves observacions
   and_you_havent_linked: '...i si no l’has associat a un d''aquests comptes externs,
-    primer hauries d''accedir-hi a través de ’%{site_name}, modificar el teu perfil
+    primer hauries d''accedir-hi a través de %{site_name}, modificar el teu perfil
     i des d’aquí vincular-hi el teu compte. Si ho fas d''una altra manera, %{site_name}
     no s''adona que els dos comptes estan connectats i, en lloc d’això, intenta crear-te
     un compte!'
@@ -402,7 +403,7 @@ ca:
   back_to_editing_observation: Torna a Modifica l'observació
   back_to_help: Torna a Ajuda
   back_to_import: Torna a Importa
-  back_to_lists: Torna a les llistes de %{name}'s
+  back_to_lists: Torna a les llistes %{name}
   back_to_observation: Torna a l'observació
   back_to_observation_fields: Torna als camps d'observació
   back_to_people: Torna a persones
@@ -462,13 +463,14 @@ ca:
   by_editedby: per %{editedby}
   by_project_list: per llista de projecte
   by_submittedby: per %{submittedby}
-  by_you: pròpies
+  by_you: Pròpies
   calendar: Calendari
   can_you_help_your_friends_id_these: Pots ajudar a identificar aquestes observacions?
   cancel: Cancel·la
   cant_flag_an_object_that_doesnt_exist: No pots posar una advertència a un contingut
     que ja no existeix
   cant_merge_a_taxon_with_itself: No pots combinar aquest tàxon amb ell mateix.
+  captive_cultivated: Captiva/cultivada
   casual: casual
   catalogue_of_life: Catàleg de la vida
   cc_attribution_license: Llicència de reconeixement de Creative Commons
@@ -549,11 +551,11 @@ ca:
   check_it_out: Fes-hi un cop d'ull
   check_list: llista de comprovació de
   check_list_description: Selecciona un tàxon d'un rang superior si vols que aparegui
-    en aquesta llista, com ara "Aus" per a aus, o "Amphibia" per a amfibis. Quan acabis,
+    en aquesta llista, com ara "Mammalia" per a mamífer, o "Amphibia" per a amfibis. Quan acabis,
     aquesta llista no admetrà tàxons que no hi estiguin inclosos. Per exemple, si
-    crees una llista d'aus, no podràs afegir-hi granotes.
+    crees una llista de mamífer, no podràs afegir-hi granotes.
   check_list_for_individual_taxa_that: Llistes de comprovació per a una espècie o
-    grup específic que habita aquí, p. ex. Aus de %{place}.
+    grup específic que habita aquí, p. ex. Mammalia de %{place}.
   check_list_of_species_occuring_in: Llista de comprovació d'espècies que existeixen
     a
   check_list_place: Llista de comprovació de %{place}
@@ -647,7 +649,7 @@ ca:
   comprehensive_list: Llista completa
   concept_status: Concepte de la situació
   configure: Configura
-  configure_a_widget_to_show: Configura el giny per mostrar les observacions d’%{site_name}
+  configure_a_widget_to_show: Configura el giny per mostrar les observacions de %{site_name}
     al teu lloc web o blog. També pots incloure l'estil CSS a la <code><head></code>
     del teu codi HTML. Pots modificar el CSS lliurement.
   confirm_membership: Confirma inscripció
@@ -661,7 +663,7 @@ ca:
   connected_accounts: Comptes vinculats
   connecting_flickr: Connectant-se a Flickr...
   connecting_to_facebook: Connectant-se a Facebook...
-  connecting_your_inat_account_to_accounts_other_sites: Connectar el teu compte d’%{site_name}
+  connecting_your_inat_account_to_accounts_other_sites: Connectar el teu compte de %{site_name}
     amb comptes en altres llocs permetrà que entris a %{site_name} amb les dades d'aquests
     llocs.
   conservation_status: Categoria de risc
@@ -671,7 +673,7 @@ ca:
   contest: concurs
   contest_projects_description: El projecte 'Concurs' mostrarà un quadre amb la classificació
     dels col·laboradors, realitzada a partir del nombre d'espècies úniques observades.
-    El projecte 'Concurs d'observació' mostrarà els líders de la classificació a partir
+    El projecte 'Concurs d'observacions' mostrarà els líders de la classificació a partir
     del nombre d'observacions dels col·laboradors
   contributions: contribucions
   contributions_from: Aportacions de
@@ -734,10 +736,10 @@ ca:
   curation: administració
   curator: Administrador
   curators_changed_for_x_html: Administra canvis per a %{x}
-  curators: Administradors
-  curators_can_remove_observations_from: Els administradors poden eliminar observacions
+  curators: Curadors
+  curators_can_remove_observations_from: Els curadors poden eliminar observacions
     del projecte i les seves identificacions es mostren en certes vistes (com a referència).
-    A més, poden veure les coordenades enfosquides o privades del projecte.
+    A més, poden veure les coordenades difuses o tancades del projecte.
   current_password: Contrasenya actual
   custom_project_fields: Camps de projecte personalitzats
   darr_apply_darr: ↓ Aplica ↓
@@ -745,6 +747,7 @@ ca:
   data_deficient: dades insuficients
   data_quality_assessment: Avaluació de la qualitat de dades
   datatype: Tipus de dades
+  date_: Data
   date_added: Data afegida
   date_created: data de creació
   date_observed: Data observada
@@ -754,7 +757,7 @@ ca:
   default_invite_comment: 'La gran foto! Ho has d''enviar a %{site_name}: {{INVITE_LINK}}'
   default_observation_license: 'Llicència per a les teves observacions:'
   default_photo_license: 'Llicència per a les teves fotos:'
-  default_sound_license: Llicències del so predeterminades
+  default_sound_license: 'Llicència per als teus sons:'
   delete: Elimina
   delete_conversation: Elimina conversa
   delete_icon?: Vols eliminar la icona?
@@ -875,7 +878,7 @@ ca:
     introduced: introduïda
     naturalised: naturalitzada
     invasive: invasiva
-    managed: captivitat/conreada
+    managed: captiva/conreada
   establishment_means: Mitjà d'establiment.
   establishment_means_descriptions:
     native_and_occurs_nowhere_else: nadiu, no succeeix a cap altre lloc
@@ -925,10 +928,10 @@ ca:
   fields: camps
   file_should_be_in_the_following_format: 'L''arxiu hauria de tenir el següent format:
     nom de l''espècie o grup, descripció'
-  fill_out_your_profile: completa el teu perfil
+  fill_out_your_profile: Completa el teu perfil
   filling_out_checklist_for_place: omple les llistes de verificació dels llocs que
     coneixes bé
-  filling_out_your_profile: completa el teu perfil
+  filling_out_your_profile: Completa el teu perfil
   filter: Filtre
   filter_by: Filtra per
   filter_by_place_taxon_and_color: Filtra per lloc, color, espècie o grup utilitzant
@@ -949,7 +952,7 @@ ca:
   first_confirmed_inat_observation: Primera observació %{site_name} confirmada
   first_connect_your_provider_account_to_your_site: 'Primer, connecta el teu compte
     %{provider} a %{site_name}:'
-  first_inat_observation: Primera observació %{site_name}
+  first_inat_observation: Primera observació a %{site_name}
   first_observer: Primer observador
   flag: Notifica
   flag_an_item: Marca un contingut
@@ -965,7 +968,7 @@ ca:
   flagged: marcat
   flagged_for_curation: Marcat per a administració.
   flagger: Marcador
-  flags_explanation: Els usuaris d’%{site_name} marquen coses quan troben quelcom
+  flags_explanation: Els usuaris de %{site_name} marquen coses quan troben quelcom
     que no està bé. Aquí hi ha problemes que els administradors encara no han pogut
     resoldre.
   flags_for: Marques per a
@@ -1004,8 +1007,8 @@ ca:
   from_list: De la llista
   from_this: d'aquesta
   from_photos: De fotos
-  from_your_site_observations: Observacions d’%{site_name}
-  from_licensed_site_observations: Observacions d’%{site_name} llicència
+  from_your_site_observations: Observacions de %{site_name}
+  from_licensed_site_observations: Observacions de %{site_name} llicència
   full_id_please!: Nom científic complet!
   full_id_please?: Nom científic complet?
   fungi:
@@ -1052,7 +1055,7 @@ ca:
   guide_taxon: Tàxon guia
   has_been: ha estat
   has_already_been_flagged_by: ja ha estat notificat per
-  hasnt_contributed_any_observations: no has fet cap observació en aquest projecte.
+  hasnt_contributed_any_observations: no ha fet cap observació en aquest projecte.
   hate_me_facebook: Desvincula els teus comptes de Facebook i %{site_name}
   hate_me_flickr: Desvincula els teus comptes de Flickr i %{site_name}
   heads_up: Avís
@@ -1113,7 +1116,7 @@ ca:
   if_this_link_will_apply_to_descendant: Si apliques aquest enllaç als tàxons descendents,
     pots fer servir les teves plantilles d'etiquetes per introduir el nom del tàxon
     a l’URL
-  if_you_already_have_an_account: Si ja tens un compte d’%{site_name}...
+  if_you_already_have_an_account: Si ja tens un compte de %{site_name}...
   if_you_dont_want_us_to_share_your_data: Si no vols compartir aquesta informació
   if_you_have_any_trouble_with_the_site_check_out: Si tinguessis algun problema amb
     el lloc, si us plau, revisa la nostra <a href="%{help_url}">secció d'ajuda</a>
@@ -1132,9 +1135,9 @@ ca:
   ignore: Ignora
   import: Importa
   import_users: Importa usuaris
-  upload_a_csv_file_with_user: Càrrega d'usuaris des de fitxer csv
+  upload_a_csv_file_with_user: Càrrega d'usuaris des d'un fitxer csv
   you_must_have_a_header_row: Cal tenir una fila amb noms de columna
-  use_well_formed_csv: Usa csv amb bona estructura. El text amb comes i apòstrofs s'ha de tancar amb dobles cometes.
+  use_well_formed_csv: Utilitza un csv amb bona estructura. El text amb comes i apòstrofs s'ha de tancar amb dobles cometes
   import_users_locale: Codi idioma
   import_project_slug: Codi del projecte
   import_users_locale_explain: ca - català, en - english, es - español, gl - galego, eu - euskera
@@ -1198,14 +1201,14 @@ ca:
   invite_someone_to: Convida algú a %{name}!
   invite_to_project: Convida al projecte
   invite_your_friends: Convida els teus amics
-  invite_your_friends_description: Ajuda que %{site_name} sigui una comunitat més
-    nombrosa i millor convidant els teus amics!
+  invite_your_friends_description: Ajuda a %{site_name} a ser una comunitat més
+    nombrosa convidant els teus amics!
   invited: convidat
   invited_to_the_following_projects: 'T’han convidat als projectes següents:'
   inviting: convidant...
   is_a: és un
   is_an: és un
-  is_not_following_anyone: No segueixes ningú
+  is_not_following_anyone: No segueix a ningú
   is_the_organism_wild: És un organisme salvatge?
   is_this_observation_offensive_html: Aquesta observació és <a href="/help#inappropriate">inadequada</a>,
     agressiva o ofensiva?
@@ -1216,6 +1219,17 @@ ca:
   its_important_that_you: És important que facis clic
   iucn_red_list_status: Llista vermella de la UICN estat
   january: Gener
+  february: Febrer
+  march: Març
+  april: Abril
+  may: Maig
+  june: Juny
+  july: Juliol
+  august: Agost
+  september: Setembre
+  october: Octubre
+  november: Novembre
+  december: Desembre
   join: Uneix-te a
   join_and: Uneix-t’hi i
   join_inat: Uneix-te a %{site_name}!
@@ -1223,7 +1237,7 @@ ca:
   join_some_projects_and_invite_some_observations_html: Uneix-te a certs <a href='%{join_url}'>projectes</a>
     i <a href='%{invite_url}'>introdueix-hi algunes observacions</a>
   join_this_project: d'unir-te a aquest projecte.
-  joined_any_projects: unit a cap projecte.
+  joined_any_projects: t'has unit a cap projecte.
   journal: Diari
   journal_archives_for: Arxius de diari de
   journal_post: Article al diari
@@ -1318,11 +1332,11 @@ ca:
   link_your_flickr_account_with_inat_so: Vincula el teu compte de Flickr amb %{site_name}
     per poder afegir fotos de les teves observacions.
   link_your_picasa_account: Vincula el teu compte de Picasa
-  linked_facebook: El teu compte d’%{site_name} actualment està vinculat amb el teu
+  linked_facebook: El teu compte de %{site_name} actualment està vinculat amb el teu
     compte de Facebook.
-  linked_facebook_description: Mantenir el teu compte d’%{site_name} vinculat al teu
+  linked_facebook_description: Mantenir el teu compte de %{site_name} vinculat al teu
     compte de Facebook et permet afegir diverses fotos a les teves observacions. Pots
-    desvincular els teus comptes d’%{site_name} i de Facebook en qualsevol moment.
+    desvincular els teus comptes de%{site_name} i de Facebook en qualsevol moment.
     No t’ho impedirem, però no podràs afegir fotos. De vegades és la millor opció,
     per exemple, si crees un nou compte de Facebook i el vols vincular a %{site_name}.
   linked_facebook_howto: Per connectar Facebook amb %{site_name}, fes clic a l’enllaç
@@ -1330,11 +1344,11 @@ ca:
   linked_facebook_password: Mai no et demanarem la contrasenya de Facebook (però Facebook
     podria demanar-te-la; verifica que l’adreça on et redirigeix el botó és facebook.com).
     Tampoc no canviarem les teves dades de Facebook, tret que ho sol·licitis.
-  linked_flickr: El teu compte d’%{site_name} actualment està vinculat amb el teu
+  linked_flickr: El teu compte de %{site_name} actualment està vinculat amb el teu
     compte de Flickr.
-  linked_flickr_description: Vincular el teu compte d’%{site_name} amb el teu compte
+  linked_flickr_description: Vincular el teu compte de %{site_name} amb el teu compte
     de Flickr et permet afegir diverses fotos a les teves observacions. Pots desvincular
-    els seus comptes d’%{site_name} i de Flickr en qualsevol moment. No t’ho impedirem,
+    els seus comptes de %{site_name} i de Flickr en qualsevol moment. No t’ho impedirem,
     però no podràs afegir fotos. De vegades és la millor opció, per exemple, si crees
     un nou compte de Flickr i el vols vincular amb %{site_name}.
   linked_flickr_hotwo: Pots vincular el teu compte de Flickr amb %{site_name} per
@@ -1378,7 +1392,7 @@ ca:
   loading_tags: Carregant etiquetes...
   loading_taxa_from_your: Carregant tàxons de les teves observacions...
   loading_wikipedia_description: Carregant descripció de Viquipèdia...
-  locale_description: Locale permet configurar l'idioma i les preferències de format
+  locale_description: Aquí pots configurar l'idioma i les preferències de format
     de data.
   localized_species_accounts: Comptes d'espècies localitzades
   location: Localitat
@@ -1471,6 +1485,7 @@ ca:
   messages: Missatges
   mixed_licenses: Llicència combinada
   misleading_or_illegal_content: Contingut il·legal, enganyós, racista, xenòfob, etc.
+  mobile_app_for: Aplicació mòbil per
   mobile_apps_for: Les aplicacions mòbils per a
   mobile_view_available: Vista per a telèfon mòbil disponible
   mollusks: mol·luscs
@@ -1530,7 +1545,7 @@ ca:
   new_journal_posts: Nou article al diari
   new_list: Nova llista
   new_members: Nous membres...
-  new_message: Nou missatge
+  new_: Nou missatge
   new_observation_field: Nou camp d'observació
   new_observation_rules: Noves normes d'observació
   new_observations: Noves observacions
@@ -1552,12 +1567,12 @@ ca:
   new_taxon_range: Nou rang de tàxon
   new_taxonomic_change: Nou canvi taxonòmic (esborrany)
   new_updates_in_the_last_24_hours_from: Noves actualitzacions en les últimes 24 hores
-    d’%{site_name}
+    de %{site_name}
   new_user_rules: Noves normes d'usuari
   new_users_week: Nous usuaris / setmana
   next: Següent
   next_page: Pàgina següent
-  "no": "No"
+  'no': "No"
   no_activity_in_the_past_week: No hi va haver activitat la setmana passada. És hora
     de
   no_administrator_knows_your_password: Cap administrador de %{sitename} no coneix
@@ -1586,12 +1601,13 @@ ca:
   no_matching_species: No hi ha espècies coincidents
   no_matching_users: No hi ha usuaris coincidents
   no_members_yet: Encara no hi ha membres
-  no_messages_yet: Cap missatge encara
-  no_more_mail_from_site: No vols rebre més correus d’%{site_name}? Edita la teva
+  no_messages_yet: Encara no hi ha missatges
+  no_more_mail_from_site: No vols rebre més correus de %{site_name}? Edita la teva
     configuració de correu a
   no_more_taxa_to_load: Ja no queden més espècies o grups per carregar!
   no_more_updates: No hi ha més actualitzacions!
   no_nearby_observations: No hi ha observacions properes.
+  new_message: Nou missatge
   no_new_messages: No hi ha nous missatges
   no_observations: no hi ha observacions
   no_observations_from_this_place_yet: Encara no hi ha observacions d'espècies per
@@ -1647,9 +1663,9 @@ ca:
   not_finding_place_you_want?: No vas trobar el lloc que cercaves?
   not_finding_what_looking_for: No trobes el que busques?
   not_just_creative_commons_licensed: No només llicències de Creative Commons
-  not_linked_facebook: El teu compte d’%{site_name} ja no està vinculat amb el teu
+  not_linked_facebook: El teu compte de %{site_name} ja no està vinculat amb el teu
     compte de Facebook.
-  not_linked_flickr: El teu compte d’%{site_name} no està vinculat amb el teu compte
+  not_linked_flickr: El teu compte de %{site_name} no està vinculat amb el teu compte
     de Flickr
   not_logged_in: No has iniciat sessió
   not_on_this_list: No ets en aquesta llista.
@@ -1683,10 +1699,10 @@ ca:
   observation_rules: Normes d'observació
   observation_rules_description: 'Pots crear normes per determinar quines observacions
     poden afegir-se a aquest projecte. Per exemple, pots limitar les observacions
-    a un lloc determinat. Nota: Actualment la limitació de llocs es basa en %{site_name}
-    Places. Només pots limitar les observacions al rectangle més petit que envolta
+    a un lloc determinat. Nota: Actualment la limitació de llocs es basa en els Llocs de %{site_name}. 
+    Només pots limitar les observacions al rectangle més petit que envolta
     un lloc.'
-  observation_was_deleted: L'observació es va esborrar.
+  observation_was_deleted: L'observació s'ha esborrat.
   observation_would_like_some_help: '%{user} necessita una mica d''ajuda per identificar
     aquest element!'
   observations: Observacions
@@ -1719,7 +1735,7 @@ ca:
     de la nostra base de dades en la resolució de la qual estem treballant
   observations_needing_curation: Observacions que requereixen la revisió d'un administrador
   observations_obscured: Observacions (amagades)
-  observations_observed_this_month: Les observacions <em>realitzades</em> aquest mes
+  observations_observed_this_month: Les observacions realitzades aquest mes
     no s'afegeixen al mes en curs. Surt i fes més observacions!
   observations_of_taxon: Observacions de %{taxon_name}
   observations_on_inat_check_list: observacions a %{site_name}. Els llocs amb llista
@@ -1803,7 +1819,7 @@ ca:
     fer això.  No siguis malvat.
   only_the_project_admin_can_delete_this_project: Només l'administrador del projecte
     pot eliminar aquest projecte.
-  open: Transparente
+  open: Oberta
   open_description: Tots els usuaris poden veure les coordenades tret que el tàxon
     estigui en perill.
   optional: opcional
@@ -1843,11 +1859,11 @@ ca:
   person: persona
   personal_message: Missatge personal
   personal_message_description: A ningú no li agrada rebre missatges automàtics. Podries
-    explicar als teus amics per què els convides.
+    explicar als teus amics perquè els convides.
   per_page: Registres per pàgina
   permalink: Enllaç permanent
   photo: foto
-  photo?: ¿foto?
+  photo?: foto?
   photo_attribution: Foto %{attribution}
   photo_by_id_attribution: Foto %{id}, %{attribution}
   photo_deleted: Foto esborrada
@@ -2048,7 +2064,7 @@ ca:
   previous_page: Pàgina anterior
   privacy: Política de privadesa
   privacy_policy: Política de privadesa
-  private: Privada
+  private: Tancada
   private_description: Coordenades completament amagades als mapes públics. Les coordenades
     reals només les podeu veure tu i els administradors dels projectes als quals s'afegeixi
     l'observació. Les observacions amb coordenades privades encara s'utilitzen per
@@ -2245,13 +2261,13 @@ ca:
   search_for_new_taxa: busca nous tàxons
   search_for_place_to_import_from_yahoo: Busca un lloc per importar des de Yahoo.
   search_for_species: Cerca d'espècies
-  search_list: Llista de cerques
+  search_list: Cerca de llistes
   search_obs: Cerca d'observacions
-  search_places: Busca llocs
-  search_projects: Busca projectes
+  search_places: Cerca llocs
+  search_projects: Cerca projectes
   search_results_for: Busca resultats per a
   search_remote: Cerca remota
-  search_species: Cerca espècies
+  search_species: Cerca d'espècies
   search_taxa: Cerca de tàxons
   search_the_map: Busca en el mapa
   search_this_taxon: busca aquest tàxon
@@ -2259,8 +2275,8 @@ ca:
   search_ubio_raquo: Cerca a uBio »
   search_your_photos: Busca les teves fotos
   searching: Cercant...
-  second_person_possessive_singular: Les teves %{noun}
-  second_person_possessive_singular_: El teu/La teva %{noun}
+  second_person_possessive_singular: Els teus %{noun}
+  second_person_possessive_singular_: El teu %{noun}
   see_something_wrong_with_taxon: Aquest tàxon és incorrecte? Comunica-ho als administradors.
   seen_it?: L’has vist?
   seen_one: N’has vist un?
@@ -2277,14 +2293,14 @@ ca:
   selected: seleccionat(s)
   selected_photos: Fotos seleccionades
   selected_taxon: Grup o espècie seleccionada
-  send: enviada(es)
+  send: envia
   send_invite: Envia invitació
   send_invites_to: Envia invitacions a
   send_me_reset_password_instructions: Envieu-me les instruccions per restablir la
     meva contrasenya
   send_the_invites: Envia les invitacions
   sending: Enviant...
-  sent: Enviat
+  sent: Enviats
   separate_values_with_a_pipe: Valors separats per barres, per exemple "1-5|6-10|molts"
     o "sí|no|potser"
   september: Setembre
@@ -2330,7 +2346,7 @@ ca:
     de dades per barrejar/intercanviar)
   sizes: Mida
   small: petit
-  site_name_place: Llocs d’%{site_name}
+  site_name_place: Llocs de %{site_name}
   some_agree: Alguns usuaris hi estan d’acord
   some_of_those_photos_couldnt_be_saved: 'Algunes fotos no s’han pogut desar: %{error}'
   some_other_reason: Una altra raó que pots explicar després.
@@ -2474,8 +2490,8 @@ ca:
     vulguis tenir en les teves preferències.
   subscribe_to_this: Subscriu-te a aquest
   subscribe_to_x_from_this_y_html: |-
-    <a href="#" onclick="$(this).parents('form:first').submit(); return false;">Subscriure's</a>
-    a %{x} d'aquestes %{y}.
+    <a href="#" onclick="$(this).parents('form:first').submit(); return false;">subscriure's</a>
+    a les %{x} d'aquest %{y}.
   subscriptions_arent_available_for: ' Les subscripcions no estan disponibles per
     a llocs sense límits definits.'
   successfully_changed_your_password: La teva contrasenya es va modificar satisfactòriament.
@@ -2546,8 +2562,8 @@ ca:
   taxonomic_order: Ordre taxonòmic
   taxonomic_tags_for_flickr: Etiquetes taxonòmiques per a Flickr
   taxonomic_tree_browser: Explorador de l'arbre taxonòmic
-  tell_everyone_a_little_about_you: Parla’ns una mica de tu
-  tell_the_world_a_little_about_yourself: Parla’ns una mica de tu
+  tell_everyone_a_little_about_you: Parla’ns una mica de tu. 
+  tell_the_world_a_little_about_yourself: Parla’ns una mica de tu. 
   terms: Termes
   terms_and_rules_html: Condicions & normes
   terms_new_users: Els nous usuaris han d'acceptar aquestes condicions abans d'unir-se
@@ -2572,7 +2588,7 @@ ca:
     enviarem un enllaç perquè puguis restablir la teva contrasenya.
   the: el (la)
   the_admin_is_the_person_who: L'administrador és la persona que va crear aquest projecte.
-    Pot fer les mateixes tasques que un administrador o gestor amb l'excepció de ser
+    Pot fer les mateixes tasques que un curador o gestor amb l'excepció de ser
     l'únic que pot eliminar el projecte.
   the_community_agrees_location_doesnt: la comunitat determina que la <strong>ubicació
     és incorrecta</strong> (és a dir, micos enmig de l'oceà, hipopòtams en edificis,
@@ -2607,7 +2623,7 @@ ca:
   the_observation_was_already_added_to_that_project: L'observació es va afegir recentment
     al projecte.
   the_past: el passat
-  the_people_of_inat: Els usuaris d’%{site_name}
+  the_people_of_inat: Els usuaris de %{site_name}
   the_project: el projecte
   the_title_of_the_wikipedia_article_we_use: 'El títol de l''article de Viquipèdia
     que fem servir per a la descripció. Si l''enllaç a Viquipèdia és <code>http: //en.Viquipèdia.org/wiki/Bird</code>,
@@ -2682,13 +2698,13 @@ ca:
   this_observation_has_been_incorporated_into_the_following_external_websites: Aquesta
     observació s’ha incorporat als següents llocs web
   this_observation_lies_outside_the: Aquesta observació està fora del rang que %{site_name}
-    té per a aquesta espècie. Això significarà que o bé el rang d’%{site_name} o la
+    té per a aquesta espècie. Això significarà que o bé el rang de %{site_name} o la
     identificació són incorrectes, o que es tracta d’una ocurrència incorrecta o d’una
     expansió del rang.
   this_photo_is_already_associated: Aquesta foto ja està associada amb una de les
     teves observacions.
-  this_place_has_no_check_list: Aquest lloc no té llista de comprovació, per tant,
-    no hi ha guia
+  this_place_has_no_check_list: Aquest lloc no té llista de comprovació i per tant
+    no té guia
   this_species: aquesta espècie
   this_species_has_no_colors: Aquesta espècie no té colors! Ajuda a millorar les cerques
     d'espècies dient-nos de quin color és l’espècie!
@@ -2698,7 +2714,7 @@ ca:
   this_taxon_concept_is_inactive: aquesta espècie o grup està inactiu/va
   this_taxon_has_no_default_photo: Aquest tàxon no té foto per defecte!
   this_taxon_is_inactive_this_means: Aquest tàxon està <strong>inactiu</strong>. Això
-    significa que els administradors d’%{site_name} l’han reemplaçat per un concepte
+    significa que els administradors de %{site_name} l’han reemplaçat per un concepte
     més actualitzat.
   this_taxon_name_was_originally_imported: Aquest nom de tàxon es va importar originàriament
     d'un proveïdor de noms extern
@@ -2832,9 +2848,10 @@ ca:
   user_is_a_naturalist: '%{user} és naturalista!'
   user_s: '%{model_name} de %{user}'
   user_s_id: '%{id} de %{user}'
-  user_s_lists: '%Llistes {user}'
+  user_s_lists: '%Llistes de {user}'
   user_thinks_yours_is: '%{user} %{noun} la teva observació %{observation} és'
   username: Nom d'usuari
+  user_name: Nom d'usuari
   username_or_email: Nom d'usuari o correu electrònic
   username_or_user_id: Nom o identificador de l'usuari
   users: Usuaris
@@ -2895,7 +2912,7 @@ ca:
   view_original_ccD_photo: Mostra foto original copiada a Flickr per %{owner}
   view_other_taxa: Mostra altres <nobr> %{taxon_name} »</nobr>
   view_photos_ranges_observations_more: Mira fotos, distribucions d'espècies, observacions
-    d’%{site_name} i més! Hem recopilat informació de moltes fonts diferents i les
+    de %{site_name} i més! Hem recopilat informació de moltes fonts diferents i les
     hem combinat per proporcionar-te un breu resum de cada espècie en cada lloc.
   view_place: Mostra lloc
   view_stats: Mostra contribucions
@@ -2909,6 +2926,7 @@ ca:
   view_the_range: Mostra el rang
   view_unidentified_observations: Mostra observacions no identificades...
   view_user_observations: Mostra observacions de %{user}
+  view_users_observations: Mostra observacions de %{user}
   view_x_from_x: Mostra %{day_observations} de %{observed_on}
   view_xs_journal: Mostra el diari de %{x}
   view_your_dashboard: Mostra el teu tauler
@@ -2964,6 +2982,7 @@ ca:
   what_do_you_think: Què en penses?
   what_to_keep: Què cal mantenir
   what_want_to_list?: Què vols afegir a la llista?
+  what_do_you_want_to_list?: Què vols afegir a la llista?
   when: Quan
   when_did_you_see_it?: Quan l’has vist?
   when_did_you_see_them?: <em>Quan</em> els vas veure?
@@ -2982,7 +3001,7 @@ ca:
   wikipedia_taxobox_raquo: Fitxa de tàxon a Viquipèdia »
   with: amb
   with_errors: Amb errors
-  within_inaturalist: Dins %{site_name}
+  within_inaturalist: Dins de %{site_name}
   wondering_what_to_do_next: No saps què fer ara? Per què no
   would_you_like_to: . T’agradaria
   would_like_some_help_identifying_this: vols obtenir ajuda per identificar això
@@ -3009,6 +3028,7 @@ ca:
   year: Any
   year_month: any/mes
   yellow: groc
+  'yes': "Sí"
   yes_find_them!: Sí, troba-les!
   yes_i_want_to_join: Sí, desitjo unir-m’hi
   yes_license_my_observations_so_scientists_can_use: Sí, crea una llicència de les
@@ -3028,7 +3048,7 @@ ca:
   you_are_now_role_for_project_html: <strong>Ara</strong> %{role} de %{project}
   user_is_now_role_for_project_html: <strong>%{user}</strong> és ara %{role} de %{project}
   you_are_already_a_member_of_this_project: Ja ets un membre d'aquest projecte!
-  you_are_no_longer_following_x: Ja no segueixes %{friend}.
+  you_are_no_longer_following_x: Ja no segueixes a %{friend}.
   you_are_subscribed_to: Estàs subscrit a
   you_arent_a_member_of_that_project: No ets un membre del projecte.
   you_arent_following_that_person: No segueixes aquesta persona.
@@ -3055,7 +3075,7 @@ ca:
   you_cant_remove_other_peoples_observations: No pots eliminar les observacions d'altres
     persones.
   you_cant_rotate_photos_hostde_outside: No pots girar fotos que estiguin emmagatzemades
-    fora d’%{site_name}.
+    fora de %{site_name}.
   you_didnt_select_any_observations: No has seleccionat cap observació.
   you_didnt_select_any_photos_to_tag: No has seleccionat cap foto per etiquetar!
   you_dont: "No"
@@ -3070,11 +3090,11 @@ ca:
   you_have_left_x_project: Has abandonat el projecte %{project}.
   you_have_logget_out: T’has desconnectat, torna aviat.
   you_have_to: Has
-  you_havent: No t'has
+  you_havent: No 
   you_havent_left_any_comments_recently: No has afegit comentaris recentment. Deixa
     una nota a algú!
   you_havent_linked_your_inaturalist_picasa_account: Encara no has vinculat el teu
-    compte d’%{site_name} amb el teu compte de Picasa.
+    compte de %{site_name} amb el teu compte de Picasa.
   you_may_have: 'Que puguis tenir. Probablement només funcionarà en cercadors moderns:'
   you_must_be_a_member_of_this_project_to_do_that: Has de ser un membre del projecte
     per poder fer això.
@@ -3111,7 +3131,7 @@ ca:
   youll_need_to_link: Hauràs de vincular
   your: Tu
   your_: Tu
-  your_account_has_been_verified: S’ha confirmat el teu compte d’%{site_name}! Si
+  your_account_has_been_verified: S’ha confirmat el teu compte de %{site_name}! Si
     us plau, accedeix al sistema per continuar.
   your_activation_code_was_missing: El teu codi d'activació s'ha perdut.  Si us plau,
     accedeix a l'enllaç des del teu correu electrònic
@@ -3138,11 +3158,11 @@ ca:
   your_observations_couldnt_be_added_to_that_project: 'No es poden afegir les teves
     observacions a aquest projecte: %{errors}'
   your_photos_have_been_tagged: Les teves fotos s’han etiquetat!
-  your_picasa_account: El teu compte de Picasa
+  your_picasa_account: el teu compte de Picasa
   your_picasa_account_info: Informació del teu compte de Picasa
   your_should_recognize: Hauries de reconèixer algunes d'aquestes fotos
   your_site_account_has_been_created: S’ha creat el teu compte de %{site}.
-  your_site_needs_your_to_authorize_more_permissions_from_provider: 'Des d’%{site_name}
+  your_site_needs_your_to_authorize_more_permissions_from_provider: 'Des de %{site_name}
     et demanem que autoritzis els següents permisos de %{provider}:'
   your_subscriptions: Les teves subscripcions
   your_sure_delete_list?: Estàs segur que vols eliminar aquesta llista?
@@ -3150,18 +3170,18 @@ ca:
     llista?
   your_world!: El teu país
   youre_following: segueixes
-  youre_not_following_anyone: No segueixes a ningú. Seguir altres naturalistes et
+  youre_not_following_anyone: No segueixes a ningú. Seguir a altres naturalistes et
     permetrà portar un control de les seves observacions més recents. Esbrina què
     fan els usuaris
   youve_already_added_an_identification: ja has afegit una identificació, i només
     pots afegir-ne una
-  youve_linked_your_inaturalist_picasa_account: Has vinculat el teu compte d’%{site_name}
+  youve_linked_your_inaturalist_picasa_account: Has vinculat el teu compte de %{site_name}
     amb el teu compte de Picasa. Aquesta acció et permetrà associar les teves fotos
-    de Picasa amb les teves observacions d’%{site_name}.
+    de Picasa amb les teves observacions de %{site_name}.
   youve_seen_it_want_to: Ho has vist! Vols
   zoom_to_taxon_name: Apropa’t a %{taxonname}
   zoom_to_x: Vés a %{x}
-  your_dashboard_helps_you: El tauler t’ajuda a seguir l’activitat dels usuaris d'iNaturaList.
+  your_dashboard_helps_you: El tauler t’ajuda a seguir l’activitat dels usuaris de Natusfera.
     Per seguir les actualitzacions d'altres usuaris, selecciona ‘Segueix [nom]’ a
     l'encapçalament quan vegis les seves observacions o el seu perfil.
   here_are_some_things_you_can_do_in_the_meantime: Mentrestant aquí trobaràs coses
@@ -3291,7 +3311,7 @@ ca:
           pots etiquetar l'observació com a "barracuda, de por, busseig, vacances,
           Puntarenas".
         can_i_include_my_observations_on_my_blog?: Puc incloure les meves observacions
-          d’%{site_name} a la meva pàgina web o blog?
+          de %{site_name} a la meva pàgina web o blog?
         sure_check_out_our_widget_html: Per descomptat, pots revisar el nostre <a
           href="%{url}" title=" Giny d’observacions">Giny d'observacions</a>.
         what_kind_of_photos_should_i_attach: Quin tipus de fotos haig d'adjuntar a
@@ -3335,7 +3355,7 @@ ca:
           taxonòmica que es trobi EN RISC D'AMENAÇA o pitjor, d'acord amb la
           llista vermella de la UICN.  Alguna informació taxonòmica pot ser considerada
           en perill per altres autoritats de conservació, i d’altra pot ser
-          marcada simplement com que està en perill pels administradors d’%{site_name} si ells
+          marcada simplement com que està en perill pels administradors de %{site_name} si ells
           creuen que s’ha de protegir.
         you_can_also_obscure_the_coordinates_html: |-
           També pots ocultar les coordenades de les teves pròpies observacions
@@ -3370,7 +3390,7 @@ ca:
           proporcionen un mitjà perquè la gent pugui aportar fonts externes de dades o
           només una llista basada en la seva pròpia experiència.
         is_a_list_of_every_species_that_you_have_seen: |-
-          Una llista de vida és una llista de totes les espècies que han vist. Tots els usuaris d’%{site_name}
+          Una llista de vida és una llista de totes les espècies que han vist. Tots els usuaris de %{site_name}
           tenen una llista de vida i aquestes llistes es completen automàticament a partir de les
           observacions afegides a %{site_name}.
         i_observed_a_species: Vaig observar una espècie, per què no apareix en la
@@ -3380,6 +3400,10 @@ ca:
           no s'afegiran a aquesta\nllista si %{site_name} no reconeix el nom que has
           utilitzat. Et\nrecomanem intentar utilitzar noms alternatius que puguem
           reconèixer."
+    lists:
+          new:
+            place_desc: |
+              La llista s'emplenarà automàticament amb els tàxons observats en aquest lloc. Tingues en compte que només pots escollir llocs que estiguin delimitats.
     observations:
       copy_tip: Afegeix una nova observació copiant-ne la data, el lloc, les fotos
         i els camps d'observació.
@@ -3400,7 +3424,7 @@ ca:
         invite_other_photographers_to_inat: Convida altres fotògrafs %{site_name}
         invite_your_friends_description: |-
           Pots facilitar que altres persones afegeixin les seves fotos a Flickr com a
-          observacions d’%{site_name}. Només has de deixar-los un comentari i incloure aquest
+          observacions de %{site_name}. Només has de deixar-los un comentari i incloure aquest
           vincle d'invitació especial. També pots preseleccionar un tàxon i
           projecte per a l'observació nova.
     places:
@@ -3452,7 +3476,7 @@ ca:
     users:
       dashboard:
         taxon_change_desc: |-
-          Els canvis de tàxon representen canvis de la taxonomia d’%{site_name}.
+          Els canvis de tàxon representen canvis de la taxonomia de%{site_name}.
           La major part del temps, %{site_name} mantindrà automàticament
           actualitzat el teu contingut, quan es produeixin canvis (tret que hagis
           seleccionat No), però encara volem saber quan i com canvien
