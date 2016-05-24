@@ -94,7 +94,7 @@ ca:
   activate_user: Activa un usuari
   active: activa
   add: Afegeix
-  add_a: Afegeix una
+  add_a: Afegeix un
   add_a_batch_of_observations: Afegeix un grup d'observacions
   add_a_batch_of_observations_by_csv: Afegeix un grup d'observacions mitjançant CSV
   add_a_batch_of_taxa: Afegeix un grup de tàxons
@@ -112,7 +112,7 @@ ca:
   add_all_your_matching_obs_to_this_project: Afegeix totes les observacions trobades
     a aquest projecte
   add_an_identification: Afegeix una identificació
-  add_an_observation: Afegeix una observació
+  add_an_observation: Afegir una observació
   add_an_observation?: Vols afegir una observació?
   add_an_observation_of: Afegeix una observació de %{taxon}
   add_another: Afegeix-ne un altre
@@ -464,35 +464,36 @@ ca:
   by_project_list: per llista de projecte
   by_submittedby: per %{submittedby}
   by_you: Pròpies
+  by_everyone: De tots
   calendar: Calendari
   can_you_help_your_friends_id_these: Pots ajudar a identificar aquestes observacions?
   cancel: Cancel·la
   cant_flag_an_object_that_doesnt_exist: No pots posar una advertència a un contingut
     que ja no existeix
   cant_merge_a_taxon_with_itself: No pots combinar aquest tàxon amb ell mateix.
-  captive_cultivated: Captiva/cultivada
   casual: casual
   catalogue_of_life: Catàleg de la vida
   cc_attribution_license: Llicència de reconeixement de Creative Commons
   cc_by_description: Aquesta llicència permet que altres persones distribueixin, combinin,
     ajustin i facin creacions a partir dels teus continguts, fins i tot amb finalitats
-    comercials, sempre que als crèdits n’esmentin el creador original. Aquesta és
+    comercials, sempre que als crèdits n’esmenti el creador original. Aquesta és
     la llicència més flexible de les que s’ofereixen. Permet la màxima difusió i l'ús
     de materials subjectes a llicència.
   cc_by_name: Reconeixement
-  cc_by_nc_description: Aquesta llicència permet la redistribució, comercial i no
-    comercial, sempre que es distribueixi sense canvis i íntegrament, amb els crèdits.
+  cc_by_nc_description: Aquesta llicència permet que altres persones combinin,
+    ajustin i facin creacions a partir dels teus continguts amb finalitats no comercials,
+    sempre que se’n faci menció als crèdits i es doni llicència de les noves creacions
+    amb les mateixes condicions.
   cc_by_nc_name: Reconeixement - No comercial
   cc_by_nc_nd_description: Aquesta llicència és la més restrictiva de les sis llicències
     principals. Només permet que altres persones es descarreguin els teus continguts
     i els comparteixin —sempre que en facin menció als crèdits—, però no els poden
     modificar de cap manera ni utilitzar-los amb finalitats comercials.
   cc_by_nc_nd_name: Reconeixement - No comercial – Sense obra derivada
-  cc_by_nc_sa_description: Aquesta llicència permet que altres persones combinin,
-    ajustin i facin creacions a partir dels teus continguts amb finalitats no comercials,
-    sempre que se’n faci menció als crèdits i es doni llicència de les noves creacions
+  cc_by_nc_sa_description: Aquesta llicència permet que altres persones combinin, ajustin
+    i facin creacions a partir dels teus continguts, amb finalitats no comercials sempre que se’n faci menció als crèdits i es doni llicència de les noves creacions
     amb les mateixes condicions.
-  cc_by_nc_sa_name: Reconeixement - No comercial - Compartir igual
+  cc_by_nc_sa_name: Reconeixement - No comercial - Compartir per igual
   cc_by_nd_description: Aquesta llicència permet la redistribució, comercial i no
     comercial, sempre que es distribueixi sense canvis i íntegrament, amb els crèdits.
   cc_by_nd_name: Reconeixement – Sense obra derivada
@@ -502,11 +503,11 @@ ca:
     amb les mateixes condicions. Aquesta llicència s’acostuma a comparar amb "copyleft",
     llicències de programari lliure i de codi obert. Tots els nous continguts que
     es basin en els teus portaran la mateixa llicència, per la qual cosa també es
-    permetrà l’ús comercial de tots els continguts que se’n derivin. És la llicència
+    permetrà l’ús comercial de tots els continguts que se’n derivin. Aquesta és la llicència
     que fa servir Viquipèdia, i es recomana per als materials que es podrien beneficiar
     de la incorporació de continguts de Viquipèdia i per als projectes amb llicència
     similar.
-  cc_by_sa_name: Reconeixement - Compartir igual
+  cc_by_sa_name: Reconeixement - Compartir per igual
   cc_used_under_a: Creative Commons, utilitzada amb una
   change: Canvia
   change_descriptions:
@@ -708,6 +709,7 @@ ca:
   countries: Països
   country_stats: Estadístiques del país per a les observacions creades
   create: Crea
+  create_a_guide: Crear una guia
   create_a_list: Crea una llista
   create_a_new_field: Crea un nou camp
   create_a_new_place: Crea un nou lloc
@@ -747,7 +749,6 @@ ca:
   data_deficient: dades insuficients
   data_quality_assessment: Avaluació de la qualitat de dades
   datatype: Tipus de dades
-  date_: Data
   date_added: Data afegida
   date_created: data de creació
   date_observed: Data observada
@@ -814,7 +815,7 @@ ca:
     l’estat de conservació i especifica qui la va observar per primera vegada en aquest
     lloc a %{site_name}. Pots filtrar l'espècie per grup taxonòmic, color, estat de
     conservació o cerca simple.
-  edit: Modifica
+  edit: Edita
   edit_a_batch_of_observations: Modifica un grup d'observacions
   edit_account_settings_and_profile: Modifica el compte i el perfil
   edit_colors: Modifica els colors
@@ -928,7 +929,7 @@ ca:
   fields: camps
   file_should_be_in_the_following_format: 'L''arxiu hauria de tenir el següent format:
     nom de l''espècie o grup, descripció'
-  fill_out_your_profile: Completa el teu perfil
+  fill_out_your_profile: Completar el teu perfil
   filling_out_checklist_for_place: omple les llistes de verificació dels llocs que
     coneixes bé
   filling_out_your_profile: Completa el teu perfil
@@ -942,12 +943,13 @@ ca:
   filters: Filtres
   find: Troba
   find_a_place: Busca un lloc
+  find_a_guide: Cerca una guia
   find_guides: Cerca Guies
   find_new_place_to_explore: Busca un nou lloc per explorar!
   find_observations: Troba observacions
   find_photos: Troba fotos
   find_places: Busca llocs
-  find_some_people_to_follow: Busca persones
+  find_some_people_to_follow: Buscar persones
   find_species: Busca espècies
   first_confirmed_inat_observation: Primera observació %{site_name} confirmada
   first_connect_your_provider_account_to_your_site: 'Primer, connecta el teu compte
@@ -1032,6 +1034,7 @@ ca:
   getting_started: Com començar
   give_it_some_detail: Introdueix alguna dada!
   global_conservation_status: Estat de conservació global
+  global_names: Noms globals
   globally: globalment
   go: Cerca
   good_choice_for_sharing: Bona alternativa per compartir amb els científics
@@ -1401,9 +1404,9 @@ ca:
     tàxons bloquejats. Per exemple, si has bloquejat Amphibia i algú intenta importar
     <i>Rana catesbeiana</i> d'un proveïdor de noms extern, es crearia el nou tàxon,
     però no podria classificar-se com a amfibi. En cas que això passi, els tàxons
-    afegits recentment haurien de marcar-se perquè un administrador els revisi. Això
+    afegits recentment haurien de marcar-se perquè un curador de continguts els revisi. Això
     només hauria d'aplicar-se als tàxons per als quals considerem que tenim tots els
-    descendents. Un administrador ho pot sobreescriure modificant els tàxons i introduint
+    descendents. Un curador ho pot sobreescriure modificant els tàxons i introduint
     identificadors pares directament, però et recomanem que en lloc d’això intentis
     combinar els tàxons nous amb els ja existents.
   log_in: Inicia sessió
@@ -1449,6 +1452,7 @@ ca:
     per defecte
   mammals: mamífers
   manage_all_your_subscriptions: Administra totes les teves subscripcions
+  manage_names: Gestionar els noms
   manage_your_project_invitations: Administra les invitacions dels teus projectes
   managed: gestionat
   manager: Gestor
@@ -1485,7 +1489,6 @@ ca:
   messages: Missatges
   mixed_licenses: Llicència combinada
   misleading_or_illegal_content: Contingut il·legal, enganyós, racista, xenòfob, etc.
-  mobile_app_for: Aplicació mòbil per
   mobile_apps_for: Les aplicacions mòbils per a
   mobile_view_available: Vista per a telèfon mòbil disponible
   mollusks: mol·luscs
@@ -1520,6 +1523,7 @@ ca:
   named_based_url_might_change: 'Name-based URLs might change, but this won''t.: Els
     enllaços basats en noms podrien canviar, però aquest no.'
   names: Noms
+  names_for_taxon_html: "Noms per %{taxon}"
   naturalised: Naturalitzat
   naturalized: Naturalitzat
   native: nativa
@@ -1572,7 +1576,7 @@ ca:
   new_users_week: Nous usuaris / setmana
   next: Següent
   next_page: Pàgina següent
-  'no': "No"
+  "no": "No"
   no_activity_in_the_past_week: No hi va haver activitat la setmana passada. És hora
     de
   no_administrator_knows_your_password: Cap administrador de %{sitename} no coneix
@@ -1607,7 +1611,6 @@ ca:
   no_more_taxa_to_load: Ja no queden més espècies o grups per carregar!
   no_more_updates: No hi ha més actualitzacions!
   no_nearby_observations: No hi ha observacions properes.
-  new_message: Nou missatge
   no_new_messages: No hi ha nous missatges
   no_observations: no hi ha observacions
   no_observations_from_this_place_yet: Encara no hi ha observacions d'espècies per
@@ -1825,7 +1828,7 @@ ca:
   optional: opcional
   or: o
   or_choose_high_level_taxa: '... O selecciona un tàxon de rang alt'
-  or_invite_your_friends: o convida els teus amics
+  or_invite_your_friends: o convidar els teus amics
   or_invited: o convidades.
   or_post_message_to_google_group: o envia un missatge al nostre Grup de Google
   or_upload: O descarrega el
@@ -1834,6 +1837,7 @@ ca:
   orange: taronja
   order: Ordre
   order_by: Ordenar per
+  organisms: Organismes
   original: original
   originally_flagged_by: Originalment posat com a advertència per
   organism_appears_captive_cultivated: L'organisme sembla captiu/conreat
@@ -2135,7 +2139,7 @@ ca:
   ray_finned_fishes: peixos amb aletes radiades
   re_apply_list_rules: Torna a aplicar les regles de la llista
   re_order_photos: Reordena fotos »
-  read_our_getting_started_guide: llegeix la nostra Guia d'inici
+  read_our_getting_started_guide: llegir la nostra Guia d'inici
   read_the_full_wikipedia: Llegeix tota la descripció de Viquipèdia
   reason: Raó
   reason_you_are_flagging_this_item: Raó per la qual estàs comunicant aquest contingut.
@@ -2228,7 +2232,7 @@ ca:
     must_be_observed_in_place: han de ser observacions en aquest lloc
     must_be_in: han d'estar dins de l'espècie o grup
   said: deia
-  sat: Sap
+  sat: Ds
   satellite: satèl·lit
   save: Desa
   save_all: Desa-ho tot
@@ -2333,14 +2337,14 @@ ca:
   showing_observations_by: Mostrant observacions fetes per
   showing_one_to: Mostrant 1 -
   shown_publicly_as: Mostra públicament com a
-  sign_in: Introdueix
+  sign_in: Inicia sessió
   sign_in_with_provider: Inicia sessió amb %{provider}
   sign_out: Surt
   sign_up!: Registra't!
   sign_up: Registra't
   sign_up_exclamation: Registra't!
   similar_species: Espècies similars
-  sing_in_exclamation: Introdueix!
+  sing_in_exclamation: Inicia sessió!
   single_observation: Observació simple
   single_taxon: Una espècie o grup (entrada de dades per separar/eliminar/etapa, sortida
     de dades per barrejar/intercanviar)
@@ -2449,12 +2453,12 @@ ca:
   species_unknown: Espècies desconegudes
   src: Font
   start: Inici
-  start_a_new_list: Inicia una nova llista
-  start_a_new_project: Inicia un nou projecte
-  start_a_project: Inicia un projecte
+  start_a_new_list: Crea una nova llista
+  start_a_new_project: Crea un nou projecte
+  start_a_project: Crea un projecte
   start_adding_observations: Comença a afegir observacions
-  start_new_account: Inicia un nou compte
-  start_new_project: Inicia un nou projecte
+  start_new_account: Crea un nou compte
+  start_new_project: Crea un nou projecte
   start_one: inicia un
   start_one_now: Inicia’n un ara!
   start_typing_field_name: Comença a introduir el nom del camp…
@@ -2562,6 +2566,7 @@ ca:
   taxonomic_order: Ordre taxonòmic
   taxonomic_tags_for_flickr: Etiquetes taxonòmiques per a Flickr
   taxonomic_tree_browser: Explorador de l'arbre taxonòmic
+  taxonomy: taxonomia
   tell_everyone_a_little_about_you: Parla’ns una mica de tu. 
   tell_the_world_a_little_about_yourself: Parla’ns una mica de tu. 
   terms: Termes
@@ -2840,7 +2845,7 @@ ca:
   user_added_a_x_to_noun_by_html: '%{user} ha afegit un %{x} a %{noun} de %{by}'
   user_added_x_observations_html: '%{user} ha afegit %{x} observacions'
   user_commented_on: '%{user} ha comentat el teu %{title} %{time}'
-  user_follows: '%{user} segueix'
+  user_follows: '%{user} segueix a'
   user_hasnt: '%{user} no ha'
   user_invite_observation_to_project: '%{user} vol convidar la teva observació "%{observation}"
     al projecte %{project}.'
@@ -2900,6 +2905,7 @@ ca:
   view_nbsp: Mostra  
   view_non_mobile_site: Mostra webs no adaptades per a mòbils
   view_post: Mostra introducció
+  view_photo: Veure foto
   view_observation: Mostra observació
   view_observations: Mostra observacions
   view_observations_raquo: Mostra observacions »
@@ -3002,7 +3008,7 @@ ca:
   with: amb
   with_errors: Amb errors
   within_inaturalist: Dins de %{site_name}
-  wondering_what_to_do_next: No saps què fer ara? Per què no
+  wondering_what_to_do_next: No saps què fer ara? Pots
   would_you_like_to: . T’agradaria
   would_like_some_help_identifying_this: vols obtenir ajuda per identificar això
   x_admin: '%{login} Administrador'
@@ -3028,7 +3034,6 @@ ca:
   year: Any
   year_month: any/mes
   yellow: groc
-  'yes': "Sí"
   yes_find_them!: Sí, troba-les!
   yes_i_want_to_join: Sí, desitjo unir-m’hi
   yes_license_my_observations_so_scientists_can_use: Sí, crea una llicència de les
@@ -3091,7 +3096,7 @@ ca:
   you_have_logget_out: T’has desconnectat, torna aviat.
   you_have_to: Has
   you_havent: No 
-  you_havent_left_any_comments_recently: No has afegit comentaris recentment. Deixa
+  you_havent_left_any_comments_recently: has afegit comentaris recentment. Deixa
     una nota a algú!
   you_havent_linked_your_inaturalist_picasa_account: Encara no has vinculat el teu
     compte de %{site_name} amb el teu compte de Picasa.
@@ -3400,10 +3405,6 @@ ca:
           no s'afegiran a aquesta\nllista si %{site_name} no reconeix el nom que has
           utilitzat. Et\nrecomanem intentar utilitzar noms alternatius que puguem
           reconèixer."
-    lists:
-          new:
-            place_desc: |
-              La llista s'emplenarà automàticament amb els tàxons observats en aquest lloc. Tingues en compte que només pots escollir llocs que estiguin delimitats.
     observations:
       copy_tip: Afegeix una nova observació copiant-ne la data, el lloc, les fotos
         i els camps d'observació.
@@ -3505,7 +3506,7 @@ ca:
         manten_un_registro: Desa un registre
         manten_un_registro_l: Registra les teves observacions naturals i desa llistes d'organismes al núvol
         identifique: Identifica
-        identifique_l: Connecta amb d'altres usuaris que t'ajudaran a identificar el que vegis
+        identifique_l: Connecta amb altres usuaris que t'ajudaran a identificar el que vegis
         aprenda: Aprèn sobre la natura
         aprenda_l: Augmenta els teus coneixements parlant amb altres naturalistes
         cree: Crea dades útils
@@ -3513,7 +3514,7 @@ ca:
         convierte: Torna't en un ciutadà científic
         convierte_l: Contribueix a projectes que t'interessin, o bé crea els teus
         bioblitz: Organitza bioblitz
-        bioblitz_l: Events on la gent enregistra tantes observacions com li és possible
+        bioblitz_l: Esdeveniments on la gent enregistra tantes observacions com li és possible
         funcion: Funcionalitat
         funcion_l: Quina funcionalitat ofereix Natusfera?
         observ_l: Algunes observacions aportades pels nostres usuaris
