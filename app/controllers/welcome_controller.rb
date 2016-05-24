@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
         @announcement = Announcement.where('placement = \'welcome/index\' AND ? BETWEEN "start" AND "end"', Time.now.utc).last
         @observations_cache_key = "#{SITE_NAME}_#{I18n.locale}_welcome_observations"
         unless fragment_exist?(@observations_cache_key)
-          if Rails.env.development?
+          #if Rails.env.development?
             @observations = Observation.has_geo.has_photos
                                       .includes([ :taxon,
                                                   :stored_preferences,
@@ -18,9 +18,9 @@ class WelcomeController < ApplicationController
                                                   { :user => :stored_preferences } ])
                                       .limit(4)
                                       .order("observations.id DESC").scoped
-          else
-            @observations = Observation.find([395, 394, 393, 382])
-          end
+          #else
+          #  @observations = Observation.find([395, 394, 393, 382])
+          #end
           #if CONFIG.site_only_observations && params[:site].blank?
           #  @observations = @observations.where("observations.uri LIKE ?", "#{FakeView.root_url}%")
           #elsif (site_bounds = CONFIG.bounds) && params[:swlat].blank?
