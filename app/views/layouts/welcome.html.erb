@@ -43,16 +43,16 @@
 </script>
 <script>
 	$(document).ready(function(){
-    window.observations = <%=json_escape @observations.to_json(:include => { :observation_photos => { :include => { :photo => { :except => :metadata } } } }).html_safe %>;
+    window.observations = <%=json_escape @observations.to_json( :include => { :observation_photos => { :include => { :photo => { :except => :metadata } } } }).html_safe %>;
 
-    var infoWindow;
+    /*var infoWindow;
 
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -34.397, lng: 150.644},
       zoom: 9,
       maxZoom: 13,
       minZoom: 9
-    });
+    });*/
     
     var features = [];
     if(observations){
@@ -66,10 +66,10 @@
       } 
     }
 
-    var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
+    //var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
     //var tile_server_url = "http://193.146.75.173:4000";
 
-	  var tilejson = {
+	  /*var tilejson = {
 			tiles : [tile_server_url + "/observations/points/{z}/{x}/{y}.png?"],
 			grids: [tile_server_url + "/observations/points/{z}/{x}/{y}.grid.json?&interactivity=id,taxon_id,species_guess,latitude,longitude,positional_accuracy,captive,quality_grade,iconic_taxon_id"],
 			template : "{{species_guess}}",
@@ -120,8 +120,42 @@
       off: function(o) {
         map.setOptions({ draggableCursor: 'url(http://maps.google.com/mapfiles/openhand.cur), move' });
       }
-    });
-          
+    });*/
+    var data_slice_to_html = function(data_slice){
+      return "<a class=\"username_label\" href=\"" + data_slice.url + "\">" + data_slice.name + "</a> - <a class=\"species_label\" href=\"" + data_slice.especie_url + "\">" + data_slice.especie + "</a>";
+    }
+
+    var activate_locale_link = function(locale){
+      var control = $("#locale_" + locale);
+      if(control){
+        $(".locale_link").removeClass("active");
+        control.addClass("active");
+      }
+    }
+
+    var init_locale = '<%= I18n.locale %>';
+
+    if(init_locale && init_locale != ''){
+      activate_locale_link(init_locale);
+    }
+
+    obs_data_slider = [];
+    <% for observation in @observations %>
+      var obs_<%= observation.id %> = {};
+      <% if observation.user.name and observation.user.name != ''%>
+      obs_<%= observation.id %>.name = '<%= observation.user.name.html_safe %>';
+      <% else %>
+      obs_<%= observation.id %>.name = '<%= observation.user.login.html_safe %>';
+      <% end %>
+      obs_<%= observation.id %>.url = '<%= observations_by_login_url(observation.user.login) %>';
+      <% unless observation.species_guess.blank? %>
+        obs_<%= observation.id %>.especie = '<%= observation.species_guess.html_safe %>';
+      <% else %>
+        obs_<%= observation.id %>.especie = '<%=t :something %>';
+      <% end %>
+      obs_<%= observation.id %>.especie_url = '<%= observation_path(observation) %>';
+      obs_data_slider[<%= observation.id %>] = obs_<%= observation.id %>;
+    <% end %>
     var getItemId = function(id){
       return parseInt(id.substring(id.indexOf("_")+1));
     };
@@ -139,15 +173,17 @@
 
     var fillSlide = function(id, observation){
       //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
-      var capped_desc = "...";
+      obs_userdata = obs_data_slider[observation.id];
+      $("#bottom").html(data_slice_to_html(obs_userdata));
+      $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
+      /*var capped_desc = "...";
       if(observation.description){
       	capped_desc = observation.description.length > 40 ? observation.description.substring(0, 37) + "..." : observation.description.substring(0, observation.description.length);
       }
       $("#item_" + id ).children("div.carousel-caption").children("p").text(capped_desc);
-      $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
       $("#item_" + id ).children("div.carousel-caption").children("a").attr("href","/observations/" + observation.id);
       var formatted_sp_guess = observation.species_guess || "Algo...";
-      $("#item_" + id ).children("div.carousel-caption").children("a").text(formatted_sp_guess);
+      $("#item_" + id ).children("div.carousel-caption").children("a").text(formatted_sp_guess);*/
     }
 
     var truncate = function(str,n){
@@ -168,11 +204,11 @@
       document.cookie = "locale=" + locale_string;
     }
 
-    $('#locale_eu').click( function() { setLocaleCookie('eu'); } );
-    $('#locale_es').click( function() { setLocaleCookie('es'); } );
-    $('#locale_ca').click( function() { setLocaleCookie('ca'); } );      
-    $('#locale_gl').click( function() { setLocaleCookie('gl'); } );
-    $('#locale_en').click( function() { setLocaleCookie('en'); } );
+    $('#locale_eu').click( function() { setLocaleCookie('eu'); activate_locale_link('eu'); } );
+    $('#locale_es').click( function() { setLocaleCookie('es'); activate_locale_link('es'); } );
+    $('#locale_ca').click( function() { setLocaleCookie('ca'); activate_locale_link('ca'); } );
+    $('#locale_gl').click( function() { setLocaleCookie('gl'); activate_locale_link('gl'); } );
+    $('#locale_en').click( function() { setLocaleCookie('en'); activate_locale_link('en'); } );
 
     // Activate Carousel
     $('#obsCarousel').carousel({interval:false});
@@ -192,7 +228,7 @@
     });
     $('#obsCarousel').on('slide.bs.carousel', function (e) {
       var id = getItemId(e.relatedTarget.id);
-      setCurrentMarker(features[id].marker);
+      //setCurrentMarker(features[id].marker);
       fillSlide(id,features[id].observation);
     });
 		
@@ -232,7 +268,7 @@
     });
 
     //init slide 0
-    setCurrentMarker(features[0].marker);
+    //setCurrentMarker(features[0].marker);
     fillSlide(0,features[0].observation);
 
     $grid.isotope({ filter: '.func' });
@@ -253,26 +289,24 @@
 		<img src="/assets/natusfera_banner_3.jpg">
 	</div>
   <div class="row">
-    <ul style="width:100%;" class="nav navbar-nav lang">
-      <li style="width:20%;">        
-        <a style="padding-left:100px;" id="locale_ca" href="/">Català</a>
-      </li>
-      <li style="width:20%"><a style="padding-left:100px;" id="locale_en" href="/">English</a></li>
-      <li style="width:20%"><a style="padding-left:100px;" id="locale_es" href="/">Español</a></li>
-      <li style="width:20%"><a style="padding-left:100px;" id="locale_eu" href="/">Euskera</a></li>            
-      <li style="width:20%"><a style="padding-left:100px;" id="locale_gl" href="/">Galego</a></li>      
-    </ul>  
+    <!--<ul style="width:100%;" class="nav navbar-nav lang">
+      <li style="width:20%;"><a style="padding-left:100px;" id="locale_ca" href="/">CA</a></li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_en" href="/">EN</a></li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_es" href="/">ES</a></li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_eu" href="/">EUS</a></li>
+      <li style="width:20%"><a style="padding-left:100px;" id="locale_gl" href="/">GAL</a></li>
+    </ul>-->
+    <div style="text-align: center;">
+    <a class="locale_link" id="locale_ca" href="/">CAT</a> /
+    <a class="locale_link" id="locale_es" href="/">ES</a> /
+    <a class="locale_link" id="locale_en" href="/">EN</a> /
+    <a class="locale_link" id="locale_eu" href="/">EUS</a> /
+    <a class="locale_link" id="locale_gl" href="/">GAL</a>
+    </div>
   </div>
-  <!--<ul> 
-    <#% I18n.available_locales.each do |locale| %>
-      <#% unless locale == I18n.locale %>
-        <li><#%= link_to I18n.t("meta.language_name", :locale => locale.to_sym) %></li>
-      <#% end  %>                            
-    <#% end  %>
-  </ul>-->
 	<div class="row">	
-		<div id="slider-container" class="col-md-6 nopadding">
-			<div id="obsCarousel" class="carousel slide" data-ride="carousel">		
+		<!--<div id="slider-container" class="col-md-6 nopadding">-->
+			<div id="obsCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 			<li data-target="#obsCarousel" data-slide-to="0" class="active"></li>
@@ -329,12 +363,35 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only"><% t :next %></span>
 		  </a>
+      <div id="bottom">
+      </div>
+        <div id="observation_count">
+          <div class="count_banner_n"><%= @observations_count %></div>
+          <div class="count_banner"><%= t('observations') %></div>
+        </div>
+        <div id="species_count">
+          <div class="count_banner_n"><%= @species_count %></div>
+          <div class="count_banner"><%= t('species') %></div>
+        </div>
+        <div id="people_count">
+          <div class="count_banner_n"><%= @people_count %></div>
+          <div class="count_banner"><%= t('people') %></div>
+        </div>
 		</div>
-		</div>
-		<div id="map-container" class="col-md-6 nopadding">
+		<!--</div>-->
+		<!--<div id="map-container" class="col-md-6 nopadding">
 			<div id="map"></div>
-		</div>
+		</div>-->
 	</div>
+  <div class="row">
+  <div class="row">
+    <div class="col-md-12">
+      <%= image_tag("como_funciona.#{I18n.locale}.png", :class => "pre-footer") %>
+      <!--<img class="pre-footer" src="/assets/como_funciona.#{I18n.locale}.png" alt="Como funciona?">-->
+    </div>
+  </div>
+
+  </div>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -645,15 +702,6 @@
 		<div class="col-md-12 section-end"></div>
 	</div>
 	<!--Pre-footer-->
-	<div class="row">
-		<div class="col-md-12">
-      <%= image_tag("como_funciona.#{I18n.locale}.png", :class => "pre-footer") %>
-			<!--<img class="pre-footer" src="/assets/como_funciona.#{I18n.locale}.png" alt="Como funciona?">-->      
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12 section-end-post"></div>
-	</div>
 	<div class="row legal">
 		<div class="col-md-3 no-right-separator">
 			<img src="/assets/natusfera_legal.png">
