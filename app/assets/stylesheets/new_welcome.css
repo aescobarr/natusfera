@@ -521,7 +521,7 @@ a {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {		  
   /*height: 50%;*/
-  height: 300px;
+  height: 500px;
   margin: auto;
 }
 div#map{
@@ -1162,4 +1162,109 @@ div.grid-item.func div.inner-grid-wrapper-small.applink{
 
 .carousel-control.left {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(91, 90, 95, 0.5) 100%);    
+}
+
+.carousel-indicators .active {
+    background-color: #5D9B45;
+    height: 15px;
+    margin: 0;
+    width: 15px;
+}
+
+.carousel-indicators li {
+    background-color: #C2DEAE;
+    border: 1px solid #C2DEAE;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 14px;
+}
+
+.carousel-inner {
+    margin-bottom:50px;
+}
+
+.carousel-indicators {
+    bottom:-50px;
+}
+
+.username_label, .username_label:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 80px;
+}
+
+.species_label, .species_label:hover {
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+ #bottom {
+     background-color: rgba(85, 85, 85, 0.9);
+     color: #FFF;
+     bottom:0;
+     left:0;
+     z-index: 10000;
+     position: absolute;
+     width: 100%;
+ }
+
+ #observation_count{
+     top: 10;
+     right: 10;
+     position: absolute;
+     width: 200px;
+     height: 70px;
+     background-color: rgba(85, 85, 85, 0.9);
+ }
+
+#species_count{
+    top: 90;
+    right: 10;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(75, 75, 75, 0.9);
+}
+
+#people_count{
+    top: 170;
+    right: 10;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(85, 85, 85, 0.9);
+}
+
+
+.count_banner{
+    right: 5;
+    bottom: 1;
+    position: absolute;
+    color: #80964E;
+    font-size: 24px;
+    text-transform: lowercase;
+}
+
+.count_banner_n{
+    right: 5;
+    top: 1;
+    position: absolute;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.locale_link{
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #5B5B5B;
+}
+
+.active{
+    color: #80964E;
 }

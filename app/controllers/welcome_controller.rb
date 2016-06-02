@@ -35,6 +35,9 @@ class WelcomeController < ApplicationController
         # rescue ActiveRecord::RecordNotFound
         #   @sample_observations = Observation.has_photos.order("RANDOM()").limit(4)
         # end
+        @observations_count = Observation.count
+        @people_count = User.active.count
+        @species_count = Taxon.count
         @sample_projects = Project.order("RANDOM()").limit(4)
         @sample_users = User.order("RANDOM()").limit(4)
       end
