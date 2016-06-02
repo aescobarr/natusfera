@@ -589,8 +589,9 @@
         });
       </script>
     <% end %>
-    
-    <% if logged_in? -%>
+
+    <!-- hide identotron for now -->
+    <% if logged_in? and false -%>
       <%= link_to t(:identotron), identotron_path(:observation_id => @observation), 
         :rel => "nofollow",
         :class => "glaucous button",
