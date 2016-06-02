@@ -14,7 +14,7 @@ es:
     favor, agrega una identificación, participa en la sección de calidad de datos,
     o describe la inexactitud en un comentario.
   we_also_support: |-
-    Tambien tenemos conexión con <a href="http://flickr.com">Flickr</a>,
+    También tenemos conexión con <a href="http://flickr.com">Flickr</a>,
     <a href="http://picasaweb.google.com">Picasa</a>, y
     <a href="http://facebook.com">Facebook</a>
     para tus imágenes.
@@ -135,7 +135,7 @@ es:
     a este proyecto
   add_an_assessment: Añade una evaluación
   add_an_identification: Añadir una identificación
-  add_an_observation: Añades una observación
+  add_an_observation: Añadir una observación
   add_an_observation?: ¿Añade una observación?
   add_an_observation_of: Añade una observación de %{taxon}
   add_another: Añade otra
@@ -228,7 +228,7 @@ es:
   additional_range_data_from_an_unknown_source: Datos de distribución adicional de
     fuente desconocida
   admin: Administrador
-  admin_any_projects: administra cualquier proyecto
+  admin_any_projects: administra ningún proyecto
   admin_tools: Herramientas administrativas
   agree: de acuerdo
   agree?: ¿De acuerdo?
@@ -336,7 +336,7 @@ es:
     no terminas con algo como
   and_help_the_inaturalist_community_grow: y ayuda a que la comunidad %{site_name}
     crezca.
-  and_make_some_new: y has nuevos
+  and_make_some_new: y haga nuevos
   and_other_taxa: '&amp; Otros taxones'
   and_un_license_all_your_observations: y quita la licencia de todas tus observaciones
   and_you_havent_linked: '...y no has ligado a una de estas cuentas externas, deberías
@@ -498,7 +498,7 @@ es:
   because: porque
   before_importing_photos: antes de importar fotos
   before_you_can_contribute_your_observations: antes de poder contribuir con tus observaciones.
-  belives_this_is_a_comprehensive_list_of: considera que ésta es una lista exhaustiva
+  belives_this_is_a_comprehensive_list_of: considera que esta es una lista exhaustiva
     de
   bg_color: Color BG
   birds: aves
@@ -548,7 +548,7 @@ es:
   cc_attribution_license: Licencia de atribución de Creative Commons
   cc_by_description: Esta licencia permite a otros distribuir, mezclar, ajustar y
     construir en base a su trabajo, incluso con fines comerciales, siempre y cuando
-    en los créditos se nombre el creador original. Ésta es la licencia más flexible que se ofrece.
+    en los créditos se nombre el creador original. Esta es la licencia más flexible que se ofrece.
     Recomendada para la máxima difusión y el uso de materiales sujetos a licencia.
   cc_by_name: Atribución
   cc_by_nc_description: Esta licencia permite a otros transformar, modificar y construir
@@ -557,7 +557,7 @@ es:
     las mismas condiciones.
   cc_by_nc_name: Atribución - No comercial
   cc_by_nc_nd_description: Esta licencia es la más restrictiva de las seis licencias
-    principales, sólo permitiendo a otros a descargar sus obras y compartirlas
+    principales, solo permitiendo a otros a descargar sus obras y compartirlas
     con los demás -siempre y cuando se de crédito de ello-, pero no se pueden modificar de ninguna
     forma ni utilizarlos con fines comerciales.
   cc_by_nc_nd_name: Atribución - No comercial - Sin derivados
@@ -619,7 +619,7 @@ es:
   check_here_to_autoload_photos: Haga clic aquí para auto-cargar fotos desde Flickr.
     Podría querer desmarcarlo cuando el nombre científico de un taxón también es una
     palabra no científica o una falta de ortografía común, como "Parus".
-  check_it_out: Échele un vistazo
+  check_it_out: Échale un vistazo
   check_list: lista de comprobación de
   check_list_description: Seleccione un taxón de más alto nivel que desee mostrar
     en esta lista, como "Aves" para aves, o "Amphibia" para anfibios. Cuando termine,
@@ -658,10 +658,10 @@ es:
   choose_a_place: Selecciona un lugar
   choose_a_taxon: Escoge una especie o grupo (opcional)
   choose_cc_licensed_photos_html: |-
-    Encontrar fotos con licencia de <a href=\"http://creativecommons.org/\">CC</a> en Flickr o seleccionarlas de sus
-    observaciones en %{site_name}. Trate de seleccionar imágenes que
-    <em>muestren características de diagnóstico</em> y <em>se vean bien como
-    íconos</em>.  La <em>primera aparece por defecto</em>.
+    Encuentra fotos con licencia de <a href=\"http://creativecommons.org/\">CC</a> en Flickr o selecciónalas de las
+    observaciones de %{site_name}. Trata de seleccionar imágenes que
+    muestren características de diagnóstico y se vean bien como
+    íconos. La primera aparece por defecto.
   chose_columns: Elige columnas
   choose_files_from_your_computer: selecciona el archivo de tu computadora.
   choose_from_your_lists: Seleccionar de sus listas
@@ -680,6 +680,7 @@ es:
   classification: Clasificación
   clear: Limpiar
   clear_color_filters: Limpiar los filtros de color
+  clear_filters: Limpiar filtros
   clear_search: Limpiar búsqueda
   clear_shapes: Quita las formas
   click_add_an_observation_to_the_lower_right: Bienvenido a %{site_name_short}! Selecciona
@@ -704,7 +705,7 @@ es:
     observaciones en tu proyecto, ej. %{root_url}observations/new?project_id=%{project_id}&tracking_code=tucodigo123.
     Se puede usar para rastrear la participación en diferentes fuentes. Puedes tener acceso a estos códigos de rastreo
     cuando descargas las observaciones de tu proyecto con formato CSV.
-  comma_separated_please: Favor separar por comas
+  comma_separated_please: Por favor, separar por comas
   comment_preview: Vista previa del comentario
   comment: comentario
   comment_deleted: El comentario ha sido borrado
@@ -717,7 +718,7 @@ es:
   comments_on_my_observations: Comentarios sobre mis observaciones
   comments_youve_made_with_others: Comentarios que ha hecho <br />(sobre el trabajo
     de otros)<br/><span class="description">durante la semana pasada</span>
-  commercial_solicitation: Anuncia algo, los enlaces no son validos, etc.
+  commercial_solicitation: Anuncia algo, los enlaces no son válidos, etc.
   commit: Guardar
   committed: Guardar
   committing: Guardando...
@@ -739,7 +740,7 @@ es:
   configure: Configurar
   configure_a_widget_to_show: Configura el widget para mostrar las observaciones de
     %{site_name} en tu sitio web o blog. También puedes incluir el estilo CSS en la
-    <code>&lt;head&gt;</code> de tu código HTML. Sienteté libre de nodificar el CSS.
+    <code>&lt;head&gt;</code> de tu código HTML. Siéntete libre de modificar el CSS.
   confirm_membership: Confirmar membresía
   confirm_new_password: Confirmar contraseña nueva
   confirm_now: Confirmar ahora
@@ -751,8 +752,8 @@ es:
   connected_accounts: Cuentas vinculadas
   connecting_flickr: Conectándose a Flickr...
   connecting_to_facebook: Conectándose a Facebook...
-  connecting_your_inat_account_to_accounts_other_sites: Conectar su cuenta de %{site_name}
-    con cuentas en otros sitios le permitirá ingresar a %{site_name} usando sus credenciales
+  connecting_your_inat_account_to_accounts_other_sites: Conectar tu cuenta de %{site_name}
+    con cuentas en otros sitios te permitirá ingresar a %{site_name} usando las credenciales
     de esos sitios.
   conservation_status: Categoría de riesgo
   conservation_status_descriptions:
@@ -894,7 +895,7 @@ es:
       november: Noviembre
       december: Diciembre
   date_observed: Fecha de observación
-  date_observed_on: fecha que se observo
+  date_observed_on: fecha que se observó
   date_picker:
     closeText: Cerrar
     currentText: Hoy
@@ -912,7 +913,7 @@ es:
   datetime_: Fecha/hora
   day: Día
   default: Predeterminada
-  default_invite_comment: 'La gran foto! Usted debe enviar a %{site_name}: {{INVITE_LINK}}'
+  default_invite_comment: '¡Gran foto! Deberías publicarla a %{site_name}: {{INVITE_LINK}}'
   default_observation_license: 'Licencia para sus observaciones:'
   default_photo_license: 'Licencia para sus fotos:'
   default_sound_license: Licencias del sonido predeterminadas
@@ -925,10 +926,10 @@ es:
   delete_photo: Eliminar foto
   delete_project: Eliminar este proyecto
   delete_selected: Eliminar seleccionados
-  delete_taxon_and_merge_most_data_html: Eliminar <i>%{taxon}</i> y combinar la mayoría
-    de sus datos con otro taxón. Utilice esta herramienta para eliminar taxones duplicados
+  delete_taxon_and_merge_most_data_html: Esta herramienta permite eliminar el taxón <i>%{taxon}</i> y combinar la mayoría
+    de sus datos con otro taxón. Utilícela para eliminar taxones duplicados
     y sinónimos desactualizados. <strong>¡TENGA CUIDADO!</fuerte> Eliminar taxones
-    podría causar mucha destrucción.
+    podría resultar un desastre.
   delete_this_name: Eliminar este nombre
   delete_user: Eliminar usuario
   delete_your_account: Eliminar su cuenta
@@ -957,9 +958,9 @@ es:
   disconnect_provider: Desconectarse de %{provider}
   display_listings_added_by_curators: Mostrar listados añadidos por los curadores
   display_listings_from_place: Mostrar listados de lugar
-  do_you_know_where_this_species_lives: ¿Sabe usted dónde vive esta especie?
+  do_you_know_where_this_species_lives: ¿Sabes dónde vive esta especie?
   do_you_study_nematodes_worlds_foremost_expert_barnacle: ¿Usted estudia nemátodos?
-    ¿Es usted el mayor experto del mundo en taxonomía de percebes? ¿Sólo le gusta
+    ¿Es usted el mayor experto del mundo en taxonomía de percebes? ¿Solo le gusta
     mirar las flores bonitas?. Llenar su perfil agrega un poco de personalidad y ayuda
     a establecer su credibilidad cuando ayuda a otras personas con las identificaciones.
   does_the_location_seem_accurate: ¿El lugar parece correcto?
@@ -989,7 +990,7 @@ es:
   edit_assessment: Editar evaluación
   edit_body: Editar el cuerpo
   edit_colors: Modificar colores
-  edit_comment: Modificar su comentario
+  edit_comment: Modificar el comentario
   edit_custom_project_fields: Modificar campos de proyecto personalizados
   edit_field: Edita el campo
   edit_flagged_observation: Editar la observación marcada
@@ -1157,14 +1158,14 @@ es:
   find_some_people_to_follow: Buscas a algunas personas a seguir
   find_species: Encontrar especies
   first_confirmed_inat_observation: Primera observación %{site_name} confirmada
-  first_connect_your_provider_account_to_your_site: 'Primero, connectar su cuenta
+  first_connect_your_provider_account_to_your_site: 'Primero, connecta tu cuenta
     %{provider} a %{site_name}:'
   first_inat_observation: Primera observación %{site_name}
   first_observer: Primer observador
   flag: Reportar
   flag_an_item: Marca un contenido
   flag_description: Marcar este contenido para hacer saber a los curadores que algo
-    no anda bien.
+    no anda bién.
   flag_for_curation: Marcar para curación.
   flag_it!: ¡Márquelo!
   flag_marked_as_resolved_html: <span class="meta">Marcar marcado como</span> <strong>resuelto.</strong>
@@ -1202,7 +1203,7 @@ es:
   follower: seguidor
   following: siguiendo
   for: para
-  for_a_taxon: de un taxon
+  for_a_taxon: de un taxón
   for_a_widget_showing_recent_observations_from: Para el widget que muestre las observaciones
     recientes de %{place_name}, échale un ojo a
   for_more_information: para más información.
@@ -1217,8 +1218,8 @@ es:
   from_this: de esta
   from_photos: De fotos
   from_place: De lugar
-  from_your_site_observations: Observaciones de %{site_name}
-  from_licensed_site_observations: Observaciones de %{site_name} licencia
+  from_your_site_observations: de observaciones de %{site_name}
+  from_licensed_site_observations: De observaciones de %{site_name} con licencia
   full_id_please: ¡Ayuda por favor!
   full_id_please!: ¡Ayuda con nombre científico!
   full_id_please?: ¿Ayuda con nombre científico?
@@ -1233,7 +1234,7 @@ es:
   generally_these_come_from_iucn_red_list: Generalmente estos vienen de la Lista Roja
     de la UICN, y si vienen de otros lugares se adhieren a las categorías de la UICN.
   generate_pdf: Generar PDF
-  generate_taxonomic_tags_for_flickr: Generar etiquetas taxonómicas para sus fotos
+  generate_taxonomic_tags_for_flickr: Generar etiquetas taxonómicas para tus fotos
     de Flickr.
   generate_widget: Genera el widget
   generating: Generando...
@@ -1350,11 +1351,11 @@ es:
     un mensaje a nuestro <a href="%{feedback_url}">grupo de retroalimentación</a>.
   if_you_have_trouble_with_the_site: Si tuvieras algún problema con el sitio, por favor
     revisa nuestra sección de ayuda
-  if_you_use: Si usted usa
+  if_you_use: Si usas
   if_youd_like_us_to_share_your_observations_with: |-
     Si deseas compartir tus observacines con la comunidad científica, asegurate
     de haber escogido una licencia Creative Commons para tus observaciones.
-  if_you_want_to_change_the_name: si sólo quieres cambiar el nombre
+  if_you_want_to_change_the_name: si solo quieres cambiar el nombre
   if_your_project_is: Si tu proyecto es acerca de un lugar especifico, añade las coordenadas
     seleccionando el enlace del mapa o añadelas manualmente.
   if_your_search_comes_up: Si su búsqueda regresa vacía, debería ver algunas cajas
@@ -1448,7 +1449,7 @@ es:
   iphone: iPhone
   is_a: es un
   is_an: es un
-  is_not_following_anyone: No esta siguiendo a nadie
+  is_not_following_anyone: No está siguiendo a nadie
   is_the_organism_wild: ¿El organismo es salvaje?
   is_this_observation_offensive_html: ¿Es esta observación <a href="/help#inappropriate">inapropiada</a>,
     spam u ofensiva?
@@ -1564,12 +1565,12 @@ es:
   link_or_unlink_your_facebook_account: Vincular o desvincular su cuenta de Facebook
   link_or_unlink_your_flickr_account: Vincular o desvincular su cuenta de Flickr
   link_or_unlink_your_picasa_account: Vincular o desvincular su cuenta de Picasa
-  link_your_facebook_account: Vincule su cuenta de Facebook
-  link_your_flickr_account: Vincule su cuenta de Flickr
-  link_your_flickr_account_with_inat: Vincule su cuenta de Flickr con %{site_name}
-  link_your_flickr_account_with_inat_so: Vincule su cuenta de Flickr con %{site_name}
+  link_your_facebook_account: Vincula tu cuenta de Facebook
+  link_your_flickr_account: Vincula tu cuenta de Flickr
+  link_your_flickr_account_with_inat: Vincula tu cuenta de Flickr con %{site_name}
+  link_your_flickr_account_with_inat_so: Vincula tu cuenta de Flickr con %{site_name}
     para poder agregar fotos de sus observaciones.
-  link_your_picasa_account: Vincule su cuenta de Picasa
+  link_your_picasa_account: Vincula tu cuenta de Picasa
   linked_facebook: Su cuenta de %{site_name} está actualmente ligada con su cuenta
     de Facebook.
   linked_facebook_automaticaly: También, ten en cuenta que si inicias sesión en %{site_name}
@@ -1656,12 +1657,12 @@ es:
   location_is_exact: ubicación es exacta
   locked_taxa_will_not_allow_new: Los taxones bloqueados no permitirán que se agreguen
     nuevos taxones descendientes. Por lo tanto, si bloqueaste Amphibia y alguien trató
-    de importar </i>Rana catesbeiana<i> de un proveedor externo de nombres, el nuevo
+    de importar Rana catesbeiana de un proveedor externo de nombres, el nuevo
     taxón sería creado pero no podría clasificarse como un anfibio. Cuando esto sucede,
     los taxones agregados recientemente deberían marcarse para la atención de un curador.
-    Ésto solamente debería usarse para taxones para los cuales pensamos que tenemos
+    Esto solamente debería usarse para taxones para los cuales pensamos que tenemos
     ya todos los descendientes. Un curador puede sobrescribirlo modificando los
-    taxones e insertando identificadores padres directamente, pero en lugar de ésto recomendamos que
+    taxones e insertando identificadores padres directamente, pero en lugar de esto recomendamos que
     trates de combinar los taxones nuevos con los ya existentes.
   log_in: Iniciar sesión
   logged_in_as: Inició sesión como
@@ -1702,7 +1703,7 @@ es:
     vea bien en tamaño grande.
   make_taxonomic_flickr_tags_for_taxon_raquo: Hacer etiquetas taxonómicas de Flickr
     para este taxón &raquo;
-  make_this_your_default_license: Hacer ésta %{type} su licencia por defecto
+  make_this_your_default_license: Hacer esta %{type} su licencia por defecto
   make_this_the_primary_listing: Hacerlo la especies listado principal
   mammals: mamíferos
   manage_all_your_subscriptions: Administra todas tus suscripciones
@@ -1785,7 +1786,7 @@ es:
     ubio: uBio
     nzor: New Zealand Organisms Register
   named_based_url_might_change: 'Name-based URLs might change, but this won''t.: Los
-    URL basados en nombres podrían cambiar pero éstos no.'
+    URL basados en nombres podrían cambiar pero estos no.'
   names: Nombres
   names_for_taxon_html: Nombres para %{taxon}
   naturalised: naturalizado
@@ -1950,7 +1951,7 @@ es:
     Flickr
   not_logged_in: No ha iniciado sesión
   not_on_this_list: No está en esta lista.
-  not_seeing_what_looking_for: ¿No ve lo que está buscando?
+  not_seeing_what_looking_for: ¿No encuentras lo que estás buscando?
   not_yet: Todavía no
   note: Nota
   note_you_can_modify_the_height_attribute: 'Nota: Puedes modificar el atributo "altura"
@@ -1961,7 +1962,7 @@ es:
   obs: Obs
   obscured: Difusa
   obscured_description: Coordenadas públicas se muestran como un punto al azar dentro
-    de un radio de 10Km de las coordenadas verdaderas . Las coordenadas reales sólo
+    de un radio de 10Km de las coordenadas verdaderas . Las coordenadas reales solo
     son visibles para usted y los curadores de los proyectos a la que se agrega la
     observación.
   observation: Observación
@@ -1991,8 +1992,8 @@ es:
   observation_rules_description: |-
     Usted puede seleccionar reglas para determinar cuáles observaciones se
     pueden agregar a este proyecto, como limitar las observaciones a un lugar
-    determinado. Nota&#58; limitar a lugares se basa actualmente en
-    %{site_name} Places y sólo puede limitar las observaciones al rectángulo
+    determinado. Nota&#58; limitar a lugares se basa actualmente en Lugares de
+    %{site_name} y solo puede limitar las observaciones al rectángulo
     más pequeño que rodea un lugar. Si usted tiene más de una regla para un
     tipo de regla, las observaciones serán válidas si pasa cualquiera regla.
     Por ejemplo, si usted tiene las reglas "debe estar en Amphibia" y "debe
@@ -2041,7 +2042,7 @@ es:
     dentro de sus límites.
   observations_per_month: Observaciones / Mes
   observations_removed_from_the_project: Observaciones eliminadas del proyecto "%{project}"
-  observations_saved: Observación(es) guardadas!
+  observations_saved: ¡Observación(es) guardadas!
   observations_specifying_this_field: Observaciones que especifican este campo
   observations_text_search_warning: |-
     Búsquedas de texto pueden producir resultados extraños cuando se combina
@@ -2098,22 +2099,22 @@ es:
   only_accepts_taxa: solamente acepta taxones
   only_an_admin_can_remove_project_users: Solo el administrador puede eliminar usuarios
     del proyecto.
-  only_country_state_and_county: Sólo se muestran lugares de país, estado y equivalentes
+  only_country_state_and_county: Solo se muestran lugares de país, estado y equivalentes
     de país por ahora. Haga un acercamiento para ver lugares más pequeños.
   only_curators_can_add_edit_scientific_names: Solo los curadores pueden añadir/editar
     nombres científicos.
   only_curators_can_access_that_page: Solo los curadores pueden acceder a esa página.
   only_files_with_10000_rows_at_a_time: Solamente archivos con 1000 filas cada vez,
     por favor
-  only_letters_numbers: Sólo letras y números, sin espacios
+  only_letters_numbers: Solo letras y números, sin espacios
   only_project_curators_can_do_that: Solo los curadores del proyecto pueden hacer
     eso.
   only_receive_updates_about_this_taxon: Solo recibir notificaciones de esta especie
     o grupo
-  only_show_active_taxa: Solo muestra especies activas
+  only_show_active_taxa: Muestra solo especies activas
   only_show_for_species_subspecies_varieties_etc: Solo muestra el link para especies,
     subespecies, variedades, etc (de este grupo o especie).
-  only_show_taxa_fom_this_list: Mostrar sólo los taxones de esta lista
+  only_show_taxa_fom_this_list: Mostrar solo los taxones de esta lista
   only_showing_taxa_from: mostrando taxones de esta lista solamente
   only_species: solamente especies
   only_species_and_subspecies: solamente especies y subespecies/variedades
@@ -2123,7 +2124,7 @@ es:
     hacer eso.  No seas malvado.
   only_the_project_admin_can_delete_this_project: Solo el administrador del proyecto
     puede eliminar este proyecto.
-  open: Transparente
+  open: Abierta
   open_description: Todo el mundo puede ver las coordenadas a menos que el taxón esté
     en peligro.
   opt_in_for_this_observation: Optar por esta observación
@@ -2349,9 +2350,9 @@ es:
   please_add_this_observation_to: Añade esta observación a
   please_add_this_to_x_html: Añade esto a %{x}
   please_be_aware_project_curators: Tenga en cuenta que los curadores del proyecto
-    podrán ver cualquier ubicación privada u oculta agregada a este proyecto.
+    podrán ver cualquier ubicación cerrada o difusa agregada a este proyecto.
   please_be_aware_that_project_curators: Tenga en cuenta que los curadores del proyecto
-    podrán ver ubicaciones privadas u ocultas de las observaciones agregadas a este
+    podrán ver ubicaciones cerradas o difusas de las observaciones agregadas a este
     proyecto.
   please_be_careful_particulary_when: Tenga cuidado, especialmente al eliminar taxones.
     Si un taxón tiene observaciones, identificadores, taxones enlistados, u otros
@@ -2394,11 +2395,11 @@ es:
   print_in_browser: Imprimir desde el navegador
   privacy: Política de privacidad
   privacy_policy: Política de privacidad
-  private: Privada
+  private: Cerrada
   private_description: Coordenadas completamente ocultas en los mapas de uso público,
-    las verdaderas coordenadas sólo son visibles para usted y los curadores de los
+    las verdaderas coordenadas solo son visibles para usted y los curadores de los
     proyectos a los que se agrega la observación. Las observaciones con coordenadas
-    privadas todavía se utiliza para verificar las listas de lugar de verificación.
+    cerradas todavía se utilizan para verificar las listas de verificación de lugar.
   processing3p: Procesando...
   profile: Perfil
   project: Proyecto
@@ -2432,7 +2433,7 @@ es:
   project_was_successfully_updated: El proyecto fue actualizado satisfactoriamente.
   project_x_was_delete: El proyecto %{project} fue eliminado
   projects: Proyectos
-  projects_description: Los proyectos son una forma de agrupar en %{site_name} sus observaciones con las de
+  projects_description: Los proyectos son una forma de agrupar en %{site_name} tus observaciones con las de
     otras personas.  Si te interesa comenzar un proyecto
     científico ciudadano o simplemente mantener registros de las aves de un parque cercano
     con tu club de observación local, la forma de hacerlo es con Proyectos.
@@ -2597,7 +2598,7 @@ es:
   satellite: satélite
   save: Guardar
   save_all: Guardar todo
-  save_and_add_another: Guardar y agregar otro
+  save_and_add_another: Guardar y agregar otra
   save_and_continue: Guardar &amp; continuar...
   save_and_add_taxa: Guardar y comenzar a agregar las especies
   save_changes: Guardar cambios
@@ -2655,7 +2656,7 @@ es:
   select: Selecciona
   select_how_unobserved_listings_are_displayed: Selecciona como mostrar los listados
     de especies no observadas en la lista del proyecto
-  select_one_or_more_photos: Selecciona una o mas fotos
+  select_one_or_more_photos: Selecciona una o más fotos
   select_none: No seleccionar ninguno
   select_photos_from_your_photo_stream: Seleccionar fotos de Photostream para convertirlas
     en observaciones en %{site_name}. Nosotros completaremos la fecha, hora y ubicación
@@ -2663,7 +2664,7 @@ es:
     etiquetas.
   select_photos_to_display: Selecciona las fotos a mostrar
   selected: seleccionado(s)
-  selected_photos: Fotos seleccionada
+  selected_photos: Fotos seleccionadas
   selected_taxon: Grupo o especie seleccionada
   send: enviada(s)
   send_invite: Enviar invitación
@@ -2676,8 +2677,8 @@ es:
   separate_values_with_a_pipe: Valores separados por barras, por ejemplo "1-5|6-10|muchos"
     o "sí|no|tal vez"
   september: Septiembre
-  set_a_place_if_this_link_only_applies_to: Pon el lugar solo si la especie o grupo
-    se encuentra ese lugar. Déjalo en blanco si la especie o grupo aplica para cualquier
+  set_a_place_if_this_link_only_applies_to: Pon el lugar solo si el enlaze se refiere a la especie o grupo
+    en un lugar concreto. Déjalo en blanco si se refiere a cualquier
     parte del mundo.
   set_license: Fijar licencia
   settings: Propiedades
@@ -2686,7 +2687,7 @@ es:
     por
   sharing_settings: Compartiendo los ajustes
   short_code_for_this_place: Código corto para el país, ej. MX para México
-  short_or_abbreviated_title_for_display: Regularmente es una abreviatura del título
+  short_or_abbreviated_title_for_display: Normalmente es una abreviatura del título
     cuando el espacio es muy limitado (máximo 10 caracteres).
   show: Mostrar
   show_active_and_inactive_taxa: Muestra especies activas e inactivas
@@ -2743,7 +2744,7 @@ es:
   somewhere: En algun lugar...
   sorry_flickr_isnt_responding_at_the_moment: Lo sentimos, Flickr de momento no esta
     respondiendo.
-  sorry_how_about_we_try_repeat: ¡Lo sentimos ¿Por qué no tratamos de repetir su búsqueda
+  sorry_how_about_we_try_repeat: ¡Lo sentimos! ¿Por qué no tratamos de repetir su búsqueda
     en algunas de nuestras bases de datos o nombres de especies? Si encontramos algo,
     lo guardaremos para que pueda encontrarlo la próxima vez.
   sorry_one_of_those_flickr_photos_either_doesnt_exist_or: Lo sentimos, alguna de
@@ -3108,7 +3109,7 @@ es:
     un identificador padre. Es el identificador padre el que realmente queda guardado.
   this_is_a_more_convenient_way_to_find_a_taxon_id: Este es el camino más conveniente
     para encontrar el identificador de la especie o grupo. Este es el identificador
-    de la especie o grupo que quedará guardado. Esta búsqueda sólo funciona para especies
+    de la especie o grupo que quedará guardado. Esta búsqueda solo funciona para especies
     o grupos activos.
   this_is_taking_forever: Esto está tardando demasiado. Por favor inténtalo más tarde.
   this_job_failed_to_run: El proceso falló al ser procesado. Por favor contactanos
@@ -3123,7 +3124,7 @@ es:
     equivocado, la identificación está equivocada, una ocurrencia errante o una expansión
     del rango.
   this_photo_is_already_associated: Esta foto ya está asociada con una de sus observaciones.
-  this_place_has_no_check_list: Éste lugar no tiene lista de comprobación, por ende
+  this_place_has_no_check_list: Este lugar no tiene lista de comprobación, por tanto
     no hay guia
   this_species: esta especie
   this_species_has_no_colors: ¡Esta especie no tiene colores¡Ayude a mejorar las búsquedas
@@ -3320,7 +3321,7 @@ es:
   view: Ver
   view_all: Ver todo
   view_all_members: Ver todos los miembros
-  view_all_n: Ver todas las %{n}
+  view_all_n: Ver todos los %{n}
   view_all_observations: Ver todas las observaciones
   view_all_photocount_photos: Ver todas las %{photo_count} fotos
   view_all_photos_tagged_taxon_html: Ver todas las fotos etiquetadas %{taxon} en <nobr>Flickr
@@ -3409,7 +3410,7 @@ es:
   want_to_show_off_some_of_your_favorite_taxa: ¿Desea presumir algunos de sus taxones
     favoritos aquí?
   was_it_captive_cultivated?: ¿Fue cautiva / cultivado?
-  we_can_only_understand_csv_in: Sólo podemos entender CSV en el siguiente formato
+  we_can_only_understand_csv_in: Solo podemos entender CSV en el siguiente formato
   we_care_privacy: ¡Nos importa su privacidad!
   we_couldnt_find_a_user: No pudimos encontrar un usuario con esa dirección de correo.
   we_couldnt_find_a_user_with_that_activation_code: No pudimos encontrar ningun usuario
@@ -3460,7 +3461,7 @@ es:
   where_do_x_live: ¿Donde viven los %{taxa}?
   where_does_x_live: ¿Donde vive el %{taxa}?
   where_were_they?: <em>¿Dónde</em> se encontraban?
-  where_were_you?: <em>¿Dónde</em> estaba usted?
+  where_were_you?: ¿Dónde estabas?
   white: blanco
   widget: Widget
   widget_code: Código de widget
@@ -3515,7 +3516,7 @@ es:
     duda, comentario o simplemente ya no quieres ser un curador, contáctanos a
   you_are_over_your_invites_quota: '...ya has enviado más de 60 invitaciones este
     mes.'
-  you_are_now_following_x: Estas siguiendo a %{friend_user}.
+  you_are_now_following_x: Estás siguiendo a %{friend_user}.
   you_are_now_role_for_project_html: <strong>Ahora</strong> %{role} de %{project}
   user_is_now_role_for_project_html: <strong>%{user}</strong> es ahora %{role} de
     %{project}
@@ -3539,7 +3540,7 @@ es:
     pero no debería haber la necesidad de hacer eso.
   you_can_help_make_our: ¡Usted puede ayudar a que nuestras páginas de especies sean
     más útiles agregando datos Aquí hay algunas formas en las que puede ayudar
-  you_can_only_destroy_taxa_you_created: Sólo puede destruir taxones si los ha creado,
+  you_can_only_destroy_taxa_you_created: Solo puede destruir taxones si los ha creado,
     y no se pueden destruir los taxones que se están utilizando en los cambios de taxones.
   you_can_see_these_coordinates_because: Usted puede ver estas coordenadas porque
     usted cura uno de los proyectos a los cuales se agregó esta observación.
@@ -3591,8 +3592,7 @@ es:
   you_must_specify_and_confirm_a_new_password: Debes especificar y confirmar una nueva
     contraseña.
   your_name_was_saved: El nombre fue guardado.
-  you_need_to_have_linked_flickr_account: Debe tener una cuenta de Flickr vinculada
-    para etiquetar sus fotos.
+  you_need_to_have_linked_flickr_account: Para etiquetar tus fotos debes tener una cuenta de Flickr vinculada.
   you_need_to_select_at_least_one_photo: ¡Necesitas seleccionar al menos una foto!
   you_need_to_select_some_observations_first: Debe seleccionar algunas observaciones
     primero.
@@ -3636,7 +3636,7 @@ es:
   your_email_address: Tu dirección de correo electrónico
   your_flickr_account: su cuenta de Flickr
   your_flickr_photos_have_been_tagged: ¡Sus fotos de Flickr han sido etiquetadas!
-  your_hard_drive: Su disco duro
+  your_hard_drive: Tu disco duro
   your_home: Su página de inicio
   your_id: Su identificación
   your_identification: Su identificación
@@ -3670,7 +3670,7 @@ es:
     que la gente está
   youre_viewing_all_observations: Estás viendo todas las observaciones
   youre_viewing_site_name_observations_html: Estás viendo las observaciones de <strong>%{site_name}</strong>
-  youve_already_added_an_identification: ya agregó una identificación, y sólo puede
+  youve_already_added_an_identification: ya agregó una identificación, y solo puede
     agregar una
   youve_linked_your_inaturalist_picasa_account: Usted ha vinculado su cuenta de %{site_name}
     con su cuenta de Picasa. Esto le permitirá asociar sus fotos de Picasa con sus
@@ -3695,9 +3695,9 @@ es:
         custom_project_fields_warning: |-
           Por favor, tenga cuidado: la adición de Javascript y CSS a tu página
           de proyecto puede dañar seriamente el diseño de la página y,
-          potencialmente, permitir software malicioso a afectar a las personas
-          que visualizan la página. Si usted no sabe lo que es un en
-          particular trozo de código no, por favor no agregarlo.
+          potencialmente, permitir a software malicioso afectar a las personas
+          que visualizan la página. Si no sabes exactamente lo que es un
+          trozo de código, por favor no lo agregues.
     guides:
       index:
         funding_html: "Los fondos para el desarrollo de Guías fueron proporcionados por
@@ -3710,55 +3710,55 @@ es:
           vida.
       edit:
         add_eol_content: |-
-          Agregar contenido a la EOL taxa seleccionados como un lote. Esto
+          Agregar contenido de la EOL para seleccionar taxones en grupo. Esto
           puede llevar algún tiempo, así que por favor sea paciente.
         add_color_tags_help: |-
-          Agregar etiquetas de color de los colores asociados a los taxa
-          seleccionados en Bioexplorador.
-        add_rank_tags_help_html: "Añadir etiquetas rango de taxones en base a nuestra
-          taxonomía, por ejemplo, \n<code>familia=Laridae</code>\no\n<code>familia=Gaviotas
+          Agregar etiquetas de los mismos colores que los asociados a los taxones
+          seleccionados en iNat (Bioexplorador).
+        add_rank_tags_help_html: "Añadir etiquetas del rango de los taxones en base a nuestra
+          taxonomía, como por ejemplo, \n<code>familia=Laridae</code>\no\n<code>familia=Gaviotas
           y Aliados</code>"
         coordinates_desc: |-
           Dando unas coordenadas, su guía aparecerá en los resultados de
-          la búsqueda según la ubicación y las personas lo podrán ver.
+          la búsqueda según la ubicación y los usuarios lo podrán ver.
         eol_subjects_desc: |-
-          EOL publica el contenido en una serie de diferentes encabezamientos
-          de materia, no todos los cuales están disponibles para cada taxón.
-          La elección de "Panorama" se acaba de importar la primera sección de
-          texto disponible de EOL, que generalmente contiene un resumen cuando
-          esté disponible.
+          EOL publica el contenido en diferentes encabezamientos,
+          pero no todos están disponibles para cada taxón.
+          La elección de "Vista general" importa la primera sección de
+          texto disponible a EOL, que generalmente contiene un resumen del taxón (cuando
+          está disponible).
         eol_collection_desc_html: |-
           La <a href="http://eol.org/" target="_blank"> Enciclopedia de la
           Vida (EOL)</a> es un repositorio de información sobre la vida en la Tierra.
-          En EOL puede crear <a href="http://eol.org/info/252" target="_blank">colecciones</a>
-          de especies. Si desea importar las especies a partir de una
+          En EOL puedes crear <a href="http://eol.org/info/252" target="_blank">colecciones</a>
+          de especies. Si deseas importar las especies a partir de una
           colección de EOL, pega la URL de esa colección aquí.
         guide_place_desc: |-
           Asociar su guía con un lugar permitirá que aparezca en
           la búsqueda de lugares, y se mostrarán los límites del lugar en los mapas de
           %{site_name}, los que se muestran cuando un límite se ha
           establecido (por ejemplo, la vista "tarjeta", las páginas del taxón,
-          etc.)
+          etc.).
         licensing_explanation: |-
           La obtención de la licencia garantiza a otras personas el
           derecho de copiar y modificar los contenidos sin pedirte permiso. Esto hace que sea
-          mucho más fácil compartir tu trabajo, y si se incorporan
+          mucho más fácil compartir con los demás tu trabajo, y si se incorporan
           contenidos de otras fuentes que también usan licencias de
-          Creative Commons ShareAlike (como por ejemplo Wikipedia), tú estarás legalmente
+          Creative Commons ShareAlike (como por ejemplo Wikipedia), estarás legalmente
           obligado a utilizar una licencia similar. He aquí un resumen de
           todas las licencias de Creative Commons y su significado: 
         paste_note_html: |-
-          Pegue un máximo de 500 nombres de especies, uno por línea.
+          Añada aquí un máximo de 500 nombres de especies, uno por línea.
           %{site_name} hará todo lo posible para reconocer los nombres
           comunes de las especies, aunque para evitar la ambigüedad
-          recomendamos usar los nombres científicos. Si desea especificar los
-          dos, separe el nombre científico del nombre común con una coma,
+          recomendamos usar los nombres científicos. Si deseas especificar los
+          dos, separa el nombre científico del nombre común con una coma,
           como <code>Homo sapiens, humano</code>.
         places_note: |-
           Nota: no todos los lugares tienen listas de comprobación con taxones.
           Si estás teniendo problemas para encontrar un lugar con
           taxones, intenta elegir áreas más grandes con las fronteras
-          políticas, como naciones, estados, provincias o condados.
+          políticas, como naciones, estados, provincias o comarcas.
         replace_existing_eol_desc: Eliminar el contenido existente antes de importar
           desde EOL
         place_choose_taxon_note: Si quieres concretar
@@ -3766,24 +3766,24 @@ es:
       eolupdate_notice: Por favor, sea paciente, importar contenido desde EOL puede
         tomar un minuto o dos.
       show:
-        draft_desc: Esta guía sólo será visible para las personas que pueden editar
-          hasta que lo publique.
+        draft_desc: Esta guía solo será visible para las personas que la pueden editar
+          hasta que la publiques.
       generating_mobile_archive_tip_html: Esto puede llevar un tiempo, así que prueba
         a actualizar esta página en unos pocos minutos.
-      mobile_downloads_tip_html: Esta guía se puede descargar en el <a href="%{iphone_url}">
-        aplicación para el iPhone </ a> para uso sin conexión.
+      mobile_downloads_tip_html: Esta guía se puede descargar en <a href="%{iphone_url}">
+        aplicación para el iPhone </ a> para usarla sin conexión.
       mobile_downloads_help_html: |-
         <p>
           Se creará un archivo descargable de todos los datos y los medios
           de comunicación asociados con esta guía para que los usuarios de
           iPhone puedan ver todo el contenido de la guía sin una conexión a
-          Internet. Generar el archivo tomará unos minutos, pero una vez
-          se habilite el archivo éste se actualizará cada vez que cambie
+          Internet. Generar el archivo tardará unos minutos, pero una vez
+          se habilite el archivo este se actualizará cada vez que cambie
           la guía.
         </p>
         <p class="alert error status">
-          Por favor <strong>no permiten descargas móviles fuera de línea a
-          menos que realmente tengan intención de utilizarlos</strong> puesto que
+          Por favor <strong>no permita descargas móviles fuera de línea a
+          menos que realmente tenga intención de utilizarlas</strong> puesto que
           representa una carga considerable para nuestro sistema.
         </p>
       pdf_layouts:
@@ -3791,16 +3791,16 @@ es:
         book: libro
         journal: revista
       pdf_layout_notes:
-        grid: Rejilla de imágenes individuales, no hay descripciones
-        journal: Página de Split, info especies a la izquierda, espacio para notas
-          a la derecha. Info Especies se truncará para que quepa en la página.
+        grid: Cuadrícula de imágenes individuales, sin descripciones
+        journal: Página partida, con la información de las especies a la izquierda y espacio para notas
+          a la derecha. La información de las especies se truncará para que quepa en la página.
         book: Guía completa incluyendo todas las fotos y descripciones, que abarcan
           varias páginas.
-      pdf_generation_notice: Por favor sea paciente, lo que genera grandes archivos
+      pdf_generation_notice: Por favor sea paciente, gererar grandes archivos
         PDF puede tomar un minuto o dos.
       tags_help_html: "Las etiquetas son como las categorías para la especie en su
-        guía,\nexcepto las especies de mulitple pueden tener la misma etiqueta.\nIntroducir
-        etiquetas como una lista separada por comas aquí, por\nejemplo, <code>pequeño,peludo</code>.
+        guía,\nvarias especies pueden tener la misma etiqueta.\nIntroduzca
+        etiquetas como una lista separadas por comas, como por\nejemplo, <code>pequeño,peludo</code>.
         Para agregar categorías con\nnombre, utilice etiquetas como <code>NOMBRE=valor</code>,
         \npor ejemplo, <code>color=amarillo</code>."
       sorts:
@@ -3813,6 +3813,11 @@ es:
           y 1 mapa de EOL.
         site_explanation: Añadir un nombre común, hasta 5 imágenes con licencia, y
           un resumen de Wikipedia %{site_name}.
+      show:
+        reuse_desc: |
+          Puedes copiar este taxón en otra guía. Si eres uno de los editores de esta guía
+          lo podrás copiar todo, pero si no lo eres solo podrás copiar el
+          contenido con licencia.
     help:
       index:
         welcome_message_html: "Hola! Si apenas estas empezando a usar %{site_name},
@@ -3988,7 +3993,7 @@ es:
         what_is_the_quality_assessment: ¿Cuál es la valoración de calidad y como se
           pueden calificar las observaciones para obtener el grado de "investigación"?
         what_is_a_life_list?: ¿Qué es una lista de vida?
-        just_a_simple_list: Sólo una simple lista de taxones con ningún comportamiento
+        just_a_simple_list: Solo una simple lista de taxones con ningún comportamiento
           especial.
         automatically_updates_based_on_your_observations: |-
           Actualiza automáticamente basándose en sus observaciones. Todo el mundo en %{site_name}
@@ -4016,7 +4021,7 @@ es:
           %{site_name} usuarios también pueden agregar listas de verificación adicionales a los lugares, pero
           estas listas de verificación no se actualizan automáticamente. Ellos principalmente
           proporcionan una forma para que la gente traer fuentes externas de datos o
-          sólo la lista de las cosas en base a su propia experiencia.
+          solo la lista de las cosas en base a su propia experiencia.
         is_a_list_of_every_species_that_you_have_seen: "Una lista de la vida es una
           lista de todas las especies que han visto. Todos los %{site_name}\nusuario
           tiene una vida lista y estas listas se rellenan automáticamente a partir
@@ -4028,69 +4033,83 @@ es:
           no serán agregadas a esta \nlista si %{site_name} no reconoce el nombre
           que has usado.  Te \nrecomendamos intentar usar nombres alternativos que
           podamos reconocer."
+    listed_taxa:
+      establishment_field:
+        confirmation: |
+          ¿Estás seguro? Esto cambiará los medios establecidos para TODOS
+          los taxones que pertenecen a lugares dentro de esta web.
+          Podrías estar deshaciendo mucho trabajo.
+        description_html: |
+          Esto cambiará los medios establecidos de <em>todas</em> las entradas de
+          este taxón en las listas de todos los lugares descendientes de 
+          <a href="%{place_url}">%{place_name}</a> 
+          en <strong>"%{establishment_means}"</strong>. Solamente los
+          curadores pueden usarlo. Cambiar los medios establecidos a
+          "introducidos" tendrá aproximadamente el mismo efecto,
+          pero los valores ya existentes no cambiarán, solo los que están en blanco.
     lists:
       new:
         place_desc: |-
           Rellena automáticamente esta lista con los taxones observados en este lugar.
-          Sólo puedes elegir lugares que tienen límites.
+          Solo puedes elegir lugares que tienen límites.
       show:
         project_list_desc: Las listas de proyectos incluyen taxones agregados manualmente
-          por los curadores del proyecto y taxa verificados por observaciones con
-          grado de investigacion agregadas al proyecto.
+          por los curadores del proyecto y taxones verificados por observaciones con
+          grado de investigacion que se encuentran agregadas al proyecto.
     observations:
       copy_tip: Añadir una nueva observación copiando la fecha de esta observación,
         el lugar, las fotos y los campos de observación.
       captive_help_html: |-
-        Fue el organismo que observó <strong>cultivado</strong> o en <strong>cautividad</strong>? Por ejemplo,
-        estaba en <strong>un jardín, zoológico, el acuario</strong> o alguna otra situación en
-        la que sólo estaba presente <strong>porque los seres humanos destinados a
-        estar allí</strong>? Todas las observaciones de los seres vivos son
-        bienvenidos, pero nos gustaría saber cuando las cosas no son salvajes
-        / naturalizado.
+        ¿Fue el organismo que observó <strong>cultivado</strong> o en <strong>cautividad</strong>? Por ejemplo,
+        ¿estaba en <strong>un jardín, zoológico, el acuario</strong> o alguna otra situación en
+        la que solo estaba presente porque los seres humanos lo destinaron a
+        estar allí? Todas las observaciones de los seres vivos son
+        bienvenidas, pero nos gustaría saber cuándo las cosas no son salvajes
+        / naturalizadas.
       export:
         choose_columns_desc: Elija las columnas que desea exportar
         create_a_query_desc_html: |-
-          Crear una consulta de observación igual que lo haría en otro lugar
-          en el sitio. También puede cortar y pegar una URL observaciones
-          desde otra parte del sitio. Debe especificar un
-          <strong>taxón</strong>, <strong>lugar</strong>, <strong>de
-          usuario</strong>, <strong>proyecto</strong>, o <strong>consulta de
+          Crea una consulta de observación de la misma forma que en otro lugar
+          de la web. También puedes cortar y pegar una URL de observaciones
+          desde otra parte de la página. Debes especificar un
+          <strong>taxón</strong>, un <strong>lugar</strong>,un <strong>usuario</strong>,
+          un <strong>proyecto</strong>, o una <strong>consulta de
           búsqueda</strong>.
-        query_placeholder: Elija los parámetros de consulta a continuación o pegar
-          en un URL observaciones
-        taxon_extras_help_html: 'Nota: estas columnas se ralentizará la generación
-          de su exportación'
+        query_placeholder: Elija los parámetros de consulta a continuación o pega una
+          URL de observaciones
+        taxon_extras_help_html: 'Nota: estas columnas ralentizarán la generación
+          de la exportación'
         geo_help_html: |-
           Ciudad, condado, estado, campos de país sobre la base de
           coordenadas. Niveles administrativos análogos serán utilizados para
-          las observaciones en las que no se aplican este tipo de lugar. Los
-          campos private_ * sólo se incluirán cuando se utiliza el filtro de
-          usuario y usted es el usuario, o cuando se utiliza el filtro de
-          proyecto y te cura el proyecto.
+          las observaciones en las que no se aplican estos tipos de lugar. Los
+          campos private_ * solo se incluirán cuando se utilice un filtro de
+          usuario y tú seas este usuario, o cuando se utilice un filtro de
+          proyecto y tú seas el curador del proyecto.
         be_patient: |-
-          Por favor, sea paciente, esto puede tardar algunos minutos. Si esto
-          está tomando demasiado tiempo, puede
+          Por favor, sea paciente, esto puede tardar algunos minutos. Si
+          está tomando demasiado tiempo, puedes
         check_back: |-
-          Si vuelve a cargar esta página dentro de unos minutos su exportación
-          debe aparecer en la lista en la parte inferior de la página.
-        receive_an_email_with_your_data: Recibir un email con sus datos
-        receive_an_email_with_your_data_help: Usted recibirá un correo electrónico
-          con su exportación como un archivo adjunto.
-        well_email_you: Ok, le enviaremos un mensaje cuando esté listo.
-        taking_a_while: Esto está tomando un tiempo. Por favor, intente una de las
+          Si vuelves a cargar esta página dentro de unos minutos tu exportación
+          deberá aparecer en la lista de la parte inferior de la página.
+        receive_an_email_with_your_data: Recibir un email con tus datos
+        receive_an_email_with_your_data_help: Recibirás un correo electrónico
+          con la exportación como un archivo adjunto.
+        well_email_you: Ok, te enviaremos un mensaje cuando esté listo.
+        taking_a_while: Esto está tomando un tiempo. Por favor, intenta una de las
           siguientes opciones.
       field_descriptions:
         id: Identificador único para la observación
         species_guess: Nombra al observador que incluyó el taxón observado
-        scientific_name: Nombre científico del taxón observado de acuerdo a este sitio
-        common_name: Nombre común del taxón observado de acuerdo a este sitio
+        scientific_name: Nombre científico del taxón observado de acuerdo con este sitio
+        common_name: Nombre común del taxón observado de acuerdo con este sitio
         iconic_taxon_name: Categoría taxonómica de nivel superior para el taxón observado
         taxon_id: Identificador único para el taxón observado
         id_please: Haya o no el observador solicitado ayuda para la identificación
         num_identification_agreements: Número de identificaciones que coinciden con
-          la identificación del observador
+          la del observador
         num_identification_disagreements: Número de identificaciones en conflicto
-          con la de identificación del observador
+          con la del observador
         observed_on_string: Fecha/hora registrada por el observador
         observed_on: Fecha normalizada de observación
         time_observed_at: Fecha normalizada de observación
@@ -4099,10 +4118,10 @@ es:
         latitude: Latitud visible públicamente
         longitude: Longitud visible públicamente
         positional_accuracy: Precisión de las coordenadas
-        private_latitude: Latitud privada, selecciona si la observación es privada
-          o está oscurecida
-        private_longitude: Longitud privada, selecciona si la observación es privada
-          o está oscurecida
+        private_latitude: Latitud oculta, selecciona si la observación es oculta
+          o difusa
+        private_longitude: Longitud oculta, selecciona si la observación es oculta
+          o difusa
         out_of_range: Si la observación entra o no dentro del área geográfica conocida
           del taxón
         user_id: Identificador único para la observación
@@ -4117,39 +4136,58 @@ es:
         tag_list: Lista de etiquetas separadas por comas
         positioning_method: Cómo se determinaron las coordenadas
         positioning_device: Dispositivo usado para determinar las coordenadas
+      import:
+        coordinate_systems_help: |
+          %{site_name} acepta coordenadas de diferentes sistemas de coordenadas,
+          por lo que cuando añades coordinadas en un sistema diferente al de
+          latitud / longitud, necesitamos saber qué sistema estás
+          usando para poder interpretarlas correctamente. Por favor, asegúrate de que
+          has escogido el sistema de coordenadas correcto para tus datos, o la localidad
+          acabará en un lugar muy legano al real. Si tus coordenadas
+          provienen de una unidad GPS, consulta su configuración para buscar el nombre
+          del sistema de coordenadas que usa. Fíjate que nosotros no guardamos dichas
+          las coordenadas, sino solo su conversión a latitud / longitud.
+        project_csv_template_notice_html: |
+          Hay un documento plantilla para este proyecto que quizás te ayude con la estructura del documento CSV.
+          <a href="%{url}">Descargar plantilla</a>
       show:
         community_taxon_desc_html: |-
           <p class="ui">
-          El taxón comunitario (o la identificación por la comunidad) representa qué taxón %{site_name} la comunidad piensa que es representado en una observación. Si está interesado en cómo seleccionamos un taxón comunitario consulta las notas sobre el algoritmo de abajo, pero en general, tratamos de <strong>elegir un taxón con un acuerdo de más de 2/3 de los identificadores. A veces esto significa que la elección de un nivel superior de taxón que contiene un número de desacuerdos (por ejemplo, tú piensas que es una culebra rey y yo creo es la serpiente de cascabel, así NaturaLista elige el suborden Serpentes que contiene a todas las serpientes). El algoritmo también favorece ligeramente la disidencia, porque hemos encontrado que los disidentes a menudo tienen razón.
+          El taxón comunitario (o la identificación por la comunidad) representa qué taxón de %{site_name} la comunidad piensa que es representado en una observación. Si está interesado en cómo seleccionamos un taxón comunitario consulta las notas sobre el algoritmo de abajo, pero en general, tratamos de <strong>elegir un taxón con un acuerdo de más de 2/3 de los identificadores. A veces esto significa que la elección de un nivel superior de taxón que contiene un número de desacuerdos (por ejemplo, tú piensas que es una culebra rey y yo creo es la serpiente de cascabel, así Natusfera elige el suborden Serpentes que contiene a todas las serpientes). El algoritmo también favorece ligeramente la disidencia, porque hemos encontrado que los disidentes a menudo tienen razón.
           </p>
           <p class="ui">
-          El taxón comunitario es el taxón que utilizamos a la hora de compartir observaciones con socios, enlazando las observaciones de un mismo taxón en el sitio, actualizando tu lista de vida, etc. Si por alguna razón no estás de acuerdo con el taxón comunitario puedes rechazarlo, lo que significa que tú identificación es la que se utiliza para vincular a otras observaciones, actualización tu lista de vida, etc. También significa que tú observación sólo puede tener grado de investigación cuando la comunidad está de acuerdo <em>contigo</em>. Si no te gusta la idea de taxón comunitario, puedes optar para salirte de ellos totalmente <a href="/users/editar" target="_blank">editando tu configuración</a>.
+          El taxón comunitario es el taxón que utilizamos a la hora de compartir observaciones con socios, enlazando las observaciones de un mismo taxón en el sitio, actualizando tu lista de vida, etc. Si por alguna razón no estás de acuerdo con el taxón comunitario puedes rechazarlo, lo que significa que tú identificación es la que se utiliza para vincular a otras observaciones, actualizaciones tu lista de vida, etc. También significa que tu observación solo puede tener grado de investigación cuando la comunidad está de acuerdo <em>contigo</em>. Si no te gusta la idea del taxón comunitario, puedes optar para salirte de ellos totalmente <a href="/users/editar" target="_blank">editando tu configuración</a>.
           </p>
           <p class="ui">
-           <strong>El algoritmo:</strong> para todos los taxones identificados y los taxa que contienen (por ejemplo, género <i>Homo</i> contiene <i>Homo sapiens</i>), toma la puntuación
-          de cada uno como el cociente entre el número acumulado de  identificaciones para cada taxón sobre la suma de las identificaciones acumuladas, el número más conservador de identificaciones añadido después de la primera identificación para ese taxón, y el número de identificaciones que son completamente diferentes (por ejemplo, identificaciones de taxa que no contienen el taxón que se está evaluando). Para los taxa identificados con un valor sobre 2/3 y por lo menos con 2 identificaciones, selecciona el taxón con el rango más bajo.
+          <strong>El algoritmo:</strong> para todos los taxones identificados y los taxones que estos contienen (por ejemplo, el género <i>Homo</i> contiene <i>Homo sapiens</i>), toma la puntuación
+          de cada uno como el cociente entre el número acumulado de identificaciones para cada taxón sobre la suma de las identificaciones acumuladas, el número más conservador de identificaciones añadido después de la primera identificación para ese taxón, y el número de identificaciones que son completamente diferentes (por ejemplo, identificaciones de taxones que no contienen el taxón que se está evaluando). Para los taxones identificados con un valor sobre 2/3 y por lo menos con 2 identificaciones, selecciona el taxón con el rango más bajo.
         identification_count_desc: '# de identificaciones para un taxon individual'
-        cumulative_count_desc: '# de identificacies para un taxón individual y todos
+        cumulative_count_desc: '# de identificaciones para un taxón individual y todos
           sus descendientes'
-        disagreement_count_desc: nº de taxa identificados que no están entre los ancestros
-          de un  taxón
-        ancestor_disagreements_desc: nº de taxones identificados que estan entre los
+        disagreement_count_desc: nº de taxones identificados que no están entre los ancestros
+          de un taxón
+        ancestor_disagreements_desc: nº de taxones identificados que están entre los
           ancestros de un taxón pero que fueron creados después de la primera identificación
           usando este taxón
         score_desc: puntuación = número acumulado / (conteo acumulado + conteo de
           desacuerdos  + desacuerdos de ancestros)
-        flagged_photos_desc_html: "Algunas de estas fotos se han marcado para contenido
-          inapropiado o \nlas infracciones de derechos de autor. Para más detalles
+        flagged_photos_desc_html: "Algunas de estas fotos se han marcado como contenido
+          inapropiado o \npor infracciones de derechos de autor. Para más detalles
           ver %{links}"
+      user_stats:
+        user_stats_desc: |
+          Las estadísticas de los usuarios están limitadas a un máximo de 500 por el recuento de observaciones
+          o el recuento de especies, por lo que el total listado normalmente es ligeramente superior
+          a 500, puesto que las dos listas probablemente no contengan los mismos usuarios.
     observation_fields:
       about_editing_observation_fields_desc_html: |-
         <p class='ui'>
-          Usted puede editar este campo de observación, porque ha creado o
-          porque eres un curador sitio. Si usted es un curador sitio, por
+          Puedes editar este campo de la observación, porque la creaste o
+          porque eres un curador del sitio. Si eres un curador, por
           favor, siga estos directrices
         </p>
         <ol>
-          <li>No haga cambios de nombres arbitrarios (por ejemplo, cambio de "comer" a la "libación")</li>
+          <li>No hagas cambios arbitrarios de nombres (por ejemplo, cambio de "comer" por "alimentar")</li>
           <li>
             Tenga en cuenta que los campos de observación se pueden utilizar
             para las observaciones de cualquier taxón, así que trate de no
@@ -4157,246 +4195,271 @@ es:
           </li>
           <li>No elimine los campos que la gente está utilizando</li>
           <li>
-            No traducir nombres de campo existentes en diferentes idiomas.
-            Inglés es la lengua franca de este sitio. Si realmente quieres un
+            No traduzca nombres de campo existentes en diferentes idiomas.
+            El inglés es la lengua base de este sitio. Si realmente quieres un
             campo que encapsula el mismo concepto pero en otro idioma, por
             favor haga un nuevo campo de observación.
           </li>
         </ol>
-      dna_help: "Per habilitar la funcionalitat corresponent codi de barres d'ADN
-        BOLD, assegureu-vos que el seu \nnom de camp inclou les paraules \"COI\",
-        \"COX1\", \"els seus\", o \"matK\" \ncorresponent al gen aquesta objectius
-        de camp."
+      dna_help: "Para habilitar la funcionalidad correspondiente al código de barras de BOLD ADN,
+        asegúrate de que tu \nnombre de campo incluye las palabras \"COI\",
+        \"COX1\", \"ITS\", o \"matK\" \ncorrespondiente al gen al que el campo se dirige."
       merge:
         warning_html: |-
-          Por favor se respetuoso con los datos de otras personas y <strong>habla con el creador de un campo de observación, antes de una fusión</strong>. Esta herramienta destruirá el
-          campo de observación que se va a combinar y moverá todas las observaciones al campo mantenido. <strong>Este proceso no se puede deshacer</strong>, así que ten cuidado..
+          Por favor sea respetuoso con los datos de otras personas y <strong>habla con el creador del campo de observación antes de fusionarlo con otro campo</strong>. Esta herramienta destruirá el
+          campo de observación que se va a combinar, y moverá todas las observaciones al campo mantenido. <strong>Este proceso no se puede deshacer</strong>, así que ten cuidado..
     emailer:
       observations_export_notification:
-        your_observations_export_is_ready_html: Tus observaciones de exportación están
-          listas. Hay una copia  adjunta a este correo, o puedes <a href="%{url}">descargar
+        your_observations_export_is_ready_html: La exportación de tus observaciones está
+          lista. Tienes una copia  adjunta al correo, o puedes <a href="%{url}">descargar
           tu exportación</a>.
+      bulk_import_success:
+        success_message: |
+          La mayor parte de tu importación de %{filename} ha sido completada. Tus observaciones
+          ahora se están procesando y próximamente ya serán a la web.
+      bulk_import_error:
+        taxon_spelling_notice_html: |
+          Por favor, comprueba la escritura de cada entrada. Si está todo correcto,
+          busca las especies en %{search_taxa_url}. Si algún nombre aún no está en
+          la base de datos de %{site_name}, tendrás que añadirlo antes subirlo.
+          Para importar nombres nuevos, puedes usar el cuadro de la parte inferior
+          de la página de búsqueda.
     photos:
       inviter:
         automatically_add_to_project: Añadir automáticamente al proyecto
         automatically_id_the_new_obs_as: Automáticamente el ID del nuevo observación
           como
-        dont_forget_the_invite_link_placeholder: no se olvide de incluir el {{INVITE_LINK}}
-          marcador de posición
-        invite_other_photographers_to_inat: Invitar a otros fotógrafos %{site_name}
-        invite_your_friends_description: "Usted puede facilitar que otras personas
-          agreguen sus fotos en Flickr como \nobservaciones %{site_name}. Sólo déjeles
+        dont_forget_the_invite_link_placeholder: no te olvides de incluir el marcador de posición {{INVITE_LINK}}
+        invite_other_photographers_to_inat: Invitar a otros fotógrafos a %{site_name}
+        invite_your_friends_description: "Puedes facilitar que otras personas
+          agreguen sus fotos en Flickr como \nobservaciones de %{site_name}. Simplemente déjeles
           un comentario incluyendo este \nvínculo de invitación especial.  También
-          puede preseleccionar un taxón y \nproyecto para la observación nueva."
+          puedes preseleccionar un taxón y \nun proyecto para la nueva observación."
       show:
         view_original_html: |-
           Puedes ver el original en <a href="%{url}">%{url}</a>. Por favor
           deja sin resolver las advertencias de violación de derechos de autor si esta foto viola los derechos de autor.
     places:
-      kml_field_desc: KML de la frontera del lugar. Puedes hacer una utilizando  Google
+      kml_field_desc: KML de la frontera del lugar. Puedes hacer una utilizando Google
         Maps, Google Earth o la mayoría de las aplicaciones de SIG. Debes tener al
-        menos un polígono de menos de 1 MB (5 MB para los curadores de sitio).
+        menos un polígono y que sea de menos de 1 MB (5 MB para los curadores de sitio).
       edit:
         complex_boundary_note_html: Este límite es demasiado complejo para editar
           en la web. Sin embargo, puedes <a href="%{url}">descargar el archivo KML</a>,
           editarlo en una aplicación de SIG, y subir tu KML editado directamente.
-        admin_level_desc: Sólo se debe establecer para los organismos políticos. En
-          términos de equivalentes de Estados Unidos, 0 = país, 1 = estado, 2 = condado,
+        admin_level_desc: Solo se debe establecer para los organismos políticos. En
+          términos equivalentes de Estados Unidos, 0 = país, 1 = estado, 2 = condado,
           3 = ciudad
       index:
         adding_new_places: la adición de nuevos lugares
         confirming_identifications: la confirmación de identificaciones
         filling_out_checklists: la actualización de listas de verificación para los
           lugares que conoces bien
-        you_can_help_out_by: Usted puede ayudar a mejorar nuestros datos de lugares
+        you_can_help_out_by: Puedes ayudar a mejorar nuestros datos de lugares
           mediante
       new:
         check_list_note: 'Nota: Las listas de verificación se desactivan automáticamente
-          para sitios muy grandes.'
-        coordinates_desc: Debes especificar las coordenadas si no dibujas un límite
-          o subes un archivo KML.
-        map_instruction: Utilice la herramienta de polígono para dibujar el contorno
+          para lugares muy grandes.'
+        coordinates_desc: Si no dibujas un límite
+          o subes un archivo KML debes especificar las coordenadas.
+        map_instruction: Utilice la herramienta de polígono para dibujar el contorno del
           lugar.
     projects:
       edit:
-        bioblitz_create_a_new_place_html: '%{link}, make sure it has a boundary, then
-          come back here and try again.'
+        bioblitz_create_a_new_place_html: '%{link}, asegúrate de que tiene límites, y luego
+          inténtalo de nuevo.'
         bioblitz_desc_html: |-
           <p>
-            A bioblitz is an event where you try to get people to observe as many
-            species as possible within a given place and time period. It's a fun
-            way to introduce people to biodiversity while collecting valuable
-            data at the same time.
+            Un Bioblitz es un evento en el que la gente intenta observar tantas
+            especies como puede en un lugar i un tiempo determinados. Es una manera
+            divertida de introducir a la ciudadanía a la biodiversidad y a la vez permite
+            conseguir información válida. A diferencia de los proyecots convencionales, los Bioblitz
+            acumulan datos de <em>todas</em> las obervaciones hechas en el lugar y tiempo
+            especificados, por lo que los participantes no necesitan
+            agregarse al proyecto ni añadir sus o observaciones explícitamente al
+            proyecto.
           </p>
         cover_desc: |-
-          Imagen de banner opcional que aparecerá en la parte superior de la
-          página del proyecto. Debe ser 950px de ancho, menos de 400px de
+          Imagen opcional que aparecerá en la parte superior de la
+          página del proyecto. Debe ser de 950px de ancho, y menos de 400px de
           alto.
         custom_project_fields_means: |-
-          Permite modificar el baner del proyecto, añadir contenido a la parte
+          Permite modificar el banner del proyecto, añadir contenido a la parte
           derecha del proyecto y poner un poco de estilo para una mejor visión.
-        end_time_desc: Terminar la hora para su bioblitz. Debe ser inferior a un año
+        end_time_desc: Hora límite para el bioblitz. Debe ser inferior a un año
           después de la hora de inicio
         event_url_desc: |-
-          URL de un servicio de registro de evento que está utilizando para su bioblitz.
+          URL de un servicio de registro para un evento que estás utilizando para tu Bioblitz.
           Si se trata de una URL Eventbrite que incluye un identificador numérico, vamos a
-          incluir un widget de inscripción en su página de proyecto hasta su bioblitz
+          incluir un widget de inscripción en tu página de proyecto hasta el Bioblitz
           comienza.
         icon_desc: Se recortará a un cuadrado
         project_assets_desc_html: |-
-          <p class="description"> Activos del Proyecto en sí ACABA de Archivos Asociados estafa do Proyecto, aire ALGUNAS reglas Especiales: </p>
+          <p class="description"> Los recursos del proyecto son simplemente documentos asociados a tu proyecto, con algunas reglas especiales:Activos del Proyecto en sí ACABA </p>
           <ol class="description">
             <li>
-              archivos que terminan en <code>.logo.jpg</code>,
-              <code>.logo.png</code>, etc será utilizado como logotipo del
-              proyecto en la página del proyecto en lugar del icono de
+              Los archivos que terminan en <code>.logo.jpg</code>,
+              <code>.logo.png</code>, etc. serán utilizados como logotipo del
+              proyecto en la página del proyecto, en lugar del icono de
               proyecto
             </li>
-            <li>archivos KML y KMZ se añadirán al mapa en la página del proyecto</li>
+            <li>Los archivos KML y KMZ se añadirán al mapa en la página del proyecto</li>
           </ol>
         rules:
           captive: ser cautivo/cultivada
-          wild: ser salvaje/naturalizó
+          wild: ser salvaje/naturalizado
           georeferenced: tener coordenadas
           has_media: tener medios (foto o sonido)
           has_a_photo: tener una foto
           has_a_sound: tener un sonido
           identified: ser identificado
-          in_taxon: estar en taxón
-          observed_in_place: ser observado en su lugar
-          on_list: ser de un taxón en la lista de proyectos
-        start_time_desc: Hora de inicio para su bioblitz
+          in_taxon: estar en un taxón
+          observed_in_place: ser observado en el lugar
+          on_list: ser de un taxón de la lista de proyectos
+        start_time_desc: Hora de inicio para el Bioblitz
         trusted_project_means: |-
           Cuando un projecto está verificado, los curadores y gerentes del
-          proyecto pueden crear, actualizar y borra sus recursos del proyecto.
+          proyecto pueden crear, actualizar y borrar sus recursos del proyecto.
       invite:
         description_html: |-
-          <h3>Acerca de las unvitaciones</h3>
+          <h3>Acerca de las invitaciones</h3>
           <p class="ui">
            Invitar a la gente a tu proyecto es un poco diferente que invitar observaciones individuales. Al invitar gente
           </p>
           <ol>
-           <li>Se enviará un correo electrónico invitándolo a unirse a tú proyecto</li>
-           <li>Mostrará una invitación en su tablero</li>
-           <li>Les permitirá unirse a tú proyecto, si se ha designado como proyecto por invitación </li>
+           <li>Se enviará un correo electrónico invitándolo a unirse a tu proyecto</li>
+           <li>Se mostrará una invitación en su tablero</li>
+           <li>Se les permitirá unirse a tu proyecto, si se ha designado como proyecto por invitación </li>
           </ol>
           <p class="ui">
-           Sólo los curadores del proyecto puede invitar a la gente a unirse a un proyecto. Puedes buscar a la gente por su nombre de usuario de Naturalista o
-          por su dirección completa de correo electrónico, suponiendo que la tenemos en archivo.
+           Solo los curadores del proyecto pueden invitar a la gente a unirse a un proyecto. Puedes buscar a la gente por su nombre de usuario de Natusfera o
+           por su dirección completa de correo electrónico, suponiendo que la tenemos.
           </p>
       join:
-        invite_only_description: La membresía en este proyecto es sólo por invitación.
+        invite_only_description: Solo se puede formar parte de este proyecto por invitación.
           Si quieres unirte, por favor ponte en contacto con uno de los curadores
           y solicita una invitación.
       members:
-        bioblitz_notice_html: <strong>Nota:</strong> esta es sólo una lista de gente
+        bioblitz_notice_html: <strong>Nota:</strong> esta es solo una lista de gente
           que se sumaron a este proyecto explícitamente. Dado que este es un proyecto
-          de "bioblitz" (evaluación rápida) y las estadísticas se calculan para todas
+          de Bioblitz y las estadísticas se calculan para todas
           las observaciones agregadas dentro de un determinado lugar y periodo de
           tiempo, puede haber muchos más participantes de los que se enumeran aquí.
       show:
-        bioblitz_results_desc_html: "<p>\n A diferencia de los proyectos, los eventos
-          de \"bioblitzes\" (evaluaciones rápidas) exhiben estadísticas con las \nobservaciones
-          de <em>todos</em> dentro de un lugar y período de tiempo, y no sólo las
+        bioblitz_results_desc_html: "<p>\n A diferencia del resto de proyectos, los eventos
+          de Bioblitz exhiben estadísticas con <em>todas</em> las \nobservaciones
+          de dentro de un lugar y período de tiempo, y no solo las
           observaciones que las personas agregan intencionalmente para el proyecto.
           Esto es con el fin de quitar el obstáculo de unirse a un proyecto para contribuir
           a las estadísticas de estos eventos.\n</p>\n<p> \nTen en cuenta que mientras
           que este tipo de proyecto muestra estadísticas para las observaciones que
           no se han añadido intencionadamente para el proyecto, no permite a los curadores
-          ver las coordenadas de las observaciones privadas u ocultas o asume que
+          ver las coordenadas de las observaciones ocultas o difusas ni asumir que
           los observadores están de acuerdo con las condiciones del proyecto. Si eres
-          de curador de un proyecto y necesitas acceso a coordenadas privadas necesitas
-          que los participantes estén de acuerdo con las condiciones del proyecto
-          o si quieres que las observaciones sean contadas en la lista curada del
+          curador de un proyecto y necesitas acceso a coordenadas ocultas necesitas
+          que los participantes estén de acuerdo con las condiciones del proyecto,
+          o si quieres que las observaciones sean contadas en la lista concreta del
           proyecto asegúrate de que los participantes se unan al proyecto y añadan
           sus observaciones como lo harían en un proyecto normal.\n</p>"
         project_observations_desc: |-
-          Este sólo incluye observaciones explícitas añadidas a este
+          Esto solo incluye observaciones explícitas añadidas a este
           proyecto, no todas las observaciones registradas en el lugar y tiempo de este eventos.
         curated_checklist_desc: |-
-          Esta es la lista curada y conteo de taxa a partir de las observaciones explícitas añadidas a este proyecto, no son todas las observaciones registradas en el lugar y tiempo de este
+          Esta es la lista de comprobación y conteo de taxones a partir de las observaciones explícitas añadidas a este proyecto, no son todas las observaciones registradas en el lugar y tiempo de este
           evento.
+    shared:
+      spam:
+        message_for_owner_and_curators_html: |
+          Este registro se ha marcado como spam y ya no es visible públicamente.
+          Tú puedes verlo porque lo creaste o porque eres un
+          curador. Si crees que es un error, por favor
+          <a href="mailto:%{email}">contacta con nosotros</a>.
+        this_has_been_flagged_as_spam: Esto se ha marcado como spam
+      not_found:
+        sorry_that_doesnt_exist: Lo sentimos, ¡esto no existe!
+        even_our_dedicated_search_mole_couldnt: Pese a la búsqueda, ¡no pudimos encontrar nada!
     taxon_names:
       form:
         new_name_guidelines_html: |-
           <ul class="ui">
-            <li>Trate de añadir nombres que se han utilizado en otros lugares. Por favor, no inventar nuevos nombres.</li>
-            <li>No agregue nombres duplicados, por ejemplo, no mencione a numerosos halcones "halcón"</li>
-            <li>Para taxa superiores de nivel, trate de usar nombres que incluyen todos los descendientes, como "Jacamarás y parientes" o "familia de brezo"</li>
+            <li>Trata de añadir nombres que se han utilizado en otros lugares. Por favor, no inventes nuevos nombres.</li>
+            <li>No agregues nombres duplicados, por ejemplo, no menciones a halcones diferentes como "halcón"</li>
+            <li>Para taxones de nivel superior, trata de usar nombres que incluyan todos los descendientes, como "Gaviotas y parientes" o "familia de brezo"</li>
           </ul>
         places_help_html: |-
-          Añada un nombre para un lugar para darle prioridad para los sitios y
-          los usuarios de ese lugar. Si hay varios nombres por lugar se puede
-          dar prioridad a ellos <a href="%{url}">aquí</a>. Por favor,
-          <strong>no agregue nombres de todos los lugares donde se utiliza el
-          nombre</strong>, sólo para los lugares que entran en conflicto con
+          Añada un nombre a un lugar para darle prioridad para los sitios y
+          los usuarios de ese lugar. Si hay varios nombres por lugar se les puede
+          dar prioridad <a href="%{url}">aquí</a>. Por favor,
+          <strong>no</strong> agregues nombres de TODOS los lugares donde se utiliza el
+          nombre, solo en los lugares que entran en conflicto con
           otros lugares.
       taxon:
         about_html: |-
-          Taxa puede tener muchos nombres comunes. Apoyamos un defecto nombre
-          común a nivel mundial, que se puede cambiar aquí arrastrando un
-          nombre a la parte superior de la lista. También puede especificar
-          nombres predeterminados en diferentes lugares editando el nombre y
-          añadir un lugar, pero por favor, sólo hacerlo cuando diferentes
-          lugares tienen nombres en conflicto.
+          Los taxones pueden tener muchos nombres comunes. Apoyamos un nombre
+          común por defecto a nivel mundial para cada taxón, que se puede cambiar aquí arrastrando un
+          nombre a la parte superior de la lista. También puedes especificar
+          nombres por defecto en diferentes lugares editando el nombre y
+          añadiendo un lugar, pero por favor, hazlo solo cuando diferentes
+          lugares tengan nombres en conflicto.
     users:
       dashboard:
         taxon_change_desc: |-
-          Cambios de taxón representan cambios en %{site_name}'s taxonomía.
-          La mayor parte del tiempo de %{site_name} mantendrá automáticamente
-          a su contenido hasta al fecha, cuando esos cambios ocurren (a menos que
-          optado por no), pero todavía queremos saber cuándo y cómo sus datos
-          está cambiando.
-        your_content_will_be_updated: Su contenido relacionado con estos taxones se
+          Los cambios de taxón representan cambios en la taxonomía de %{site_name}.
+          Cuando estos cambios ocurran, la mayoría de veces %{site_name}
+          mantendrá tu contenido actualizado automáticamente,(a menos que
+          optes por lo contrario), pero aún así queremos que sepas cuándo y cómo tus datos
+          cambian.
+        your_content_will_be_updated: Tu contenido relacionado con estos taxones se
           actualizará automáticamente.
-        you_may_want_to_update: Usted tiene algunos contenidos relacionados con estos
-          taxones que es posible que desee actualizar.
-        cannot_update_your_content: '%{site_name} no puede actualizar su contenido
+        you_may_want_to_update: Tienes algunos contenidos relacionados con estos
+          taxones que es posible que quieras actualizar.
+        cannot_update_your_content: '%{site_name} no puede actualizar tu contenido
           de forma automática para que este cambio.'
         new_project_admin_html: |-
-          Se pregunta por qué está ahora administrador de este proyecto? El
-          dueño anterior probablemente elimina su cuenta, por lo que el %{site_name}
-          asignado porque usted es un gerente de proyecto o de un curador
-          sitio. Si usted no quiere ser el administrador de un proyecto, por
-          favor póngase en contacto con
+          ¿Te preguntas por qué ahora eres administrador del proyecto? El
+          dueño anterior probablemente eliminó su cuenta, y %{site_name}
+          te asignó a ti porque eres un administrador de proyecto o un curador
+          del sitio. Si no quieres ser el administrador del proyecto, por
+          favor póngate en contacto con
           <a href="mailto:%{help_email}">%{help_email}</a>
-        curators_can_see: "Sólo un recordatorio, los curadores del proyecto pueden
-          ver la privada y oculta \ncoordenadas de las observaciones que se agregan
+        curators_can_see: "Solamente un recordatorio, los curadores del proyecto pueden
+          ver las coordenadas ocultas y difusas \nde las observaciones que se agregan
           a este proyecto."
       edit:
         taxon_change_desc: |-
-          Cuando taxa se fusionan o cambiar de nombre en %{site_name}, sus
-          observaciones, taxa incluidos, identificaciones, etc se actualizará
-          automáticamente a la nueva taxa si el cambio es inequívoco. Si se
-          excluye o el cambio es ambigua (por ejemplo, una fractura), recibirá
-          una actualización sobre el cambio de la vinculación a una
-          herramienta que puede utilizar para actualizar manualmente el
-          contenido si usted elige.
-        licensing_desc_html: "Obtención de la licencia de contenido da a otras personas
-          el derecho\nlegal de utilizar sin pedir su permiso si se adhieren a los
-          términos\nde la licencia. %{site_name} utiliza su contenido con licencia\nCreative
-          Commons-para compartir con los socios de datos como la \n<a href=\"http://www.gbif.org/\">Global
-          Biodiversity Informatics Facility</a>\n(GBIF), una organización internacional,
-          organización\nintergubernamental que recopila y distribuye información sobre
+          Cuando unos taxones se fusionan o cambian de nombre en %{site_name}, tus
+          observaciones, con los taxones incluidos, identificaciones, etc se actualizan
+          automáticamente al nuevo nombre de taxón (si el cambio es inequívoco). Si declinas
+          el cambio o si este es ambiguo (por ejemplo, una partición de taxón), recibirás
+          una actualización sobre el cambio con el vínculo a una
+          herramienta que podrás utilizar para actualizar manualmente el
+          contenido si lo deseas.
+        licensing_desc_html: "La obtención de una licencia de contenido da a otras personas
+          el derecho\nlegal de utilizarlo sin pedirte permiso, si se adhieren a los
+          términos\nde la licencia. %{site_name} utiliza tu contenido con licencia\nCreative
+          Commons para compartir con los socios de datos, como \n<a href=\"http://www.gbif.org/\">Global
+          Biodiversity Informatics Facility</a>\n(GBIF), una organización internacional e
+          \nintergubernamental que recopila y distribuye información sobre
           la\nbiodiversidad de todo el mundo."
         place_help_html: |-
-          Personaliza unos pocos aspectos del sitio un lugar, al igual que los
+          Personaliza algunos aspectos de la web para un lugar concreto, como los
           nombres comunes.
         prefers_community_taxa_desc: |-
-          %{site_name} rastrea lo que usted piensa que sus observaciones son y
+          %{site_name} rastrea lo que piensas que son tus observaciones y
           lo que la comunidad piensa que son. La identificación que
           compartimos con los socios de datos es la identificación de la
-          comunidad, pero si usted no cree que la opinión de la comunidad debe
-          nunca hacer caso omiso de su cuenta, usted puede optar por aquí. La
-          gente todavía será capaz de añadir identificaciones, pero la opinión
-          de la comunidad no serán favorecidos frente a la suya. Esto
-          significa que sus observaciones sólo serán de grado de
-          investigación, cuando usted está de acuerdo con la comunidad.
+          comunidad, pero también puedes pedir que la opinión de la comunidad
+          nunca desautorice la tuya. Los usuarios podrán
+          seguir añadiendo identificaciones, pero la opinión
+          de la comunidad no será favorecida frente a la tuya. Esto
+          significa que tus observaciones solo serán de grado de
+          investigación cuando estés de acuerdo con la comunidad.
+      show:
+        take_a_chance_to_review_html: 'Haz el intento de revisar <a href="%{link}">nuestras reglas generales</a>.'
+        this_user_was_banned: Este usuario ha sido expulsado
     welcome:
       index:
-        welcome_message_html: "ATENCIÓN: Este es un portal de pruebas, y el registro de nuevos usuarios 
-			está disponible únicamente por invitación. Siga este enlace para acceder a la aplicación original
-			<a href=\"http://www.inaturalist.org/\">iNaturalist</a>"
+        welcome_message_html: "ATENCIÓN: Este es un portal de pruebas, y el registro de nuevos usuarios está disponible únicamente por invitación. Siga este enlace para acceder a la aplicación original <a href=\"http://www.inaturalist.org/\">iNaturalist</a>"
         manten_un_registro: Mantén un registro
         manten_un_registro_l: Registra tus observaciones naturales y guarda listas de organismos en la nube
         identifique: Identifica
@@ -4404,10 +4467,10 @@ es:
         aprenda: Aprende acerca de la naturaleza
         aprenda_l: Aumenta tus conocimientos hablando con otros naturalistas
         cree: Crea datos útiles
-        cree_l: Ayuda a los científicos a obtener datos sobre distribución de especies
+        cree_l: Ayuda a los científicos a obtener datos sobre la distribución de especies
         convierte: Conviértete en un ciudadano científico
         convierte_l: Contribuye con proyectos que te interesen o crea los tuyos propios
-        bioblitz: Organiza bioblitz
+        bioblitz: Organiza Bioblitz
         bioblitz_l: Eventos donde los usuarios registran tantas observaciones como les es posible
         funcion: Funcionalidad
         funcion_l: ¿Qué funciones ofrece Natusfera?
@@ -4417,7 +4480,7 @@ es:
         people_l: Conoce a nuestros usuarios
     wiki_pages:
       form:
-        save_and_edit_to_add_attachments: Guardar y editar para agregar datos adjuntos
+        save_and_edit_to_add_attachments: Guardar y editar para añadir datos adjuntos
   date:
     abbr_day_names:
     - dom
@@ -4468,9 +4531,9 @@ es:
       11: noviembre
       12: diciembre
     order:
-    - day
-    - month
-    - year
+    - :day
+    - :month
+    - :year
   datetime:
     distance_in_words:
       about_x_hours:
@@ -4545,7 +4608,7 @@ es:
         other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
   helpers:
     select:
-      prompt: Por favor seleccione
+      prompt: Por favor, selecciona
     submit:
       create: Crear %{model}
       submit: Guardar %{model}
@@ -4585,13 +4648,19 @@ es:
           kb: KB
           mb: MB
           tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
   support:
     array:
       last_word_connector: ', y'
       two_words_connector: ' y'
       words_connector: ','
   time:
-    am: am
+    am: mañana
     formats:
       default: '%d %b %Y %H:%M:%S %Z'
       long: '%d de %B de %Y'
@@ -4600,7 +4669,7 @@ es:
       rfc: '%d %B %Y'
       day_month_year: '%d %b. %Y'
       hours: '%l:%M %p'
-    pm: pm
+    pm: tarde
   activemodel:
     errors:
       format: '%{attribute} %{message}'
@@ -4624,44 +4693,44 @@ es:
         record_invalid: 'Falló la validación: %{errors}'
         taken: ya ha sido tomado.
         too_long:
-          one: es demasiado largo (el máximo es %{count} carácter
+          one: es demasiado largo (el máximo es %{count} carácteres)
           other: es demasiado largo (el máximo son %{count} caracteres)
         too_short:
-          one: es demasiado corto (el mínimo es %{count} carácter
+          one: es demasiado corto (el mínimo es %{count} carácter)
           other: es demasiado corto (el mínimo son %{count} caracteres)
         wrong_length:
           other: =no tiene el tamaño correcto(debe ser de 1 carácter)
       template:
         body: 'Hubo problemas con los siguientes campos:'
         header:
-          other: =1 error prohibió este %{model} de ser salvado
+          other: =1 error prohibió este %{model} de ser guardado
   activerecord:
     errors:
       models:
         guide:
           attributes:
             published_at:
-              published_at_needs_3_taxa: requiere al menos 3 taxa en la guía
+              published_at_needs_3_taxa: se requieren al menos 3 taxones en la guía
         guide_taxon:
           attributes:
             base:
-              guide_has_too_many_taxa: la guía sólo puede tener 500 taxa
+              guide_has_too_many_taxa: la guía solo puede tener 500 taxones
         observation_field_value:
           attributes:
             value:
-              dna_only_atcg: para el ADN sólo puede contener los caracteres A, T,
+              dna_only_atcg: para el ADN solo puede contener los caracteres A, T,
                 C o G
-              date_format: debe estar en la forma AAAA-MM-DD para un campo de fecha
+              date_format: para un campo de fecha debe escribirse en la forma AAAA-MM-DD 
                 ("%{observation_field_name}" en tu observación de "%{observation_species_guess}")
-              time_format: debe estar en la forma hh:mm para un campo de hora ("%{observation_field_name}"
+              time_format: para un campo de hora debe estar en la forma hh:mm ("%{observation_field_name}"
                 en tu observación de "%{observation_species_guess}")
         post:
           attributes:
             user:
-              must_be_on_site_long_enough: debe de haberse registrado hace más de
-                24 horas para publicar. Tenemos gran cantidad de gente que introduce
-                spam, y asi los evitamos. De todas formas puedes guardar un borrador,
-                y si estas usando el sitio en un día, podrás publicarlo.
+              must_be_on_site_long_enough: para poderse publicar debe de haberse registrado hace más de
+                24 horas. Tenemos gran cantidad de gente que introduce
+                spam, y esta es una forma de evitarlos. De todas formas, puedes guardar un borrador,
+                y si en un día sigues utilizando la web, podrás publicarlo.
     attributes:
       assessment:
         description: Descripción
@@ -4704,11 +4773,14 @@ es:
         name: Nombre
         parent_id: Lugar relacionado
         place_type: Tipo de lugar
-        prefers_check_lists: ¿Comprobar listas permitidas?
+        prefers_check_lists: ¿Quieres comprobar las listas permitidas?
         woeid: Identificador único mundial (de acuerdo a Yahoo)
       flag:
         reason: Razón
         flag: Marca
+      observation:
+        geo_x: Al este
+        geo_y: Al norte
       observation_field_value:
         value: valor
       taxon:
@@ -4718,8 +4790,8 @@ es:
         locked: Bloqueado
         auto_photos: Cargar fotos automáticamente
         auto_description: Cargar automáticamente la descripción
-        wikipedia_title: Título de wikipedia
-        wikipedia_summary: Resumen de wikipedia
+        wikipedia_title: Título de Wikipedia
+        wikipedia_summary: Resumen de Wikipedia
         source_identifier: Identificador de la fuente
         source_url: Enlace fuente
       taxon_name:

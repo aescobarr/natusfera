@@ -59,6 +59,8 @@ class Project < ActiveRecord::Base
   validates_presence_of :end_time, :if => lambda {|p| p.project_type == BIOBLITZ_TYPE}, :message => "can't be blank for a bioblitz"
   validate :place_with_boundary, :if => lambda {|p| p.project_type == BIOBLITZ_TYPE}
   validate :one_year_time_span, :if => lambda {|p| p.project_type == BIOBLITZ_TYPE}, :unless => "errors.any?"
+  validate :superproject_must_be_base_project, :if => lambda {|p| p.parent? }
+  validate :superproject_must_be_empty, :if => lambda {|p| p.parent? }
   
   scope :featured, where("featured_at IS NOT NULL")
   scope :in_group, lambda {|name| where(:group => name) }
@@ -135,6 +137,18 @@ FROM projects JOIN places ON projects.place_id = places.id", :as => :place_ids, 
   def place_with_boundary
     unless PlaceGeometry.where(:place_id => place_id).exists?
       errors.add(:place_id, "must be set and have a boundary for a bioblitz")
+    end
+  end
+
+  def superproject_must_be_empty
+    if parent? and observations.count > 0
+      errors.add(:project_type, "superprojects can't contain observations and must be empty")
+    end
+  end
+
+  def superproject_must_be_base_project
+    if parent? and project_type != ''
+      errors.add(:project_type, "only type normal allowed for superprojects")
     end
   end
 
