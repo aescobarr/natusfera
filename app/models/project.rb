@@ -147,7 +147,7 @@ FROM projects JOIN places ON projects.place_id = places.id", :as => :place_ids, 
   end
 
   def superproject_must_be_base_project
-    if parent? and project_type != ''
+    if parent? and project_type != '' and observations.count > 0
       errors.add(:project_type, "only type normal allowed for superprojects")
     end
   end
