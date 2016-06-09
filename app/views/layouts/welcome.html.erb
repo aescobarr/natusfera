@@ -5,8 +5,8 @@
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <!-- Google maps include -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
+<!-- Google maps include -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
 	<%= javascript_include_tag 'isotope.pkgd.min' %>
 	<%= javascript_include_tag 'wax.g' %>
   <%= javascript_include_tag "i18n" %>
@@ -45,14 +45,14 @@
 	$(document).ready(function(){
     window.observations = <%=json_escape @observations.to_json( :include => { :observation_photos => { :include => { :photo => { :except => :metadata } } } }).html_safe %>;
 
-    /*var infoWindow;
+    var infoWindow;
 
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -34.397, lng: 150.644},
       zoom: 9,
       maxZoom: 13,
       minZoom: 9
-    });*/
+    });
     
     var features = [];
     if(observations){
@@ -60,16 +60,16 @@
         var obs_n = observations[i];
         var marker = new google.maps.Marker({
           position: {lat: parseFloat(obs_n.latitude), lng: parseFloat(obs_n.longitude)},
-          icon: "<%= image_url("mapMarkers/natusfera-marker.png") %>"
+          icon: "<%= image_url("mapMarkers/natusfera-marker-mini.png") %>"
         });
         features.push({ marker: marker, observation: obs_n  });
       } 
     }
 
-    //var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
+    var tile_server_url = <%= CONFIG.tile_servers.windshaft.inspect.html_safe %>;
     //var tile_server_url = "http://193.146.75.173:4000";
 
-	  /*var tilejson = {
+	  var tilejson = {
 			tiles : [tile_server_url + "/observations/points/{z}/{x}/{y}.png?"],
 			grids: [tile_server_url + "/observations/points/{z}/{x}/{y}.grid.json?&interactivity=id,taxon_id,species_guess,latitude,longitude,positional_accuracy,captive,quality_grade,iconic_taxon_id"],
 			template : "{{species_guess}}",
@@ -120,9 +120,13 @@
       off: function(o) {
         map.setOptions({ draggableCursor: 'url(http://maps.google.com/mapfiles/openhand.cur), move' });
       }
-    });*/
+    });
     var data_slice_to_html = function(data_slice){
-      return "<a class=\"username_label\" href=\"" + data_slice.url + "\">" + data_slice.name + "</a> - <a class=\"species_label\" href=\"" + data_slice.especie_url + "\">" + data_slice.especie + "</a>";
+      var retVal = "<a class=\"username_label\" href=\"" + data_slice.url + "\">" + data_slice.name + "</a> - <a class=\"species_label\" href=\"" + data_slice.especie_url + "\">" + data_slice.especie + "</a>";
+      if(data_slice.place_guess_url){
+        retVal = retVal + ", " + data_slice.place_guess_url;
+      }
+      return retVal;
     }
 
     var activate_locale_link = function(locale){
@@ -155,6 +159,8 @@
       <% end %>
       obs_<%= observation.id %>.especie_url = '<%= observation_path(observation) %>';
       obs_data_slider[<%= observation.id %>] = obs_<%= observation.id %>;
+
+      obs_<%= observation.id %>.place_guess_url = '<%= observation_place_guess(observation).html_safe %>';
     <% end %>
     var getItemId = function(id){
       return parseInt(id.substring(id.indexOf("_")+1));
@@ -175,7 +181,9 @@
       //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
       obs_userdata = obs_data_slider[observation.id];
       $("#bottom").html(data_slice_to_html(obs_userdata));
-      $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
+      //$("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
+      $("#item_" + id ).children("img").attr("src","/attachments/local_photos/Voltor_tallat_slider.png");
+      //http://localhost:4000/attachments/local_photos/Voltor_tallat_slider.png
       /*var capped_desc = "...";
       if(observation.description){
       	capped_desc = observation.description.length > 40 ? observation.description.substring(0, 37) + "..." : observation.description.substring(0, observation.description.length);
@@ -210,6 +218,11 @@
     $('#locale_gl').click( function() { setLocaleCookie('gl'); activate_locale_link('gl'); } );
     $('#locale_en').click( function() { setLocaleCookie('en'); activate_locale_link('en'); } );
 
+    $('.nav-button').click( function() {
+      $(".nav-button").removeClass("active");
+      $(this).addClass("active");
+    });
+
     // Activate Carousel
     $('#obsCarousel').carousel({interval:false});
 
@@ -228,7 +241,7 @@
     });
     $('#obsCarousel').on('slide.bs.carousel', function (e) {
       var id = getItemId(e.relatedTarget.id);
-      //setCurrentMarker(features[id].marker);
+      setCurrentMarker(features[id].marker);
       fillSlide(id,features[id].observation);
     });
 		
@@ -268,7 +281,7 @@
     });
 
     //init slide 0
-    //setCurrentMarker(features[0].marker);
+    setCurrentMarker(features[0].marker);
     fillSlide(0,features[0].observation);
 
     $grid.isotope({ filter: '.func' });
@@ -367,15 +380,19 @@
       </div>
         <div id="observation_count">
           <div class="count_banner_n"><%= @observations_count %></div>
-          <div class="count_banner"><%= t('observations') %></div>
+          <!--<div class="count_banner"><%= t('observations') %></div>-->
+          <div class="count_banner"><%= link_to t(:observations), observations_path, :class=> "cblink" %></div>
         </div>
         <div id="species_count">
           <div class="count_banner_n"><%= @species_count %></div>
-          <div class="count_banner"><%= t('species') %></div>
+          <div class="count_banner"><%= link_to t(:species), taxa_path, :class => "cblink" %></div>
         </div>
         <div id="people_count">
           <div class="count_banner_n"><%= @people_count %></div>
-          <div class="count_banner"><%= t('people') %></div>
+          <div class="count_banner"><%= link_to t(:people), people_path, :class => "cblink" %></div>
+        </div>
+        <div id="map-container">
+          <div id="map"></div>
         </div>
 		</div>
 		<!--</div>-->
@@ -383,75 +400,69 @@
 			<div id="map"></div>
 		</div>-->
 	</div>
-  <div class="row">
-  <div class="row">
+  <!--<div class="row">-->
+  <div class="row green-fill">
     <div class="col-md-12">
       <%= image_tag("como_funciona.#{I18n.locale}.png", :class => "pre-footer") %>
       <!--<img class="pre-footer" src="/assets/como_funciona.#{I18n.locale}.png" alt="Como funciona?">-->
     </div>
   </div>
 
-  </div>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>			  
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapsible-1">
-			  <ul class="nav navbar-nav">
-				<li>
-					<a class="func-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading"><%= t('views.welcome.index.funcion') %></h4>
-						<p class="list-group-item-text"><%= t('views.welcome.index.funcion_l') %></p>
-					</a>
-				</li>			
-				<li>
-					<a class="observations-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading"><%= t('observations') %></h4>
-						<p class="list-group-item-text"><%= t('views.welcome.index.observ_l') %></p>
-					</a>
-				</li>				
-
-				<li>
-					<a class="especies-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading"><%= t('species') %></h4>
-						<p class="list-group-item-text"><%= t('views.welcome.index.especies_l') %></p>
-					</a>
-				</li>
-				<li>
-					<a class="proyectos-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading"><%= t('projects') %></h4>
-						<p class="list-group-item-text"><%= t('views.welcome.index.project_l') %></p>
-					</a>
-				</li>
-				<!--<li>
-					<a class="lugares-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Lugares</h4>
-						<p class="list-group-item-text">Las mejores montañas para la investigación</p>
-					</a>
-				</li>-->
-				<li>
-					<a class="gente-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading"><%= t('people') %></h4>
-						<p class="list-group-item-text"><%= t('views.welcome.index.people_l') %></p>
-					</a>
-				</li>
-				<!--<li>
-					<a class="todo-button" href="#navbar-collapsible-1">
-						<h4 class="list-group-item-heading">Todo</h4>
-						<p class="list-group-item-text">Muestralo todo</p>
-					</a>
-				</li>-->
-			  </ul>
-		</div>
-	</nav>	
+  <!-- start nav -->
+	<!--<nav class="navbar navbar-default" role="navigation">-->
+  <div class="row green-fill">
+      <div class="col-sm-2 sidebar-nav">
+        <!--<div class="sidebar-nav">-->
+          <!--<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          </div>-->
+          <!--<div class="collapse navbar-collapse" id="navbar-collapsible-1">-->
+        <ul class="nav navbar-nav white-fill">
+          <li class="stretch">
+            <span class="span_right"><a class="func-button nav-button active" href="#navbar-collapsible-1"><h4 class="list-group-item-heading"><%= t('views.welcome.index.funcion') %></h4></a></span>
+          </li>
+          <li class="stretch">
+            <span class="span_right">
+            <a class="observations-button nav-button" href="#navbar-collapsible-1">
+              <h4 class="list-group-item-heading"><%= t('observations') %></h4>
+            </a>
+              </span>
+          </li>
+          <li class="stretch">
+            <span class="span_right">
+            <a class="especies-button nav-button" href="#navbar-collapsible-1">
+              <h4 class="list-group-item-heading"><%= t('species') %></h4>
+            </a>
+              </span>
+          </li>
+          <li class="stretch">
+            <span class="span_right">
+            <a class="proyectos-button nav-button" href="#navbar-collapsible-1">
+              <h4 class="list-group-item-heading"><%= t('projects') %></h4>
+            </a>
+              </span>
+          </li>
+          <li class="stretch">
+            <span class="span_right">
+            <a class="gente-button nav-button" href="#navbar-collapsible-1">
+              <h4 class="list-group-item-heading"><%= t('people') %></h4>
+            </a>
+            </span>
+          </li>
+        </ul>
+          <!--</div>-->
+      </div>
+      <!--</div>-->
+	<!--</nav>-->
+  <!-- end nav -->
 	<!-- Inici grid -->
-	<div class="grid">
+      <div class="col-sm-10 sidebar-content">
+	      <div class="grid">
           <div class="row">
             <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
@@ -467,20 +478,20 @@
                 <p><%= t('views.welcome.index.identifique_l') %></p>
               </div>
             </div>
-           <div class="grid-item func">
+            <div class="grid-item func">
               <div class="inner-grid-wrapper-small">
                 <%= image_tag("learn.jpg") %>
                 <h4><%= t('views.welcome.index.aprenda') %></h4>
                 <p><%= t('views.welcome.index.aprenda_l') %></p>
               </div>
             </div>
-           <div class="grid-item func">
-              <div class="inner-grid-wrapper-small">
-                <%= image_tag("data.jpg") %>
-                <h4><%= t('views.welcome.index.cree') %></h4>
-                <p><%= t('views.welcome.index.cree_l') %></p>
-              </div>
+            <div class="grid-item func">
+            <div class="inner-grid-wrapper-small">
+              <%= image_tag("data.jpg") %>
+              <h4><%= t('views.welcome.index.cree') %></h4>
+              <p><%= t('views.welcome.index.cree_l') %></p>
             </div>
+          </div>
           </div>
           <div class="row">
             <div class="grid-item func">
@@ -497,87 +508,62 @@
                 <p><%= t('views.welcome.index.bioblitz_l') %></p>
               </div>
             </div>
-            <% if CONFIG.iphone_app_url %>
+            <% if CONFIG.iphone_app_url and false %>
+            <div class="grid-item func">
+                <div class="inner-grid-wrapper-small applink">
+                  <a href="<%= CONFIG.iphone_app_url %>"><img src="<%= asset_path("apple_app_store.png") %>"></a>
+                </div>
+            </div>
+            <% end %>
+            <% if CONFIG.android_app_url and false %>
             <div class="grid-item func">
               <div class="inner-grid-wrapper-small applink">
-                  <a href="<%= CONFIG.iphone_app_url %>"><img src="<%= asset_path("apple_app_store.png") %>"></a>
+                <a href="<%= CONFIG.android_app_url %>"><img src="<%= asset_path("android_market.png") %>"></a>
               </div>
             </div>
             <% end %>
-            <% if CONFIG.android_app_url %>
-            <div class="grid-item func">
-              <div class="inner-grid-wrapper-small applink">                
-                  <a href="<%= CONFIG.android_app_url %>"><img src="<%= asset_path("android_market.png") %>"></a>
+          </div>
+            <div class="row">
+            <% for taxon in Taxon::ICONIC_TAXA %>
+            <div class="grid-item especies">
+              <div class="inner-grid-wrapper-small">
+                <div class="section-label">
+                  <span><%= taxon_image(taxon, :size => "small", :class => "taxonimage") %></span>
+                  <%= link_to t("all_taxa.#{Taxon::ICONIC_TAXON_NAMES[taxon.name].gsub(' ','_').gsub('-','_').downcase}", :default=>Taxon::ICONIC_TAXON_NAMES[taxon.name]), taxon_path(taxon), :class => "label-species" %>
+                  <% if taxon.photos.exists? %>
+                    <span><%= t :photo %>: <%= link_to taxon.photos.first.attribution, taxon.photos.first.native_page_url,:class => "photo_caption" %></span>
+                  <% end %>
+                </div>
               </div>
-            </div>            
+            </div>
             <% end %>
-           <!--<div class="grid-item func">
+            <div class="grid-item especies">
               <div class="inner-grid-wrapper-small">
+                <div class="section-label">
+                  <span><%= image_tag ("species_more.png") %></span>
+                  <%= link_to t(:species).upcase, taxa_path, :class => "label-species" %>
+                </div>
               </div>
             </div>
-           <div class="grid-item func">
-              <div class="inner-grid-wrapper-small">
+		      </div>
+		      <div class="row">
+            <% for observation in @sample_observations %>
+            <div class="grid-item observaciones">
+                <div class="inner-grid-wrapper-small">
+                  <div class="section-label">
+                    <span><img src="<%= observation.observation_photos[0].photo.small_url  %>"></span>
+                    <% unless observation.species_guess.blank? %>
+                      <%= link_to observation.species_guess.html_safe, observation_path(observation), class: "label-observaciones" %>
+                    <% else %>
+                      <%= link_to "#{t(:something)}...", observation_path(observation), class: "label-observaciones" %>
+                    <% end %>
+                    <!--p><%#= truncate(observation.description.html_safe, length: 40) %></p-->
+                    <span><%=t :observer %>: <%= link_to observation.user.login, observations_by_login_url(observation.user.login), :class => "observer_caption" %></span>
+                  </div>
+                </div>
               </div>
-            </div>-->
-          </div>
-		<div class="row">
-      <% for taxon in Taxon::ICONIC_TAXA %>
-			<div class="grid-item especies">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<span><%= taxon_image(taxon, :size => "small", :class => "taxonimage") %></span>
-						<%= link_to t("all_taxa.#{Taxon::ICONIC_TAXON_NAMES[taxon.name].gsub(' ','_').gsub('-','_').downcase}", :default=>Taxon::ICONIC_TAXON_NAMES[taxon.name]), taxon_path(taxon), :class => "label-species" %>
-						<% if taxon.photos.exists? %>
-							<span><%= t :photo %>: <%= link_to taxon.photos.first.attribution, taxon.photos.first.native_page_url,:class => "photo_caption" %></span>
-						<% end %>
-					</div>
-				</div>				
-			</div>      
-      <% end %>
-      <div class="grid-item especies">
-        <div class="inner-grid-wrapper-small">
-          <div class="section-label">
-            <span><%= image_tag ("species_more.png") %></span>
-            <%= link_to t(:species).upcase, taxa_path, :class => "label-species" %>
-          </div>
-        </div>        
-      </div>
-			<!--div class="grid-item proyectos">
-				<div class="inner-grid-wrapper-large">
-					<div class="section-label">
-						<a class="label-proyectos" href="#">Proyectos</a>
-					</div>
-				</div>
-			</div>
-			<div class="grid-item guias">
-				<div class="inner-grid-wrapper-small">
-					<div class="guide-wrapper">
-						<p class="guide-header">Guias</p>
-						<h4 class="guide-title">Las mejores rutas para investigar el medio ambiente</h4>
-						<p class="guide-body">Light a bonfire in the garden, and step barvely into your best-dressed decade</p>
-						<div class="guide-more-link very-round-border"><a href="#">Leer más</a></div>
-					</div>
-				</div>
-			</div>-->		
-		</div>
-		<div class="row">
-      <% for observation in @sample_observations %>
-        <div class="grid-item observaciones">
-          <div class="inner-grid-wrapper-small">
-            <div class="section-label">
-              <span><img src="<%= observation.observation_photos[0].photo.small_url  %>"></span>
-              <% if observation.species_guess.blank? %>
-              	<%= link_to observation.species_guess.html_safe, observation_path(observation), class: "label-observaciones" %>
-            	<% else %>
-            		<%= link_to "#{t(:something)}...", observation_path(observation), class: "label-observaciones" %>
-            	<% end %>
-              <!--p><%#= truncate(observation.description.html_safe, length: 40) %></p-->
-              <span><%=t :observer %>: <%= link_to observation.user.login, observations_by_login_url(observation.user.login), :class => "observer_caption" %></span>
-            </div>
-          </div>
-        </div>
-      <% end %>
-      <div class="grid-item observaciones">
+            <% end %>
+            <div class="grid-item observaciones">
         <div class="inner-grid-wrapper-small">
           <div class="section-label">
             <span><%= image_tag ("observations_more.png") %></span>
@@ -585,81 +571,25 @@
           </div>
         </div>
       </div>
-			<!--<div class="grid-item observaciones">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-observaciones" href="#">Observaciones</a>
-<span style="position: relative;display: block;width: 240px;height: 180px;overflow: hidden"><img style="position: absolute;left: -10px" src="http://158.109.62.1:3000/attachments/local_photos/files/48/small/dsc01322-181025.jpg"></span>
-<h4>Some observation</h4>
-<p>Some description</p>
-					</div>
-				</div>
-			</div>
-			<div class="grid-item observaciones">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-observaciones" href="#">Observaciones</a>
-					</div>
-				</div>
-			</div>
-			<div class="grid-item observaciones">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-observaciones" href="#">Observaciones</a>
-					</div>
-				</div>
-			</div>
-			<div class="grid-item observaciones">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-observaciones" href="#">Observaciones</a>
-					</div>
-				</div>
-			</div>-->
-
-			<!--div class="grid-item proyectos">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-proyectos" href="#">Proyectos</a>
-					</div>
-				</div>
-			</div>
-			<div class="grid-item guias">
-			  	<div class="inner-grid-wrapper-small">
-					<div class="guide-wrapper">
-						<p class="guide-header">Guias</p>
-						<h4 class="guide-title">Materiales principales para la investigación</h4>
-						<p class="guide-body">Will Hersey recalls a disastrous encounter with holiest man alive</p>
-						<div class="guide-more-link very-round-border"><a href="#">Leer más</a></div>
-					</div>
-				</div>
-			</div>		
-			<div class="grid-item observaciones">
-				<div class="inner-grid-wrapper-small">
-					<div class="section-label">
-						<a class="label-observaciones" href="#">Observaciones</a>
-					</div>
-				</div>
-			</div-->		
-		</div>
-      <div class="row">
-        <% for project in @sample_projects %>
-          <div class="grid-item proyectos">
-            <div class="inner-grid-wrapper-small">
-              <div class="section-label">
-                <span><%= image_tag project.icon.url(:span2), :id => "iconimg", :class => "project_picture" %></span>
-                <%= link_to truncate(project.title.html_safe, length:40), project_path(project), class: "label-proyectos" %>
-                <span>
-                  <%= t :owner %>: <%= link_to project.user.login, projects_by_login_url(project.user.login), :class => "photo_caption" %>
-                  <% if project.child? %>                          	
-                    <br><%= t :subproject %> <%= t :of %>: <%= link_to truncate(project.parent.title, length: 40), project_path(project.parent), :class => "photo_caption" %>                            
-              	<% end %>
-                </span>                          
+		      </div>
+          <div class="row">
+            <% for project in @sample_projects %>
+            <div class="grid-item proyectos">
+                <div class="inner-grid-wrapper-small">
+                  <div class="section-label">
+                    <span><%= image_tag project.icon.url(:span2), :id => "iconimg", :class => "project_picture" %></span>
+                    <%= link_to truncate(project.title.html_safe, length:40), project_path(project), class: "label-proyectos" %>
+                    <span>
+                      <%= t :owner %>: <%= link_to project.user.login, projects_by_login_url(project.user.login), :class => "photo_caption" %>
+                      <% if project.child? %>
+                        <br><%= t :subproject %> <%= t :of %>: <%= link_to truncate(project.parent.title, length: 40), project_path(project.parent), :class => "photo_caption" %>
+                    <% end %>
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        <% end %>
-        <div class="grid-item proyectos">
+            <% end %>
+            <div class="grid-item proyectos">
             <div class="inner-grid-wrapper-small">
               <div class="section-label">
                 <span><%= image_tag ("projects_more.png") %></span>
@@ -667,28 +597,28 @@
               </div>
             </div>
           </div>
-      </div>
-		<div class="row">
-        <% for user in @sample_users %>
-          <div class="grid-item gente">
-            <div class="inner-grid-wrapper-small">
-              <div class="section-label">
-              	<% if user.icon_file_name? %>
-              		<span class="fullframe"><%= user_image(user, :size => "medium") %></span>
-                <% else %>
-                	<span class="fullframe"><%= user_image(user, :size => "medium", :class => "homegriduser") %></span>
-                <% end %>                          
-                <%= link_to truncate(user.login.html_safe, length:40), user_path(user), class: "label-gente" %>
-                <% if user.description? %>
-                	<p><%= truncate(user.description.html_safe, length:100) %></p>
-                <% else %>
-                	<p><%= t(:user_is_a_naturalist, :user => user.login) %></p>
-                <% end %>
-              </div>
-            </div>
           </div>
-        <% end %>			
-        <div class="grid-item gente">
+		      <div class="row">
+            <% for user in @sample_users %>
+            <div class="grid-item gente">
+                <div class="inner-grid-wrapper-small">
+                  <div class="section-label">
+                    <% if user.icon_file_name? %>
+                      <span class="fullframe"><%= user_image(user, :size => "medium") %></span>
+                    <% else %>
+                      <span class="fullframe"><%= user_image(user, :size => "medium", :class => "homegriduser") %></span>
+                    <% end %>
+                    <%= link_to truncate(user.login.html_safe, length:40), user_path(user), class: "label-gente" %>
+                    <% if user.description? %>
+                      <p><%= truncate(user.description.html_safe, length:100) %></p>
+                    <% else %>
+                      <p><%= t(:user_is_a_naturalist, :user => user.login) %></p>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+            <div class="grid-item gente">
           <div class="inner-grid-wrapper-small">
             <div class="section-label">
               <span><%= image_tag ("people_more.png") %></span>
@@ -696,8 +626,11 @@
             </div>
           </div>
         </div>
-		</div>
-	</div> <!-- Fi grid -->
+		      </div>
+	      </div> <!-- Fi grid -->
+      </div> <!-- Fi col-sm-10 -->
+  </div>
+
 	<div class="row">
 		<div class="col-md-12 section-end"></div>
 	</div>
