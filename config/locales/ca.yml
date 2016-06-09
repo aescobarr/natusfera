@@ -12,7 +12,7 @@ ca:
     (GBIF).
   you_think_observation_inacurate: |-
     Si penses que aquesta observació és inexacta, afegeix una
-    identificació, participa en la secció de qualitat de dades, o descriu
+    identificació o descriu
     la inexactitud amb un comentari.
   we_also_support: |-
     També tenim connexió amb <a href="http://flickr.com">Flickr</a>,
@@ -44,6 +44,9 @@ ca:
   x_people:
     one: 1 persona
     other: '%{count} persones'
+  x_people_agree_html:
+    one: '<span class="count">1</span> persona hi està d"acord'
+    other: '<span class="count">%{count}</span> persones hi estan d"acord'
   x_species:
     one: 1 espècie
     other: '%{count} espècies'
@@ -54,13 +57,13 @@ ca:
     one: <span class='count'>1</span> tàxon observat</span>
     other: <span class='count'>%{count}</span> tàxons observats</span>
   x_research_grade_observations_html:
-    one: <span class='count'>1</span> grau d'observació de la recerca</span>
+    one: <span class='count'>1</span> observació amb grau de recerca</span>
     other: <span class=count>%{count}</span> observacions amb grau de recerca</span>
   x_research_grade_observations_to_species_html:
-    one: <span class=count>1</span> observació amb grau de recerca va identificar
-      les espècies</span>
-    other: <span class=count>%{count}</span> observacions amb grau de recerca van
-      identificar les espècies</span>
+    one: <span class=count>1</span> identificació d'una observació amb grau de recerca 
+      d'espècies o inferior</span>
+    other: <span class=count>%{count}</span> identificacions d'observacions amb grau de recerca
+      d'espècies o inferiors</span>
   a: una
   a_: un(a)
   a_community_for_naturalist: Una comunitat per a naturalistes
@@ -180,7 +183,7 @@ ca:
   add_your_photo_to: Afegeix la teva foto a %{project}
   added: Afegit el
   added!: Afegit!
-  added_an: Afegeixo una
+  added_an: Has afegit una
   added_as_a_part_of: Afegit com a part d'un
   added_by: Afegit per
   added_identifications_to: has afegit identificacions a les observacions de ningú.
@@ -330,7 +333,7 @@ ca:
   are_you_sure_leave_this_project: Estàs segur que vols sortir d'aquest projecte?
   are_you_sure_merge_these_places: Estàs segur que vols combinar aquests llocs?  Aquesta
     acció no podrà desfer-se.
-  are_you_sure_remove_curator: Estàs segur que vols eliminar %{user} com a administrador?
+  are_you_sure_remove_curator: Estàs segur que vols eliminar %{user} com a revisor?
   are_you_sure_remove_from_project: Estàs segur que vols eliminar %{user} d'aquest
     projecte?
   are_you_sure_remove_taxon_from_list: Estàs segur que vols eliminar de la llista
@@ -360,7 +363,7 @@ ca:
   are_you_sure_you_want_to_delete_this_taxon_change: Estàs segur que vols esborrar
     aquest canvi en l'espècie o grup?
   are_you_sure_you_want_to_remove_curator: Estàs segur que vols eliminar %{user} com
-    a administrador?
+    a revisor?
   are_you_sure_you_want_to_remove_from_project: Estàs segur que vols eliminar a %{user}
     del projecte?
   are_you_sure_you_want_to_remove_manager: Estàs segur que vols eliminar %{user} com
@@ -368,7 +371,7 @@ ca:
   are_you_sure_you_want_to_remove_this_invitation: Estàs segur que vols cancel·lar
     la invitació?
   are_you_sure_you_want_to_remove_this_taxon_from_checklist: Estàs segur que vols
-    eliminar aquesta espècie o grup de la llista de comprovació de %{place}?
+    eliminar aquesta espècie o grup de la llista de verificació de %{place}?
   associated_observations: Observacions associades
   associated_taxa: Tàxons associats
   you_sure_delete_list: Estàs segur que vols eliminar aquesta llista?
@@ -439,10 +442,10 @@ ca:
   black: negre
   blog_widget: Giny del blog
   blue: blau
-  blue_icons_represent_political_units: Les icones blaves representen unitats polítiques
+  blue_icons_represent_political_units: Les icones blaves representen unitats territorials
     com ara països o estats i entitats afins, i les icones verdes representen diferents
-    tipus d'espais oberts, parcs i reserves. Si t'hi apropes, podràs veure llocs més
-    petits.
+    tipus d'espais oberts, parcs i reserves. Si t'hi apropes, podràs veure llocs
+    al detall.
   body: Cos
   breadcrumbs: Rastres de navegació
   breadcrumbs_description: Això reemplaçarà l'h1 i la configuració per defecte de
@@ -459,6 +462,7 @@ ca:
   browse_your_observations: Examina les teves observacions
   but_we_didnt_add_this_observation_to_the_x_project: Aquesta observació no s’ha pogut
     afegir al projecte %{project}, perquè no has acceptat les condicions del projecte.
+  but_you_can_still: però pots
   by: per
   by_adding_ids_to_observations: afegint identificadors a les observacions
   by_editedby: per %{editedby}
@@ -472,7 +476,7 @@ ca:
   cant_flag_an_object_that_doesnt_exist: No pots posar una advertència a un contingut
     que ja no existeix
   cant_merge_a_taxon_with_itself: No pots combinar aquest tàxon amb ell mateix.
-  casual: casual
+  casual: bàsic
   catalogue_of_life: Catàleg de la vida
   cc_attribution_license: Llicència de reconeixement de Creative Commons
   cc_by_description: Aquesta llicència permet que altres persones distribueixin, combinin,
@@ -551,16 +555,16 @@ ca:
     també sigui una paraula no científica o una falta d'ortografia comuna, com ara
     "Parus."
   check_it_out: Fes-hi un cop d'ull
-  check_list: llista de comprovació de
+  check_list: llista de verificació de
   check_list_description: Selecciona un tàxon d'un rang superior si vols que aparegui
     en aquesta llista, com ara "Mammalia" per a mamífer, o "Amphibia" per a amfibis. Quan acabis,
     aquesta llista no admetrà tàxons que no hi estiguin inclosos. Per exemple, si
     crees una llista de mamífer, no podràs afegir-hi granotes.
-  check_list_for_individual_taxa_that: Llistes de comprovació per a una espècie o
+  check_list_for_individual_taxa_that: Llistes de verificació per a una espècie o
     grup específic que habita aquí, p. ex. Mammalia de %{place}.
-  check_list_of_species_occuring_in: Llista de comprovació d'espècies que existeixen
+  check_list_of_species_occuring_in: Llista de verificació d'espècies que existeixen
     a
-  check_list_place: Llista de comprovació de %{place}
+  check_list_place: Llista de verificació de %{place}
   check_list_source: Font <span class="meta">(opcional)</span>
   check_lists_for: Altres llistes de verificació per a %{place}
   check_out_my_observations_at: Si ho vols, pots veure les meves observacions a
@@ -571,7 +575,7 @@ ca:
     Selecciona aquesta caixa si vols aplicar una
     <a href='http://creativecommons.org/licenses/by-nc/3.0/' target='_blank'>Llicència de reconeixement no comercial Creative Commons</a> a les teves fotos. Pots escollir una llicència diferent o eliminar-la
     després, però és la millor llicència per compartir dades amb els investigadors.
-  checklist: Llista de comprovació
+  checklist: Llista de verificació
   checklist_places: Llocs amb llista de verificació
   checklist_places_absent: Llocs amb llista de verificació (absents)
   checklist_places_confirmed: Llocs amb llista de verificació (confirmats)
@@ -642,6 +646,7 @@ ca:
   commit: Desa
   committed: Desa
   committing: Desant...
+  community_id: 'ID de la <strong>comunitat</strong>: '
   community_supported_id: Identificador reconegut per la comunitat?
   compare_with: Compara amb
   comparing: comparant
@@ -670,6 +675,8 @@ ca:
     amb comptes en altres llocs permetrà que entris a %{site_name} amb les dades d'aquests
     llocs.
   conservation_status: Categoria de risc
+  conservation_statuses: Categoria de risc
+  conservation_statusca: Categoria de risc
   conservation_summary: Resum de conservació
   contain_all_descendants?: Aquesta llista de verificació conté tots els descendents
     d'aquest tàxon que es produeixen aquí?
@@ -736,14 +743,16 @@ ca:
   curate_taxa: Administra tàxons
   curate_users: Administra usuaris
   curated: Administrats
+  curated_checklist: Llista de verificació revisada
+  curated_count: Compte revisat
   curating: Administrant
   curation: administració
-  curator: Administrador
+  curator: Revisor
   curators_changed_for_x_html: Administra canvis per a %{x}
-  curators: Curadors
-  curators_can_remove_observations_from: Els curadors poden eliminar observacions
+  curators: Revisors
+  curators_can_remove_observations_from: Els revisors poden eliminar observacions
     del projecte i les seves identificacions es mostren en certes vistes (com a referència).
-    A més, poden veure les coordenades difuses o tancades del projecte.
+    A més, poden veure les coordenades difuses o ocultes del projecte.
   current_password: Contrasenya actual
   custom_project_fields: Camps de projecte personalitzats
   darr_apply_darr: ↓ Aplica ↓
@@ -806,6 +815,9 @@ ca:
   dont_use_double_quotes: No utilitzis cometes dobles en cap altre lloc
   double_click_to_finish: (Amb doble clic acaba la teva forma)
   download: 'Descarrega:'
+  download_bulk_import_template_html: |
+    <a href="%{url}">Descarrega una plantilla</a> per a la
+    <a href="/observations/import#csv_import">importació massiva</a>
   download_csv: Descarrega CSV
   download_kml: Descarrega KML
   drag_and_drop_photos: arrossega i deixa anar la foto en aquesta finestra o
@@ -848,6 +860,7 @@ ca:
   edit_your_settings_to_unsubscribe_html: <a href='%{url}'>Edita la configuració</a>
     per canviar els tipus d'actualització que reps o donar-te totalment de baixa.
   edited: Modificat
+  edited_by: Editat per
   editing: Modifica
   editing_announcement: Modifica anunci
   editing_observation_field: Modifica camp d'observació
@@ -941,8 +954,8 @@ ca:
   filter_by_place_taxon_and_color: Filtra per lloc, color, espècie o grup utilitzant
     els controls.
   filtering: Filtrant...
-  filtering_observations_that_pass_the: Observacions filtrades que passen els termes
-    i les regles del projecte i no s’han afegit
+  filtering_observations_that_pass_the: Observacions filtrades que cumpleixen els termes
+    i les regles del projecte i no s’han afegit.
   filters: Filtres
   find: Troba
   find_a_place: Busca un lloc
@@ -961,9 +974,9 @@ ca:
   first_observer: Primer observador
   flag: Notifica
   flag_an_item: Marca un contingut
-  flag_description: Marca aquest contingut perquè els administradors sàpiguen que
+  flag_description: Marca aquest contingut perquè els revisors sàpiguen que
     alguna cosa no va bé.
-  flag_for_curation: Marca per a administració.
+  flag_for_curation: Marca per a revisió.
   flag_it!: Marca’l!
   flag_marked_as_resolved_html: <span class=meta>Marca marcat com a</span> <strong>resolt.</strong>
   flag_reason: “ Marco aquest %{record} perquè
@@ -971,7 +984,7 @@ ca:
   flag_saved_thanks: Advertència desada. Gràcies!
   flag_this_observation: Marca aquesta observació
   flagged: marcat
-  flagged_for_curation: Marcat per a administració.
+  flagged_for_curation: Marcat per a revisió.
   flagger: Marcador
   flags_explanation: Els usuaris de %{site_name} marquen coses quan troben quelcom
     que no està bé. Aquí hi ha problemes que els administradors encara no han pogut
@@ -1035,7 +1048,7 @@ ca:
   get_current_position: Obtén posició actual
   get_started_raquo: Comença »
   getting_started: Com començar
-  give_it_some_detail: Introdueix alguna dada!
+  give_it_some_detail: Dades del lloc
   global_conservation_status: Estat de conservació global
   global_names: Noms globals
   globally: globalment
@@ -1072,7 +1085,7 @@ ca:
     amb <a target=''_blank'' href=''%{url}''>una altra observació</a>'
   heads_up_this_taxon_locked_users_cant_add_descendants: <strong>Avís.</strong> Aquest
     tàxon està bloquejat, cosa que significa que la majoria dels usuaris no poden
-    afegir-hi descendents quan importen dades. Els administradors sí que poden, en
+    afegir-hi descendents quan importen dades. Els revisors sí que poden, en
     editar els tàxons i triar un tàxon pare. Però, en lloc d’això, et recomanem que
     combinis els tàxons.
   heads_up_you_have_multiple: Avisos. Has generat diverses etiquetes taxonòmiques
@@ -1408,9 +1421,9 @@ ca:
     tàxons bloquejats. Per exemple, si has bloquejat Amphibia i algú intenta importar
     <i>Rana catesbeiana</i> d'un proveïdor de noms extern, es crearia el nou tàxon,
     però no podria classificar-se com a amfibi. En cas que això passi, els tàxons
-    afegits recentment haurien de marcar-se perquè un curador de continguts els revisi. Això
+    afegits recentment haurien de marcar-se perquè un revisor de continguts els revisi. Això
     només hauria d'aplicar-se als tàxons per als quals considerem que tenim tots els
-    descendents. Un curador ho pot sobreescriure modificant els tàxons i introduint
+    descendents. Un revisor ho pot sobreescriure modificant els tàxons i introduint
     identificadors pares directament, però et recomanem que en lloc d’això intentis
     combinar els tàxons nous amb els ja existents.
   log_in: Inicia sessió
@@ -1443,7 +1456,7 @@ ca:
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   make_a_new_place: Crea un nou lloc
   make_a_taxon_swap_instead?: Vols fer un intercanvi de l'espècie o grup?
-  make_curator: Fes administrador
+  make_curator: Fes revisor
   make_it_a_life_list?: Vols crear una llista de vida?
   make_manager: Fes gestor
   make_new_place: Crea un nou lloc
@@ -1461,7 +1474,7 @@ ca:
   managed: gestionat
   manager: Gestor
   managers: Gestors
-  managers_can_do: Els gestors poden realitzar les mateixes activitats que un administrador
+  managers_can_do: Els gestors poden realitzar les mateixes activitats que un revisor
     i addicionalment poden canviar les propietats del projecte i escriure notes en
     el diari del projecte.
   manually_create_new_place: Crea un nou lloc manualment
@@ -1592,8 +1605,8 @@ ca:
     Flickr
   no_creative_commons_flickr_photos_tagged_x: No hi ha fotos a Flickr etiquetades
     amb Creative Commons per a "%{x}"
-  no_curators_set: Encara no hi ha administradors
-  no_curators_yet: Encara no hi ha administradors!
+  no_curators_set: Encara no hi ha revisors
+  no_curators_yet: Encara no hi ha revisors!
   no_facebook_photos: No trobem fotos a Facebook.
   no_flags: No hi ha marques
   no_flickr_photos_tagged: No hi ha fotos etiquetades amb Flickr!
@@ -1659,7 +1672,7 @@ ca:
     criteri de cerca
   no_wikipedia_page_for_taxon: No hi ha cap pàgina a Viquipèdia per a aquest tàxon.
   no_x_this_y: No hi ha %{x} d’aquest %{y}
-  noble_curators: Curadors actius d'%{site}
+  noble_curators: Revisors actius de %{site}
   none: Cap
   none_of_the_people_you_follow_have_updates: Les persones que tu segueixes encara
     no han fet cap actualització!
@@ -1667,7 +1680,7 @@ ca:
   not_evaluated: no avaluat
   not_filtering: Sense filtrar
   not_findig_what_you_want: No trobes el que vols?
-  not_finding_place_you_want?: No vas trobar el lloc que cercaves?
+  not_finding_place_you_want?: No has trobat el lloc que buscaves?
   not_finding_what_looking_for: No trobes el que busques?
   not_just_creative_commons_licensed: No només llicències de Creative Commons
   not_linked_facebook: El teu compte de %{site_name} ja no està vinculat amb el teu
@@ -1685,7 +1698,7 @@ ca:
   obscured: Difusa
   obscured_description: Les coordenades públiques es mostren en un punt triat a l'atzar
     dins un radi de 10 km de les coordenades reals. Les coordenades reals només les
-    podeu veure tu i els administradors dels projectes als quals s'ha afegit l'observació.
+    podeu veure tu i els administradors (i revisors) dels projectes als quals s'ha afegit l'observació.
   observation: Observació
   observation_added: Observació afegida
   observation_added_to_the_project: Observació afegida al projecte %{project}
@@ -1740,8 +1753,8 @@ ca:
     rectangle al voltant dels límits de la figura poden donar com a resultat algunes
     dades imprecises per a llocs que no semblin rectangles. Això es deu a una limitació
     de la nostra base de dades en la resolució de la qual estem treballant
-  observations_needing_curation: Observacions que requereixen la revisió d'un administrador
-  observations_obscured: Observacions (amagades)
+  observations_needing_curation: Observacions que requereixen ser verifiacdes per un revisor
+  observations_obscured: Observacions (difuses)
   observations_observed_this_month: Les observacions realitzades aquest mes
     no s'afegeixen al mes en curs. Surt i fes més observacions!
   observations_of_taxon: Observacions de %{taxon_name}
@@ -1763,7 +1776,7 @@ ca:
     èxit.
   observations_week: Observacions/setmana
   observations_widget: Giny d'observacions
-  observations_will_revert_to_casual: Les observacions tornaran a l'estat de "casual"
+  observations_will_revert_to_casual: Les observacions tornaran al grau de qualitat bàsic
     si les condicions anteriors no es compleixen o
   observed: Observat el
   observed_by: ', observat per'
@@ -1804,7 +1817,7 @@ ca:
     del projecte.
   only_country_state_and_county: De moment els llocs només inclouen unitats com ara
     països o estats. Apropa la imatge per veure llocs més petits.
-  only_curators_can_add_edit_scientific_names: Només els administradors poden afegir/editar
+  only_curators_can_add_edit_scientific_names: Només els revisors poden afegir/editar
     noms científics.
   only_files_with_10000_rows_at_a_time: Només arxius de 10000 files cadascun, si us
     plau.
@@ -1826,7 +1839,7 @@ ca:
     fer això.  No siguis malvat.
   only_the_project_admin_can_delete_this_project: Només l'administrador del projecte
     pot eliminar aquest projecte.
-  open: Oberta
+  open: Pública
   open_description: Tots els usuaris poden veure les coordenades tret que el tàxon
     estigui en perill.
   optional: opcional
@@ -2082,9 +2095,10 @@ ca:
   project: Projecte
   project_assessments: Avaluació del projecte
   project_assets: Arxius del projecte
+  project_cover: Portada del projecte
   project_created_on: va crear aquest projecte el %{date}
-  project_curator_id: Identificació de l'administrador del projecte
-  project_curators: Administradors del projecte
+  project_curator_id: Identificació del revisor del projecte
+  project_curators: Revisors del projecte
   project_home: Inici del projecte
   project_icon: Icona de projecte
   project_id_or_url_slug: Identificador o enllaç del projecte, ex. 333 o el meu-projecte
@@ -2092,6 +2106,9 @@ ca:
   project_members: Membres de %{project}
   project_observations: Observacions del projecte
   project_post: nota de projecte
+  project_preferred_count_description: |
+    Vols que el nombre de tàxons del projecte sigui citat com
+    espècies, qualsevol tàxon o simplement "fulles" de l'arbre taxonòmic?
   project_rules: Normes del projecte
   project_terms_and_rules: termes i regles del projecte
   project_user_cannot_be_found: No es va trobar l'usuari del projecte
@@ -2166,7 +2183,7 @@ ca:
   redo_search_in_map_area: Torna a realitzar la cerca a l'àrea del mapa
   refresh: Actualitza
   regenerate_url: Torna a generar l'enllaç
-  reload_from_observations: Torna a carregar les teves observacions
+  reload_from_observations: Torna a carregar les observacions
   reload_timed_out: El temps de càrrega ha caducat.  Torna-ho a intentar d’aquí una
     estona.
   remarks_optional: Comentaris <span class="small description">(opcionals)</span>
@@ -2178,9 +2195,9 @@ ca:
   remove: Elimina
   remove_boundary: Elimina límits
   remove_from: Elimina de
-  remove_curator: Elimina administrador
-  remove_curator_role: Elimina funció d'administrador
-  remove_curator_status: Elimina estat d'administrador
+  remove_curator: Elimina el revisor
+  remove_curator_role: Elimina la funció de revisor
+  remove_curator_status: Elimina l'estat de revisor
   remove_from_batch: Elimina l'edició
   remove_from_id_please?: Elimina del grup ID?
   remove_from_list: Elimina de la llista
@@ -2242,6 +2259,7 @@ ca:
   save_all: Desa-ho tot
   save_and_add_another: Desa i afegeix-ne un altre
   save_and_continue: Desa & continua...
+  save_and_add_taxa: Guarda i comença a afegir espècies
   save_changes: Desa canvis
   save_colors: Desa colors
   save_comment: Desa comentari
@@ -2286,7 +2304,7 @@ ca:
   searching: Cercant...
   second_person_possessive_singular: Els teus %{noun}
   second_person_possessive_singular_: El teu %{noun}
-  see_something_wrong_with_taxon: Aquest tàxon és incorrecte? Comunica-ho als administradors.
+  see_something_wrong_with_taxon: Aquest tàxon és incorrecte? Comunica-ho als revisors.
   seen_it?: L’has vist?
   seen_one: N’has vist un?
   select_all: Selecciona-ho tot
@@ -2360,7 +2378,7 @@ ca:
   some_of_those_photos_couldnt_be_saved: 'Algunes fotos no s’han pogut desar: %{error}'
   some_other_reason: Una altra raó que pots explicar després.
   some_people: Algunes persones
-  some_people_that: Algunes persones que
+  some_people_that: Algunes persones a les que
   some_rights_reserved: alguns drets reservats
   something: Alguna cosa
   something_: algun grup o espècie
@@ -2499,7 +2517,7 @@ ca:
     vulguis tenir en les teves preferències.
   subscribe_to_this: Subscriu-te a aquest
   subscribe_to_x_from_this_y_html: |-
-    <a href="#" onclick="$(this).parents('form:first').submit(); return false;">subscriure's</a>
+    <a href="#" onclick="$(this).parents('form:first').submit(); return false;">subscriure't</a>
     a les %{x} d'aquest %{y}.
   subscriptions_arent_available_for: ' Les subscripcions no estan disponibles per
     a llocs sense límits definits.'
@@ -2529,7 +2547,7 @@ ca:
   take_me_flickr!: Sí, vés a Flickr
   taxa: Tàxons
   taxa_all_species_html: Tàxons · Totes les espècies
-  taxa_needing_curation: Tàxons que necessiten administració
+  taxa_needing_curation: Tàxons que necessiten revisió
   taxa_observed: espècies o grups observats
   taxon: Tàxon
   taxon_: Tàxon
@@ -2598,7 +2616,7 @@ ca:
     enviarem un enllaç perquè puguis restablir la teva contrasenya.
   the: el (la)
   the_admin_is_the_person_who: L'administrador és la persona que va crear aquest projecte.
-    Pot fer les mateixes tasques que un curador o gestor amb l'excepció de ser
+    Pot fer les mateixes tasques que un revisor o gestor amb l'excepció de ser
     l'únic que pot eliminar el projecte.
   the_community_agrees_location_doesnt: la comunitat determina que la <strong>ubicació
     és incorrecta</strong> (és a dir, micos enmig de l'oceà, hipopòtams en edificis,
@@ -2607,18 +2625,18 @@ ca:
     no és salvatge/aclimatat</strong> (és a dir, està captiu o és conreat per humans
     o alienígenes espacials intel·ligents)
   the_data_quality_assessment_is: L'avaluació de la qualitat de les dades és un resum
-    de l'exactitud d'una observació. Totes les observacions comencen amb el grau de
-    <strong>"casual"</strong> i aconsegueixen el grau de <strong>"recerca"</strong>
+    de l'exactitud d'una observació. Totes les observacions comencen amb el grau
+    <strong>"bàsic"</strong> i aconsegueixen el grau de <strong>"recerca"</strong>
     quan
   the_following_lists: les llistes següents
   the_following_observations_could: Les observacions següents no s'han pogut afegir
     a %{link}
   the_following_photos_have_been_tagged: S’han etiquetat les fotos següents
   the_identotron_is_a_tool_to: ' L''identotron és una eina per identificar observacions
-    basades en les llistes de comprovació de %{place}. Quan es dóna una classe i un
-    lloc (ex. mamífers i l''Índia), %{place} cercarà en llistes de comprovació les
+    basades en les llistes de verificació de %{place}. Quan es dóna una classe i un
+    lloc (ex. mamífers i l''Índia), %{place} cercarà en llistes de verificació les
     coincidències entre aquesta espècie o grup i aquest lloc; és com una guia d''espècies
-    de tot el planeta. En la majoria de les llistes de comprovació de %{place} encara
+    de tot el planeta. En la majoria de les llistes de verificació de %{place} encara
     s''hi està treballant, però si existeix alguna llista que sigui exhaustiva, és
     a dir, que llisti <em>totes</em> les espècies o grups representatius d''aquest
     lloc, l''identotron mostrarà un avís.'
@@ -2713,7 +2731,7 @@ ca:
     expansió del rang.
   this_photo_is_already_associated: Aquesta foto ja està associada amb una de les
     teves observacions.
-  this_place_has_no_check_list: Aquest lloc no té llista de comprovació i per tant
+  this_place_has_no_check_list: Aquest lloc no té llista de verificació i per tant
     no té guia
   this_species: aquesta espècie
   this_species_has_no_colors: Aquesta espècie no té colors! Ajuda a millorar les cerques
@@ -3016,7 +3034,7 @@ ca:
   within_inaturalist: Dins de %{site_name}
   wondering_what_to_do_next: No saps què fer ara? Pots
   would_you_like_to: . T’agradaria
-  would_like_some_help_identifying_this: vols obtenir ajuda per identificar això
+  would_like_some_help_identifying_this: vol obtenir ajuda per identificar això
   x_admin: '%{login} Administrador'
   x_does_not_exist: '"%{x}" no existeix'
   x_doesnt: '%{login} no'
@@ -3048,11 +3066,11 @@ ca:
   yesterday_at: ', ahir a les 4 de la tarda'
   you: tu
   you_admin: que administres
-  youre_a_site_curator_which_means: Ets un administrador del lloc, la qual cosa significa
+  youre_a_site_curator_which_means: Ets un revisor del lloc, la qual cosa significa
     que t'has ofert voluntari per ajudar a gestionar les dades i supervisar el contingut
     de la pàgina. No et sentis obligat per tot el que això implica, però si tens temps
     de revisar alguns continguts per endavant, t'ho agraïm. Si tens algun dubte, comentari
-    o simplement ja no vols ser administrador, posa't en contacte amb nosaltres a
+    o simplement ja no vols ser revisor, posa't en contacte amb nosaltres a
   you_are_over_your_invites_quota: '...ja has enviat més de 60 invitacions aquest
     mes.'
   you_are_now_following_x: Segueix %{friend_user}.
@@ -3075,6 +3093,7 @@ ca:
     amb aquest article del diari.
   you_can_help_make_our: Pots fer que les nostres pàgines d'espècies siguin més útils
     afegint-hi dades; aquí t’explicarem com pots fer-ho!
+  you_can_only_destroy_taxa_you_created: "Només pots destruir tàxons si els has creat, i no pots destruir tàxons que s'estan utilitzant en canvis taxonòmics."
   you_can_see_these_coordinates_because: Pots veure aquestes coordenades perquè ets
     l’administrador d’un dels projectes als quals es va afegir aquesta observació.
   you_can_show_the_boundary_of: Pots mostrar els límits del lloc a la pàgina del teu
@@ -3157,11 +3176,11 @@ ca:
   your_id: La teva identificació
   your_identification: La teva identificació
   your_inat_account_has_been_activated: S’ha activat el teu compte %{inat}.
-  your_life_list: your life list!
+  your_life_list: La teva llista de vida!
   your_month_observations: Les teves observacions de %{month}
   your_new_password_is: La teva nova contrasenya és
   your_observation_will_get_shared_html: Si no desmarques aquestes caselles, la teva
-    observació es compartirà a les xarxes socials. Pots canviar per <a href='%{url}'
+    observació es compartirà a les xarxes socials. Pots canviar-ho a <a href='%{url}'
     target='_blank'>edita la teva configuració</a>.
   your_observation_wont_get: La teva observació no s’associarà amb altres observacions
     d'aquesta espècie i la teva llista de vida no s’actualitzarà.
@@ -3173,13 +3192,12 @@ ca:
   your_picasa_account_info: Informació del teu compte de Picasa
   your_should_recognize: Hauries de reconèixer algunes d'aquestes fotos
   your_site_account_has_been_created: S’ha creat el teu compte de %{site}.
-  your_site_needs_your_to_authorize_more_permissions_from_provider: 'Des de %{site_name}
-    et demanem que autoritzis els següents permisos de %{provider}:'
+  your_site_needs_your_to_authorize_more_permissions_from_provider: 'Des de %{site_name} et demanem que autoritzis els següents permisos de %{provider}:'
   your_subscriptions: Les teves subscripcions
   your_sure_delete_list?: Estàs segur que vols eliminar aquesta llista?
   your_sure_delete_taxon_from_list?: Estàs segur que vols eliminar %{taxon} d'aquesta
     llista?
-  your_world!: El teu país
+  your_world!: El teu país!
   youre_following: segueixes
   youre_not_following_anyone: No segueixes a ningú. Seguir a altres naturalistes et
     permetrà portar un control de les seves observacions més recents. Esbrina què
@@ -3189,6 +3207,8 @@ ca:
   youve_linked_your_inaturalist_picasa_account: Has vinculat el teu compte de %{site_name}
     amb el teu compte de Picasa. Aquesta acció et permetrà associar les teves fotos
     de Picasa amb les teves observacions de %{site_name}.
+  youve_opted_out_of_community_ids: "Has optat per no dependre de les identificacions de la comunitat"
+  youve_opted_out_of_community_ids_for_this_obs: "Has optat per no dependre de les identificacions de la comunitat per a aquesta observació"
   youve_seen_it_want_to: Ho has vist! Vols
   zoom_to_taxon_name: Apropa’t a %{taxonname}
   zoom_to_x: Vés a %{x}
@@ -3266,7 +3286,7 @@ ca:
           dos, separa el nom científic del nom comú amb una coma,
           com <code>Homo sapiens, humà</code>.
         places_note: |-
-          Nota: no tots els llocs tenen llistes de comprovació amb tàxons.
+          Nota: no tots els llocs tenen llistes de verificació amb tàxons.
           Si tens problemes per trobar un lloc amb
           tàxons, intenta escollir àrees més grans amb les fronteres
           polítiques, com nacions, estats, províncies o comarques.
@@ -3369,15 +3389,15 @@ ca:
           at master - GitHub\">fes un fork del projecte a GitHub!</a>"
         how_do_i_contact_inaturalist?: Com puc posar-me en contacte amb %{site_name}?
         you_can_contact_us_at_html: Ens pots contactar a <a href="mailto:%{help_email}">%{help_email}</a>
-        what_are_admins_and_curators?: Què són els administradors?
-        inat_admins_are_the_people_who: "%{site_name} admins són els que dirigeixen
+        what_are_admins_and_curators?: Què són els administradors i revisors?
+        inat_admins_are_the_people_who: "Els administradors de %{site_name} són els que dirigeixen
           el lloc.  Tenen accés directe al \ncodi subjacent de la pàgina i a la base
           de dades, i poden canviar\nqualsevol element del lloc web."
-        curators_are_inat_users_who_volunteer_to_html: "Els administradors són usuaris
+        curators_are_inat_users_who_volunteer_to_html: "Els revisors són usuaris
           de %{site_name} que voluntàriament ens ajuden a\nmantenir la nostra informació
-          taxonòmica actualitzada.  Si estàs interessat\na convertir-te en administrador,
+          taxonòmica actualitzada.  Si estàs interessat\na convertir-te en revisor,
           si us plau, <a href=mailto: %{help_email}>\nposa't en contacte amb nosaltres</a>.
-          \ Els administradors també poden convertir altres usuaris \nen administradors.
+          \ Els revisors també poden convertir altres usuaris \nen revisors.
           \ Si us plau, ascendeix només les persones en les\nquals confiïs i sàpigues
           que realment tenen coneixements taxonòmics."
         what_is_considered_inappropriate_content?: Què es considera contingut inadequat?
@@ -3471,24 +3491,24 @@ ca:
           en els administradors amb els quals participes en els projectes.
         what_is_does_it_mean_for: Què significa que una observació estigui amagada?
         when_coordinates_are_obscured_it_means_that: |-
-          Quan les coordenades estan ocultes significa que es mostra públicament un punt a l'atzar dins dels
+          Quan les coordenades estan difuses significa que es mostra públicament un punt a l'atzar dins dels
           10 km a la rodona de les teves coordenades reals
           (per exemple, a la pàgina d'inici, la pàgina d'observacions i pàgines
           de projectes), mentre que les teves coordenades reals només són visibles quan
           estàs veient les teves pròpies observacions (per exemple, en el projecte
           individual i la llista de les teves pròpies observacions). Tingues en compte que els
           administradors que has afegit a les teves observacions també poden veure les teves
-          coordenades veritables.  Les coordenades ocultes sempre es mostraran
+          coordenades veritables.  Les coordenades difuses sempre es mostraran
           amb una marca circular sense arrels en mapes i retroacció geoespacial.
         coordinates_are_obscured_for_all_taxa: |-
-          Les coordenades s'oculten automàticament per a tota la informació
+          Les coordenades queden difuses automàticament per a tota la informació
           taxonòmica que es trobi EN RISC D'AMENAÇA o pitjor, d'acord amb la
           llista vermella de la UICN.  Alguna informació taxonòmica pot ser considerada
           en perill per altres autoritats de conservació, i d’altra pot ser
           marcada simplement com que està en perill pels administradors de %{site_name} si ells
           creuen que s’ha de protegir.
         you_can_also_obscure_the_coordinates_html: |-
-          També pots ocultar les coordenades de les teves pròpies observacions
+          També pots deixar difuses les coordenades de les teves pròpies observacions
           sense importar la informació taxonòmica.  Mostra <a href="#geoprivacy">geoprivacitat</a>.
         what_is_the_quality_assessment: Quina és la valoració de qualitat i com es
           poden qualificar les observacions per obtenir el grau de "recerca"?
@@ -3541,7 +3561,7 @@ ca:
           d'aquest tàxon a les llistes de tots els llocs descendents de 
           <a href="%{place_url}">%{place_name}</a> 
           a <strong>"%{establishment_means}"</strong>. Només els
-          curadors poden utilitzar-lo. Canviar els medis establerts a
+          revisors poden utilitzar-lo. Canviar els medis establerts a
           "introduïts" tindrà aproximadament el mateix efecte,
           però els valors ja existents no canviaran, només els que estan en blanc.
     lists:
@@ -3551,8 +3571,8 @@ ca:
           Només pots escollir llocs que tenen límits.
       show:
         project_list_desc: Les llistes de projecte inclouen tàxons agregats manualment
-          pels curadors del projecte y tàxons verificats per observacions amb
-          grau d'investigació i agregats al projecte.
+          pels revisors del projecte y tàxons verificats per observacions amb
+          grau de recerca i agregats al projecte.
     observations:
       copy_tip: Afegeix una nova observació copiant-ne la data, el lloc, les fotos
         i els camps d'observació.
@@ -3577,12 +3597,12 @@ ca:
         taxon_extras_help_html: |-
           Nota: aquestes columnes alentiran la generació de l'exportació
         geo_help_html: |-
-          Ciutat, comptat, estat, camps de país sobre la base de
+          Ciutat, demarcació regional, estat, camps de país sobre la base de
           coordenades. Per a les observacions en què no s'apliquen aquests tipus de llocs,
           s'utilitzaran sistemes administratius anàlegs. Els camps
           private_ * només s'inclouran quan s'utilitzi un filtre
           d'usuari i tu siguis aquest usuari, o quan s'utilitzi un filtre de
-          projecte i tu siguis el curador del projecte.
+          projecte i tu siguis el revisor del projecte.
         be_patient: |-
           Si us plau tingues paciència, això pot trigar uns minuts. Si
           està trigant massa temps, pots
@@ -3653,7 +3673,7 @@ ca:
           El tàxon comunitari (o la identificació per la comunitat) representa quin tàxon de %{site_name} la comunitat pensa que és representat en una observació. Si estàs interessat en com seleccionem un tàxon comunitari consulta les notes sobre l'algoritme de baix, però bàxicament tractem d'<strong>escollir un tàxon amb un acord de més de 2/3 dels identificadors. A vegades això pot significar l'elecció d'un nivell superior de tàxon que contingui un nombre de desacords (per exemple, pot ser que tu pensis que es tracta d'una serp rei de Califòrnia i jo crec que és la serp de cascavell, i Natusfera tria el subordre Serpentes, que conté a totes les serps). L'algoritmo tambié afavoreix lleugerament la dissidència, perquè ens hem adonat que sovint els dissidents tenen raó.
           </p>
           <p class="ui">
-          El tàxon comunitari és el tàxon que utilitzem per compartir observacions amb socis, enlllaçant les observacions d'un mateix tàxon del lloc web, actualitzant la teva llista de vida, etc. Si per alguna raó no estàs d'acord amb el tàxon comunitari pots rebutjar-lo, cosa que significa que la teva identificació serà la que s'utilitzarà per a vincular-se amb altres observacions, actualitzacions de la teva llista de vida, etc. També significa que aquesta observació només podrà tenir grau d'investigació quan la comunitat estigui d'acord <em>amb tu</em>. Si no t'agrada la idea del tàxon comunitari, pots sortir-ne totalment <a href="/users/editar" target="_blank">editant la teva configuració</a>.
+          El tàxon comunitari és el tàxon que utilitzem per compartir observacions amb socis, enlllaçant les observacions d'un mateix tàxon del lloc web, actualitzant la teva llista de vida, etc. Si per alguna raó no estàs d'acord amb el tàxon comunitari pots rebutjar-lo, cosa que significa que la teva identificació serà la que s'utilitzarà per a vincular-se amb altres observacions, actualitzacions de la teva llista de vida, etc. També significa que aquesta observació només podrà tenir grau de recerca quan la comunitat estigui d'acord <em>amb tu</em>. Si no t'agrada la idea del tàxon comunitari, pots sortir-ne totalment <a href="/users/editar" target="_blank">editant la teva configuració</a>.
           </p>
           <p class="ui">
           <strong>L'algoritme:</strong> per a tots els tàxons identificats i tots els tàxons que aquests contenen (per exemple, el gènere <i>Homo</i> conté <i>Homo sapiens</i>), pren la puntuació
@@ -3680,7 +3700,7 @@ ca:
       about_editing_observation_fields_desc_html: |-
         <p class='ui'>
           Pots editar aquest camp de la observació, degut a que la vas crear
-          o perquè ets un curador del lloc. Si ets un curador, si us plau,
+          o perquè ets un revisor del lloc. Si ets un revisor, si us plau,
           segueix les següents directrius
         </p>
         <ol>
@@ -3741,13 +3761,13 @@ ca:
     places:
       kml_field_desc: KML de la frontera del lloc. Pots fer-ne una mitjançant Google
         Maps, Google Earth o la majoria de les aplicacions de SIG. Ha de tenir almenys
-        un polígon i que sigui de menys d'1 MB (5 MB en el cas dels curadors del web).
+        un polígon i que sigui de menys d'1 MB (5 MB en el cas dels revisors del web).
       edit:
         complex_boundary_note_html: Aquest límit és massa complex per poder-lo editar a la web.
           Tot i així, pots <a href="%{url}">descarregar l'arxiu KML</a>,
           editar-lo en una aplicació de SIG, i pujar el teu KML editat directament.
         admin_level_desc: Només s'ha d'establir per als organismes polítics. En
-          termes equivalents d'Estats Units, 0 = país, 1 = estat, 2 = comptat,
+          termes equivalents d'Estats Units, 0 = país, 1 = estat, 2 = demarcació regional,
           3 = ciutat
       index:
         adding_new_places: l’addició de nous llocs
@@ -3771,7 +3791,7 @@ ca:
           la gent a la biodiversitat mentre que, alhora,\nes recullen dades valuoses.\n</p>"
         cover_desc: |-
           Imatge del bàner opcional que apareixerà a la part superior de la
-          pàgina del projecte. Ha de tenir 950 px d'amplada, menys de 400 px d’alçària.
+          pàgina del projecte. Ha de tenir 950 px d'amplada, i menys de 400 px d’alçària.
         custom_project_fields_means: |-
           Permet modificar el bàner del projecte, afegir contingut a la part
           dreta del projecte i donar-li cert estil per millorar el seu aspecte visual.
@@ -3806,7 +3826,7 @@ ca:
           on_list: ser d'un tàxon de la llista de projectes
         start_time_desc: Hora d'inici del Bioblitz
         trusted_project_means: Quan un projecte està verificat, els administradors
-          i curadors del projecte poden crear, actualitzar i esborrar els seus recursos
+          i revisors del projecte poden crear, actualitzar i esborrar els seus recursos
           del projecte.
       invite:
         description_html: |-
@@ -3820,12 +3840,12 @@ ca:
            <li>Si s'ha designat com a un projecte per invitació, se'ls permetrà unir-se al teu projecte</li>
           </ol>
           <p class="ui">
-           Els curadors del projecte són els únics que poden convidar gent a unir-se a un projecte. Pots buscar a les persones pel seu nom d'usuari de Natusfera o
+           Els revisors del projecte són els únics que poden convidar gent a unir-se a un projecte. Pots buscar a les persones pel seu nom d'usuari de Natusfera o
            per la seva direcció completa de correu electrònic, suposant que la tenim.
           </p>
       join:
         invite_only_description: Només es pot formar part d'aquest projecte per invitació.
-          Si t'hi vols unir posa't en contacte amb un dels curadors
+          Si t'hi vols unir posa't en contacte amb un dels revisors
           i sol·licita una invitació.
       members:
         bioblitz_notice_html: <strong>Nota:</strong> aquesta llista conté la gent
@@ -3841,10 +3861,10 @@ ca:
           Això es fa per eliminar l'obstacle d'unir-se a un projecte per poder contribuir
           a les estadístiques d'aquests esdeveniments.\n</p>\n<p> \nTingues en compte que per bé
           que aquest tipus de projecte mostri estadístiques per a les observacions que
-          no s'han afegit intencionadament per al projecte, els seus curadors
+          no s'han afegit intencionadament per al projecte, els seus revisors
           no podran veure les coordenades de les observacions ocultes o difuses ni podran assumir que
           els observadors estan d'acord amb les condicions del projecte. Si ets
-          curador d'un projecte i necessites accés a aquestes coordenades ocultes necessitaràs
+          revisor d'un projecte i necessites accés a aquestes coordenades ocultes necessitaràs
           que els participants estiguin d'acord amb les condicions del projecte; i si
           vols que aquestes observacions es contin a la llista concreta del projecte
           t'hauràs d'assegurar que els participants s'uneixin al projecte i afegeixin
@@ -3853,14 +3873,14 @@ ca:
           Això només inclou observacions explícites afegides a aquest projecte,
           no totes les observacions registrades al lloc i temps d'aquest esdeveniment.
         curated_checklist_desc: |-
-          Aquesta és la llista de comprovació i comptatge de tàxons a partir de les observacions explícites afegides a aquest projecte,
+          Aquesta és la llista de verificació i comptatge de tàxons a partir de les observacions explícites afegides a aquest projecte,
           no inclou totes les observacions registrades en el lloc i el temps d'aquestesdeveniment.
     shared:
       spam:
         message_for_owner_and_curators_html: |
           Aquesta entrada s'ha marcat com a spam i ja no és visible públicament.
           Tu pots veure'l perquè el vas crear o perquè ets un
-          curador. Si creus que és un error, si us plau
+          revisor. Si creus que és un error, si us plau
           <a href="mailto:%{email}">contacta amb nosaltres</a>.
         this_has_been_flagged_as_spam: Això s'ha marcat com a spam
       not_found:
@@ -3937,7 +3957,7 @@ ca:
           mai desautoritzi la teva. Els usuaris podran seguir afegint
           identificacions, però la opinió de la comunitat no serà
           afavorida per sobre de la teva. Això significa que les teves
-          observacions només tindran de grau d'investigació quan
+          observacions només tindran de grau de recerca quan
           estiguis d'acord amb la comunitat.
       show:
         take_a_chance_to_review_html: 'Fes l''intent de revisar <a href="%{link}">les nostres normes generals</a>.'

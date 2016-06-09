@@ -461,6 +461,7 @@ en:
   built_with_site_guides_html: "Built with <a href='%{url}'>%{site_name} Guides</a>"
   bulk_import_of_filename_is_complete: "Bulk import of %{filename} is complete"
   but_we_didnt_add_this_observation_to_the_x_project: "But we didn't add this observation to the %{project} project because you didn't agree to the project terms."
+  but_you_can_still: but you can still
   by: by
   by_adding_ids_to_observations: by adding IDs to observations
   by_editedby: "by %{editedby}"
