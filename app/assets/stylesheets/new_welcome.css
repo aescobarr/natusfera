@@ -924,9 +924,9 @@ img.pre-footer{
 }
 
 .section-end{
-	height: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	height: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	/*border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-color: #aeaeae;*/
@@ -955,10 +955,9 @@ img.pre-footer{
 div.row.legal ul.list-group li.list-group-item{
 	background-color: #2f2f2f;
 	border-color: #2f2f2f;
-	
 }
 
-div.row.legal div.col-md-3 ul.list-group li.list-group-item{
+div.row.legal div.col-md-2 ul.list-group li.list-group-item{
 	font-family: 'Myriad Pro Bold';
 	color: #fff;
 }
@@ -968,7 +967,7 @@ div.row.legal div.col-md-3 ul.list-group li.list-group-item{
 	color: #fff;
 }*/
 
-div.row.legal div.col-md-3 ul.list-group li.list-group-item a{
+div.row.legal div.col-md-2 ul.list-group li.list-group-item a{
 	font-family: 'Myriad Pro Bold';
 	color: #fff;
 }
@@ -976,8 +975,8 @@ div.row.legal div.col-md-3 ul.list-group li.list-group-item a{
 div.row.legal div.col-md-3{
 	border-right-width: 1px;
 	border-right-color: #fff;
-	border-style: solid;
-	height: 320px;
+	/*border-style: solid;*/
+	/*height: 320px;*/
 }
 
 div.row.legal div.col-md-3.no-right-separator{
@@ -1338,4 +1337,42 @@ div#bottom a {
 
 .span_right{
     float: right;
+}
+
+.menulegalitem{
+    font-size: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.menulegalminoritem{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.lgdown{
+    margin-top: 65px !important;
+}
+
+.applogo{
+    width: 180px;
+    padding-bottom: 10px;
+}
+
+.sublegal{
+    background-color: #2f2f2f;
+}
+
+.sublegal .row{
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.sublegal a, span{
+    color: #fff;
+    font-family: "Myriad Pro Semibold";
+}
+
+.sublegal span a {
+    color: #8AB63B;
 }

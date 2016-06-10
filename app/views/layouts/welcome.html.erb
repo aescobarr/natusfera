@@ -638,48 +638,50 @@
 	<div class="row legal">
 		<div class="col-md-3 no-right-separator">
 			<img src="/assets/natusfera_legal.png">
-			<span><%= t :powered_by_inaturalist_open_source_software_html %></span>
 		</div>
-		<div class="col-md-3">
-			<ul class="list-group">				
-				<li class="list-group-item">
-					<%= link_to t(:observations).upcase, observations_path %>
+		<div class="col-md-2">
+			<ul class="list-group lgdown">
+				<li class="list-group-item menulegalitem">
+					<%= link_to t(:observations), observations_path %>
 				</li>
-				<li class="list-group-item">					
-					<%= link_to t(:species).upcase, taxa_path %>
+				<li class="list-group-item menulegalitem">
+					<%= link_to t(:species), taxa_path %>
 				</li>
-				<li class="list-group-item">					
-					<%= link_to t(:projects).upcase, projects_path %>					
+				<li class="list-group-item menulegalitem">
+					<%= link_to t(:projects), projects_path %>
 				</li>
-				<li class="list-group-item">					
-					<%= link_to t(:places).upcase, places_path %>
+				<li class="list-group-item menulegalitem">
+					<%= link_to t(:places), places_path %>
 				</li>
-				<li class="list-group-item">
-					<%= link_to t(:guides).upcase, guides_path %>
+				<li class="list-group-item menulegalitem">
+					<%= link_to t(:guides), guides_path %>
 				</li>
-				<li class="list-group-item">					
-					<%= link_to t(:people).upcase, people_path %>
+				<li class="list-group-item menulegalitem">
+					<%= link_to t(:people), people_path %>
 				</li>				
 			</ul>
 		</div>
-		<div class="col-md-3">
-			<ul class="list-group">
-        <li class="list-group-item"><a href="/pages/help">Ayuda</a></li>
-				<!--<li class="list-group-item"><a href="#">Sobre nosotros</a></li>
-				<li class="list-group-item"><a href="#">Contacto</a></li>
-				<li class="list-group-item"><a href="#">Terminos</a></li>-->
-				<li class="list-group-item"><a href="/pages/privacy">Privacidad</a></li>
+		<div class="col-md-2">
+			<ul class="list-group lgdown">
+        <li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.about_url %>"><%= t(:about_x, :x => CONFIG.site_name) %></a></li>
+        <li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.help_url %>"><%= t(:help) %></a></li>
+				<li class="list-group-item menulegalminoritem"><a href="mailto:<%= CONFIG.admin_email %>">Contacto</a></li>
+				<li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.terms_url %>"><%= t(:terms_service) %></a></li>
+				<li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.privacy_url %>"><%= t(:privacy) %></a></li>
 			</ul>
 		</div>
-		<div class="col-md-3">
-			<!--<ul class="list-group">
-				<li class="list-group-item">SIGUENOS</li>
-				<li class="list-group-item"><a href="#">Facebook</a></li>
-				<li class="list-group-item"><a href="#">Twitter</a></li>
-				<li class="list-group-item"><a href="#">Instagram</a></li>
-				<li class="list-group-item"><a href="#">RSS</a></li>				
-			</ul>-->
+		<div class="col-md-2 lgdown">
+      <% if CONFIG.iphone_app_url %>
+        <a href="<%= CONFIG.iphone_app_url %>"><img class="applogo" src="<%= asset_path("apple_app_store.png") %>"></a>
+      <% end %>
+      <% if CONFIG.android_app_url %>
+        <a href="<%= CONFIG.android_app_url %>"><img class="applogo" src="<%= asset_path("android_market.png") %>"></a>
+      <% end %>
 		</div>
+    <div class="col-md-3 lgdown">
+      <a style="margin-left: 30%;" href="#"><img src="<%= asset_path("twitter-home.png") %>"></a>
+      <a style="margin-left: 10px;" href="mailto:<%= CONFIG.admin_email %>"><img src="<%= asset_path("email-home.png") %>"></a>
+    </div>
 		<!--<div class="col-md-4">
 			<div class="input-group">
 				<input type="text" class="form-control" placeholder="SUSCRIBETE A NUESTRAS NOTICIAS...">
@@ -687,22 +689,28 @@
 					<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
 				</span>
 			</div>
-			<div class="app_group">
-				<%# if CONFIG.iphone_app_url %>
-					<a href="<%#= CONFIG.iphone_app_url %>"><img src="<%#= asset_path("apple_app_store.png") %>"></a>
-				<%# end %>
-				<%# if CONFIG.android_app_url %>
-	    		<a href="<%#= CONFIG.android_app_url %>"><img src="<%#= asset_path("android_market.png") %>"></a>
-	    	<%# end %>
-    	</div>-->
-	</div>
-  <%# if CONFIG.custom_footer %>
-  <div id="footer" class="clear">
-    <div style="text-align: center">
-      <%= raw CONFIG.custom_footer %>
+	</div>-->
+</div>
+  <% if CONFIG.custom_footer %>
+      <div class="row">
+        <div id="footer" class="clear">
+          <div style="text-align: center">
+            <%= raw CONFIG.custom_footer %>
+          </div>
+        </div>
+      </div>
+  <% end %>
+  <div class="row sublegal">
+    <div style="text-align: center;" class="row">
+      <a href="<%= CONFIG.about_url %>"><%= t(:about_x, :x => CONFIG.site_name) %> / </a>
+      <a href="<%= CONFIG.help_url %>"><%= t(:help) %> / </a>
+      <a href="mailto:<%= CONFIG.admin_email %>">Contacto / </a>
+      <a href="<%= CONFIG.terms_url %>"><%= t(:terms_service) %> / </a>
+      <a href="<%= CONFIG.privacy_url %>"><%= t(:privacy) %></a>
+    </div>
+    <div style="text-align: center;" class="row">
+      <span><%= t :powered_by_inaturalist_open_source_software_html %></span>
     </div>
   </div>
-  <%# end %>
-</div>
 </body>
 </html>
