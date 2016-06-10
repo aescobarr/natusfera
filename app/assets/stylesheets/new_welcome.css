@@ -520,15 +520,16 @@ a {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {		  
-  /*height: 50%;*/
-  height: 300px;
-  margin: auto;
+    /*height: 50%;*/
+    height: 600px;
+    margin: auto;
 }
 div#map{
 	/*background-color: red;*/
 	/*height: 50%;*/
-    height: 300px;
+    /*height: 300px;*/
 }
+
 div#slider-footer{		
     height: 100px;
 }
@@ -566,8 +567,8 @@ div.carousel-caption a{
 	border-right-width: 0px !important;
 }		
 h4.list-group-item-heading{
-	font-size:16px;
-	font-family: 'Myriad Pro Semibold Italic';
+	font-size:20px;
+	font-family: 'Myriad Pro Semibold';
 }
 p.list-group-item-text{
 	font-size:10px;
@@ -682,7 +683,8 @@ div.row.body-content-row-item-picture a{
 }*/
 
 .grid {
-    background-color: #eaece9;
+    background-color: #FFF;
+    padding-left: 60px;
 }
 
 .grid-text h4{
@@ -700,9 +702,9 @@ div.row.body-content-row-item-picture a{
 
 .grid-item {
 	float: left;
-	width: 285px;	
+	width: 285px;
     height: 295px;
-	background: #e6e5e4;
+	background: #FFF;
 	/*border: 2px solid #b6b5b4;
 	border-top-left-radius: 4px; 
 	border-top-right-radius: 4px;
@@ -718,9 +720,11 @@ div.row.body-content-row-item-picture a{
 	top:25px;
 	left:25px;
 	width:230px;
-    height: 260px;
+    height: 265px;
 	/*height:300px;*/
 	background-color:white;
+    border: solid 1px;
+    border-color: #5B5B5B;
 }
 
 .inner-grid-wrapper-small h4{
@@ -920,12 +924,12 @@ img.pre-footer{
 }
 
 .section-end{
-	height: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-bottom-width: 1px;
+	height: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-color: #aeaeae;
+	border-color: #aeaeae;*/
 }
 
 .section-end-post{
@@ -951,10 +955,9 @@ img.pre-footer{
 div.row.legal ul.list-group li.list-group-item{
 	background-color: #2f2f2f;
 	border-color: #2f2f2f;
-	
 }
 
-div.row.legal div.col-md-3 ul.list-group li.list-group-item{
+div.row.legal div.col-md-2 ul.list-group li.list-group-item{
 	font-family: 'Myriad Pro Bold';
 	color: #fff;
 }
@@ -964,7 +967,7 @@ div.row.legal div.col-md-3 ul.list-group li.list-group-item{
 	color: #fff;
 }*/
 
-div.row.legal div.col-md-3 ul.list-group li.list-group-item a{
+div.row.legal div.col-md-2 ul.list-group li.list-group-item a{
 	font-family: 'Myriad Pro Bold';
 	color: #fff;
 }
@@ -972,8 +975,8 @@ div.row.legal div.col-md-3 ul.list-group li.list-group-item a{
 div.row.legal div.col-md-3{
 	border-right-width: 1px;
 	border-right-color: #fff;
-	border-style: solid;
-	height: 320px;
+	/*border-style: solid;*/
+	/*height: 320px;*/
 }
 
 div.row.legal div.col-md-3.no-right-separator{
@@ -1151,6 +1154,10 @@ div.grid-item.func div.inner-grid-wrapper-small a img {
     margin-right: 10px;
 }
 
+div.grid-item.func div.inner-grid-wrapper-small{
+    border: 0 !important;
+}
+
 div.grid-item.func div.inner-grid-wrapper-small.applink{
     background-color: #82b71f;
     color: #82b71f;
@@ -1162,4 +1169,210 @@ div.grid-item.func div.inner-grid-wrapper-small.applink{
 
 .carousel-control.left {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(91, 90, 95, 0.5) 100%);    
+}
+
+.carousel-indicators .active {
+    background-color: #5D9B45;
+    height: 15px;
+    margin: 0;
+    width: 15px;
+}
+
+.carousel-indicators li {
+    background-color: #C2DEAE;
+    border: 1px solid #C2DEAE;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 14px;
+}
+
+.carousel-inner {
+    margin-bottom:50px;
+}
+
+.carousel-indicators {
+    bottom:-50px;
+}
+
+.username_label, .username_label:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 80px;
+}
+
+.species_label, .species_label:hover {
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+ #bottom {
+     background-color: rgba(85, 85, 85, 0.9);
+     color: #FFF;
+     bottom:0;
+     left:0;
+     z-index: 10000;
+     position: absolute;
+     width: 100%;
+ }
+
+div#bottom a {
+    font-size: 18px;
+    color: white;
+}
+
+#map-container{
+    position: absolute;
+    bottom: 40;
+    right: 10;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(85, 85, 85, 0.9);
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+ #observation_count{
+     top: 10;
+     right: 10;
+     position: absolute;
+     width: 200px;
+     height: 70px;
+     background-color: rgba(85, 85, 85, 0.9);
+ }
+
+#species_count{
+    top: 90;
+    right: 10;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(75, 75, 75, 0.9);
+}
+
+#people_count{
+    top: 170;
+    right: 10;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(85, 85, 85, 0.9);
+}
+
+.cblink, .cblink:hover {
+    color: #80964E;
+    font-size: 24px;
+    text-transform: lowercase;
+}
+
+.count_banner{
+    right: 5;
+    bottom: 1;
+    position: absolute;
+}
+
+.count_banner_n{
+    right: 5;
+    top: 1;
+    position: absolute;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.locale_link{
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #5B5B5B;
+}
+
+.active{
+    color: #80964E !important;
+}
+
+.sidebar-nav{
+    /*padding-top: 25px;*/
+    /*padding-left: 0 !important;*/
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    width: 180px;
+}
+
+.sidebar-content{
+    padding-left: 0 !important;
+}
+
+.green-fill{
+    background-color: #8AB63B;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.white-fill{
+    background-color: #FFF;
+}
+
+.nav-button{
+    color: #5B5B5B;
+}
+
+.nav-button:hover{
+    color: #5B5B5B;
+    background-color: #FFF;
+}
+
+.stretch{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+}
+
+.span_right{
+    float: right;
+}
+
+.menulegalitem{
+    font-size: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.menulegalminoritem{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.lgdown{
+    margin-top: 65px !important;
+}
+
+.applogo{
+    width: 180px;
+    padding-bottom: 10px;
+}
+
+.sublegal{
+    background-color: #2f2f2f;
+}
+
+.sublegal .row{
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.sublegal a, span{
+    color: #fff;
+    font-family: "Myriad Pro Semibold";
+}
+
+.sublegal span a {
+    color: #8AB63B;
 }
