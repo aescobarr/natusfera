@@ -665,7 +665,9 @@
 			<ul class="list-group lgdown">
         <li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.about_url %>"><%= t(:about_x, :x => CONFIG.site_name) %></a></li>
         <li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.help_url %>"><%= t(:help) %></a></li>
-				<li class="list-group-item menulegalminoritem"><a href="mailto:<%= CONFIG.admin_email %>">Contacto</a></li>
+        <% if CONFIG.admin_email %>
+				  <li class="list-group-item menulegalminoritem"><a href="mailto:<%= CONFIG.admin_email %>">Contacto</a></li>
+        <% end %>
 				<li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.terms_url %>"><%= t(:terms_service) %></a></li>
 				<li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.privacy_url %>"><%= t(:privacy) %></a></li>
 			</ul>
@@ -679,8 +681,12 @@
       <% end %>
 		</div>
     <div class="col-md-3 lgdown">
-      <a style="margin-left: 30%;" href="#"><img src="<%= asset_path("twitter-home.png") %>"></a>
-      <a style="margin-left: 10px;" href="mailto:<%= CONFIG.admin_email %>"><img src="<%= asset_path("email-home.png") %>"></a>
+      <% if CONFIG.twitter_url %>
+        <a style="margin-left: 30%;" href="<%= CONFIG.twitter_url %>" target="_blank"><img src="<%= asset_path("twitter-home.png") %>"></a>
+      <% end %>
+      <% if CONFIG.admin_email %>
+        <a style="margin-left: 10px;" href="mailto:<%= CONFIG.admin_email %>"><img src="<%= asset_path("email-home.png") %>"></a>
+      <% end %>
     </div>
 		<!--<div class="col-md-4">
 			<div class="input-group">
