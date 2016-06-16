@@ -2764,7 +2764,7 @@ en:
   time_: time
   time_ago: "%{time} ago"
   title: title
-  title_and_description: "Title & Description"
+  title_and_description: "Title and description"
   titled_favorites_and_the_most_recent_additions: titled "Favorites" and the most recent additions will appear in this space.
   to: to
   to_: to
