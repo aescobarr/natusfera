@@ -162,6 +162,7 @@ ca:
   add_several_observations_at_once: Afegeix diverses observacions d'una tirada
   add_shape: Afegeix un límit
   add_some_now: Afegeix-ne algunes ara
+  add_tags: Afegeix etiquetes
   add_taxa: Afegeix tàxons
   add_taxa_to_places: Afegeix tàxons a llocs
   add_taxon_batch_to: Afegeix un grup de tàxons a %{list}
@@ -176,7 +177,7 @@ ca:
   add_to_id_please: Sol·licita ID
   add_to_list: Afegeix a la llista
   add_to_project: Afegeix al projecte
-  add_to_your_life_list: Afegeix a la llista de la teva vida
+  add_to_your_life_list: Afegeix a la teva llista de vida
   add_to_your_list: Afegeix a la teva llista
   add_your_own_observations_at: Afegeix les teves pròpies observacions a %{site_name}
   add_your_photo: Afegeix la teva foto
@@ -883,6 +884,7 @@ ca:
     el teu lloc web »
   embed_place_widget: Insereix un giny de lloc
   embed_widget_project: Insereix un giny per a aquest projecte a la teva pàgina web
+  enable_offline_access_for_iphone: Habilitar l'accés sense línia per a iPhone
   end: Final
   endangered: en perill
   endemic: endèmica
@@ -1021,10 +1023,12 @@ ca:
   from: de
   from_a_place: d'un lloc
   from_anywhere_change: de qualsevol lloc (<span class="button">modifica</span>)
+  from_eol_collection: D'una col·lecció d'EOL
   from_in_this_place: d'aquest lloc
   from_list: De la llista
   from_this: d'aquesta
   from_photos: De fotos
+  from_place: D'un lloc
   from_your_site_observations: Observacions de %{site_name}
   from_licensed_site_observations: Observacions de %{site_name} llicència
   full_id_please!: Nom científic complet!
@@ -2176,6 +2180,7 @@ ca:
   recent_updates: Actualitzacions recents
   recently_active: Actius recentment
   recently_created: Creats recentment
+  recently_created_projects_from_place: Projectes recentment creats des de %{place}
   recently_observed: Observats recentment
   recently_resolved: Resolts recentment
   record!: Comparteix!
@@ -2193,6 +2198,7 @@ ca:
     i alguna informació sobre la <strong>mida</strong >.'
   remember_me: Recorda'm
   remove: Elimina
+  remove_all_tags: Elimina totes les etiquetes
   remove_boundary: Elimina límits
   remove_from: Elimina de
   remove_curator: Elimina el revisor
@@ -2204,11 +2210,14 @@ ca:
   remove_from_project: Quitar del proyecto
   remove_manager: Elimina gestor
   remove_project_user: Elimina usuari de projecte
+  remove_selected: Elimina els elements seleccionats
+  remove_tags: Elimina etiquetes
   remove_your_existing_id?: Vols eliminar la identificació existent?
   removed: eliminat
   removed!: Eliminat!
   removed_project_user: Usuari eliminat del projecte
   removing: Eliminant...
+  reorder_by_taxonomy: Reordena per taxonomia
   repair_doesnt_work_for_that_kind_of_photo: La reparació no funciona per a aquest
     tipus de foto.
   replace_boundary_with_kml: Substitueix límit amb KML
@@ -2359,6 +2368,7 @@ ca:
   show_total_listed_taxa: Mostra la llista total d'espècies o grups
   showing_observations_by: Mostrant observacions fetes per
   showing_one_to: Mostrant 1 -
+  showing_taxa_from_place: Mostrant els tàxons de %{place}
   shown_publicly_as: Mostra públicament com a
   sign_in: Inicia sessió
   sign_in_with_provider: Inicia sessió amb %{provider}
@@ -2767,6 +2777,7 @@ ca:
   time_: hora
   time_ago: fa %{time}
   title: títol
+  title_and_description: Títol i descripció
   titled_favorites_and_the_most_recent_additions: etiquetats "Preferits" i les addicions
     més recents apareixeran en aquest espai.
   to: a
@@ -2839,6 +2850,7 @@ ca:
     triada
   update_past: Actualitza %{type} passat
   update_photos: Actualitza fotos
+  update_with_eol_content: Acutalitza amb el contingut d'EOL
   update_your_content: Actualitza el teu contingut
   updated: Actualitzat
   updated_by: Actualitzat per
@@ -2930,6 +2942,7 @@ ca:
   view_non_mobile_site: Mostra webs no adaptades per a mòbils
   view_post: Mostra introducció
   view_photo: Veure foto
+  view_projects_from_place: Veure els projectes de %{place}
   view_observation: Mostra observació
   view_observations: Mostra observacions
   view_observations_raquo: Mostra observacions »
@@ -4259,7 +4272,7 @@ ca:
         name: Nom
         parent_id: Lloc relacionat
         place_type: Tipus de lloc
-        prefers_check_lists: Vols comprovar les llistes permeses?
+        prefers_check_lists: Vols que es creï una llista de verificació?
         woeid: Identificador únic mundial (d'acord amb Yahoo)
       flag:
         reason: Raó

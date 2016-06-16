@@ -8,19 +8,19 @@
 ---
 es:
   licensing_your_content: |-
-    Licenciar tu contenido le da a otros el derecho legal de utilizarlo si se apegan a los términos de la licencia. Utilizamos contenido licenciado bajo Creative Commons para compartir con asociados como <a href="http://www.gbif.org/">Global Biodiversity Information Facility</a>
+    Licenciar tu contenido da a otros el derecho legal de utilizarlo si se apegan a los términos de la licencia. Utilizamos contenido licenciado bajo Creative Commons para compartir con asociados como <a href="http://www.gbif.org/">Global Biodiversity Information Facility</a>
     (GBIF).
   you_think_observation_inacurate: Si piensas que esta observación no es exacta, por
     favor, agrega una identificación
     o describe la inexactitud en un comentario.
   we_also_support: |-
     También tenemos conexión con <a href="http://flickr.com">Flickr</a>,
-    <a href="http://picasaweb.google.com">Picasa</a>, y
+    <a href="http://picasaweb.google.com">Picasa</a> y
     <a href="http://facebook.com">Facebook</a>
     para tus imágenes.
-  a_default_taxon_name_will_automatically_created: Un nombre por defecto del taxón
-    será creado automáticamente del atributo del nombre científico de este taxón.
-    Cuando haya guardado este taxón, podrás agregar otros nombres aquí (nombres comunes,
+  a_default_taxon_name_will_automatically_created: Se creará automáticamente un nombre taxonómico por defecto
+    a partir del nombre científico de este taxón.
+    Cuando hayas guardado este taxón, podrás agregar otros nombres aquí (nombres comunes,
     nombres científicos actualizados, etc.).
   x_followers:
     one: 1 seguidor
@@ -38,7 +38,8 @@ es:
     one: 1 taxón que coincide
     other: '%{count} taxones que coinciden'
   x_matching_taxa_html:
-    other: =<span class="count">1</span> coincidencia de taxón
+    one: <span class='count'>1</span> taxón que coincide
+    other: <span class='count'>%{count}</span> taxones que coinciden
   x_observations:
     one: 1 observación
     other: '%{count} observaciones'
@@ -71,9 +72,9 @@ es:
     other: <span class='count'>%{count}</span> observaciones con grado de investigación</span>
   x_research_grade_observations_to_species_html:
     one: <span class='count'>1</span> identificación de una observación con grado de
-      investigación para especies o menor</span>
+      investigación con nivel de especie o menor</span>
     other: <span class='count'>%{count}</span> identificaciones de observaciones con
-      grado de investigación de especies o menor</span>
+      grado de investigación con nivel de especies o menor</span>
   x_taxa_matching_current_filters:
     one: 1 especie o grupo con los filtros seleccionados
     other: '%{count} especies o grupos con los filtros seleccionados'
@@ -84,30 +85,30 @@ es:
   a_flag_for_x: una advertencia para %{x}
   a_greasemonkey_script: un script de Greasemonkey
   a_member_of_taxon_html: un miembro de %{taxon}
-  able_to_connect_flickr: ¡Muy bien! Pudimos vincular tu cuenta de Flickr.
+  able_to_connect_flickr: ¡Perfecto! Pudimos vincular tu cuenta de Flickr.
   about: Acerca de
-  about_bioblitz_results: sobre los resultados del "bioblitz" (evaluación rápida)
-  about_community_taxa: Sobre los taxa comunitarios
+  about_bioblitz_results: sobre los resultados del Bioblitz (evaluación rápida)
+  about_community_taxa: Sobre los taxones comunitarios
   about_external_links: Acerca de los enlaces externos
   about_licenses: Sobre las licencias
-  about_licensing: Sobre las licencias
+  about_licensing: Sobre dar licencias
   about_life!: '!Sobre la vida!'
-  about_places: Sobre lugares
+  about_places: Sobre Lugares
   about_the_cc_licenses: Sobre las licencias de Creative Commons
   about_the_quality_assessment: Sobre la calidad de los datos
   about_the_taxobox_raquo: Sobre la ficha de taxón &raquo;
   about_these_licenses: Sobre estas licencias
   about_this_map: Sobre este mapa
-  about_this_project: Sobre este Proyecto
+  about_this_project: Sobre este proyecto
   about_x: Sobre %{x}
   acc: Precisión (metros)
   accept: aceptar
-  accept_community_identifications: Aceptar identificaciones de la comunidad
+  accept_community_identifications: Aceptar las identificaciones de la comunidad
   accuracy: Precisión
   accuracy_meters: Precisión (metros)
   accuracy_of_the_coordinates: Precisión de las coordenadas en metros. Las puedes
     cambiar seleccionando el enlace "Modificar" o seleccionando el punto de tu ubicación
-    en el mapa. Trata de hacer el círculo lo suficientemente grande para asegurar
+    en el mapa. Trata de hacer el círculo lo suficientemente grande para asegurarte
     que estabas en algún lugar del área marcada.
   acquaintances: conocidos
   actions: Acciones
@@ -118,111 +119,111 @@ es:
   add_a: Añadir un
   add_a_batch_of_observations: Añadir un grupo de observaciones
   add_a_batch_of_observations_by_csv: Añadir un grupo de observaciones por CSV
-  add_a_batch_of_taxa: Añadir un grupo de taxa
+  add_a_batch_of_taxa: Añadir un grupo de taxones
   add_a_comment: 'Añadir un comentario:'
   add_a_field: Añadir un campo
+  add_a_flag: Añadir una advertencia
   add_a_link_raquo: Añadir un vínculo &raquo;
   add_a_name: Añadir un nombre
-  add_a_new_change_group: Añadir un nuevo cambio en grupo
-  add_a_new_observation_to_id_please!: ¡Añade una nueva observación a la "Ayuda por
+  add_a_new_change_group: Añadir un nuevo grupo de cambios
+  add_a_new_observation_to_id_please!: ¡Añadir una observación en la "Ayuda por
     favor"!
-  add_a_place_raquo: Añade un lugar &raquo;
-  add_a_single_observation: Añade una sola observación
-  add_a_taxon: Añade una especie o grupo
-  add_all_your_matching_obs_of_this_taxon: Añade todas tus observaciones encontradas
-    de esa especie o grupo a este proyecto
-  add_all_your_matching_obs_to_this_project: Añade todas las observaciones que coinciden
+  add_a_place_raquo: Añadir un Lugar &raquo;
+  add_a_single_observation: Añadir una sola observación
+  add_a_taxon: Añadir una especie o grupo
+  add_all_your_matching_obs_of_this_taxon: Añadir todas tus observaciones encontradas
+    de esta especie o grupo a este proyecto
+  add_all_your_matching_obs_to_this_project: Añadir todas las observaciones que coinciden
     a este proyecto
-  add_an_assessment: Añade una evaluación
+  add_an_assessment: Añadir una evaluación
   add_an_identification: Añadir una identificación
   add_an_observation: Añadir una observación
   add_an_observation?: ¿Añade una observación?
-  add_an_observation_of: Añade una observación de %{taxon}
-  add_another: Añade otra
-  add_another_flag: Añade otra advertencia
-  add_another_photo: Añade otra foto
-  add_another_section: Añade otra sección
-  add_another_subscription: Añade otra suscripción
-  add_asset: Añade activo
-  add_batch: Añade grupo
-  add_colors: Añade colores
+  add_an_observation_of: Añadir una observación de %{taxon}
+  add_another: Añadir otra
+  add_another_flag: Añadir otra advertencia
+  add_another_photo: Añadir otra foto
+  add_another_section: Añadir otra sección
+  add_another_subscription: Añadir otra suscripción
+  add_asset: Añadir activo
+  add_batch: Añadir en grupo
+  add_colors: Añadir colores
   add_comma_separated_tags: Añade etiquetas separadas por comas
   add_comment: Añade un comentario
-  add_common_names_for: Añade nombres comunes a taxa existentes
-  add_conservation_status: Añade estado de conservación
-  add_countries: Añade países
-  add_custom_project_fields: Añade campos de proyecto personalizados
-  add_edit_more_fields: Añada/edita más campos
+  add_common_names_for: Añadir nombres comunes a taxones existentes
+  add_conservation_status: Añade un estado de conservación
+  add_countries: Añadir países
+  add_custom_project_fields: Añadir campos de proyecto personalizados
+  add_edit_more_fields: Añade/edita más campos
   add_description: Añade %{description_name}
   add_editor: Añadir un editor
-  add_from_your_observations: Añade de tus observaciones
-  add_listed_taxa_from_observations: Añade taxa listados de las observaciones
-  add_higher_level_taxon: Añade un taxón de más alto nivel (por ejemplo "aves")
-  add_id: Añade identificación
-  add_it_to_place_raquo: Añádela a un lugar &raquo;
-  add_more_photos: Añade más fotos
-  add_new_lexicon: Añade léxico nuevo
-  add_new_observations: Añade observaciones nuevas
-  add_new_photos_by_their_ids: Añade nuevas fotos por tus identificadores en Flickr
+  add_from_your_observations: Añadir desde tus observaciones
+  add_listed_taxa_from_observations: Añadir taxones listados en las observaciones
+  add_higher_level_taxon: Añadir un taxón de nivel más alto (por ejemplo "aves")
+  add_id: Añadir una identificación
+  add_it_to_place_raquo: Añádela a un Lugar &raquo;
+  add_more_photos: Añadir más fotos
+  add_new_lexicon: Añadir léxico nuevo
+  add_new_observations: Añadir observaciones nuevas
+  add_new_photos_by_their_ids: Añadir nuevas fotos por tus identificaciones en Flickr
     (¡Deben ser de Creative Commons!)
-  add_new_place: Añade un lugar nuevo
-  add_new_rule: Añade nueva regla
-  add_new_source: Añade una nueva fuente...
+  add_new_place: Añadir un nuevo Lugar
+  add_new_rule: Añadir una nueva regla
+  add_new_source: Añadir una nueva fuente...
   add_new_taxon_name: Añade un nuevo nombre de taxón
   add_notes_about_this_taxon: Añade notas sobre este taxón en este lugar, por ejemplo,
     dónde y cuándo está presente.
-  add_obs_from_a_link: Añade observaciones de una lista %{link}
-  add_obs_from_a_list: Añade observaciones de una lista
-  add_observation: Añade observación
+  add_obs_from_a_link: Añadir observaciones de una lista %{link}
+  add_obs_from_a_list: Añadir observaciones de una lista
+  add_observation: Añade una observación
   add_observations!: ¡Añade observaciones!
   add_observations: Añade observaciones
   add_observations_by_checking_off: Añade observaciones seleccionando especies de
     una lista.
-  add_observations_from_list: Añade observaciones de una lista
-  add_observations_of_taxa_youve_added: Añade observaciones de taxa que agregaste
-    a una lista.  En desarrollo, todavía trabajamos en algunos detalles...
-  add_observations_project: Añade observaciones a este proyecto
+  add_observations_from_list: Añade observaciones desde una lista
+  add_observations_of_taxa_youve_added: Añade observaciones de taxones que agregaste
+    a una lista. Función en desarrollo, todavía trabajamos en algunos detalles...
+  add_observations_project: Añadir observaciones a este proyecto
   add_one: ¡Añade una!
-  add_photos: Añade fotos
-  add_photos_to_this_observation: Añade fotos a esta observación
-  add_place: Añadir un lugar
+  add_photos: Añadir fotos
+  add_photos_to_this_observation: Añadir fotos a esta observación
+  add_place: Añadir un Lugar
   add_several_observations_at_once: Añade varias observaciones de una sola vez
-  add_shape: Añade un límite
+  add_shape: Añadir un límite
   add_some_now: Añade algunas ahora
-  add_tags: Añade etiquetas
-  add_tags_to_selected_taxa: Añade las etiquetas a los taxa seleccionados
-  add_taxa: Añade un taxon
-  add_taxa_to_places: añade taxones a lugares
-  add_taxon_batch_to: Añade un grupo de taxa a %{list}
-  add_taxon_range: Añade rango de taxón
-  add_taxonomic_tags_to: Añade etiquetas taxonómicas a fotos seleccionadas de Flickr
+  add_tags: Añadir etiquetas
+  add_tags_to_selected_taxa: Añadir las etiquetas a los taxones seleccionados
+  add_taxa: Añadir un taxon
+  add_taxa_to_places: añadir taxones a Lugares
+  add_taxon_batch_to: Añadir un grupo de taxones a %{list}
+  add_taxon_range: Añadir un rango de taxón
+  add_taxonomic_tags_to: Añadir etiquetas taxonómicas a fotos seleccionadas de Flickr
     &raquo;
-  add_taxonomic_tags_to_the_fickr_photos: Añade etiquetas taxonómicas a las fotos
+  add_taxonomic_tags_to_the_fickr_photos: Añadir etiquetas taxonómicas a las fotos
     de Fickr asociadas con las observaciones seleccionadas.
   add_to: Añade a
-  add_to_a_scheme: Añade a un esquema
-  add_to_checklist: añade a la lista de verificación
-  add_to_id_please: Añade a la identificación por favor
-  add_to_list: Añade a la lista
-  add_to_project: Añade al proyecto
-  add_to_your_life_list: ¡Añade a tu lista de vida!
-  add_to_your_list: Añade a tu lista
+  add_to_a_scheme: Añadir a un esquema
+  add_to_checklist: añadir a la lista de verificación
+  add_to_id_please: Pedir "Ayuda por favor"
+  add_to_list: Añadir a la lista
+  add_to_project: Añadir al proyecto
+  add_to_your_life_list: Añadir a tu lista de vida
+  add_to_your_list: Añadir a tu lista
   add_your_email_to_get: Añade tu correo electrónico para recibir comentarios de la
-    comunidad sobre tu observación. Si no quieres compartirlo, ¡revisa pronto de nuevo
-    el sitio!
-  add_your_own_observations_at: Añade tus propias observaciones en %{site_name}
-  add_your_photo: Añade tu foto
-  add_your_photo_to: Añade tu foto a %{project}
+    comunidad sobre tu observación. Si no quieres compartirlo, ¡revisa el sitio muy pronto!
+  add_your_own_observations_at: Añadir tus propias observaciones en %{site_name}
+  add_your_photo: Añadir tu foto
+  add_your_photo_to: Añadir tu foto a %{project}
   added: Añadido
   added!: ¡Añadido!
-  added_an: añadió una
+  added_an: Has añadido una
   added_as_a_part_of: Añadido como parte de un
   added_by: Añadido por
-  added_identifications_to: añadió identificaciones a todas las observaciones.
+  added_identifications_to: añadido identificaciones las observaciones de nadie.
   added_on: Añadido el
   added_to: Añadido para
   adding: Añadiendo...
-  adding_observations: Añadir observaciones
+  adding_observations: Añadiendo observaciones
   adding_to_your_life_list: Añadiendo a tu lista de vida...
   additional_range: Distribución adicional
   additional_range_data_from_an_unknown_source: Datos de distribución adicional de
@@ -246,7 +247,7 @@ es:
   all_places: Todos los Lugares
   all_projects: Todos los Proyectos
   all_rights_reserved: todos los derechos reservados
-  all_species: Todas las Especies
+  all_species: Todas las especies
   all_taxa:
     rank:
       kingdom: Reino
@@ -702,10 +703,9 @@ es:
     por ejemplo: evita usar el color café para los mamíferos y verde para las plantas.
   colors: Colores
   comma_separated_list_of_tracking_codes: |-
-    Separa los códigos de rastreo con comas. Añade esto si quieres poner un código de rastreo cuando las personas hagan
-    observaciones en tu proyecto, ej. %{root_url}observations/new?project_id=%{project_id}&tracking_code=tucodigo123.
-    Se puede usar para rastrear la participación en diferentes fuentes. Puedes tener acceso a estos códigos de rastreo
-    cuando descargas las observaciones de tu proyecto con formato CSV.
+    Si quieres poner un código de rastreo cuando las personas hagan observaciones en tu proyecto, separa los códigos con comas.
+    Se puede usar para rastrear la participación de las personas en diferentes fuentes.
+    Cuando descargas las observaciones de tu proyecto con formato CSV puedes tener acceso a estos códigos de rastreo.
   comma_separated_please: Por favor, separar por comas
   comment_preview: Vista previa del comentario
   comment: comentario
@@ -773,10 +773,9 @@ es:
   contain_all_descendants?: ¿Esta lista de verificación contiene todos los descendientes
     de este taxón que se producen aquí?
   contest: concurso
-  contest_projects_description: Proyectos 'Concurso' mostrará un cuadro clasificatorio
-    contribuyentes clasificación por el número de especies únicas observadas mientras
-    que los proyectos 'Concurso de Observación' muestra las tablas de líder en la
-    clasificación de los contribuyentes por el número de observaciones
+  contest_projects_description: Los proyectos "Concurso" mostrarás una tabla que organiza a los colaboradores por el número de especies únicas observadas, mientras
+    que los proyectos "Concurso de Observación" muestran una tabla que organiza a los colaboradores
+    por el número total de observaciones.
   contributions: contribuciones
   contributions_from: Aportes de
   contributor_cannot_be_found: El contribuidor no se pudo encontrar
@@ -942,7 +941,7 @@ es:
   desc: desc
   descendant_taxa: taxones descendientes
   descending: descendente
-  describe_purpose: Describa el propósito de este proyecto
+  describe_purpose: Describa el propósito de este proyecto.
   describe_your_interest_in_nature: ¡Describa su interés en la naturaleza!
   description: Descripción
   description_from: Descripción de
@@ -1222,7 +1221,7 @@ es:
   from_list: De la lista
   from_this: de esta
   from_photos: De fotos
-  from_place: De lugar
+  from_place: De un lugar
   from_your_site_observations: de observaciones de %{site_name}
   from_licensed_site_observations: De observaciones de %{site_name} con licencia
   full_id_please: ¡Ayuda por favor!
@@ -1465,7 +1464,7 @@ es:
   iucn_red_list_status: Lista Roja de la UICN estado
   january: Enero
   join: ¡Únete a
-  join_and: Únase y
+  join_and: Únete y
   join_inat: ¡Únete a %{site_name}!
   join_project: Unirse a este proyecto
   join_some_projects_and_invite_some_observations_html: Únete a ciertos <a href='%{join_url}'>proyectos</a>
@@ -1477,7 +1476,7 @@ es:
   journal_archives_for: Archivos de diario de
   journal_post: Artículo en el diario
   journal_post_deleted: La nota del diario ha sido borrada.
-  jpg_png_or_gif: JPG, PNG, o GIF
+  jpg_png_or_gif: "JPG, PNG o GIF"
   jump_to_letter: Saltar a letra
   just_added!: ¡Se acaba de agregar!
   kelp_diatoms_and_allies: algas, diatomeas, y aliados
@@ -1505,7 +1504,7 @@ es:
   least_concern: preocupación menor
   leave_a_comment: Dejar un comentario
   leave_this_project: Salir de este proyecto
-  leaves: hojas
+  leaves: taxa
   not_absent: no ausente
   legacy_authentication_notice_html: |-
     Parece que estas usando una contraseña de una versión antigua de este sitio web.
@@ -1994,15 +1993,15 @@ es:
   observation_rights_html: Observación %{rights}
   observation_rules: Reglas de observación
   observation_rules_description: |-
-    Puedes seleccionar reglas para determinar cuáles observaciones se
+    Puedes seleccionar reglas para determinar qué observaciones se
     pueden agregar a este proyecto, como limitar las observaciones a un lugar
-    determinado. Nota&#58; limitar a lugares se basa actualmente en Lugares de
-    %{site_name} y solo puede limitar las observaciones al rectángulo
-    más pequeño que rodea un lugar. Si tienes más de una regla para un
-    tipo de regla, las observaciones serán válidas si cumplen cualquiera regla.
+    determinado. Nota&#58; "limitar a lugares" se basa actualmente en Lugares de
+    %{site_name} y solo se pueden limitar las observaciones al rectángulo
+    más pequeño que incluya un lugar. Si tienes más de una regla para un
+    tipo de proyecto, las observaciones serán válidas si cumple al menos alguna de ellas.
     Por ejemplo, si tienes las reglas "debe estar en Amphibia" y "debe
     estar en Reptilia", entonces el proyecto aceptará observaciones de
-    reptiles o anfibios.
+    reptiles y de anfibios.
   observation_was_deleted: La observación fue borrada.
   observation_would_like_some_help: ¡A %{user} le gustaría un poco de ayuda para identificar
     esto!
@@ -2427,8 +2426,8 @@ es:
   project_observations: Observaciones del proyecto
   project_post: nota de proyecto
   project_preferred_count_description: ¿Quieres que el número total de taxones del
-    proyecto sea citado como especies, cualquier taxón o simplemente como "hojas"
-    del árbol taxonómico?
+    proyecto sea contando las especies, cualquier taxón o simplemente las categorías
+    taxonómicas que figuran?
   project_rules: Reglas del Proyecto
   project_terms_and_rules: terminos &amp; reglas del proyecto
   project_user_cannot_be_found: El usuario del proyecto no pudo ser encontrado
@@ -2526,7 +2525,7 @@ es:
     alguna información acerca del <strong>tamaño</fuerte>.
   remember_me: Recuérdame
   remove: Quitar
-  remove_all_tags: Retire todas las etiquetas
+  remove_all_tags: Elimina todas las etiquetas
   remove_boundary: Quitar límites
   remove_comma_separated_tags: Quita las etiquetas separadas por comas
   remove_conservation_status: Eliminar estado de conservación
@@ -2544,7 +2543,7 @@ es:
   remove_place: Eliminar lugar
   remove_project_user: Quitar usuario de proyecto
   remove_selected: Eliminar los elementos seleccionados
-  remove_tags: Quite las etiquetas
+  remove_tags: Elimina las etiquetas
   remove_your_existing_id?: Eliminar la identificación existente?
   removed: eliminado
   removed!: ¡Eliminado!
@@ -2705,7 +2704,7 @@ es:
   show_only: Mostrar solamente
   show_taxa_from_both: (mostrar taxones de ambas listas de nuevo)
   show_the_total_number_of: Muestra el número total de especies o grupos en las listas
-    de proyecos junto con el número de especies o grupos observados.
+    de proyectos junto con el número de especies o grupos observados.
   show_total_listed_taxa: Mostrar la lista total de especies o grupos
   showing_observations_by: Mostrando observaciones hechas por
   showing_one_to: Mostrando 1 -
@@ -2854,10 +2853,10 @@ es:
   start_new_project: Crear proyecto nuevo
   start_one: comenzar uno
   start_one_now: ¡Comienza una ahora!
-  start_typing_field_name: Comienza a digitar el nombre del campo…
-  start_typing_place_name: Comienza a digitar el nombre del lugar…
-  start_typing_taxon_name: Comienza a digitar el nombre del especies…
-  start_typing_someones_name: Comienza a digitar el nombre de alguien…
+  start_typing_field_name: Comienza a teclear el nombre del campo…
+  start_typing_place_name: Comienza a teclear el nombre del lugar…
+  start_typing_taxon_name: Comienza a teclear el nombre del especies…
+  start_typing_someones_name: Comienza a teclear el nombre de alguien…
   states: Estados
   stats: Estadísticas
   stats_title: Estadísticas del sitio
@@ -2893,8 +2892,7 @@ es:
     sin límites definidos.
   successfully_changed_your_password: Tu contraseña fue modificada satisfactoriamente.
   suggest_an_id: Sugerir un identificador
-  suggest_or_require_that: Se sugiere o solicita que los contribuyentes llenen estos
-    campos para las observaciones que añadan a tu proyecto.
+  suggest_or_require_that: Se sugiere o solicita que los colaboradores que añadan observaciones a tu proyecto llenen estos campos.
   summary: Resumen
   suspicious_photos: Fotos sospechosas
   siutable_observations: observaciones que puedes invitar
@@ -3174,7 +3172,7 @@ es:
   time_: vez
   time_ago: hace %{time}
   title: título
-  title_and_description: Título y Descripción
+  title_and_description: Título y descripción
   titled_favorites_and_the_most_recent_additions: titulados "Favoritos" y las adiciones
     más recientes aparecerán en este espacio.
   to: a
@@ -3215,13 +3213,13 @@ es:
   type_authority: Pon el nombre de la autoridad...
   type_date_time_or_use_the_calendar: Pon la fecha/hora o usa el calendario
   type_one_name_per_line: Escribe un nombre por línea
-  type_place_name: Digite el nombre del lugar
-  type_project_name: Digite el nombre del proyecto...
+  type_place_name: Teclea el nombre del lugar
+  type_project_name: Teclea el nombre del proyecto...
   type_source_name: Nombre de la fuente
   type_source_title: Título del tipo de fuente...
-  type_species_name: Digitar el nombre de la especie...
-  type_taxon_name: Digite el nombre del taxón
-  type_taxon_name_and_click_lookup: Digite el nombre del taxón y click lookup
+  type_species_name: Teclear el nombre de la especie...
+  type_taxon_name: Teclea el nombre del taxón
+  type_taxon_name_and_click_lookup: Teclea el nombre del taxón y haz clic en buscar
   uicn_red_list_status: Estado de la Lista Roja de UICN
   un_license_this_observation: quita la licencia de esta observación
   unclassified: Sin clasificar
@@ -3548,8 +3546,8 @@ es:
     y no se pueden destruir los taxones que se están utilizando en los cambios de taxones.
   you_can_see_these_coordinates_because: Puedes ver estas coordenadas porque
     eres revisor de uno de los proyectos a los cuales se agregó esta observación.
-  you_can_show_the_boundary_of: Puedes mostrar los límetes del lugar en la pagina
-    de tu proyecto solo si el lugar tiene límites.
+  you_can_show_the_boundary_of: Puedes mostrar los límites del lugar en la página
+    de tu proyecto solo los tiene.
   you_can_sign_free_at: Puedes registrarte gratis en %{site_name} en
   you_cant_compare_a_list_with_nothing: ¡No puedes comparar una lista con nada!
   you_cant_delete_a_project_list: No puedes borrar una lista de proyecto
@@ -3666,7 +3664,7 @@ es:
   your_sure_delete_taxon_from_list?: ¿Seguro que deseas eliminar %{taxon} de esta
     lista?
   your_world!: ¡Tu país!
-  youre_following: Estás siguiendo
+  youre_following: estás siguiendo
   youre_not_following_anyone: No sigues a nadie. Seguir a otros naturalistas
     te permitirá llevar un control de sus observaciones más recientes. Averigua lo
     que la gente está
@@ -4267,7 +4265,7 @@ es:
           lugar.
     projects:
       edit:
-        bioblitz_create_a_new_place_html: '%{link}, asegúrate de que tiene límites, y luego
+        bioblitz_create_a_new_place_html: '%{link}. Asegúrate de que tiene límites y luego
           inténtalo de nuevo.'
         bioblitz_desc_html: |-
           <p>
@@ -4282,7 +4280,7 @@ es:
           </p>
         cover_desc: |-
           Imagen opcional que aparecerá en la parte superior de la
-          página del proyecto. Debe ser de 950px de ancho, y menos de 400px de
+          página del proyecto. Debe ser de 950px de ancho y menor de 400 de
           alto.
         custom_project_fields_means: |-
           Permite modificar el banner del proyecto, añadir contenido a la parte
@@ -4294,7 +4292,7 @@ es:
           Si se trata de una URL Eventbrite que incluye un identificador numérico, vamos a
           incluir un widget de inscripción en tu página de proyecto hasta el Bioblitz
           comienza.
-        icon_desc: Se recortará a un cuadrado
+        icon_desc: Se recortará a un cuadrado.
         project_assets_desc_html: |-
           <p class="description"> Los recursos del proyecto son simplemente documentos asociados a tu proyecto, con algunas reglas especiales:Activos del Proyecto en sí ACABA </p>
           <ol class="description">
@@ -4754,7 +4752,7 @@ es:
         parent_id: Proyecto padre
         project_icon: Ícono de proyecto
         project_type: Tipo de proyecto
-        preferred_count_by: Conteo preferido por
+        preferred_count_by: Preferencia del conteo
         prefers_count_from_list: Prefiere conteo de la lista
         description: Descripción
         end_time: Hora de finalización
@@ -4762,7 +4760,7 @@ es:
         terms: Términos
         map_type: Tipo de mapa
         zoom_level: Nivel de acercamiento
-        prefers_place_boundary_visible: Mostrar los límites del lugar en el mapa
+        prefers_place_boundary_visible: Mostrar en el mapa los límites del lugar
         tracking_codes: Códigos de rastreo
         source_url: Dirección web de la fuente
         start_time: Hora de inicio
@@ -4774,7 +4772,7 @@ es:
         name: Nombre
         parent_id: Lugar relacionado
         place_type: Tipo de lugar
-        prefers_check_lists: ¿Quieres comprobar las listas permitidas?
+        prefers_check_lists: ¿Quieres que se cree una lista de verificación?
         woeid: Identificador único mundial (de acuerdo a Yahoo)
       flag:
         reason: Razón
