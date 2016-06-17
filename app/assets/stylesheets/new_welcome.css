@@ -91,7 +91,8 @@ body{
 }
 
 #banner{    
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    position: relative;
 }
 
 div#banner.row img{
@@ -1375,4 +1376,29 @@ div#bottom a {
 
 .sublegal span a {
     color: #8AB63B;
+}
+
+.calltoaction{
+    left: 5px;
+    top: 1px;
+    position: absolute;
+    background-color: #4000FF;
+    font-size: 24px;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+
+.explore {
+    top: 45px;
+}
+
+.ctalink {
+    vertical-align: middle;
+    display: table-cell;
+    height: 50px;
+}
+
+.calltoaction a{
+    color: #FFF;
 }

@@ -298,7 +298,13 @@
   <% end -%>
 
 <div class="container">
-	<div id="banner" class="row">		
+	<div id="banner" class="row">
+    <div class="calltoaction">
+      <%= link_to t(:sign_up!), signup_url %>
+    </div>
+    <div class="calltoaction explore">
+      <%= link_to t(:explore!), observations_path %>
+    </div>
 		<img src="/assets/natusfera_banner_3.jpg">
 	</div>
   <div class="row">
