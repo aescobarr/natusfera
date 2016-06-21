@@ -25,14 +25,14 @@
     &nbsp;
     %a{:href => site.help_url}= t :help
     &nbsp;
-    %a{:href => site.feedback_url}= t :feedback
-    &nbsp;
-    %a{:href => site.terms_url}= t :terms_service
-    &nbsp;
+    /= %a{:href => site.feedback_url}= t :feedback
+    /= &nbsp;
+    /= %a{:href => site.terms_url}= t :terms_service
+    /= &nbsp;
     %a{:href => site.privacy_url}= t :privacy
     &nbsp;
-    %a{:href => site.developers_url}= t :developers
-    &nbsp;
+    /= %a{:href => site.developers_url}= t :developers
+    /= &nbsp;
   - if site.custom_footer
     .meta.upstacked
       = raw site.custom_footer
