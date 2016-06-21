@@ -674,7 +674,7 @@
         <% if CONFIG.admin_email %>
 				  <li class="list-group-item menulegalminoritem"><a href="mailto:<%= CONFIG.admin_email %>">Contacto</a></li>
         <% end %>
-				<li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.terms_url %>"><%= t(:terms_service) %></a></li>
+				<!--<li class="list-group-item menulegalminoritem"><a href="<#%= CONFIG.terms_url %>"><#%= t(:terms_service) %></a></li>-->
 				<li class="list-group-item menulegalminoritem"><a href="<%= CONFIG.privacy_url %>"><%= t(:privacy) %></a></li>
 			</ul>
 		</div>
@@ -717,7 +717,7 @@
       <a href="<%= CONFIG.about_url %>"><%= t(:about_x, :x => CONFIG.site_name) %> / </a>
       <a href="<%= CONFIG.help_url %>"><%= t(:help) %> / </a>
       <a href="mailto:<%= CONFIG.admin_email %>">Contacto / </a>
-      <a href="<%= CONFIG.terms_url %>"><%= t(:terms_service) %> / </a>
+      <!-- <a href="<#%= CONFIG.terms_url %>"><#%= t(:terms_service) %> / </a>-->
       <a href="<%= CONFIG.privacy_url %>"><%= t(:privacy) %></a>
     </div>
     <div style="text-align: center;" class="row">
