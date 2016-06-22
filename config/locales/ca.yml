@@ -884,6 +884,7 @@ ca:
     el teu lloc web »
   embed_place_widget: Insereix un giny de lloc
   embed_widget_project: Insereix un giny per a aquest projecte a la teva pàgina web
+  enable_offline_access: Habilitar l'accés sense connexió
   enable_offline_access_for_iphone: Habilitar l'accés sense línia per a iPhone
   end: Final
   endangered: en perill
@@ -917,7 +918,7 @@ ca:
   exit_full_screen: Surt del mode de pantalla completa.
   expand_days: expandeix dies
   expand_updates: expandeix actualitzacions
-  explore!: Descobreix!
+  explore!: Explora!
   explore_everyones_observations: Llegeix les observacions de tots els usuaris.
   external_links: Enllaços externs
   extinct: extint
@@ -1075,6 +1076,7 @@ ca:
   guess_description: Estimació/descripció
   guides: Guies
   guide_colors: Guia de colors
+  guidelines: Regles generals
   guide_taxon: Tàxon guia
   has_been: ha estat
   has_already_been_flagged_by: ja ha estat notificat per
@@ -1877,6 +1879,7 @@ ca:
   paste: Copia
   paste_in_a_bunch_of_names: Enganxa un grup de noms, 1 per línia i fes clic a l’enllaç!
   paste_in_a_comma_separated_list: Enganxa la llista de països separats per comes
+  pending_invitations: Invitacions pendents
   people: Persones
   people_agree: persones hi estan d'acord
   people_following_user: Usuaris que segueixen %{user}

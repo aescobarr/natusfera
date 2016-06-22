@@ -615,10 +615,10 @@ es:
   change_your_password: Cambiar su contraseña
   changing_the_geoprivacy: Cambiar la geoprivacidad modifica el como otras personas
     ven la localización de tu observación.
-  check_here_to_autoload_description: Marque aquí para auto cargar la descripción
+  check_here_to_autoload_description: Marca aquí para auto cargar la descripción
     desde Wikipedia. Podría querer desmarcarlo cuando el nombre científico de un taxón
     también es una palabra no científica o una falta de ortografía común, como "Parus".
-  check_here_to_autoload_photos: Haga clic aquí para auto-cargar fotos desde Flickr.
+  check_here_to_autoload_photos: Haz clic aquí para auto-cargar fotos desde Flickr.
     Podría querer desmarcarlo cuando el nombre científico de un taxón también es una
     palabra no científica o una falta de ortografía común, como "Parus".
   check_it_out: Échale un vistazo
@@ -1272,6 +1272,7 @@ es:
   group: Grupo
   guess_description: Estimación / Descripción
   guides: Guías
+  guidelines: Reglas generales
   guide_colors: Guía de colores
   guide_compiled_by: Guía compilada por
   guide_deleted: Guía eliminada
@@ -1346,8 +1347,8 @@ es:
   if_matches_come_from_a_comprehensive_list: Si los resultados provienen de una lista
     exhaustiva, una barra verde como esta se mostrará.
   if_this_is_a_scientific_name: Si este es un nombre científico, ¿está aceptado actualmente?
-  if_this_link_will_apply_to_descendant: Si este vínculo aplicará a los taxones descendientes,
-    puede usar sus plantillas de etiquetas para llenar el nombre del taxón en la URL
+  if_this_link_will_apply_to_descendant: Si este vínculo va a afectar a los taxones descendientes,
+    puedes usar sus plantillas de etiquetas para rellenar el nombre del taxón en la URL.
   if_you_already_have_an_account: Si ya tienes una cuenta de %{site_name}...
   if_you_dont_want_us_to_share_your_data: Si no deseas compartir esta información
   if_you_have_any_trouble_with_the_site_check_out: Si tuviera algún problema con el
@@ -2035,7 +2036,7 @@ es:
     un rectangulo alrededor de los limites de la figura, puede dar de resultado algunos
     datos imprecisos para lugares que no parezcan rectangulos. Esto es debido a una
     limitación con nuestra base de datos que estamos trabajando para resolver.
-  observations_needing_curation: Observaciones que necesitan curación
+  observations_needing_curation: Observaciones que necesitan revisión
   observations_obscured: Observaciones (difusas)
   observations_observed_this_month: Observaciones hechas este mes, no se
     añaden al mes en curso. ¡Sal y haz más observaciones!
@@ -2178,6 +2179,7 @@ es:
   paste_in_a_comma_separated_list: Pegar la lista de países separados por comas
   pdf: PDF
   pdf_slash_print: PDF / Imprimir
+  pending_invitations: Invitaciones pendientes
   people: Personas
   people_agree: personas concuerdan
   people_following_user: Personas que siguen a %{user}
@@ -2680,8 +2682,8 @@ es:
   separate_values_with_a_pipe: Valores separados por barras, por ejemplo "1-5|6-10|muchos"
     o "sí|no|tal vez"
   september: Septiembre
-  set_a_place_if_this_link_only_applies_to: Pon el lugar solo si el enlaze se refiere a la especie o grupo
-    en un lugar concreto. Déjalo en blanco si se refiere a cualquier
+  set_a_place_if_this_link_only_applies_to: Pon el lugar solo si el vínculo se refiere a la especie o grupo
+    solamente en un lugar concreto. Déjalo en blanco si se refiere a cualquier
     parte del mundo.
   set_license: Fijar licencia
   settings: Propiedades
@@ -2921,7 +2923,7 @@ es:
   take_me_flickr!: ¡Sí, lléveme a Flickr!
   taxa: Taxones
   taxa_all_species_html: Taxones &middot; Todas las especies
-  taxa_needing_curation: Taxones que necesitan curación
+  taxa_needing_curation: Taxones que necesitan revisión
   taxa_observed: especies o grupos observados
   taxa_to_include: Especies o grupos a incluir
   taxon: Taxón
@@ -3025,7 +3027,7 @@ es:
     aviso.
   the_list: la lista
   the_name_of_the_taxon_including_space: El nombre del taxón, incluyendo el espacio
-    para las especies e infraespecies.<br/><br/> <strong>Ejemplo. </strong><br/>
+    para las especies e infraespecies.
   the_observation_form_looks: El formulario de observación es así
   the_observation_has_date: la observación <strong>tiene una fecha</strong>
   the_observation_has_photo: la observación <strong>tiene una foto</strong>
@@ -3080,7 +3082,7 @@ es:
     campos
   theres_also: también hay
   these_are_items_people_on: Son contenidos que la gente a puesto como advertencia
-    para curación. Contenidos de spam serán borrados y el usuario que lo puso debería
+    para revisión. Contenidos de spam serán borrados y el usuario que lo puso debería
     ser suspendido (ve a la pagina de su perfil y en la parte inferior izquierda selecciona
     el enlace "suspender usuario" para que ya no pueda entrar al sitio). Otro tipo
     de contenidos como que sea ilegal, engañoso, racial, étnico, etc, deberán ser
@@ -3276,7 +3278,7 @@ es:
   use_this_if_the_url_needs_genus_species_separated: Usa esto si la URL debe tener
     los géneros y especies separados de forma particular. Si el taxón no es una especie
     o infraespecie, todo lo que esté entre [GÉNERO] y [ESPECIE] será reemplazado por
-    el nombre del taxón, así que úsalo con moderación. <br/><br/> <strong>Ejemplo.</strong><br/>
+    el nombre del taxón, así que úsalo con moderación.
   user: Usuario
   user_added_an_observation_html: '%{user} añadió una observación'
   user_added_an_x_to_noun_html: '%{user} añadió una %{x} a %{noun}'
@@ -3298,8 +3300,8 @@ es:
   user_invited_you_to_join_this_project_on_date_html: '%{user} te invito a unirte
     a este proyecto en %{fecha}'
   user_invited_your_x_to_a_project_html: '%{user} invitó a su %{x} a un proyecto'
-  user_added_an_observation_field_html: El %{user} añadió un un valor para "%{nombre_campo}"
-    a una observación de %{propietario}
+  user_added_an_observation_field_html: El %{user} añadió un un valor para "%{field_name}"
+    a una observación de %{owner}
   user_is_a_naturalist: '%{user} es un naturalista!'
   user_name: Nombre de usuario
   user_s: '%{model_name} de %{user}'
