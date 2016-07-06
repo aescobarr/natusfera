@@ -107,7 +107,7 @@ ca:
   add_a_link_raquo: Afegeix un enllaç »
   add_a_name: Afegeix un nom
   add_a_new_change_group: Afegeix un nou canvi en grup
-  add_a_new_observation_to_id_please!: Afegeix una observació a "ID, si us plau"!
+  add_a_new_observation_to_id_please!: Afegeix una observació a "Ajuda si us plau"!
   add_a_place_raquo: Afegeix un lloc »
   add_a_single_observation: Afegeix una breu observació
   add_a_taxon: Afegeix una espècie o grup
@@ -175,7 +175,7 @@ ca:
   add_to: Afegeix a
   add_to_a_scheme: Afegeix a un esquema
   add_to_checklist: afegeix a la llista de verificació
-  add_to_id_please: Sol·licita ID
+  add_to_id_please: Sol·licita ajuda per identificar
   add_to_list: Afegeix a la llista
   add_to_project: Afegeix al projecte
   add_to_your_life_list: Afegeix a la teva llista de vida
@@ -281,6 +281,7 @@ ca:
       one: 1 altre animal
       other: '%{count} altres animals'
   all_taxonomic_groups: « Tots els grups taxonòmics
+  all_updates: Totes les actualitzacions
   all_your_observations_will_default_this_time_zone: Totes les teves observacions
     es faran en aquesta zona horària tret que ho especifiquis altrament.
   all_your_observations_will_default_to_this_time_zone: Totes les teves observacions
@@ -649,7 +650,7 @@ ca:
   commit: Desa
   committed: Desa
   committing: Desant...
-  community_id: 'ID de la <strong>comunitat</strong>: '
+  community_id: 'Identificació de la <strong>comunitat</strong>: '
   community_supported_id: Identificador reconegut per la comunitat?
   compare_with: Compara amb
   comparing: comparant
@@ -954,7 +955,7 @@ ca:
   fill_out_your_profile: Completar el teu perfil
   filling_out_checklist_for_place: omple les llistes de verificació dels llocs que
     coneixes bé
-  filling_out_your_profile: Completa el teu perfil
+  filling_out_your_profile: Completar el teu perfil
   filter: Filtre
   filter_by: Filtra per
   filter_by_place_taxon_and_color: Filtra per lloc, color, espècie o grup utilitzant
@@ -1030,7 +1031,7 @@ ca:
   from_eol_collection: D'una col·lecció d'EOL
   from_in_this_place: d'aquest lloc
   from_list: De la llista
-  from_this: d'aquesta
+  from_this: d'aquest
   from_photos: De fotos
   from_place: D'un lloc
   from_your_site_observations: Observacions de %{site_name}
@@ -1122,9 +1123,9 @@ ca:
   iconic_taxon: Taxonomia de la icona
   id: Identificació
   id_: identificació
-  id_please!: ID, si us plau!
-  id_please: ID, si us plau
-  id_please_expandable_html: ID,<span class='full'> si us plau!</span>
+  id_please!: Ajuda si us plau!
+  id_please: Ajuda si us plau
+  id_please_expandable_html: Ajuda<span class='full'> si us plau!</span>
   identification: identificació
   identification_deleted: Identificació eliminada.
   identification_saved: Identificació desada!
@@ -1147,10 +1148,9 @@ ca:
   if_you_already_have_an_account: Si ja tens un compte de %{site_name}...
   if_you_dont_want_us_to_share_your_data: Si no vols compartir aquesta informació
   if_you_have_any_trouble_with_the_site_check_out: Si tinguessis algun problema amb
-    el lloc, si us plau, revisa la nostra <a href="%{help_url}">secció d'ajuda</a>
-    o escriu un missatge al nostre <a href="%{feedback_url}">grup de retroacció</a>.
-  if_you_have_trouble_with_the_site: Si tens cap problema amb el lloc, revisa la nostra
-    secció d'ajuda
+    el lloc, si us plau, revisa la nostra <a href="%{help_url}">secció d'ajuda</a>.
+  if_you_have_trouble_with_the_site: Si tinguessis algun problema amb el lloc, si us plau, 
+    revisa la nostra <a href="%{help_url}">secció d'ajuda</a>.
   if_you_use: Si fas servir
   if_youd_like_us_to_share_your_observations_with: |-
     Si vols compartir les teves observacions amb la comunitat científica, assegura't
@@ -1729,6 +1729,9 @@ ca:
   observation_fields: Camps d'observació
   observation_fields_are_additional: Els camps d'observació són camps de dades addicionals
     que poden afegir-se a les observacions.
+  observation_fields_by_preferences_description: |
+    Els camps d'observació són com les etiquetes, exceptuant que tothom pot afegir-ne a la teva observació
+    per defecte. Canvia-ho si prefereixes que només tu o els revisors pugueu afegir-ne.
   observation_must_dotdotdot: L'observació ha de...
   observation_removed_from_the_project: S'ha eliminat l'observació del projecte %{project}
   observation_rights_html: Observació %{rights}
@@ -2220,7 +2223,7 @@ ca:
   remove_curator_role: Elimina la funció de revisor
   remove_curator_status: Elimina l'estat de revisor
   remove_from_batch: Elimina l'edició
-  remove_from_id_please?: Elimina del grup ID?
+  remove_from_id_please?: Elimina d'Ajuda si us plau?
   remove_from_list: Elimina de la llista
   remove_from_project: Quitar del proyecto
   remove_manager: Elimina gestor
@@ -2434,6 +2437,8 @@ ca:
     de vida.
   sorry_you_need_to_be_signed_in_and: Ho sentim, has d’entrar al sistema i tenir un
     compte enllaçat de Flickr per poder publicar etiquetes directament des de Flickr.
+  sort_by: Ordenar per
+  sorting_by: Ordenat per
   sounds:
     add_media: Afegeix contingut digital
     add_sounds: Afegeix un so
@@ -2540,7 +2545,7 @@ ca:
     subscrit i a què no. Selecciona l'enllaç de més avall "Administra todas tus suscripciones" i
     també, si ho desitges, podràs eliminar totes les subscripcions d'algun lloc que ja no
     vulguis tenir en les teves preferències.
-  subscribe_to_this: Subscriu-te a aquest
+  subscribe_to_this: Subscriu-te a aquest/a
   subscribe_to_x_from_this_y_html: |-
     <a href="#" onclick="$(this).parents('form:first').submit(); return false;">subscriure't</a>
     a les %{x} d'aquest %{y}.
@@ -2855,7 +2860,7 @@ ca:
   updates_notification_email_subject: '%{prefix} Noves actualitzacions %{date}'
   unpublish: No publiquis
   unsubscribe: Elimina subscripció
-  unsubscribe_from_this: Elimina subscripció d'aquest
+  unsubscribe_from_this: Elimina la subscripció aquest/a
   unsuspend_user: Reactiva usuari
   update: Actualitza
   update_existing_observations_with_new_license: Actualitza les observacions existents
@@ -2872,6 +2877,7 @@ ca:
   updated_by: Actualitzat per
   updated_daily: Actualitzat el dia d'avui
   updated_photo: Foto pujada
+  updates_on_your_content: Actualitzacions al teu contingut
   upload: Carrega
   upload_a_csv_file: Carrega un arxiu CSV
   upload_a_csv_file_with_observation: Carrega un arxiu CSV amb dades d'observació.
@@ -2924,7 +2930,7 @@ ca:
   view: Mostra
   view_all: Mostra-ho tot
   view_all_members: Mostra tots els membres
-  view_all_n: Mostra totes les %{n}
+  view_all_n: Mostra tots els %{n}
   view_all_observations: Mostra totes les observacions
   view_all_photocount_photos: Mostra totes les %{photo_count} fotos
   view_all_photos_tagged_taxon_html: Mostra totes les fotos etiquetades %{taxon} a
@@ -3243,7 +3249,7 @@ ca:
   zoom_to_taxon_name: Apropa’t a %{taxonname}
   zoom_to_x: Vés a %{x}
   your_dashboard_helps_you: El tauler t’ajuda a seguir l’activitat dels usuaris de Natusfera.
-    Per seguir les actualitzacions d'altres usuaris, selecciona ‘Segueix [nom]’ a
+    Per seguir les actualitzacions d'altres usuaris, selecciona "Segueix [nom]" a
     l'encapçalament quan vegis les seves observacions o el seu perfil.
   here_are_some_things_you_can_do_in_the_meantime: Mentrestant aquí trobaràs coses
     per fer
@@ -3275,7 +3281,7 @@ ca:
           tasca pot requerir una mica de temps, així que si us plau sigues pacient.
         add_color_tags_help: |-
           Afegir etiquetes dels mateixos colors que els associats amb els tàxons seleccionats a
-          iNat (Bioexplorador).
+          Natusfera.
         add_rank_tags_help_html: "Afegir etiquetes del rang dels tàxons segons la nostra
           taxonomia, com per exemple, \n<code>familia=Laridae</code>\no\n<code>familia=Gaviotas
           y Aliados</code>"
@@ -3464,9 +3470,9 @@ ca:
         how_can_i_get_help_identifying_what_i_saw?: Com puc rebre ajuda per identificar
           el que vaig veure?
         check_the_id_please_checkbox_when_html: |-
-          Marca la casella que diu "ID, si us plau" quan afegeixis/editis les teves observacions i
+          Marca la casella que diu "Ajuda si us plau" quan afegeixis/editis les teves observacions i
           la teva observació apareixerà a
-          <a href="%{url}" title=ID, si us plau>ID, si us plau</a>.
+          <a href="%{url}" title=Ajuda si us plau>Ajuda si us plau</a>.
         what_does_it_mean_to_link_inaturalist_to_my_flickr_account?: Què significa
           vincular %{site_name} amb el meu compte de Flickr?
         inaturalist_can_link_directly_to_the_flickr_photo_service: |-
@@ -3774,8 +3780,8 @@ ca:
     photos:
       inviter:
         automatically_add_to_project: Afegeix automàticament al projecte
-        automatically_id_the_new_obs_as: Identifica automàticament una nova observació
-          amb ID com a
+        automatically_id_the_new_obs_as: Identifica automàticament la nova observació
+          com a
         dont_forget_the_invite_link_placeholder: pensa en incloure el {{INVITE_LINK}}
           marcador de posició
         invite_other_photographers_to_inat: Convida a altres fotògrafs %{site_name}

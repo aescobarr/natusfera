@@ -13,6 +13,7 @@ config/gmaps_api_key.yml
 config/s3.yml
 config/newrelic.yml
 config/smtp.yml
+config/smtp.yml.devel
 config/sphinx.yml
 config/settings.yml
 config/tilestache.cfg

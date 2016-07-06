@@ -1020,7 +1020,7 @@ es:
   edit_your_identification: Modificar su identificación
   edit_your_profile: Editar tu perfil
   edit_your_settings_to_unsubscribe_html: <a href='%{url}'>Editar la configuración</a>
-    para cambiar los tipos de actualizaciones que recibes o darse de baja por completo.
+    para cambiar los tipos de actualizaciones que recibes o darte de baja por completo.
   edited: Modificado
   edited_by: Editado por
   edited_by_name_html: Editado por %{name}
@@ -1138,7 +1138,7 @@ es:
   fields_merged: Campos combinados
   file_should_be_in_the_following_format: 'El archivo debería tener el siguiente formato:
     nombre de la especie o grupo, descripción'
-  fill_out_your_profile: completas tu perfil
+  fill_out_your_profile: completar tu perfil
   filling_out_checklist_for_place: llenar las listas de verificación de los lugares
     que conoces bien
   filling_out_your_profile: completar su perfil
@@ -1327,10 +1327,10 @@ es:
   iconic_taxon: Taxonómia del icono
   id: Identificación
   id_: identificación
-  id_more_in_id_please: ID más en ID, por favor
+  id_more_in_id_please: Identificar más en Ayuda por favor
   id_please!: ¡ayuda por favor!
   id_please: ayuda por favor
-  id_please_expandable_html: Ayuda<span class='full'> por favor!</span>
+  id_please_expandable_html: ¡Ayuda<span class='full'> por favor!</span>
   identification: identificación
   identification_deleted: Identificación eliminada.
   identification_saved: ¡Identificación guardada!
@@ -1351,11 +1351,10 @@ es:
     puedes usar sus plantillas de etiquetas para rellenar el nombre del taxón en la URL.
   if_you_already_have_an_account: Si ya tienes una cuenta de %{site_name}...
   if_you_dont_want_us_to_share_your_data: Si no deseas compartir esta información
-  if_you_have_any_trouble_with_the_site_check_out: Si tuviera algún problema con el
-    sitio, por favor revise nuestro <a href="%{help_url}">sección de ayuda</a> o escriba
-    un mensaje a nuestro <a href="%{feedback_url}">grupo de retroalimentación</a>.
+  if_you_have_any_trouble_with_the_site_check_out: Si tuvieras algún problema con el
+    sitio, por favor revisa nuestra <a href="%{help_url}">sección de ayuda</a>.
   if_you_have_trouble_with_the_site: Si tuvieras algún problema con el sitio, por favor
-    revisa nuestra sección de ayuda
+    revisa nuestra <a href="%{help_url}">sección de ayuda</a>.
   if_you_use: Si usas
   if_youd_like_us_to_share_your_observations_with: |-
     Si deseas compartir tus observacines con la comunidad científica, asegurate
@@ -2484,7 +2483,7 @@ es:
   ray_finned_fishes: peces con aletas radiadas
   re_apply_list_rules: Re-aplicar las reglas de la lista
   re_order_photos: Reordenar fotos &raquo;
-  read_our_getting_started_guide: lees nuestra Guía de Inicio
+  read_our_getting_started_guide: leer nuestra Guía de Inicio
   read_the_full_wikipedia: Leer toda la descripción de Wikipedia
   ready_to_get_started?: ¿Listo para empezar?
   reason: Razón
@@ -2775,7 +2774,7 @@ es:
     tener una cuenta enlazada de Flickr para poder publicar etiquetas directamente
     desde Flickr.
   sort_by: Ordenar por
-  sorting_by: Ordenando por
+  sorting_by: Ordenado por
   soundcloud_needs_to_confirm: SoundCloud necesita confirmar que quieres que su cuenta
     esté conectada a %{site_name}.
   sounds:
@@ -3476,7 +3475,7 @@ es:
   with: con
   with_errors: Con errores
   within_inaturalist: Dentro de %{site_name}
-  wondering_what_to_do_next: ¿Te preguntas qué hacer ahora? Por qué no
+  wondering_what_to_do_next: ¿Te preguntas qué hacer ahora? Puedes
   would_you_like_to: . ¿Le gustaría
   would_like_some_help_identifying_this: te agradaría tener ayuda identificando esto
   x_admin: '%{login} Administrador'
@@ -3917,9 +3916,9 @@ es:
           y agrega el nombre original a las etiquetas o espacios \ndescriptivos."
         how_can_i_get_help_identifying_what_i_saw?: ¿Cómo puedo recibir ayuda para
           identificar lo que vi?
-        check_the_id_please_checkbox_when_html: "Marca la casilla que dice \"ID por
+        check_the_id_please_checkbox_when_html: "Marca la casilla que dice \"Ayuda por
           favor\" cuando agregues/edites tus observaciones y\ntu observación aparecerá
-          en \n<a href=\"%{url} title=\"ID por favor\">ID por favor</a>."
+          en \n<a href=\"%{url} title=\"Ayuda por favor\">Ayuda por favor</a>."
         what_does_it_mean_to_link_inaturalist_to_my_flickr_account?: ¿Qué significa
           enlazar %{site_name} con mi cuenta de Flickr?
         inaturalist_can_link_directly_to_the_flickr_photo_service: "%{site_name} puede
@@ -4228,7 +4227,7 @@ es:
     photos:
       inviter:
         automatically_add_to_project: Añadir automáticamente al proyecto
-        automatically_id_the_new_obs_as: Automáticamente el ID del nuevo observación
+        automatically_id_the_new_obs_as: Identificar la nueva observación automáticamente como
           como
         dont_forget_the_invite_link_placeholder: no te olvides de incluir el marcador de posición {{INVITE_LINK}}
         invite_other_photographers_to_inat: Invitar a otros fotógrafos a %{site_name}
