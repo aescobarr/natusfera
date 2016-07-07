@@ -479,7 +479,7 @@ es:
   back_to_shared_taxon: Regresa a %{sharedtaxon}
   back_to_taxon: Regresa a %{defaulttaxon}
   back_to_this: Regresa a %{place}
-  back_to_viewing: Regresa a ver <i>%{taxon}</i>
+  back_to_viewing: Regresa para ver <i>%{taxon}</i>
   back_to_x: Regresa a %{noun}
   back_to_x_assessment: Regresa a las evaluaciones del %{project}
   back_to_x_history: Regresa a la historia de %{x}
@@ -703,7 +703,7 @@ es:
     por ejemplo: evita usar el color café para los mamíferos y verde para las plantas.
   colors: Colores
   comma_separated_list_of_tracking_codes: |-
-    Si quieres poner un código de rastreo cuando las personas hagan observaciones en tu proyecto, separa los códigos con comas.
+    Si quieres poner un código de seguimiento cuando las personas hagan observaciones en tu proyecto, separa los códigos con comas.
     Se puede usar para rastrear la participación de las personas en diferentes fuentes.
     Cuando descargas las observaciones de tu proyecto con formato CSV puedes tener acceso a estos códigos de rastreo.
   comma_separated_please: Por favor, separar por comas
@@ -971,7 +971,7 @@ es:
   dont_filter: No filtrar
   dont_send_me_email: No enviarme ningún mensaje de correo electrónico
   dont_use_double_quotes: No utilice comillas dobles en ningún otro lugar
-  double_click_to_finish: (Con doble clic termina tu forma)
+  double_click_to_finish: (Termina tu forma haciendo doble clic)
   download: Descargar
   download_csv: Descargar CSV
   download_kml: Descargar KML
@@ -988,51 +988,51 @@ es:
     estado de conservación y quién observó esa especie por primera vez allí
     en %{site_name}. Puedes filtrar la especie por grupo taxonómico, color, estado
     de conservación o hacer una búsqueda sencilla.
-  edit: Modificar
-  edit_a_batch_of_observations: Modificar un grupo de observaciones
-  edit_account_settings_and_profile: Modificar la cuenta y perfil
+  edit: Editar
+  edit_a_batch_of_observations: Editar un grupo de observaciones
+  edit_account_settings_and_profile: Editar la cuenta y perfil
   edit_assessment: Editar evaluación
   edit_body: Editar el cuerpo
-  edit_colors: Modificar colores
-  edit_comment: Modificar el comentario
-  edit_custom_project_fields: Modificar campos de proyecto personalizados
+  edit_colors: Editar colores
+  edit_comment: Editar el comentario
+  edit_custom_project_fields: Editar campos de proyecto personalizados
   edit_field: Edita el campo
   edit_flagged_observation: Editar la observación marcada
   edit_license: Modificar licencia
-  edit_notes: Modificar notas
-  edit_photos: Modificar fotos
-  edit_photos_for_observation_id: Modificar fotos para la observación %{obs_id}
-  edit_place: modificar lugar
-  edit_project: Modificar proyecto
-  edit_range_raquo: Modificar rango &raquo;
+  edit_notes: Editar notas
+  edit_photos: Editar fotos
+  edit_photos_for_observation_id: Editar fotos para la observación %{obs_id}
+  edit_place: Editar lugar
+  edit_project: Editar proyecto
+  edit_range_raquo: Editar rango &raquo;
   edit_remove: Modificar/Quitar
-  edit_selected: Modificar seleccionados
-  edit_source: Modificar fuente
-  edit_taxa: Edita la taxa
-  edit_taxon_change: Modifica los cambios a la especie o grupo
-  edit_taxon_link: Modificar vínculo del Taxón
-  edit_taxon_range: Modificar rango del taxón
-  edit_the_observation: Modificar la observación
-  edit_this_link: Modificar este vínculo
-  edit_your_account: modificar tu cuenta
-  edit_your_account_and_profile_html: Modificar su cuenta y Perfil
+  edit_selected: Editar seleccionados
+  edit_source: Editar fuente
+  edit_taxa: Edita los taxones
+  edit_taxon_change: Editar los cambios a la especie o grupo
+  edit_taxon_link: Editar vínculo del Taxón
+  edit_taxon_range: Editar rango del taxón
+  edit_the_observation: Editar la observación
+  edit_this_link: Editar este vínculo
+  edit_your_account: Editar tu cuenta
+  edit_your_account_and_profile_html: Editar tu cuenta y perfil
   edit_your_default_settings: Editar la configuración predeterminada
   edit_your_identification: Modificar su identificación
-  edit_your_profile: Modificar su perfil
+  edit_your_profile: Editar tu perfil
   edit_your_settings_to_unsubscribe_html: <a href='%{url}'>Editar la configuración</a>
-    para cambiar los tipos de actualizaciones que recibes o darse de baja por completo.
+    para cambiar los tipos de actualizaciones que recibes o darte de baja por completo.
   edited: Modificado
   edited_by: Editado por
   edited_by_name_html: Editado por %{name}
-  editing: Modificar
-  editing_announcement: Modificar anuncio
+  editing: Editar
+  editing_announcement: Editar anuncio
   editing_custom_project_fields_for: Editando campos a la medida para
-  editing_observation_field: Modificando campo de observación
-  editing_observation_id: Modificar observación %{obs_id}
-  editing_project: Modificación %{project}
-  editing_project_asset: Modificar posesión de Proyecto para
+  editing_observation_field: Editando campo de observación
+  editing_observation_id: Editar observación %{obs_id}
+  editing_project: Editando %{project}
+  editing_project_asset: Editar posesión de Proyecto para
   editing_subscription_to_x_html: Editando suscripción para %{x}
-  editing_taxon_link: Modificando vínculo del Taxón
+  editing_taxon_link: Modificar vínculo del Taxón
   editing_taxon_name: Modificar nombre del Taxón
   editing_taxon_range: Modificar rango de taxón
   editing_this: Modificando %{elem}
@@ -1126,7 +1126,7 @@ es:
   featured_projects_from_place: Proyectos destacados de %{place}
   feedback: Retroalimentación
   feedback_group: Grupo de retroalimentación
-  feeds: Feeds
+  feeds: 'Fuentes'
   feeds_for_current_filters: Fuentes para los filtros actuales
   field_note: |-
     <strong>Nota:</strong> Si vas a crear un campo
@@ -1138,7 +1138,7 @@ es:
   fields_merged: Campos combinados
   file_should_be_in_the_following_format: 'El archivo debería tener el siguiente formato:
     nombre de la especie o grupo, descripción'
-  fill_out_your_profile: completas tu perfil
+  fill_out_your_profile: completar tu perfil
   filling_out_checklist_for_place: llenar las listas de verificación de los lugares
     que conoces bien
   filling_out_your_profile: completar su perfil
@@ -1327,10 +1327,10 @@ es:
   iconic_taxon: Taxonómia del icono
   id: Identificación
   id_: identificación
-  id_more_in_id_please: ID más en ID, por favor
+  id_more_in_id_please: Identificar más en Ayuda por favor
   id_please!: ¡ayuda por favor!
   id_please: ayuda por favor
-  id_please_expandable_html: Ayuda<span class='full'> por favor!</span>
+  id_please_expandable_html: ¡Ayuda<span class='full'> por favor!</span>
   identification: identificación
   identification_deleted: Identificación eliminada.
   identification_saved: ¡Identificación guardada!
@@ -1351,11 +1351,10 @@ es:
     puedes usar sus plantillas de etiquetas para rellenar el nombre del taxón en la URL.
   if_you_already_have_an_account: Si ya tienes una cuenta de %{site_name}...
   if_you_dont_want_us_to_share_your_data: Si no deseas compartir esta información
-  if_you_have_any_trouble_with_the_site_check_out: Si tuviera algún problema con el
-    sitio, por favor revise nuestro <a href="%{help_url}">sección de ayuda</a> o escriba
-    un mensaje a nuestro <a href="%{feedback_url}">grupo de retroalimentación</a>.
+  if_you_have_any_trouble_with_the_site_check_out: Si tuvieras algún problema con el
+    sitio, por favor revisa nuestra <a href="%{help_url}">sección de ayuda</a>.
   if_you_have_trouble_with_the_site: Si tuvieras algún problema con el sitio, por favor
-    revisa nuestra sección de ayuda
+    revisa nuestra <a href="%{help_url}">sección de ayuda</a>.
   if_you_use: Si usas
   if_youd_like_us_to_share_your_observations_with: |-
     Si deseas compartir tus observacines con la comunidad científica, asegurate
@@ -1807,7 +1806,7 @@ es:
   ne_lon: Long. N.E.
   near_threatened: casi amenazado
   nearby_observations: Observaciones cercanas
-  need_id_help?: ¿Necesita ayuda?
+  need_id_help?: ¿Necesitas ayuda?
   new_announcement: Nuevo anuncio
   new_assessment: Nueva evaluación
   new_check_list: Nueva lista de verificación
@@ -2031,7 +2030,7 @@ es:
   observations_it_may_take_a_few: observaciones. Esto podría tardar unos minutos.
   observations_last500: Observaciones (últimas 500)
   observations_map: Observaciones / Mapa
-  observation_must_dotdotdot: Observación debe...
+  observation_must_dotdotdot: La observación debe...
   observations_near_a_place_are: Observaciones "cercanas" a un lugar que esten con
     un rectangulo alrededor de los limites de la figura, puede dar de resultado algunos
     datos imprecisos para lugares que no parezcan rectangulos. Esto es debido a una
@@ -2046,7 +2045,7 @@ es:
     dentro de sus límites.
   observations_per_month: Observaciones / Mes
   observations_removed_from_the_project: Observaciones eliminadas del proyecto "%{project}"
-  observations_saved: ¡Observación(es) guardadas!
+  observations_saved: ¡Observaciones guardadas!
   observations_specifying_this_field: Observaciones que especifican este campo
   observations_text_search_warning: |-
     Las búsquedas de texto pueden producir resultados extraños cuando se combinan
@@ -2055,7 +2054,7 @@ es:
   observations_title: Observaciones de todos
   observations_w: Búsqueda de observaciones con
   observations_w_field: Búsqueda de observaciones con campo
-  observations_was_successfully_updated: La observación(es) fue actualizada exitosamente.
+  observations_was_successfully_updated: La/s observación/es se ha/n actualizado exitosamente.
   observations_week: Observaciones / Semana
   observations_widget: Observaciones del widget
   observations_will_revert_to_casual: Las observaciones volverán al grado "básico"
@@ -2361,7 +2360,7 @@ es:
     proyecto.
   please_be_careful_particulary_when: Tenga cuidado, especialmente al eliminar taxones.
     Si un taxón tiene observaciones, identificadores, taxones enlistados, u otros
-    asociados, por favor
+    asociados, deberías
   please_check_for_you_confirmation_email: ¡Bienvenido a %{site_name}!  Por favor, revisa
     la confirmación en tu correo, pero siéntete libre de explorar el sitio.
   please_cite_the_published_source_of_taxon: Por favor mencione la fuente publicada
@@ -2440,8 +2439,8 @@ es:
   projects: Proyectos
   projects_description: Los proyectos son una forma de agrupar en %{site_name} tus observaciones con las de
     otras personas.  Si te interesa comenzar un proyecto
-    científico ciudadano o simplemente mantener registros de las aves de un parque cercano
-    con tu club de observación local, la forma de hacerlo es con Proyectos.
+    científico ciudadano o quieres utilizar %{site_name} en tu centro educativo,
+    ¡los proyectos son lo que estabas buscando! Para aprender a usarlos, consulta el tutorial de aydua para proyectos.
   projects_from_place: Proyectos de %{place}
   projects_in_x: Proyectos en %{x}
   projects_you_admin: Proyectos que administras
@@ -2484,7 +2483,7 @@ es:
   ray_finned_fishes: peces con aletas radiadas
   re_apply_list_rules: Re-aplicar las reglas de la lista
   re_order_photos: Reordenar fotos &raquo;
-  read_our_getting_started_guide: lees nuestra Guía de Inicio
+  read_our_getting_started_guide: leer nuestra Guía de Inicio
   read_the_full_wikipedia: Leer toda la descripción de Wikipedia
   ready_to_get_started?: ¿Listo para empezar?
   reason: Razón
@@ -2564,7 +2563,7 @@ es:
   request_password: Solicitar contraseña
   request_timed_out: ¡La petición excedio el tiempo de espera!
   required: obligatorio
-  required_field: Campo requerido
+  required_field: Campo obligatorio
   required_columns_in_order: Columnas requeridas en orden
   research: investigación
   research_grade: grado de investigación
@@ -2775,7 +2774,7 @@ es:
     tener una cuenta enlazada de Flickr para poder publicar etiquetas directamente
     desde Flickr.
   sort_by: Ordenar por
-  sorting_by: Ordenando por
+  sorting_by: Ordenado por
   soundcloud_needs_to_confirm: SoundCloud necesita confirmar que quieres que su cuenta
     esté conectada a %{site_name}.
   sounds:
@@ -2957,7 +2956,7 @@ es:
   taxon_split: división de taxón
   taxon_stage: montar de taxón
   taxon_subscription: suscripción de especie o grupo
-  taxon_swap: intercambio de taxón
+  taxon_swap: nuevo cambio taxonómico
   taxon_to_delete: Taxón a eliminar
   taxon_to_keep: Taxón a mantener
   taxon_name_was_deleted: El nombre del taxon fue eliminado.
@@ -3097,8 +3096,8 @@ es:
     sinónimos y mezclarla.
   these_arent_necessarily_relevant_to: Estas observaciones no necesariamente son relevantes
     para el proyecto. Por favor revisa los
-  these_folks_kindly_volunteer_to: Estas personas amablemente son voluntarios para
-    mantener la taxonomía y resolver otros problemas.
+  these_folks_kindly_volunteer_to: Estas personas son voluntarias que se ofrecen para mantener y 
+    resolver problemas relacionados con la taxonomía.
   they_already_have_iNat_accounts: '...que ya tienen cuentas %{site_name}'
   they_have_been_invited: '...ellos ya han sido invitados.'
   third_person_possessive_singular: '%{noun} de %{object_phrase}'
@@ -3300,8 +3299,8 @@ es:
   user_invited_you_to_join_this_project_on_date_html: '%{user} te invito a unirte
     a este proyecto en %{fecha}'
   user_invited_your_x_to_a_project_html: '%{user} invitó a su %{x} a un proyecto'
-  user_added_an_observation_field_html: El %{user} añadió un un valor para "%{field_name}"
-    a una observación de %{owner}
+  user_added_an_observation_field_html: El %{user} añadió un un valor para "%{nombre_campo}"
+    a una observación de %{propietario}
   user_is_a_naturalist: '%{user} es un naturalista!'
   user_name: Nombre de usuario
   user_s: '%{model_name} de %{user}'
@@ -3447,7 +3446,7 @@ es:
     <strong>conocer a</strong> otros amantes de la naturaleza, y <strong>aprender</strong>
     acerca del mundo natural.
   welcome_to_inat: ¡Bienvenido a %{site_name}!
-  welcome_to_guides: ¡Bienvenido a Guías %{site_name}!
+  welcome_to_guides: ¡Bienvenido a las Guías de %{site_name}!
   welcome_to_x_project: Bienvenido al proyecto %{project}
   were_currently_down_for: Estamos fuera de servicio por
   what: Qué
@@ -3476,7 +3475,7 @@ es:
   with: con
   with_errors: Con errores
   within_inaturalist: Dentro de %{site_name}
-  wondering_what_to_do_next: ¿Te preguntas qué hacer ahora? Por qué no
+  wondering_what_to_do_next: ¿Te preguntas qué hacer ahora? Puedes
   would_you_like_to: . ¿Le gustaría
   would_like_some_help_identifying_this: te agradaría tener ayuda identificando esto
   x_admin: '%{login} Administrador'
@@ -3917,9 +3916,9 @@ es:
           y agrega el nombre original a las etiquetas o espacios \ndescriptivos."
         how_can_i_get_help_identifying_what_i_saw?: ¿Cómo puedo recibir ayuda para
           identificar lo que vi?
-        check_the_id_please_checkbox_when_html: "Marca la casilla que dice \"ID por
+        check_the_id_please_checkbox_when_html: "Marca la casilla que dice \"Ayuda por
           favor\" cuando agregues/edites tus observaciones y\ntu observación aparecerá
-          en \n<a href=\"%{url} title=\"ID por favor\">ID por favor</a>."
+          en \n<a href=\"%{url} title=\"Ayuda por favor\">Ayuda por favor</a>."
         what_does_it_mean_to_link_inaturalist_to_my_flickr_account?: ¿Qué significa
           enlazar %{site_name} con mi cuenta de Flickr?
         inaturalist_can_link_directly_to_the_flickr_photo_service: "%{site_name} puede
@@ -4228,7 +4227,7 @@ es:
     photos:
       inviter:
         automatically_add_to_project: Añadir automáticamente al proyecto
-        automatically_id_the_new_obs_as: Automáticamente el ID del nuevo observación
+        automatically_id_the_new_obs_as: Identificar la nueva observación automáticamente como
           como
         dont_forget_the_invite_link_placeholder: no te olvides de incluir el marcador de posición {{INVITE_LINK}}
         invite_other_photographers_to_inat: Invitar a otros fotógrafos a %{site_name}

@@ -103,10 +103,11 @@ ca:
   add_a_batch_of_taxa: Afegeix un grup de tàxons
   add_a_comment: Afegeix un comentari
   add_a_field: Afegeix un camp
+  add_a_flag: Afegeix una advertència
   add_a_link_raquo: Afegeix un enllaç »
   add_a_name: Afegeix un nom
   add_a_new_change_group: Afegeix un nou canvi en grup
-  add_a_new_observation_to_id_please!: Afegeix una observació a "ID, si us plau"!
+  add_a_new_observation_to_id_please!: Afegeix una observació a "Ajuda si us plau"!
   add_a_place_raquo: Afegeix un lloc »
   add_a_single_observation: Afegeix una breu observació
   add_a_taxon: Afegeix una espècie o grup
@@ -122,7 +123,7 @@ ca:
   add_another_flag: Afegeix una altra marca.
   add_another_photo: Afegeix una altra foto
   add_asset: Afegeix actiu
-  add_batch: Afegeix grup
+  add_batch: Afegeix en grup
   add_colors: Afegeix colors
   add_comment: Afegeix un comentari
   add_common_names_for: Afegeix noms comuns a tàxons existents
@@ -140,7 +141,7 @@ ca:
   add_new_photos_by_their_ids: Afegeix noves fotos a través dels teus identificadors
     de Flickr. (Han de ser de Creative Commons!)
   add_new_place: Afegeix un nou lloc
-  add_new_rule: Afegeix una norma nova
+  add_new_rule: Afegeix una nova norma
   add_new_source: Afegeix una nova font
   add_new_taxon_name: Afegeix un nou nom de tàxon
   add_notes_about_this_taxon: Afegeix notes sobre aquest tàxon en aquest lloc, per
@@ -174,7 +175,7 @@ ca:
   add_to: Afegeix a
   add_to_a_scheme: Afegeix a un esquema
   add_to_checklist: afegeix a la llista de verificació
-  add_to_id_please: Sol·licita ID
+  add_to_id_please: Sol·licita ajuda per identificar
   add_to_list: Afegeix a la llista
   add_to_project: Afegeix al projecte
   add_to_your_life_list: Afegeix a la teva llista de vida
@@ -280,6 +281,7 @@ ca:
       one: 1 altre animal
       other: '%{count} altres animals'
   all_taxonomic_groups: « Tots els grups taxonòmics
+  all_updates: Totes les actualitzacions
   all_your_observations_will_default_this_time_zone: Totes les teves observacions
     es faran en aquesta zona horària tret que ho especifiquis altrament.
   all_your_observations_will_default_to_this_time_zone: Totes les teves observacions
@@ -419,7 +421,7 @@ ca:
   back_to_shared_taxon: Torna a %{sharedtaxon}
   back_to_taxon: Torna a %{defaulttaxon}
   back_to_this: Torna a %{place}
-  back_to_viewing: Torna a mostrar <i>%{taxon}</i>
+  back_to_viewing: Torna per mostrar <i>%{taxon}</i>
   back_to_x: Torna a %{noun}
   back_to_x_journal: Torna al diari de %{user}
   back_to_x_observations: Torna a les observacions de %{user}
@@ -477,6 +479,7 @@ ca:
   cant_flag_an_object_that_doesnt_exist: No pots posar una advertència a un contingut
     que ja no existeix
   cant_merge_a_taxon_with_itself: No pots combinar aquest tàxon amb ell mateix.
+  card: Targeta
   casual: bàsic
   catalogue_of_life: Catàleg de la vida
   cc_attribution_license: Llicència de reconeixement de Creative Commons
@@ -629,7 +632,7 @@ ca:
   colors: Colors
   comma_separated_list_of_tracking_codes: |-
     Separa els codis de seguiment amb comes. Afegeix això si vols afegir un codi de seguiment quan les persones facin
-    observacions en el teu projecte, ex. %{root_url}observations/new?project_id=%{project_id}&tracking_code=elteucodi123.
+    observacions en el teu projecte.
     Es pot utilitzar per fer el seguiment de la participació en diferents fonts. Pots accedir a aquests codis de seguiment
     quan descarreguis les observacions del teu projecte en format CSV.
   comma_separated_please: Si us plau, separa mitjançant comes
@@ -647,7 +650,7 @@ ca:
   commit: Desa
   committed: Desa
   committing: Desant...
-  community_id: 'ID de la <strong>comunitat</strong>: '
+  community_id: 'Identificació de la <strong>comunitat</strong>: '
   community_supported_id: Identificador reconegut per la comunitat?
   compare_with: Compara amb
   comparing: comparant
@@ -682,10 +685,10 @@ ca:
   contain_all_descendants?: Aquesta llista de verificació conté tots els descendents
     d'aquest tàxon que es produeixen aquí?
   contest: concurs
-  contest_projects_description: El projecte 'Concurs' mostrarà un quadre amb la classificació
+  contest_projects_description: El projecte "Concurs" mostrarà un quadre amb la classificació
     dels col·laboradors, realitzada a partir del nombre d'espècies úniques observades.
-    El projecte 'Concurs d'observacions' mostrarà els líders de la classificació a partir
-    del nombre d'observacions dels col·laboradors
+    El projecte "Concurs d'observacions" mostrarà els líders de la classificació a partir
+    del nombre d'observacions dels col·laboradors.
   contributions: contribucions
   contributions_from: Aportacions de
   contributor_cannot_be_found: No s'ha pogut trobar al contribuïdor del projecte
@@ -788,7 +791,7 @@ ca:
   desc: desc
   descendant_taxa: tàxons descendents
   descending: descendent
-  describe_purpose: Descriu l'objectiu d'aquest projecte
+  describe_purpose: Descriu l'objectiu d'aquest projecte.
   describe_your_interest_in_nature: Descriu el teu interès per la natura!
   description: Descripció
   description_from: Descripció de
@@ -814,7 +817,7 @@ ca:
   doh_something_went_wrong: Alguna cosa no ha anat bé.
   dont_filter: No filtris
   dont_use_double_quotes: No utilitzis cometes dobles en cap altre lloc
-  double_click_to_finish: (Amb doble clic acaba la teva forma)
+  double_click_to_finish: (Acaba la teva forma amb un doble clic)
   download: 'Descarrega:'
   download_bulk_import_template_html: |
     <a href="%{url}">Descarrega una plantilla</a> per a la
@@ -832,41 +835,41 @@ ca:
     lloc a %{site_name}. Pots filtrar l'espècie per grup taxonòmic, color, estat de
     conservació o cerca simple.
   edit: Edita
-  edit_a_batch_of_observations: Modifica un grup d'observacions
-  edit_account_settings_and_profile: Modifica el compte i el perfil
-  edit_colors: Modifica els colors
-  edit_comment: Modifica el teu comentari
-  edit_custom_project_fields: Modifica els camps de projecte personalitzats
+  edit_a_batch_of_observations: Edita un grup d'observacions
+  edit_account_settings_and_profile: Edita el compte i el perfil
+  edit_colors: Edita els colors
+  edit_comment: Edita el teu comentari
+  edit_custom_project_fields: Edita els camps de projecte personalitzats
   edit_flagged_observation: Edita l'observació marcada
   edit_license: Modifica la llicència
-  edit_notes: Modifica les notes
-  edit_photos: Modifica les fotos
-  edit_photos_for_observation_id: Modifica les fotos per a l'observació %{obs_id}
-  edit_place: modifica lloc
-  edit_project: Modifica projecte
-  edit_range_raquo: Modifica rang »
-  edit_remove: Modificar/Quitar
-  edit_selected: Modifica els elements seleccionats
-  edit_source: Modifica font
-  edit_taxa: Edita el tàxon
+  edit_notes: Edita les notes
+  edit_photos: Edita les fotos
+  edit_photos_for_observation_id: Edita les fotos per a l'observació %{obs_id}
+  edit_place: Edita lloc
+  edit_project: Edita projecte
+  edit_range_raquo: Edita rang »
+  edit_remove: Modificar/Eliminar
+  edit_selected: Edita els elements seleccionats
+  edit_source: Edita font
+  edit_taxa: Edita els tàxons
   edit_taxon_change: Modifica els canvis en l'espècie o grup
   edit_taxon_link: Modifica enllaç del tàxon
   edit_taxon_range: Modifica rang del tàxon
-  edit_the_observation: Modifica observació
-  edit_this_link: Modifica aquest enllaç
-  edit_your_account: modifica el teu compte
-  edit_your_account_and_profile_html: Modifica el teu compte i el teu perfil
+  edit_the_observation: Edita observació
+  edit_this_link: Edita aquest enllaç
+  edit_your_account: Edita el teu compte
+  edit_your_account_and_profile_html: Edita el teu compte i el teu perfil
   edit_your_identification: Modifica la teva identificació
-  edit_your_profile: Modifica el teu perfil
+  edit_your_profile: Edita el teu perfil
   edit_your_settings_to_unsubscribe_html: <a href='%{url}'>Edita la configuració</a>
     per canviar els tipus d'actualització que reps o donar-te totalment de baixa.
   edited: Modificat
   edited_by: Editat per
-  editing: Modifica
-  editing_announcement: Modifica anunci
-  editing_observation_field: Modifica camp d'observació
-  editing_observation_id: Modifica observació %{obs_id}
-  editing_project: Modifica %{project}
+  editing: Editar
+  editing_announcement: Edita anunci
+  editing_observation_field: Edita camp d'observació
+  editing_observation_id: Edita observació %{obs_id}
+  editing_project: Edita %{project}
   editing_project_asset: Modifica l'arxiu de projecte per a
   editing_taxon_link: Modifica enllaç del tàxon
   editing_taxon_name: Modifica nom del tàxon
@@ -920,6 +923,7 @@ ca:
   expand_updates: expandeix actualitzacions
   explore!: Explora!
   explore_everyones_observations: Llegeix les observacions de tots els usuaris.
+  export: Exporta
   external_links: Enllaços externs
   extinct: extint
   extinct_in_the_wild: extingit en estat silvestre
@@ -941,7 +945,7 @@ ca:
   featured?: Destacats?
   feedback: Retroacció
   feedback_group: Grup de retroacció
-  feeds: 'Fonts:'
+  feeds: 'Fonts'
   feeds_for_current_filters: Fonts per als filtres actuals
   field_note: <strong>Nota:</strong> Si has de crear un camp comprova abans si algú
     ja l'ha creat per evitar duplicats.
@@ -951,7 +955,7 @@ ca:
   fill_out_your_profile: Completar el teu perfil
   filling_out_checklist_for_place: omple les llistes de verificació dels llocs que
     coneixes bé
-  filling_out_your_profile: Completa el teu perfil
+  filling_out_your_profile: Completar el teu perfil
   filter: Filtre
   filter_by: Filtra per
   filter_by_place_taxon_and_color: Filtra per lloc, color, espècie o grup utilitzant
@@ -1027,7 +1031,7 @@ ca:
   from_eol_collection: D'una col·lecció d'EOL
   from_in_this_place: d'aquest lloc
   from_list: De la llista
-  from_this: d'aquesta
+  from_this: d'aquest
   from_photos: De fotos
   from_place: D'un lloc
   from_your_site_observations: Observacions de %{site_name}
@@ -1119,9 +1123,9 @@ ca:
   iconic_taxon: Taxonomia de la icona
   id: Identificació
   id_: identificació
-  id_please!: ID, si us plau!
-  id_please: ID, si us plau
-  id_please_expandable_html: ID,<span class='full'> si us plau!</span>
+  id_please!: Ajuda si us plau!
+  id_please: Ajuda si us plau
+  id_please_expandable_html: Ajuda<span class='full'> si us plau!</span>
   identification: identificació
   identification_deleted: Identificació eliminada.
   identification_saved: Identificació desada!
@@ -1144,10 +1148,9 @@ ca:
   if_you_already_have_an_account: Si ja tens un compte de %{site_name}...
   if_you_dont_want_us_to_share_your_data: Si no vols compartir aquesta informació
   if_you_have_any_trouble_with_the_site_check_out: Si tinguessis algun problema amb
-    el lloc, si us plau, revisa la nostra <a href="%{help_url}">secció d'ajuda</a>
-    o escriu un missatge al nostre <a href="%{feedback_url}">grup de retroacció</a>.
-  if_you_have_trouble_with_the_site: Si tens cap problema amb el lloc, revisa la nostra
-    secció d'ajuda
+    el lloc, si us plau, revisa la nostra <a href="%{help_url}">secció d'ajuda</a>.
+  if_you_have_trouble_with_the_site: Si tinguessis algun problema amb el lloc, si us plau, 
+    revisa la nostra <a href="%{help_url}">secció d'ajuda</a>.
   if_you_use: Si fas servir
   if_youd_like_us_to_share_your_observations_with: |-
     Si vols compartir les teves observacions amb la comunitat científica, assegura't
@@ -1205,7 +1208,7 @@ ca:
   inaturalist_is_catching_some_zs: '%{site_name} està captant algunes Zs'
   inaturalist_observations_by: '%{site_name} : Observacions per %{login}'
   inaturalist_places: Llocs %{site_name}
-  inaturalist_places_are_way_record_what_lives_where: Llocs %{site_name} és una forma
+  inaturalist_places_are_way_record_what_lives_where: Els Llocs de %{site_name} són una manera
     de registrar on viu cada espècie. Si busques una espècie en particular, sabràs
     on trobar-la. Cada lloc té una llista de verificació per registrar totes les espècies
     que s’hi troben, de manera que també és útil per buscar dades que vas trobar en
@@ -1222,6 +1225,8 @@ ca:
   invite_flickr_photos: Introdueix les fotos de Flickr a %{site_name}
   invite_more: Convida més gent
   invite_observations: Convida observacions al teu projecte
+  invite_people: Convida gent
+  invite_people_to_project: Convida gent al %{project}
   invite_photos_from_other_sites: Convida les fotos d'altres llocs
   invite_photos_to_raquo_html: Convida algú amb fotos de <nobr>%{site_name} »</nobr>
   invite_someone_to: Convida algú a %{name}!
@@ -1231,6 +1236,7 @@ ca:
     nombrosa convidant els teus amics!
   invited: convidat
   invited_to_the_following_projects: 'T’han convidat als projectes següents:'
+  inviteonly: Només per invitació
   inviting: convidant...
   is_a: és un
   is_an: és un
@@ -1268,6 +1274,7 @@ ca:
   journal_archives_for: Arxius de diari de
   journal_post: Article al diari
   journal_post_deleted: La nota del diari s’ha esborrat.
+  jpg_png_or_gif: "JPG, PNG o GIF"
   jump_to_letter: Salta a la lletra
   just_added!: S'hi acaba d'afegir!
   kelp_diatoms_and_allies: algues brunes i parents
@@ -1294,6 +1301,7 @@ ca:
   least_concern: preocupació menor
   leave_a_comment: Deixa un comentari
   leave_this_project: Surt d'aquest projecte
+  leaves: fulles
   lexicon: Lèxic
   lexicons:
     scientific_names: Noms científics
@@ -1341,7 +1349,7 @@ ca:
     Commons per compartir dades amb altres iniciatives, com ara
   life: Vida
   life!: la vida
-  life_list: Llista de vida de %{user}
+  life_list: "Llista de vida de %{user}"
   life_list_updated: Llista de vida actualitzada!
   life_list_updated_we_also_saved_a: Llista de vida actualitzada! També desem una
     observació buida per a aquest tàxon.
@@ -1410,8 +1418,7 @@ ca:
   load: Carrega
   loading: Carregant...
   loading_flickr_photos: Carregant fotos de Flickr...
-  loading_full_description_html: 'Carregant la descripció completa... No hi ha cap
-    article ni una redirecció a Viquipèdia que es tituli <i>%{taxon}</i>. Potser podries:'
+  loading_full_description_html: 'Carregant la descripció completa... No hi ha cap article ni una redirecció a Viquipèdia que es tituli <i>%{taxon}</i>. Potser podries:'
   loading_more_photos: Carregant més fotos...
   loading_observations: Carregant observacions...
   loading_preview_and_code: Carregant... el codi...
@@ -1512,6 +1519,7 @@ ca:
   messages: Missatges
   mixed_licenses: Llicència combinada
   misleading_or_illegal_content: Contingut il·legal, enganyós, racista, xenòfob, etc.
+  mobile_app_for: Aplicació mòbil per a
   mobile_apps_for: Les aplicacions mòbils per a
   mobile_view_available: Vista per a telèfon mòbil disponible
   mollusks: mol·luscs
@@ -1572,7 +1580,7 @@ ca:
   new_journal_posts: Nou article al diari
   new_list: Nova llista
   new_members: Nous membres...
-  new_: Nou missatge
+  new_message: Nou missatge
   new_observation_field: Nou camp d'observació
   new_observation_rules: Noves normes d'observació
   new_observations: Noves observacions
@@ -1647,6 +1655,7 @@ ca:
     o convidar al projecte.
   no_observations_yet: Encara no s'han afegit observacions a aquest projecte
   no_one_has_added_any: Ningú no ha afegit cap nota per a aquest lloc
+  no_one_has_been_invited_yet: Encara ningú ha sigut convidat
   no_one_posted_anything_yet: Encara no s'ha introduït res!
   no_ones_observed: Ningú ha fet cap observació
   no_photos: No hi ha fotos
@@ -1720,6 +1729,10 @@ ca:
   observation_fields: Camps d'observació
   observation_fields_are_additional: Els camps d'observació són camps de dades addicionals
     que poden afegir-se a les observacions.
+  observation_fields_by_preferences_description: |
+    Els camps d'observació són com les etiquetes, exceptuant que tothom pot afegir-ne a la teva observació
+    per defecte. Canvia-ho si prefereixes que només tu o els revisors pugueu afegir-ne.
+  observation_must_dotdotdot: L'observació ha de...
   observation_removed_from_the_project: S'ha eliminat l'observació del projecte %{project}
   observation_rights_html: Observació %{rights}
   observation_rules: Normes d'observació
@@ -1778,7 +1791,7 @@ ca:
   observations_title: Observacions de tots els usuaris
   observations_w: Cerca d'observacions amb
   observations_w_field: Cerca d'observacions amb camp
-  observations_was_successfully_updated: L'observació(ons) es va(n) actualitzar amb
+  observations_was_successfully_updated: L'observació/ns s'ha/n actualitzat amb
     èxit.
   observations_week: Observacions/setmana
   observations_widget: Giny d'observacions
@@ -1877,8 +1890,9 @@ ca:
   password: Contrasenya
   password_confirmation: Confirma la teva contrasenya
   paste: Copia
-  paste_in_a_bunch_of_names: Enganxa un grup de noms, 1 per línia i fes clic a l’enllaç!
+  paste_in_a_bunch_of_names: Enganxa un grup de noms, un per línia i fes clic a l’enllaç!
   paste_in_a_comma_separated_list: Enganxa la llista de països separats per comes
+  pdf_slash_print: PDF / Imprimir
   pending_invitations: Invitacions pendents
   people: Persones
   people_agree: persones hi estan d'acord
@@ -2053,7 +2067,7 @@ ca:
     s'afegeixin a aquest projecte.
   please_be_careful_particulary_when: Vés amb compte, especialment a l’hora d’eliminar
     tàxons. Si un tàxon té associats identificadors, observacions, tàxons llistats
-    o d’altres,
+    o d’altres, hauries de
   please_check_for_you_confirmation_email: Benvingut a %{site_name}!  Comprova la
     confirmació que t’hem enviat per correu electrònic, però no dubtis a començar
     a explorar el lloc web.
@@ -2078,6 +2092,7 @@ ca:
   powered_by: Desenvolupat per
   powered_by_inaturalist_open_source_software_html: Desenvolupat a partir del programari de
     codi obert <a href="https://github.com/inaturalist/inaturalist" target="_new">iNaturalist</a>"
+  project_membership_model_description: El projecte està obert a tothom o només als membres que rebin invitació?
   present: natiu
   preview: Vista prèvia
   preview_of_synced_observation: <strong>Previ</strong> a l'observació.  <a href="%{url}">Vols
@@ -2126,8 +2141,8 @@ ca:
   projects: Projectes
   projects_description: Els projectes són una manera d'agrupar les teves observacions
     amb les d’altres persones a %{site_name}.  Tant si t’interessa iniciar un projecte
-    científic ciutadà com si només vols mantenir registres de les aus d'un parc proper
-    al teu club d'observació local, pots fer servir projectes.
+    científic ciutadà com si vols utilitzar %{site_name} al teu centre educatiu,
+    els projectes són l'eina que estàs buscant! Per aprendre a utlitzar-los consulta el tutorial d'ajuda per a projectes.
   projects_you_admin: Projectes que administres
   projects_youve_joined: Projectes als quals t’has unit
   protozoans: protozous
@@ -2139,7 +2154,7 @@ ca:
   quality_grade_colon: 'Grau de qualitat:'
   range: Interval
   range_from: Distribució de
-  rank: rang
+  rank: Rang
   rank_restrictions: Classifica les restriccions
   ranks:
     kingdom: Regne
@@ -2208,7 +2223,7 @@ ca:
   remove_curator_role: Elimina la funció de revisor
   remove_curator_status: Elimina l'estat de revisor
   remove_from_batch: Elimina l'edició
-  remove_from_id_please?: Elimina del grup ID?
+  remove_from_id_please?: Elimina d'Ajuda si us plau?
   remove_from_list: Elimina de la llista
   remove_from_project: Quitar del proyecto
   remove_manager: Elimina gestor
@@ -2233,7 +2248,7 @@ ca:
   request_password: Sol·licita contrasenya
   request_timed_out: La petició ha excedit el temps d'espera
   required: obligatori
-  required_field: Camp requerit
+  required_field: Camp obligatori
   required_columns_in_order: Columnes requerides en ordre
   research: recerca
   research_grade: grau de recerca
@@ -2422,6 +2437,8 @@ ca:
     de vida.
   sorry_you_need_to_be_signed_in_and: Ho sentim, has d’entrar al sistema i tenir un
     compte enllaçat de Flickr per poder publicar etiquetes directament des de Flickr.
+  sort_by: Ordenar per
+  sorting_by: Ordenat per
   sounds:
     add_media: Afegeix contingut digital
     add_sounds: Afegeix un so
@@ -2528,7 +2545,7 @@ ca:
     subscrit i a què no. Selecciona l'enllaç de més avall "Administra todas tus suscripciones" i
     també, si ho desitges, podràs eliminar totes les subscripcions d'algun lloc que ja no
     vulguis tenir en les teves preferències.
-  subscribe_to_this: Subscriu-te a aquest
+  subscribe_to_this: Subscriu-te a aquest/a
   subscribe_to_x_from_this_y_html: |-
     <a href="#" onclick="$(this).parents('form:first').submit(); return false;">subscriure't</a>
     a les %{x} d'aquest %{y}.
@@ -2588,7 +2605,7 @@ ca:
   taxon_split: divisió de tàxon
   taxon_stage: munta a partir de tàxon
   taxon_subscription: subscripció d'espècie o grup
-  taxon_swap: intercanvi de tàxon
+  taxon_swap: nou canvi taxonòmic
   taxon_to_delete: Tàxon que vols eliminar
   taxon_to_keep: Tàxon que vols mantenir
   taxon_name_was_deleted: El nom del tàxon es va eliminar.
@@ -2597,9 +2614,10 @@ ca:
   taxon_was_successfully_updated: El tàxon es va actualitzar amb èxit.
   taxonomic: Taxonomia
   taxonomic_changes: Canvis taxonòmics
-  taxonomic_changes_raquo_html: Canvis<nobr>taxonòmics&raquo;</nobr>
+  taxonomic_changes_raquo_html: Canvis <nobr>taxonòmics&raquo;</nobr>
   taxonomic_groups: Grups taxonòmics
   taxonomic_order: Ordre taxonòmic
+  taxonomic_status: Estat de la taxonomia
   taxonomic_tags_for_flickr: Etiquetes taxonòmiques per a Flickr
   taxonomic_tree_browser: Explorador de l'arbre taxonòmic
   taxonomy: taxonomia
@@ -2679,7 +2697,7 @@ ca:
     permet buscar vida en qualsevol racó del planeta. Comença a explorar!
   the_world_is_full_of_interesting_places_short: El món està ple de llocs interessants,
     cadascun amb les seves formes de vida rares i meravelloses. Algunes es troben
-    a l'altre costat del món, i d’altres són molt a la vora
+    a l'altre costat del món, i d’altres són molt a la vora.
   there_is_no_wikipedia_page_matching: No hi ha pàgines a Viquipèdia coincidents
   there_isnt_a_wikipedia_article_titled_x_html: A Viquipèdia no hi ha cap article
     que tingui relació amb el nom '%{x}. T’agradaria <a href='http://en.Viquipèdia.org/wiki/%{x}'>crear-ne</a>
@@ -2718,8 +2736,8 @@ ca:
     sinònims i combinar-los.
   these_arent_necessarily_relevant_to: Aquestes observacions no necessàriament són
     rellevants per al projecte. Si us plau, comprova els
-  these_folks_kindly_volunteer_to: Aquestes persones s'ofereixen voluntàries amablement
-    per mantenir la taxonomia i resoldre altres problemes.
+  these_folks_kindly_volunteer_to: Aquestes persones són voluntaris que s'ofereixen
+    per mantenir i resoldre problemes relacionats amb la taxonomia.
   they_already_have_iNat_accounts: '...que ja tenen comptes %{site_name}'
   they_have_been_invited: '... ells ja han estat convidats.'
   third_person_possessive_singular: '%{noun} de %{object_phrase}'
@@ -2842,7 +2860,7 @@ ca:
   updates_notification_email_subject: '%{prefix} Noves actualitzacions %{date}'
   unpublish: No publiquis
   unsubscribe: Elimina subscripció
-  unsubscribe_from_this: Elimina subscripció d'aquest
+  unsubscribe_from_this: Elimina la subscripció aquest/a
   unsuspend_user: Reactiva usuari
   update: Actualitza
   update_existing_observations_with_new_license: Actualitza les observacions existents
@@ -2859,6 +2877,7 @@ ca:
   updated_by: Actualitzat per
   updated_daily: Actualitzat el dia d'avui
   updated_photo: Foto pujada
+  updates_on_your_content: Actualitzacions al teu contingut
   upload: Carrega
   upload_a_csv_file: Carrega un arxiu CSV
   upload_a_csv_file_with_observation: Carrega un arxiu CSV amb dades d'observació.
@@ -2911,7 +2930,7 @@ ca:
   view: Mostra
   view_all: Mostra-ho tot
   view_all_members: Mostra tots els membres
-  view_all_n: Mostra totes les %{n}
+  view_all_n: Mostra tots els %{n}
   view_all_observations: Mostra totes les observacions
   view_all_photocount_photos: Mostra totes les %{photo_count} fotos
   view_all_photos_tagged_taxon_html: Mostra totes les fotos etiquetades %{taxon} a
@@ -3019,6 +3038,7 @@ ca:
   welcome_comma: Benvingut,
   welcome_login: Benvingut %{login}
   welcome_to_inat: Benvingut a %{site_name}!
+  welcome_to_guides: "Benvingut a les Guies de %{site_name}!"
   welcome_to_x_project: Benvingut al projecte %{project}
   were_currently_down_for: Estem fora de servei per
   what: Què
@@ -3229,7 +3249,7 @@ ca:
   zoom_to_taxon_name: Apropa’t a %{taxonname}
   zoom_to_x: Vés a %{x}
   your_dashboard_helps_you: El tauler t’ajuda a seguir l’activitat dels usuaris de Natusfera.
-    Per seguir les actualitzacions d'altres usuaris, selecciona ‘Segueix [nom]’ a
+    Per seguir les actualitzacions d'altres usuaris, selecciona "Segueix [nom]" a
     l'encapçalament quan vegis les seves observacions o el seu perfil.
   here_are_some_things_you_can_do_in_the_meantime: Mentrestant aquí trobaràs coses
     per fer
@@ -3261,7 +3281,7 @@ ca:
           tasca pot requerir una mica de temps, així que si us plau sigues pacient.
         add_color_tags_help: |-
           Afegir etiquetes dels mateixos colors que els associats amb els tàxons seleccionats a
-          iNat (Bioexplorador).
+          Natusfera.
         add_rank_tags_help_html: "Afegir etiquetes del rang dels tàxons segons la nostra
           taxonomia, com per exemple, \n<code>familia=Laridae</code>\no\n<code>familia=Gaviotas
           y Aliados</code>"
@@ -3450,9 +3470,9 @@ ca:
         how_can_i_get_help_identifying_what_i_saw?: Com puc rebre ajuda per identificar
           el que vaig veure?
         check_the_id_please_checkbox_when_html: |-
-          Marca la casella que diu "ID, si us plau" quan afegeixis/editis les teves observacions i
+          Marca la casella que diu "Ajuda si us plau" quan afegeixis/editis les teves observacions i
           la teva observació apareixerà a
-          <a href="%{url}" title=ID, si us plau>ID, si us plau</a>.
+          <a href="%{url}" title=Ajuda si us plau>Ajuda si us plau</a>.
         what_does_it_mean_to_link_inaturalist_to_my_flickr_account?: Què significa
           vincular %{site_name} amb el meu compte de Flickr?
         inaturalist_can_link_directly_to_the_flickr_photo_service: |-
@@ -3587,7 +3607,7 @@ ca:
           Només pots escollir llocs que tenen límits.
       show:
         project_list_desc: Les llistes de projecte inclouen tàxons agregats manualment
-          pels revisors del projecte y tàxons verificats per observacions amb
+          pels revisors del projecte i tàxons verificats per observacions amb
           grau de recerca i agregats al projecte.
     observations:
       copy_tip: Afegeix una nova observació copiant-ne la data, el lloc, les fotos
@@ -3760,8 +3780,8 @@ ca:
     photos:
       inviter:
         automatically_add_to_project: Afegeix automàticament al projecte
-        automatically_id_the_new_obs_as: Identifica automàticament una nova observació
-          amb ID com a
+        automatically_id_the_new_obs_as: Identifica automàticament la nova observació
+          com a
         dont_forget_the_invite_link_placeholder: pensa en incloure el {{INVITE_LINK}}
           marcador de posició
         invite_other_photographers_to_inat: Convida a altres fotògrafs %{site_name}
@@ -3817,7 +3837,7 @@ ca:
           URL del servei de registre d'esdeveniments que estàs utilitzant per al teu Bioblitz.
           Si es tracta d'un URL Eventbrite que inclou un identificador numèric,
           inclourem un giny d'inscripció a la teva pàgina de projecte fins que comenci el Bioblitz.
-        icon_desc: Es retallarà en un quadrat
+        icon_desc: Es retallarà en un quadrat.
         project_assets_desc_html: |-
           <p class="description">Els recursos del projecte són simplements arxius associats al projecte, segons certes normes especials: </p>
           <ol class="description">
