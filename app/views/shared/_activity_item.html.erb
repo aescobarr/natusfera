@@ -56,6 +56,7 @@
     
     <% if item.respond_to?(:body) && !item.body.blank? -%>
       <div class="readable body"><%= formatted_user_text(item.body) %></div>
+        <div><%= item.class %></div>
     <% end -%>
     
     <div class="meta">

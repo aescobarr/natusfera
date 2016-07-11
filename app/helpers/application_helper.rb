@@ -838,6 +838,13 @@ module ApplicationHelper
         else
           t(:x_wrote_y_new_posts_html, :x => title, :y => options[:count])
         end
+      elsif update.notifier_type == "ProjectObservation"
+          project_observation = update.notifier
+          observer = project_observation.observation.user
+          project = project_observation.project
+          project_link = link_to truncate(project.title, length: 40), project_path(project)
+          observer_link = link_to truncate(observer.login.html_safe, length:40), user_path(observer)
+          observer_link + " " + t(:added_observation_to_project) + " " + project_link
       else
         title = if options[:skip_links]
           project.title

@@ -1,0 +1,15 @@
+<% project = resource %>
+<% updates.each do |update| %>
+    <%
+      project_observation = update.notifier
+      observer = project_observation.observation.user
+      observation = project_observation.observation
+      the_user_path = user_path(observer)
+    %>
+    <div id="<%= id_for(project_observation) %>" class="post clear stacked">
+      <%#= link_to(image_tag(observer.icon.url(:thumb), :class => 'usericon'), the_user_path) %>
+      <div class="mini observations">
+        <%= render :partial => 'observations/observation_component', :locals => {:observation => observation} %>
+      </div>
+    </div>
+<% end %>
