@@ -583,36 +583,35 @@ es:
   change: Cambiar
   change_cover: cambio de cubierta
   change_descriptions:
-    split: La especie o grupo es separada
-    merge: Muchas especies son agrupadas formando una nueva clase o grupo
-    swap: Intercambio de nombres, el viejo por el nuevo
-    drop: El concepto de la especie o grupo es totalmente inválido, solo se mantiene
-      por propositos de llevar una cronología o compatibilidad con otros sitios
-    stage: Prepara un concepto inactivo como parte de un cambio de taxonómia de un
-      grupo de especies.
+    split: Dividir un taxón antinguo en múltiples taxones nuevos.
+    merge: Algunos taxones antiguos se agrupan formando un único taxón nuevo.
+    swap: Intercambio de nombres, el viejo por el nuevo.
+    drop: El concepto del taxón es totalmente inválido, solo se mantiene
+      con el propósito de conocer su cronología o mantener la compatibilidad con otros sitios.
+    stage: Prepara un concepto inactivo como parte de un grupo de cambios taxonómicos.
   change_geoprivacy: Cambiar geoprivacidad
   change_group: Cambiar grupo
   change_icon: Cambiar ícono
-  change_password: Cambiar su contraseña
+  change_password: Cambiar la contraseña
   change_types:
     activated_soon: activado hace poco
     change_types: Tipo de cambios
-    split: Separar
-    merge: Mezclar
+    split: Dividir taxones
+    merge: Unir taxones
     swap: Intercambiar
-    stage: Etapa
-    drop: Eliminar
+    stage: Cambio por fases
+    drop: Eliminar taxones
     split_from: dividido de
     split_into: dividido en
-    merge_into: mezclado en
-    merged_into: fue combinado en
+    merge_into: unido en
+    merged_into: fue unido en
     replaced_by: reemplazado por
     replace_with: reemplazado con
     dropped: eliminado
-    staged: cambio de etapa
+    staged: cambio por fases
   change_visibility_of: ¿Camibar la visibilidad de las coordenadas espaciales?
   change_your_matching: Cambia tu coincidencia
-  change_your_password: Cambiar su contraseña
+  change_your_password: Cambiar tu contraseña
   changing_the_geoprivacy: Cambiar la geoprivacidad modifica el como otras personas
     ven la localización de tu observación.
   check_here_to_autoload_description: Marca aquí para auto cargar la descripción
@@ -2440,7 +2439,7 @@ es:
   projects_description: Los proyectos son una forma de agrupar en %{site_name} tus observaciones con las de
     otras personas.  Si te interesa comenzar un proyecto
     científico ciudadano o quieres utilizar %{site_name} en tu centro educativo,
-    ¡los proyectos son lo que estabas buscando! Para aprender a usarlos, consulta el tutorial de aydua para proyectos.
+    ¡los proyectos son lo que estabas buscando! Para aprender a usarlos, consulta el tutorial de ayuda para proyectos.
   projects_from_place: Proyectos de %{place}
   projects_in_x: Proyectos en %{x}
   projects_you_admin: Proyectos que administras
@@ -2832,7 +2831,7 @@ es:
   sources: Fuentes
   sources_youve_added: Fuentes que has agregado
   sources_and_credits: Fuentes y Créditos
-  sourcing: Poniendo la fuente
+  sourcing: Fuente de la información
   spam: spam
   spanish: Español
   species: Especies

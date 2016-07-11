@@ -520,33 +520,34 @@ ca:
   cc_used_under_a: Creative Commons, utilitzada amb una
   change: Canvia
   change_descriptions:
-    split: L'espècie o grup està separat
-    merge: Moltes espècies s'agrupen formant una nova classe o grup
-    swap: Intercanvi de noms, el vell pel nou
-    drop: El concepte de l'espècie o grup és totalment invàlid, només es manté amb
-      l'objectiu de portar una cronologia o compatibilitat amb altres llocs
-    stage: Prepara un concepte inactiu com a part d'un canvi de taxonomia d'un grup
-      d'espècies.
+    split: Dividir un tàxon antic en múltiples tàxons nous.
+    merge: Alguns tàxons antics s'agrupen per formar un únic tàxon nou.
+    swap: Intercanvi de noms, el vell pel nou (canvi u per u).
+    drop: El concepte del tàxon és totalment invàlid, només es manté amb
+      l'objectiu de tenir-ne la seva cronologia o mantenir la compatibilitat amb altres llocs.
+    stage: Prepara un concepte inactiu com a part grup de canvis taxonòmics.
   change_geoprivacy: Canvia la geoprivacitat
-  change_group: Cambiar grupo
+  change_group: Canviar en grup
   change_icon: Canvia la icona
   change_password: Canvia la teva contrasenya
   change_types:
     activated_soon: activat fa poc
     change_types: Tipus de canvis
-    split: Separa
-    merge: Barreja
-    swap: Intercanvia
-    stage: Etapa
-    drop: Elimina
+    split: Dividir tàxons
+    merge: Unir tàxons
+    swap: Intercanviar
+    stage: Canvi per fases
+    drop: Eliminar tàxons
     split_from: dividit de
     split_into: dividit en
-    merge_into: barrejat a
-    merged_into: es va combinar a
+    merge_into: unit a
+    merged_into: es va unir a
     replaced_by: reemplaçat per
     replace_with: reemplaçat amb
     dropped: eliminat
+    staged: canvi per fases
   change_visibility_of: Vols canviar la visibilitat de les coordenades espacials?
+  change_your_matching: Canvia la teva coincidència
   change_your_password: Canvia la teva contrasenya
   changing_the_geoprivacy: Canviar la geoprivacitat modifica la manera en què altres
     persones veuen la localització de la teva observació.
@@ -1214,6 +1215,7 @@ ca:
     que s’hi troben, de manera que també és útil per buscar dades que vas trobar en
     llocs concrets.
   info: Informació
+  input_taxon: Tàxon d'entrada
   insects: Insectes
   inspired_by_the_flickr_group: Inspirat pel grup Flickr <a href='http://flickr.com/groups/idplease/'>Identificador,
     si us plau</a>, això és un lloc per afegir observacions de coses que no saps,
@@ -1884,6 +1886,7 @@ ca:
     other: altres animals
   other_annimals: Altres animals
   out_of_range: Fora del rang
+  output_taxon: Tàxon de sortida
   owner: Propietari
   parent: Pare
   parent_name: Nom de la classe o espècie pare
@@ -2492,7 +2495,7 @@ ca:
     de manera automàtica.
   sources: Fonts
   sources_youve_added: Fonts que has afegit
-  sourcing: Posant la font
+  sourcing: Font d'informació
   spam: contingut brossa
   spanish: Espanyol
   species: Espècies

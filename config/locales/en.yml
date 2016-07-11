@@ -496,11 +496,11 @@ en:
   change: Change
   change_cover: change cover
   change_descriptions:
-      split: Old taxon split into multiple new taxa
-      merge: Several old taxa lumped into one new taxon
-      swap: 1-to-1 name change
-      drop: Taxon concept completely invalid, maintained for historical purposes or partner compatability
-      stage: Prepare an inactive concept for release as part of a change group
+      split: Old taxon split into multiple new taxa.
+      merge: Several old taxa lumped into one new taxon.
+      swap: 1-to-1 name change.
+      drop: Taxon concept completely invalid, maintained for historical purposes or partner compatability.
+      stage: Prepare an inactive concept for release as part of a change group.
   change_geoprivacy: 'Change geoprivacy'
   change_group: Change group
   change_icon: Change icon
@@ -959,7 +959,7 @@ en:
   exit_full_screen: "Exit full screen"
   expand_days: expand days
   expand_updates: expand updates
-  explore!: explore!
+  explore!: Explore!
   explore_everyones_observations: Explore everyone's observations
   export: Export
   export_observations: Export observations
