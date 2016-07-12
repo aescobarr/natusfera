@@ -3272,8 +3272,8 @@ es:
     web fuente
   US_states: Estados Unidos
   use_this_form_to_create_a_new: |-
-    Usa esta forma para crear un cambio taxonómico en el borrador, describiendo si es para separar, juntar o es un cambio
-    en el grupo o especie, para que despues sea guardado.
+    Usa esta herramienta para crear un cambio taxonómico en el borrador, describiendo si es para dividir o unir taxones, y si es un cambio
+    en el grupo o en la especie, para que despues sea guardado.
   use_this_if_the_url_needs_genus_species_separated: Usa esto si la URL debe tener
     los géneros y especies separados de forma particular. Si el taxón no es una especie
     o infraespecie, todo lo que esté entre [GÉNERO] y [ESPECIE] será reemplazado por

@@ -9,6 +9,8 @@
     update_cached(item, :updater) || update_cached(item, :user)
   elsif item.respond_to?(:user)
     update_cached(item, :user)
+  elsif item.is_a?(ProjectObservation)
+    item.observation.user
   end
   edit_url = case item.class.name
   when "Comment" then edit_comment_path(item)
@@ -52,13 +54,20 @@
       <div class="stacked body">
         <%= render "observation_fields/observation_field_value", :observation_field_value => item %>
       </div>
+    <% elsif item.is_a? ProjectObservation %>
+        <div class="stacked body">
+          <div class="mini observations">
+            <%= render :partial => 'observations/observation_component', :locals => {:observation => item.observation} %>
+          </div>
+        </div>
     <%- end -%>
     
     <% if item.respond_to?(:body) && !item.body.blank? -%>
       <div class="readable body"><%= formatted_user_text(item.body) %></div>
         <div><%= item.class %></div>
     <% end -%>
-    
+
+    <% unless item.is_a?(ProjectObservation ) %>
     <div class="meta">
       <%=t :posted_by %>
       <%= link_to(truncate(you_or_login(user).downcase, :length => 20), person_path(user)) %>
@@ -86,5 +95,6 @@
         (<%= pieces.join(' | ').html_safe %>)
       </span>
     </div>
+    <% end %>
   </div>
 </div>

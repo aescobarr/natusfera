@@ -31,7 +31,7 @@ class Project < ActiveRecord::Base
   has_subscribers :to => {
     :posts => {:notification => "created_project_post"},
     :project_users => {:notification => "curator_change"},
-    :project_observations => {:notification => "created_observation_project"}
+    :project_observations => {:notification => "activity"}
   }
 
   extend FriendlyId
