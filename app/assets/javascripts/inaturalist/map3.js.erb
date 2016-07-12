@@ -933,11 +933,10 @@ google.maps.Map.prototype.addLayerAndControl = function( tilejson, options ) {
 google.maps.Map.prototype.addiNatObservationsLayer = function(options) {
   this.setTilt(0);
   var options = options || { },      
-      iNatObsTileUrl = "http://tiles.inaturalist.org/points/{z}/{x}/{y}.png";
+      iNatObsTileUrl = "http://elastictiles1.inaturalist.org/v1/points/{z}/{x}/{y}.png";
   var tilejson = { tiles: [ iNatObsTileUrl ] };
-  return this.addLayerAndControl( tilejson, options );
   // prevent the tilt feature, which cannot overlay tiles at higher zooms
-  /*this.setTilt( 0 );  
+  /*this.setTilt( 0 );
   var options = options || { },
       iNatObsTileUrl = "http://tiles.inaturalist.org/points/{z}/{x}/{y}.png";
   //interact_url: 'http://www.inaturalist.org'  
@@ -967,6 +966,7 @@ google.maps.Map.prototype.addiNatObservationsLayer = function(options) {
       [ pointLayer ], options
     );
   }*/
+  return this.addLayerAndControl( tilejson, options );
 };
 
 google.maps.Map.prototype.addObservationsLayer = function(options) {
