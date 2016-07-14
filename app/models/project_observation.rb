@@ -37,6 +37,12 @@ class ProjectObservation < ActiveRecord::Base
   after_destroy :touch_observation
   
   after_save :update_project_list_if_curator_ident_changed
+
+  notifies_subscribers_of :project, {
+      :on => [:create],
+      :notification => "created_observation_project",
+      :include_notifier => true
+  }
   
   def update_project_list_if_curator_ident_changed
     return true unless curator_identification_id_changed?

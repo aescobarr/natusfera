@@ -445,6 +445,13 @@
         </li>
       <% end -%>
     <% end -%>
+    <li>
+      <% if logged_in? -%>
+          <p class="ui">
+            <%= render :partial => 'subscriptions/subscription', :locals => {:resource => @project } %>
+          </p>
+      <% end -%>
+    </li>
   </ul>
   
   <% unless @project.project_type == Project::BIOBLITZ_TYPE && !@project.event_started? %>

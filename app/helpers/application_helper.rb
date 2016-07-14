@@ -568,6 +568,7 @@ module ApplicationHelper
         to_json(only: [ :id, :name ],
           include: { common_name: { only: [ :name ] } }
         ) : nil,
+      "taxon_gbif_id" => options[:taxon_gbif_id] ? options[:taxon_gbif_id] : nil,
       "latitude" => options[:latitude],
       "longitude" => options[:longitude],
       "map-type" => options[:map_type],
@@ -590,7 +591,9 @@ module ApplicationHelper
       "all_layer_description" => I18n.t("maps.overlays.every_publicly_visible_observation"),
       "featured_layer_label" => I18n.t("maps.overlays.featured_observations"),
       "inat_layer_label" => I18n.t("maps.overlays.inat_observations_label"),
-      "inat_layer_description" => I18n.t("maps.overlays.inat_observations_description")
+      "inat_layer_description" => I18n.t("maps.overlays.inat_observations_description"),
+      "gbif_layer_label" => I18n.t("maps.overlays.gbif_observations_label"),
+      "gbif_layer_description" => I18n.t("maps.overlays.gbif_observations_description")
     }
     if options[:taxon]
       map_tag_attrs["taxon-range-layer-description"] = options[:taxon].to_styled_s
@@ -838,6 +841,13 @@ module ApplicationHelper
         else
           t(:x_wrote_y_new_posts_html, :x => title, :y => options[:count])
         end
+      elsif update.notifier_type == "ProjectObservation"
+          project_observation = update.notifier
+          observer = project_observation.observation.user
+          project = project_observation.project
+          project_link = link_to truncate(project.title, length: 40), project_path(project)
+          observer_link = link_to truncate(observer.login.html_safe, length:40), user_path(observer)
+          observer_link + " " + t(:added_observation_to_project) + " " + project_link
       else
         title = if options[:skip_links]
           project.title

@@ -200,6 +200,7 @@ en:
   added_as_a_part_of: Added as part of a
   added_by: Added by
   added_identifications_to: added identifications to anyone's observations.
+  added_observation_to_project: added a new observation to project
   added_on: Added on
   added_to: Added to
   adding: "Adding..."
@@ -1496,6 +1497,8 @@ en:
       taxon_range: Taxon range
       inat_observations_label: iNat observations
       inat_observations_description: All observations featured in iNaturalist
+      gbif_observations_label: GBIF observations
+      gbif_observations_description: GBIF taxon density layer
   map_tooltip: Show map view
   map_for: Map for
   maptype_for_places: 'google.maps.MapTypeId.TERRAIN'

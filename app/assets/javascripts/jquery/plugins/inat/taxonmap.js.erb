@@ -16,6 +16,7 @@ var inatTaxonMap = { };
 inatTaxonMap.setup = function ( elt, options ) {
   var options = $.extend( { }, options );
   options.taxon = $(elt).data('taxon');
+  options.taxon_gbif_id = $(elt).data('taxon-gbif-id');
   options.latitude = options.latitude || $(elt).data('latitude');
   options.longitude = options.longitude || $(elt).data('longitude');
   options.mapType = $(elt).data('map-type');
@@ -41,6 +42,8 @@ inatTaxonMap.setup = function ( elt, options ) {
   options.allLayerDescription = options.allLayerDescription || $(elt).data('all-layer-description');
   options.iNatLayerLabel = options.iNatLayerLabel || $(elt).data('inat-layer-label');
   options.iNatLayerDescription = options.iNatLayerDescription || $(elt).data('inat-layer-description');
+  options.gbifLayerLabel = options.gbifLayerLabel || $(elt).data('gbif-layer-label');
+  options.gbifLayerDescription = options.gbifLayerDescription || $(elt).data('gbif-layer-description');
   // turn the observations JSON into proper JavaScript objects
   if( options.observations ) {
     options.observations = _.map( options.observations, function( observation ) {
@@ -50,6 +53,9 @@ inatTaxonMap.setup = function ( elt, options ) {
   // Make sure these two values are null if seemingly unassigned
   if (options.gbifKmlUrl === '') {
     options.gbifKmlUrl = null;
+  }
+  if (options.taxon_gbif_id === '') {
+    options.taxon_gbif_id = null;
   }
   if (options.zoomLevel === 0) {
     options.zoomLevel = null;
@@ -134,7 +140,11 @@ inatTaxonMap.setupGoogle = function( elt ) {
   // Observations that need Google Maps-style flags
   inatTaxonMap.addObservationsToMap( options, map, preserveViewport);
   // GBIF KML Layer (layer is invisible until selected)
-  inatTaxonMap.addGBIFKml( options, map );
+  // inatTaxonMap.addGBIFKml( options, map );
+  if(options.taxon_gbif_id){
+    map.addGBIFTaxonOccurrenceLayer({disabled:true,title:options.gbifLayerLabel,description:options.gbifLayerDescription,taxon_gbif_id:options.taxon_gbif_id});
+  }
+
   if( !preserveViewport ) {
     inatTaxonMap.fit( elt )
   }
@@ -142,6 +152,7 @@ inatTaxonMap.setupGoogle = function( elt ) {
   $(elt).data('taxonMap', map)
 };
 
+//This is deprecated
 inatTaxonMap.addGBIFKml = function( options, map ) {
   if( !options.gbifKmlUrl ) { return; }
   var gbifLyr = new google.maps.KmlLayer(options.gbifKmlUrl, {suppressInfoWindows: true, preserveViewport: true})

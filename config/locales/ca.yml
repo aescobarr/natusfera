@@ -183,12 +183,13 @@ ca:
   add_your_own_observations_at: Afegeix les teves pròpies observacions a %{site_name}
   add_your_photo: Afegeix la teva foto
   add_your_photo_to: Afegeix la teva foto a %{project}
-  added: Afegit el
+  added: afegit el
   added!: Afegit!
   added_an: Has afegit una
   added_as_a_part_of: Afegit com a part d'un
   added_by: Afegit per
   added_identifications_to: has afegit identificacions a les observacions de ningú.
+  added_observation_to_project: ha afegit una nova observació al projecte
   added_on: Afegit el
   added_to: Afegit per a
   adding: Afegint...
@@ -1072,7 +1073,7 @@ ca:
     aquest tàxon al nostre arbre taxonòmic, trobar un tàxon pare existent o crear
     tots els tàxons necessaris al mig per incorporar-lo a un tàxon existent d’un rang
     superior.
-  grant_role: Es %{grant} el permís de %{role}
+  grant_role: S'ha %{grant} el permís de %{role}
   gray: gris
   green: verd
   grey: gris
@@ -1503,6 +1504,8 @@ ca:
       taxon_range: Rang de tàxon
       inat_observations_label: Observacions iNat
       inat_observations_description: Observacions extretes de iNaturalist
+      gbif_observations_label: Observacions GBIF
+      gbif_observations_description: Densitat d'observacions del taxon registrat per GBIF
   map_for: Mapa per a
   maptype_for_places: google.maps.MapTypeId.TERRAIN
   matching_species_will_shown_up_here: Les espècies que trobis es mostraran aquí.
@@ -1889,7 +1892,7 @@ ca:
   output_taxon: Tàxon de sortida
   owner: Propietari
   parent: Pare
-  parent_name: Nom de la classe o espècie pare
+  parent_name: Nom del tàxon pare
   password: Contrasenya
   password_confirmation: Confirma la teva contrasenya
   paste: Copia
@@ -2443,8 +2446,8 @@ ca:
   sort_by: Ordenar per
   sorting_by: Ordenat per
   sounds:
-    add_media: Afegeix contingut digital
-    add_sounds: Afegeix un so
+    add_media: Afegir contingut digital
+    add_sounds: Afegir un so
     before_importing_sounds: abans d'importar sons
     import_from_soundcloud_description: Selecciona sons del teu compte de SoundCloud
       per afegir-los com a observacions. El nostre equip completarà les dades amb
@@ -2910,6 +2913,11 @@ ca:
   user_hasnt: '%{user} no ha'
   user_invite_observation_to_project: '%{user} vol convidar la teva observació "%{observation}"
     al projecte %{project}.'
+  user_invited_you_to_join_project: '%{user} t''ha convidat a unir-te a %{project}'
+  user_invited_you_to_join_html: '%{user} t''ha convidat a unir-te'
+  user_invited_you_to_join_this_project_on_date_html: '%{user} t''ha convidat a unir-te a aquest projecte el %{fecha}'
+  user_added_an_observation_field_html: El/La %{user} ha afegit un valor per a "%{nombre_campo}"
+    a una observació de %{propietario}
   user_invited_your_x_to_a_project_html: '%{user} ha convidat la teva %{x} a un projecte'
   user_is_a_naturalist: '%{user} és naturalista!'
   user_s: '%{model_name} de %{user}'
@@ -3095,7 +3103,7 @@ ca:
   x_wrote_a_new_post_html: '%{x} ha afegit una nova entrada'
   x_wrote_y_new_posts_html: '%{x} ha afegit %{y} noves entrades'
   year: Any
-  year_month: any/mes
+  year_month: any-mes
   yellow: groc
   yes_find_them!: Sí, troba-les!
   yes_i_want_to_join: Sí, desitjo unir-m’hi
@@ -4311,7 +4319,7 @@ ca:
       taxon:
         name: Nom
         rank: Classificació
-        parent_id: Identificador de la classe o espècie pare
+        parent_id: Identificador del tàxon pare
         locked: Bloquejat
         auto_photos: Carrega fotos automàticament
         auto_description: Carrega automàticament la descripció

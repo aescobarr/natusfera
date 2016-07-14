@@ -1248,6 +1248,62 @@ class Taxon < ActiveRecord::Base
       }
   end
 
+  # Used primarily in get_gbif_id. For that particular API, it is useful
+  # to know the ancestor of a taxon that fits one of the major ranks, rather
+  # than a sibtribe or infrafamily which may nto be as common. This
+  # 'preferred' ancestor (term borrowed from Taxon::PREFERRED_RANKS) can be
+  # used to give extra context when searching taxa (e.g. the Aotus in Fabaceae)
+  def preferred_uninomial_ancestor
+    Taxon::PREFERRED_RANKS.reverse.each do |r|
+      # don't use binomials as preferred ancestors, use genera or above
+      next if [ "species", "subspecies", "variety" ].include?( r )
+      # the rank_level of the ancestor will be higher than its own rank_level
+      next if rank_level && rank_level >= Taxon::RANK_LEVELS[r]
+      # if the taxon has an ancestor at this next rank, return it
+      if ancestor = self.send("find_#{ r }")
+        return ancestor if ancestor != self
+      end
+    end
+    nil
+  end
+
+  def get_gbif_id
+    if taxon_scheme_taxa.loaded? && tst = taxon_scheme_taxa.detect{|r| r.taxon_scheme.title == 'GBIF'}
+      return tst.source_identifier
+    end
+    gbif = TaxonScheme.find_by_title("GBIF")
+    if !gbif
+      #TaxonScheme doesn't exist, create it
+      if source = Source.find_by_in_text("GBIF")
+        gbif = TaxonScheme.create(source: source, title: "GBIF", created_at: Time.now, updated_at: Time.now)
+      end
+    end
+    # return their ID if we know it
+    if scheme = TaxonSchemeTaxon.where(taxon_scheme_id: gbif.id, taxon_id: id).first
+      return scheme.source_identifier
+    end
+    params = { name: name }
+    if ancestor = preferred_uninomial_ancestor
+      params[ancestor.rank] = ancestor.name
+    end
+    json = begin
+      GbifService.species_match(params: params)
+    rescue Timeout::Error, SocketError => e
+      # probably GBIF is down or throttling us
+      Rails.logger.error "[ERROR #{Time.now}] #{e}"
+      nil
+    end
+    if json
+      if json["usageKey"]
+        TaxonSchemeTaxon.create(taxon_scheme_id: gbif.id, taxon_id: id, source_identifier: json["usageKey"])
+        return json["usageKey"]
+      else
+        TaxonSchemeTaxon.create(taxon_scheme_id: gbif.id, taxon_id: id, source_identifier: nil)
+      end
+    end
+    nil
+  end
+
   # Static ##################################################################
 
   def self.match_descendants_of_id(id, taxon_hash)
