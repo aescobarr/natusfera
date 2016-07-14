@@ -568,6 +568,7 @@ module ApplicationHelper
         to_json(only: [ :id, :name ],
           include: { common_name: { only: [ :name ] } }
         ) : nil,
+      "taxon_gbif_id" => options[:taxon_gbif_id] ? options[:taxon_gbif_id] : nil,
       "latitude" => options[:latitude],
       "longitude" => options[:longitude],
       "map-type" => options[:map_type],
@@ -590,7 +591,9 @@ module ApplicationHelper
       "all_layer_description" => I18n.t("maps.overlays.every_publicly_visible_observation"),
       "featured_layer_label" => I18n.t("maps.overlays.featured_observations"),
       "inat_layer_label" => I18n.t("maps.overlays.inat_observations_label"),
-      "inat_layer_description" => I18n.t("maps.overlays.inat_observations_description")
+      "inat_layer_description" => I18n.t("maps.overlays.inat_observations_description"),
+      "gbif_layer_label" => I18n.t("maps.overlays.gbif_observations_label"),
+      "gbif_layer_description" => I18n.t("maps.overlays.gbif_observations_description")
     }
     if options[:taxon]
       map_tag_attrs["taxon-range-layer-description"] = options[:taxon].to_styled_s

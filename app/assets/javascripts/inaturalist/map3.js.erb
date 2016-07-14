@@ -930,6 +930,14 @@ google.maps.Map.prototype.addLayerAndControl = function( tilejson, options ) {
   return layerID;
 };
 
+  google.maps.Map.prototype.addGBIFTaxonOccurrenceLayer = function(options){
+    this.setTilt(0);
+    var options = options || { },
+        gbifTileUrl = "http://api.gbif.org/v1/map/density/tile?x={x}&y={y}&z={z}&type=TAXON&key=" + options.taxon_gbif_id + "&resolution=4&colors=%2C10%2C%23F7005Ae6%7C10%2C100%2C%23D50067e6%7C100%2C1000%2C%23B5006Ce6%7C1000%2C10000%2C%2394006Ae6%7C10000%2C100000%2C%2372005Fe6%7C100000%2C%2C%2352034Ee6";
+    var tilejson = { tiles: [ gbifTileUrl ] };
+    return this.addLayerAndControl( tilejson, options );
+  };
+
 google.maps.Map.prototype.addiNatObservationsLayer = function(options) {
   this.setTilt(0);
   var options = options || { },      
