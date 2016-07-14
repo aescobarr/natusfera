@@ -1451,6 +1451,8 @@ eu:
       taxon_range: Rango de taxon
       inat_observations_label: Observaciones iNat
       inat_observations_description: Observacions extraídas de iNaturalist
+      gbif_observations_label: Observaciones GBIF
+      gbif_observations_description: Densidad de observaciones del taxon registradas por GBIF
   map_for: 'Mapa honetarako:'
   maptype_for_places: google.maps.MapTypeId.TERRAIN
   matching_species_will_shown_up_here: Topatzen dituzun espezieak hemen azalduko dira.

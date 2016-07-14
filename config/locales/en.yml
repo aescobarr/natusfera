@@ -1497,6 +1497,8 @@ en:
       taxon_range: Taxon range
       inat_observations_label: iNat observations
       inat_observations_description: All observations featured in iNaturalist
+      gbif_observations_label: GBIF observations
+      gbif_observations_description: GBIF taxon density layer
   map_tooltip: Show map view
   map_for: Map for
   maptype_for_places: 'google.maps.MapTypeId.TERRAIN'

@@ -214,15 +214,15 @@ es:
   add_your_own_observations_at: Añadir tus propias observaciones en %{site_name}
   add_your_photo: Añadir tu foto
   add_your_photo_to: Añadir tu foto a %{project}
-  added: Añadido
+  added: añadido
   added!: ¡Añadido!
   added_an: Has añadido una
   added_as_a_part_of: Añadido como parte de un
   added_by: Añadido por
   added_identifications_to: añadido identificaciones las observaciones de nadie.
   added_observation_to_project: ha añadido una nueva observación al proyecto
-  added_on: Añadido el
-  added_to: Añadido para
+  added_on: añadido el
+  added_to: añadido para
   adding: Añadiendo...
   adding_observations: Añadiendo observaciones
   adding_to_your_life_list: Añadiendo a tu lista de vida...
@@ -1263,7 +1263,7 @@ es:
     en nuestro árbol taxonómico, encontrar un taxón padre existente o crear todos
     los taxones necesarios en el medio con el fin de adjuntarlo a un taxón de más
     alto nivel existente.
-  grant_role: Se a %{grant} el permiso de %{role}
+  grant_role: Se ha %{grant} el permiso de %{role}
   gray: gris
   green: verde
   grey: gris
@@ -1729,6 +1729,8 @@ es:
       taxon_range: Rango de taxon
       inat_observations_label: Observaciones iNat
       inat_observations_description: Observacions extraídas de iNaturalist
+      gbif_observations_label: Observaciones GBIF
+      gbif_observations_description: Densidad de observaciones del taxon registradas por GBIF
   map_tooltip: Muestra la vista de mapa
   map_for: Mapa para
   maptype_for_places: google.maps.MapTypeId.TERRAIN
@@ -2095,7 +2097,7 @@ es:
   on_your_life_list: en su lista de vida
   one_by_one: Uno por uno
   one_of_your_lists: una de tus listas...
-  only_a_project_manager_can_add: Solo un Gerente del proyecto puede darle una clasificación
+  only_a_project_manager_can_add: Solo un gerente del proyecto puede darle una clasificación
     a un revisor de proyecto
   only_administrators_may_access_that_page: Solo los administradores pueden acceder
     a esa página
@@ -2169,7 +2171,7 @@ es:
   output_taxon: Taxón de salida
   owner: Propietario
   parent: Padre
-  parent_name: Nombre de la clase o especie padre
+  parent_name: Nombre del taxón padre
   password: Contraseña
   password_confirmation: Confirmar contraseña
   paste: Pegar
@@ -2778,8 +2780,8 @@ es:
   soundcloud_needs_to_confirm: SoundCloud necesita confirmar que quieres que su cuenta
     esté conectada a %{site_name}.
   sounds:
-    add_media: Añade contenido digital
-    add_sounds: Añade un sonido
+    add_media: Añadir contenido digital
+    add_sounds: Añadir un sonido
     before_importing_sounds: antes de importar sonidos
     import_from_soundcloud_description: Selecciona sonidos de tu cuenta de SoundCloud
       para ponerlos como observaciones. Completaremos los datos con la fecha y hora
@@ -2999,7 +3001,7 @@ es:
     para restablecer su contraseña.
   thats_not_a_real_date: ¡Eso no es una cita de verdad!
   the: el (la)
-  the_admin_is_the_person_who: El administrador es la persona que creo este proyecto.
+  the_admin_is_the_person_who: El administrador es la persona que creó este proyecto.
     Puede hacer las mismas actividades que un revisor o gerente con la distinción
     de ser el único que puede eliminar el proyecto.
   the_community_agrees_location_doesnt: la comunidad acuerda que la <strong>ubicación
@@ -3295,11 +3297,11 @@ es:
   user_invite_observation_to_project: '%{user} desea invitar su observación "%{observation}"
     al proyecto %{project}.'
   user_invited_you_to_join_project: '%{user} te ha invitado a unirte a %{project}'
-  user_invited_you_to_join_html: '%{user} te invito a unirse'
-  user_invited_you_to_join_this_project_on_date_html: '%{user} te invito a unirte
+  user_invited_you_to_join_html: '%{user} te ha invitado a unirte'
+  user_invited_you_to_join_this_project_on_date_html: '%{user} te ha invitado a unirte
     a este proyecto en %{fecha}'
   user_invited_your_x_to_a_project_html: '%{user} invitó a su %{x} a un proyecto'
-  user_added_an_observation_field_html: El %{user} añadió un un valor para "%{nombre_campo}"
+  user_added_an_observation_field_html: El/La %{user} añadió un un valor para "%{nombre_campo}"
     a una observación de %{propietario}
   user_is_a_naturalist: '%{user} es un naturalista!'
   user_name: Nombre de usuario
@@ -3501,7 +3503,7 @@ es:
   x_wrote_a_new_post_html: '%{x} escribió una nueva ingreso'
   x_wrote_y_new_posts_html: '%{x} escribió %{y} nuevas ingresos'
   year: Año
-  year_month: año/mes
+  year_month: año-mes
   yellow: amarillo
   "yes": Sí
   yes_find_them!: ¡Sí, encuéntrelas!
@@ -4786,7 +4788,7 @@ es:
       taxon:
         name: Nombre
         rank: Clasificación
-        parent_id: Identificador de la clase o especie padre
+        parent_id: Identificador del taxón padre
         locked: Bloqueado
         auto_photos: Cargar fotos automáticamente
         auto_description: Cargar automáticamente la descripción
