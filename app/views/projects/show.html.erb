@@ -445,13 +445,6 @@
         </li>
       <% end -%>
     <% end -%>
-    <li>
-      <% if logged_in? -%>
-          <p class="ui">
-            <%= render :partial => 'subscriptions/subscription', :locals => {:resource => @project } %>
-          </p>
-      <% end -%>
-    </li>
   </ul>
   
   <% unless @project.project_type == Project::BIOBLITZ_TYPE && !@project.event_started? %>
@@ -485,5 +478,14 @@
   <center class="small meta">
     <%= link_to t(:embed_widget_project), observations_widget_path(:project_id => @project.id),
       :rel => "nofollow" %>
+  </center>
+
+  <%= separator %>
+  <center class="small meta">
+  <% if logged_in? -%>
+      <p class="ui">
+        <%= render :partial => 'subscriptions/subscription', :locals => {:resource => @project } %>
+      </p>
+  <% end -%>
   </center>
 </div>
