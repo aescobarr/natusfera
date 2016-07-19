@@ -222,6 +222,7 @@ class TaxaController < ApplicationController
         @taxon_range = @taxon_ranges[0]
         @additional_ranges = @taxon_ranges[1..-1]
         @taxon_gbif = "#{@taxon.name.gsub(' ','+')}*"
+        @taxon_gbif_id = @taxon.get_gbif_id
         @colors = @taxon.colors if @taxon.species_or_lower?
         
         unless @taxon.is_active?
