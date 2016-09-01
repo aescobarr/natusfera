@@ -41,6 +41,8 @@ class ProjectObservation < ActiveRecord::Base
   notifies_subscribers_of :project, {
       :on => [:create],
       :notification => "created_observation_project",
+      # change notification to 'activity' to enable user warnings on toolbar
+      #:notification => "activity",
       :include_notifier => true
   }
   
