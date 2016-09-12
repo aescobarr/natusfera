@@ -13,7 +13,8 @@ class Update < ActiveRecord::Base
   NOTIFICATIONS = %w(create change activity)
   
   scope :unviewed, where("viewed_at IS NULL")
-  scope :activity, where(:notification => "activity")
+  #scope :activity, where(:notification => "activity")
+  scope :activity, where("notification='activity' or notification='created_observation_project'")
   scope :activity_on_my_stuff, where("resource_owner_id = subscriber_id AND notification = 'activity'")
 
   def to_s
