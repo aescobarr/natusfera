@@ -1,4 +1,5 @@
 es:
+  test_new_key: nueva clave
   licensing_your_content: |
     Licenciar tu contenido da a otros el derecho legal de utilizarlo si se apegan a los términos de la licencia. Utilizamos contenido licenciado bajo Creative Commons para compartir con asociados como <a href="http://www.gbif.org/">Global Biodiversity Information Facility</a>
     (GBIF).
@@ -222,7 +223,7 @@ es:
     rank:
       kingdom: Reino
       class: Clase
-      phylum: Phylum
+      phylum: Filo
       species: Especie
       order: Orden
     plants: Plantas
@@ -317,7 +318,7 @@ es:
   apply_fields: Aplicar campos
   apply_geoprivacy: Aplica geoprivacidad
   apply_darr: 'Aplicar &darr;'
-  apply_establishment_means_to_descendant_places: Apply establishment means to descendant places
+  apply_establishment_means_to_descendant_places: Aplicar medios de establecimiento a lugares descendientes
   apply_these_settings_to_all: Aplicar estas configuraciones a todas las observaciones siguientes
   appropriate?: ¿Adecuada?
   arachnids: arácnidos
@@ -436,7 +437,7 @@ es:
   blue: azul
   blue_icons_represent_political_units: Los íconos azules representan unidades territoriales como países, estados y afines, mientras que los íconos verdes representan diferentes tipos de espacios abiertos, parques y reservas. Si haces un acercamiento, podrás ver lugares al detalle.
   body: Cuerpo
-  breadcrumbs: Breadcrumbs
+  breadcrumbs: Rastros de navegación
   breadcrumbs_description: Esto reemplazará al h1 y los ajustes por defecto de la acción, asegúrate de incluirlos si son importantes para este proyecto.
   brief_caption: Leyenda breve
   brief_description_on_what_you_observed: Breve descripción de lo que observaste
@@ -449,7 +450,7 @@ es:
   browse_species_that_occur_near_this_observation: Busca especies que ocurran cerca de esta observación.
   browse_your_observations: Examina tus observaciones
   built_with_site_guides_html: "Construido con las <a href='%{url}'>%{site_name} Guías</a>"
-  bulk_import_of_filename_is_complete: 'Bulk import of %{filename} is complete'
+  bulk_import_of_filename_is_complete: 'Se ha completado la importación masiva de %{filename}'
   but_we_didnt_add_this_observation_to_the_x_project: 'Esta observación no se añadió al proyecto %{project}, porque no aceptaste los términos del proyecto.'
   but_you_can_still: pero puedes aún
   by: por
@@ -649,13 +650,13 @@ es:
   contributor_cannot_be_found: El contribuidor no se pudo encontrar
   contributors_to_project: 'Contribuyentes de %{project}'
   controls: Controles
-  coordinate_systems: Coordinate systems
+  coordinate_systems: Sistemas de coordenadas
   coordinates: Coordenadas
   coordinates_private: (coordenadas privadas)
   copy: Copiar
   copy_and_paste_the_following_code_to: Copia y pega el siguiente código para incrustar esta evaluación en otra página web.
   copy_and_paste_this_into_your_own_html: Copiar y pegar en su propio HTML.
-  copy_guide_taxon_to: Copy guide taxon to...
+  copy_guide_taxon_to: Copia el taxón de la guía en...
   copyright:
     some_rights_reserved: algunos derechos reservados
     some_rights_reserved_by: '(c) %{name}, algunos derechos reservados (%{license_short})'
@@ -804,7 +805,7 @@ es:
   devise:
     failure:
       user:
-        suspended: Your account has been suspended
+        suspended: Tu cuenta ha sido suspendida
   developers: Desarrolladores
   device: Dispositivo
   did_not_send_invitations_because: 'No les enviamos invitaciones a tus amigos y amigas pues:'
@@ -1009,12 +1010,12 @@ es:
   flag_this_photo: Advertencia para esta foto
   flagged: marcado
   flagged_for_curation: Marcado para revisión.
-  flagged_thing_explanation: 'Users have flagged this %{thing} because'
+  flagged_thing_explanation: 'Los usuarios han marcado esta %{thing} porque'
   flagger: Marcador
-  flags: Flags
+  flags: Marcas
   flags_explanation: 'Los usuarios de %{site_name} marcan cosas cuando encuentran algo que no está bien. Aquí hay algunos problemas que los revisores no han resuelto todavía.'
   flags_for: Marcas para
-  flags_on_users_content: "Flags on %{user}'s content"
+  flags_on_users_content: 'Marcas en el contenido de %{user}'
   flickr_account_information: Información de su cuenta de Flickr
   flickr_description: Flickr es un servicio de alojamiento de fotos en línea, tal vez ya lo conozcas.
   flickr_has_no_creative_commons: Flickr no tiene fotos etiquetadas con Creative Commons para este lugar.
@@ -1123,12 +1124,12 @@ es:
   here_are_some_things_you_can_do_meantime: Aquí hay algunas cosas que puede hacer mientras tanto
   hex_color_eg: Color en hexadecimal, ej. 65644F
   hi: 'Hola:'
-  hi_user: 'Hi %{user}'
+  hi_user: 'Hola %{user}'
   hide: Ocultar
   hide_details: Ocultar detalles
   highest_rank: Rango más alto
   home: Inicio
-  home_faq: FAQ
+  home_faq: Preguntas frecuentes (FAQ)
   however_there_were_some_issues: 'Sin embargo, hubo algunos problemas: %{issues}'
   hybrid: híbrido
   i_something_i: '<i>Algo...</i>'
@@ -1150,7 +1151,7 @@ es:
   identifications: Identificaciones
   identifications_by: 'Identificaciones por %{user}'
   identified?: con identificación
-  identotron: Identotron
+  identotron: Identotrón
   identotron_for: Identotrón para
   identotron_help: Ayuda con el identotrón
   ids: Identificaciones
@@ -1201,7 +1202,7 @@ es:
   inactive: inactivo
   inactive_taxon: Especie o grupo inactivo
   inactive_taxon_concepts_are: Los conceptos inactivos son las especies o grupos que taxonómicamente han sido cambiados por otro nombre. Los conceptos inactivos se mantienen para mantener la historia de la especies o grupo y la compatibilidad con otros sitios.
-  inat_account_action: '%{site_name} &#58; Account &#58; %{action_name}'
+  inat_account_action: '%{site_name} &#58; Cuenta &#58; %{action_name}'
   inat_believes_this_is_a_complete_listing: '%{site_name} cree que este es un listado completo de este taxón en este lugar.'
   inat_user_profile: '%{site_name}:  perfil de %{user}'
   inat_will_be_back_on: '%{site_name} volverá a estar en sus pies/alas/aletas/tentáculos/pseudópodos'
@@ -1242,7 +1243,7 @@ es:
   is_not_following_anyone: No está siguiendo a nadie
   is_the_organism_wild: ¿El organismo es salvaje?
   is_this_observation_offensive_html: '¿Es esta observación <a href="/help#inappropriate">inapropiada</a>, spam u ofensiva?'
-  is_this_offensive_html: 'Is this <a href="/help#inappropriate">inappropriate</a>, spam, or offensive?'
+  is_this_offensive_html: '¿Es <a href="/help#inappropriate">inapropiado</a>, spam u ofensivo?'
   is_this_place_a_duplicate: ¿Este lugar está duplicado?
   it: Este
   it_has: Tiene
@@ -1278,7 +1279,7 @@ es:
   lat: Latitud
   latitude: Latitud
   latitude_in_decimals: Latitud en grados con decimales, ej. 38.123
-  latitude_slash_y_coord_slash_northing: Latitude / y coord / northing
+  latitude_slash_y_coord_slash_northing: Latitud / coordenadas y
   layout: Disposición
   leaderboard_for_x: 'Los más activos de %{x}'
   leaderboards: Los más activos
@@ -1406,7 +1407,7 @@ es:
     "es-MX": Español (México)
     eu: Euskera
     gl: Gallego
-    mk: Macdeonian
+    mk: Macedonio
   localized_species_accounts: Cuentas de especies localizadas
   location: Ubicación
   location_: Ubicación
@@ -1424,7 +1425,7 @@ es:
   long: Longitud
   longitude: Longitud
   longitude_in_decimal: Longitud en grados con decimales, ej. -122.123
-  longitude_slash_x_coord_slash_easting: Longitude / x coord / easting
+  longitude_slash_x_coord_slash_easting: Longitud / coordenadas x
   look_up_name: Buscar el nombre
   looks_like_neither_have!: ¡Parece que ninguno tiene taxones!
   looks_like_no_species_in_guide: Parece que no has añadido ninguna especie aún.
@@ -1468,7 +1469,7 @@ es:
   map_tooltip: Muestra la vista de mapa
   map_for: Mapa para
   maptype_for_places: google.maps.MapTypeId.TERRAIN
-  matched_several_different_taxa: varios taxa distintos coinciden
+  matched_several_different_taxa: varios taxones distintos coinciden
   matching_species_will_shown_up_here: 'Las especies que encuentres se mostrarán aquí. El mapa mostrará un rango si %{place} tiene alguna de esas especies.'
   maybe_your_signed_in_with: '¿Tal vez iniciaste sesión con tu cuenta %{omniauth}?'
   medium: medio
@@ -1513,13 +1514,13 @@ es:
   n_person_disagrees: '%{amount} persona no concuerda'
   name: Nombre
   name_entered: Nombre ingresado
-  name_llaves: '[NOMBRE]'
+  name_llaves: '[NAME]'
   name_of_the_place_you: Nombre del lugar donde realizó la observación
   name_provider: Nombre del proveedor
   name_providers:
     col: Catálogo de la Vida
     ubio: uBio
-    nzor: New Zealand Organisms Register
+    nzor: Registro de organismos de Nueva Zelanda
   named_based_url_might_change: "Name-based URLs might change, but this won't.: Los URL basados en nombres podrían cambiar pero estos no."
   names: Nombres
   names_for_taxon_html: 'Nombres para %{taxon}'
@@ -1787,7 +1788,7 @@ es:
   only_curators_can_access_that_page: Solo los revisores pueden acceder a esa página.
   only_files_with_10000_rows_at_a_time: Solamente archivos con 1000 filas cada vez, por favor
   only_letters_numbers: Solo letras y números, sin espacios
-  only_one_coordinate_system_per_file: Only one coordinate system can be used per file, otherwise incorrect conversion or display will occur.
+  only_one_coordinate_system_per_file: Sólo se puede utilitzar un sistema de coordenadas por archivo, de lo contrario se producirá una conversión incorrecta.
   only_project_curators_can_do_that: Solo los revisores del proyecto pueden hacer eso.
   only_receive_updates_about_this_taxon: Solo recibir notificaciones de esta especie o grupo
   only_show_active_taxa: Muestra solo especies activas
@@ -2024,7 +2025,7 @@ es:
   please_confirm_your_inat_username: 'Por favor confirme su nombre de usuario con %{site_name}'
   please_confirm_your_account_html: 'Por favor tómate un segundo para <a href="%{url}">confirmar tu cuenta</a>.'
   please_enter_a_new_pass: Por favor digite una nueva contraseña y confírmela.
-  please_fix_your_csv_and_try_again: Please fix your CSV and try again.
+  please_fix_your_csv_and_try_again: Por favor, fija tu CSV e inténtalo de nuevo.
   please_hold_on_while_the_file: Por favor espere mientras se genera el archivo. Puede tomar algunos minutos para listas grandes.
   please_hold_on_while_the_file_is_generated: Por favor espere mientras se genera el archivo. Puede tomar algunos minutos para listas grandes.
   position: Posición
@@ -2151,7 +2152,7 @@ es:
   red: rojo
   redo_search_in_map_area: Vuelve a realizar la búsqueda en el área del mapa
   refresh: Refrescar
-  refresh_listed_taxa: refrescar taxa incluidos
+  refresh_listed_taxa: actualizar la lista de taxones
   refreshing: refrescando
   regenerate_url: Regenerar URL
   register_for_this_event_at_x_html: 'Registro para este evento en %{x}'
@@ -2217,7 +2218,7 @@ es:
   role: Permiso
   rotate_left: Girar a la izquierda
   rotate_right: Girar a la derecha
-  row_singular_or_plural: Row(s)
+  row_singular_or_plural: Línea(s)
   row_number_i_was_parsed_as: 'Número de fila %{row} se analizó como'
   rule_must_be: 'Regla: debe ser...'
   rules_and_formatting: 'Reglas & Formato'
@@ -2267,7 +2268,7 @@ es:
   search_for_new_taxa: buscar nuevos taxones
   search_for_place_to_import_from_yahoo: Buscar un lugar para importar desde Yahoo.
   search_for_species: Búsqueda de especies
-  search_for_users: Search for users
+  search_for_users: Buscar usuarios
   search_list: Lista de búsqueda
   search_obs: Búsqueda de observaciones
   search_places: Buscar lugares
@@ -2390,11 +2391,11 @@ es:
     listen: Escucha
     no_photos_sounds: No hay fotos o sonidos
     photos_sounds: Fotos / Sonidos
-    request_timed_out: 'Request to the SoundCloud timed out.  Please try again later.'
+    request_timed_out: La solicitud a SoundCloud ha agotado el tiempo. Por favor inténtalo más tarde.
     select_one_or_more_sounds: Selecciona uno o más sonidos
     selected_sounds: Sonidos seleccionados
     sound: Sonido
-    soundcloud_replied_with_an_error: 'SoundCloud replied with an error.  Please try again later.'
+    soundcloud_replied_with_an_error: SoundCloud respondió con un error. Por favor inténtalo más tarde.
     sounds: Sonidos
     sounds_size_sound: '%Duración del sonido: {sounds_size}'
     sounds_size_sounds: '%Peso del sonido: {sounds_size}'
@@ -2411,7 +2412,7 @@ es:
     new_zeland_organisms_register: Registro de organismos de Nueva Zelanda
     nzbrn_birds: NZBRN Aves
     nzbrn_fungi: NZBRN Hongos
-    nzbrn_herpetofauna: NZBRN Herpetofauna
+    nzbrn_herpetofauna: Herpetofauna de NZBRN
     nzbrn_invertebrates: NZBRN Invertebrados
     nzbrn_mammals: NZBRN Mamíferos
     nzbrn_plants: NZBRN Plantas
@@ -2498,7 +2499,7 @@ es:
   sw_lon: long. S.O.
   sync: ¿Sincronizar?
   sync_with_eol: Sincronizar con EOL
-  sync_obs_with_photo_metadata: ¿Sinc obs. con metadatos foto?
+  sync_obs_with_photo_metadata: ¿Sinc. obs. con metadatos foto?
   synonyms: Sinónimos
   table: Tabla
   table_of_contents: Índice de contenido
@@ -2583,7 +2584,7 @@ es:
   the_following_lists: las siguientes listas
   the_following_observations_could: 'Las observaciones siguientes no se pudieron agregar a %{link}'
   the_following_photos_have_been_tagged: Las siguientes fotos han sido etiquetadas
-  the_identotron_is_a_tool_to: 'El identotrón es una herramienta para identificar observaciones basadas en las listas de verificación de %{place}. Dada una clase y un lugar (ej. mamíferos y la India), %{place} buscara por listas de verificación que concurran con esa especie o grupo en ese lugar, es como una guía de especies del planeta entero. En la mayoría de las listas de verificación de %{place} aún se esta trabajando, pero si existe alguna lista que sea exhaustiva, es decir que liste <em>todas</em> las especies o grupos representativos de ese lugar, el identotrón mostrará un aviso.'
+  the_identotron_is_a_tool_to: 'El identotrón es una herramienta para identificar observaciones basadas en las listas de verificación de %{place}. Dado un nivel taxonómico mayor y un lugar (p. ej. mamíferos y la India), %{place} buscará por listas de verificación que concurran con esa especie o grupo en ese lugar. Es como una guía de especies del planeta entero. En la mayoría de las listas de verificación de %{place} aún se esta trabajando, pero si existe alguna lista que sea exhaustiva (p. ej. que liste <em>todas</em> las especies o grupos representativos de ese lugar) el identotrón mostrará un aviso.'
   the_list: la lista
   the_name_of_the_taxon_including_space: El nombre del taxón, incluyendo el espacio para las especies e infraespecies.
   the_observation_form_looks: El formulario de observación es así
@@ -2594,8 +2595,8 @@ es:
   the_past: el pasado
   the_people_of_inat: 'La gente de %{site_name}'
   the_project: el proyecto
-  the_species_listed_below_were_not_found_in_the_site_database: 'The species listed below were not found in the %{site_name} database.'
-  the_title_of_the_wikipedia_article_we_use: 'Se refiere al título del artículo de Wikipedia que usamos para la descripción. Si la URL de Wikipedia es <code>http: //en.wikipedia.org/wiki/Bird</code>, entonces este valor debe ser <code>Ave</code>. Si se deja en blanco, entonces se usa el nombre científico de este taxón (normalmente funciona).'
+  the_species_listed_below_were_not_found_in_the_site_database: 'Las especies que figuran a continuación no fueron encontradas en la base de datos de %{site_name}.'
+  the_title_of_the_wikipedia_article_we_use: 'Se refiere al título del artículo de Wikipedia que usamos para la descripción. Si la URL de Wikipedia es <code>https://es.wikipedia.org/wiki/Aves</code>, entonces este valor debe ser <code>Ave</code>. Si se deja en blanco, entonces se usa el nombre científico de este taxón por defecto (normalmente funciona).'
   the_user_x_has_been_suspended: 'El usuario %{user} ha sido suspendido'
   the_user_x_has_been_unsuspended: 'El usuario %{user} ha sido removido de la lista de suspendidos'
   the_world_is_full_of_interesting_places: 'El mundo está lleno de lugares interesantes, cada uno lleno de formas de vida raras y maravillosas. ¡Algunas están en el otro lado del mundo, mientras que otras están a la vuelta de la esquina! Lugares de %{site_name} te permite buscar vida de todas partes del planeta. ¡Comienza a explorar!'
@@ -2656,7 +2657,7 @@ es:
   this_taxon_was_originally_imported_from: Este taxón fue importado originalmente de un proveedor externo de nombres
   this_tool_is_experimental: Esta herramienta esta aún en desarrollo, así que por favor
   this_will_add_listed_taxa: Esto agregará taxa incluidos a partir de observaciones. Esto puede tomar un tiempo así que por favor utilice con moderación y en pequeñas listas de verificación
-  this_will_refresh_listed_taxa: Esto actualizará la taxa incluidos en esta lista. Esto puede tomar un tiempo así que por favor utilice con moderación y en pequeñas listas de verificación
+  this_will_refresh_listed_taxa: Esto actualizará los taxones incluidos en esta lista. Esto puede tomar un tiempo así que por favor utilízalo con moderación y en listas de verificación pequeñas
   this_will_re_apply_all_list_rules: Esto aplicará nuevamente todas las reglas de la lista a los taxones, por ejemplo rechazar taxones que no están dentro del taxón de la lista de vida o dentro del rango seleccionado. No agregará ningún taxón. Esto podría tardar unos minutos.
   this_will_refresh_without_reload: Esto actualizar las estadísticas de observación inmediatamente. Puede tomar algún tiempo y por favor, utilice con moderación.
   this_will_reload_and_refresh: Esto agregará taxa incluidos a partir de observaciones y actualizar las estadísticas de observación inmediatamente. Puede tomar algún tiempo y por favor, utilice con moderación.
@@ -2750,7 +2751,7 @@ es:
   upload: Cargar
   upload_a_csv_file: Carga un archivo CSV
   upload_a_csv_file_with_observation: Cargar un archivo CSV con datos de observación. Si sus datos están en una hoja de cálculo o base de datos, esta es probablemente la forma de hacerlo.
-  upload_photos: Upload photos
+  upload_photos: Subir fotos
   url_identifier_of_a_project_derived_from: Direcció web / identificador del proyecto derivado de fuentes externas
   url_of_this_taxon_on_the_source_website: Enlace de esta especie o grupo en el sitio web fuente
   US_states: Estados Unidos
@@ -2793,7 +2794,7 @@ es:
   using_a_license: utilizando una licencia
   using_cc_license_makes_easier_use_your_data: 'Usar una licencia de <strong>Atribución de Creative Commons</fuerte> facilita que los investigadores usen tus datos. Puedes elegir una licencia diferente después de registrarse, si así lo deseas.'
   valid_interrogation: ¿Válido?
-  valid_options_are: Valid options are
+  valid_options_are: Las opciones válidas son
   verbing_x_of_y: '%{verbo} %{x} de %{y}...'
   view: Ver
   view_all: Ver todo
@@ -2886,9 +2887,7 @@ es:
   we_import_our_taxonomic_data: Importamos nuestros datos taxonómicos de algunas bases de datos taxonómicos externas, incluyendo el Catálogo de Vida y uBio. Algunos de nuestros taxones también han sido ingresados manualmente y cualquier usuario puede agregar nombres nuevos para los taxones. Si no puede encontrar un taxón o un nombre, pruebe
   we_know_is_inconvenience_but_will_allow_grow: 'Sabemos que esto es un inconveniente, pero nuestro nuevo sistema de autorización permitirá que %{sitename} crezca mejor en el futuro y le brinde mayor seguridad.'
   we_support_flickr: Somos compatibles con Flickr en alojamiento de imágenes y esperamos agregar otros alojamientos de imágenes en poco tiempo.
-  we_tried_to_process_your_upload_named_filename: |
-    We tried to process your upload named %{filename} but it didn't work.
-    Please fix the following problem(s) and try again.
+  we_tried_to_process_your_upload_named_filename: 'Intentamos procesar la carga de %{filename} pero no funcionó. Por favor arregla el problema/s siguiente y vuelva a intentarlo.'
   wed: mié
   welcome!: ¡Bienvenidos!
   welcome_comma!: ¡Bienvenido,
@@ -2901,7 +2900,7 @@ es:
   welcome_to_guides: '¡Bienvenido a las Guías de %{site_name}!'
   welcome_to_x_project: 'Bienvenido al proyecto %{project}'
   were_currently_down_for: Estamos fuera de servicio por
-  were_sorry_but_your_bulk_import_of_filename_has_failed: "We're sorry but your bulk import of %{filename} has failed."
+  were_sorry_but_your_bulk_import_of_filename_has_failed: 'Lo sentimos pero la importación masiva de %{filename} ha fracasado.'
   what: Qué
   what_color_was_it: ¿De qué color era?
   what_did_you_see: ¿Qué viste?
@@ -2968,7 +2967,7 @@ es:
   you_are_over_your_invites_quota: ...ya has enviado más de 60 invitaciones este mes.
   you_are_now_following_x: 'Estás siguiendo a %{friend_user}.'
   you_are_now_role_for_project_html: '<strong>Ahora</strong> %{role} de %{project}'
-  you_are_not_editing_any_guides_add_one_html: 'You are not editing any guides. <a href="/guides/new">Add one</a>'
+  you_are_not_editing_any_guides_add_one_html: 'No estás editando ningua guía. <a href="/guides/new">Crea una</a>'
   user_is_now_role_for_project_html: '<strong>%{user}</strong> es ahora %{role} de %{project}'
   you_are_already_a_member_of_this_project: ¡Ya eres un miembro de este proyecto!
   you_are_no_longer_following_x: 'Ya no estas siguiendo a %{friend}.'
@@ -2998,7 +2997,7 @@ es:
   you_cant_rotate_photos_hostde_outside: 'No puedes rotar fotos que son almacenadas fuera de %{site_name}.'
   you_didnt_select_any_observations: No seleccionaste ninguna observación.
   you_didnt_select_any_photos_to_tag: ¡No seleccionaste ninguna foto para etiquetar!
-  you_dont: "You don't"
+  you_dont: Tu no
   you_dont_have_any: No tienes ningún lugar o suscripción de especie o grupo
   you_dont_have_permission_to_do_that: No tienes permisos para hacer eso.
   you_dont_have_permission_to_edit_that_observation: No tienes permisos para editar esa observación.
@@ -4014,8 +4013,8 @@ es:
       default: '%d/%m/%Y'
       long: '%d de %B de %Y'
       short: '%d de %b'
-      month_year: '%B %Y'
-      month_day_year: '%B %d, %Y'
+      month_year: '%b %Y'
+      month_day_year: '%d %b %Y'
     month_names:
       - [ ]
       - enero
@@ -4032,7 +4031,7 @@ es:
       - diciembre
     order:
       - :day
-      - :month
+      - :mes
       - :year
   datetime:
     distance_in_words:
@@ -4099,14 +4098,14 @@ es:
       record_invalid: 'La validación falló: %{errors}'
       taken: ya está en uso
       too_long:
-        one: is too long (maximum is 1 character)
-        other: 'is too long (maximum is %{count} characters)'
+        one: es demasiado largo (el máximo es 1 carácter)
+        other: 'es demasiado largo (el máximo son %{count} caracteres)'
       too_short:
-        one: is too short (minimum is 1 character)
-        other: 'is too short (minimum is %{count} characters)'
+        one: es demasiado corto (el mínimo es 1 carácter)
+        other: 'es demasiado corto (el mínimo son %{count} caracteres)'
       wrong_length:
-        one: is the wrong length (should be 1 character)
-        other: 'is the wrong length (should be %{count} characters)'
+        one: es una longitud incorrecta (debe tener 1 carácter)
+        other: 'es una longitud incorrecta (debe tener %{count} caracteres)'
     template:
       body: 'Se encontraron problemas con los siguientes campos:'
       header:
@@ -4178,7 +4177,7 @@ es:
       long: '%d de %B de %Y'
       short: '%d/%m/%Y'
       observed_at: 'a las %I:%M %p %Z'
-      rfc: '%d %B %Y'
+      rfc: '%d %b %Y'
       day_month_year: '%d %b. %Y'
       hours: '%l:%M %p'
     pm: tarde
@@ -4211,13 +4210,13 @@ es:
           one: 'es demasiado corto (el mínimo es %{count} carácter)'
           other: 'es demasiado corto (el mínimo son %{count} caracteres)'
         wrong_length:
-          one: is the wrong length (should be 1 character)
-          other: 'is the wrong length (should be %{count} characters)'
+          one: es una longitud incorrecta (debe tener 1 carácter)
+          other: 'es una longitud incorrecta (debe tener %{count} caracteres)'
       template:
         body: 'Hubo problemas con los siguientes campos:'
         header:
-          one: '1 error prohibited this %{model} from being saved'
-          other: '%{count} errors prohibited this %{model} from being saved'
+          one: 'No se pudo guardar este/a %{model} porque se encontró 1 error'
+          other: 'No se pudo guardar este/a %{model} porque se encontraron %{count} errores'
   activerecord:
     errors:
       models:

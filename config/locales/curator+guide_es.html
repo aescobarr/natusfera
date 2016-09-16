@@ -1,0 +1,191 @@
+<div id="wrapper" class="container clear">
+
+<div class="column span-6">
+  <ul class='leftmenu'>
+    <li><a href="/pages/help">Ayuda</a></li>
+    <li><a href="/pages/getting+started">Getting Started</a></li>
+    <li><a href="/pages/video+tutorials">Video Tutoriales</a></li>
+    <li><a class="active" href="/pages/curator+guide">Guía para revisores</a></li>
+    <li><a href="/pages/bioblitz+guide">Guía sobre Bioblitz</a></li>
+    <li><a href="/pages/teacher&#39;s+guide">Guía para profesores</a></li>
+    <li><a href="/pages/translate">Ayúdanos a traducir</a></li></ul>
+</div>
+
+
+<div class="last column span-18">
+  <p>    
+    ¡Bienvenidos revisores! Esta guía describe algunas herramientas que Natusfera ofrece, junto con algunas políticas de NS sobre la revisión de nuestra taxonomía. Si no eres un revisor del sitio y te gustaría ayudar a actualizar nuestra taxonomía, por favor contacta con <a href="mailto:natusfera@gbif.es">nosotros</a>. Por lo general, permitimos ser revisor a todo usuaria que sabemos que tiene experiencia, o que haya demostrado tenerla utilizando Natusfera. Si quieres ser un revisor pero no te conocemos, además de no haber hecho observaciones ni identificaciones en NS, lo más probable es que te pidamos que uses un poco más la web, y así poder aprobar tu petición. Si demuestras, mediante tu comportamiento en la web o con nosotros (los administradores de NS), que no vas a respetar nuestras políticas, que eres agresivo o tienes un comportamiento inaceptable, revocaremos tu estatus de revisor o no te lo concederemos. Lo que provoca que un comportamiento sea violento o inaceptable es lo que contrasta con la discreción de los administradores.
+  </p>
+  <p>
+	Como eres un revisor de Natusfera puedes crear nuevos taxones, editar los existentes, editar nuestro árbol taxonómico, eliminar los nombres de un taxón y, en global, mantener la taxonomía de Natusfera. Los administradores del sitio hacemos una parte de este trabajo, pero no tenemos los recursos suficientes para mantenerlo todo actualizado, ni tampoco para aprobar todas las notificaciones que nos llegan de nuestros compañeros, por lo que necesitamos la colaboración de revisores como tú.
+  </p>
+  <p>
+	Este documento te servirá como manual de uso del revisor y como resumen de nuestras políticas de revisores. Si no respetas nuestras políticas te lanzaremos avisos, y si sigues rechazándolas anularemos tu estatus de revisor.
+  </p>
+    
+  <div class="quiet box">
+    <h4>
+      Contenido
+    </h4>
+    <ol>
+      <li><a href="#contenido1">Añadiendo / Modificando taxones</a></li>
+      <li><a href="#contenido2">Editando la geoprivacidad de un taxón</a></li>
+      <li><a href="#contenido3">Añadiendo / Editando nombres</a></li>
+      <li><a href="#contenido4">Cambios taxonómicos</a></li>
+      <li><a href="#contenido5">Políticas</a></li>
+      <!--<li><a href="#contenido6">Hacer un seguimiento de los conceptos taxonómicos (Esquema taxonómico)</a></li>!-->
+      <li><a href="#contenido7">Lugares</a></li>
+      <li><a href="#contenido8">Marcas</a></li>
+	  <li><a href="#contenido9">Spam y contenido inapropiado</a></li>
+	  <li><a href="#contenido10">Editando este Wiki</a></li>
+    </ol>
+  </div>
+       
+  <h3><a name="contenido1">Añadiendo / Modificando taxones</a></h3>
+      <p>
+	    En NS todo el mundo puede añadir un taxón al sistema mediante la búsqueda de proveedores externos de una especie. Esto se puede hacer desde el seleccionador de taxones (en añadir una observación) o con el cuadro de la parte inferior en la <a href="http://natusfera.gbif.es/taxa/search?utf8=%E2%9C%93&q">Búsqueda de especies</a>. Permite añadir una especie desde las bases de datos a la taxonomía interna de Natusfera. 
+      </p>
+	  <p>
+	    Los revisores pueden crear nuevos taxones directamente en <a href="http://natusfera.gbif.es/taxa/new">Crear un nuevo taxón</a>. También puedes modificar la taxonomía de un organismo buscando su página i haciendo clic en “Modifica”, arriba a la derecha. Por ejemplo, supongamos que queremos editar la taxonomía de Danas chrysippus. Su página de edición tiene el aspecto <a href="http://natusfera.gbif.es/taxa/1538-Danaus-chrysippus/edit">siguiente</a>:
+	  </p>
+  <p class="center"><img src="/assets/wiki_images/es_1_update_taxon.png" style="width:700px;"/></p>
+      <p>
+	    La mayoría de los campos incluyen una pequeña explicación, pero aquí te dejamos algunas indicaciones más:
+	  </p>
+  <dl>
+    <dt>Nombre</dt>
+    <dd>
+	  Cada taxón tiene un nombre, pero puede tener más de uno, incluyendo nombres científicos (actual y obsoletos) y nombres coloquiales. El contenido de este campo tiene que ser el nombre científico válido para este taxón.
+	  <div id="toc" class="box">
+	  <h4>Probablemente no quieras cambiar el nombre</h4>
+	    Por favor, <strong>no cambies el nombre del taxón si lo que quieres hacer es un cambio taxonómico</strong>, p. ej. sustituir un nombre obsoleto por uno de nuevo. La forma indicada para hacer este tipo de cambio es mediante <a href="#contenido4">Cambios Taxonómicos</a>. Si cambias el nombre de un taxón, la historia del cambio no quedará registrada y no se notificará a los usuarios sobre el cambio. El único motivo para cambia el nombre del taxón es <strong>arreglar un error tipográfico</strong>.
+	  </div>
+	</dd>
+	<dt>Clasificación:</dt>
+    <dd>Rango taxonómico; p. ej. especie, género, familia, etc.</dd>
+	<dt>Identificador de la clase o especie padre:</dt>
+	<dd>ID del taxón padre. Permite situar el taxón dentro de la clasificación taxonómica. Puedes usar el buscador de nombres para seleccionar el ID padre de la misma forma como lo harías en cualquier buscador web, o sencillamente puedes pegar el ID.</dd>
+  </dl>
+  <h3><a name="contenido2">Editando la geoprivacidad de un taxón</a></h3>
+      <p>
+        NS esconde las localizaciones de todos los taxones con una catalogación de la UICN de “Casi Amenazado” o peor. De todas formas, si crees que alguna de estas especies está en peligro muy leve de explotación por mucho que se conozca su localización, los revisores pueden cambiar su nivel de geoprivacidad (asociada con el estado de conservación) de “difusa” a “pública”. Esto se puede hacer desde la página de <a href="http://natusfera.gbif.es/taxa/1538-Danaus-chrysippus/edit">edición</a> de cualquier taxón (apartado “Categoría de riesgo”, al final).
+      </p>
+	  <p>
+		Para entenderlo mejor podéis pensar en el ejemplo de la sequoia roja, en situación de Vulnerable según la UICN debido al cambio climático, pero no por la presión humana que pueda sufrir.
+      </p>
+	  <p>
+		Os daréis cuenta de que esto puede ser un tema complicado. Por lo tanto, si te sientes forzado a hacer públicas las coordenadas de una especie en peligro, piensa antes por qué esta especie no será explotada por las personas, por qué es interesante conocer su localización exacta, etc.
+      </p>
+  <h3><a name="contenido3">Añadiendo / Editando nombres</a></h3>
+      <p>
+	    Cada taxón tiene un nombre (el nombre científico) además de poder tener otros nombres registrados. Esto permite asociar todos estos nombres con un taxón concreto, incluyendo nombres científicos obsoletos y nombres coloquiales en múltiples idiomas. Es muy importante que cada nombre esté asociado con solo un taxón.
+      </p>
+	  <p>
+		A la izquierda de la página de un taxón, verás una lista de “Todos los nombres”. Todos los usuarios de NS pueden añadir nombres haciendo clic en “Añadir un nombre”, pero solamente los revisores pueden editar los nombres científicos y suprimir nombres que otros usuarios hayan añadido.
+      </p>
+	  <h4>Nombre por defecto</h4>
+	  <p>Actualmente el nombre común por defecto para un taxón es el primer nombre que es añadió a la base de datos. De momento el nombre por defecto se basa en el orden de inserción.
+	  </p>
+	  <h4>Minúsculas</h4>
+	  <p>En general, los nombres comunes se deberían escribir en minúsculas. En cambio, los nombres propios deberían empezar con una mayúscula.
+      </p>
+	  <h4>Nombres comunes buenos y malos</h4>
+	  <p>Los nombres deberían de ser tan específicos como sea posible. Seguramente pensarás que “mamífero” no es un buen nombre para definir la especie <em>Homo sapiens</em>. Pues por eso mismo, no añadas el nombre <em>caracol</em> a cualquier gasterópodo pensando qua ayudarás a los inexpertos. Más bien lo complicarás, porque hay centenares de especies de caracol. Si una especie no tiene nombre común, no le añadas ninguno. En vez de esto, puedes añadir nombres comunes a los niveles taxonómicos más elevados, los que describen todos y solamente los miembros del taxón en cuestión.
+	  </p>
+	  <p>Para los taxones de niveles elevados puede resultar difícil encontrar un nombre común que describa todos los descendientes que incluye. En estas circunstancias, normalmente recomendamos nombres como <em>Garzas y aliados</em> o <em>familia de los matorrales</em>.
+	  </p>
+	  <p>Si encuentras nombres que no siguen este criterio (p. ej. 10 taxones que se llamen <em>caracol</em>) elimínalos sin miedo.
+	  </p>
+  <h3><a name="contenido4">Cambios taxonómicos</a></h3>
+      <p>Los <a href="http://natusfera.gbif.es/taxon_changes">cambios taxonómicos</a> son cambios a la clasificación taxonómica: “Separar”, “Mezclar” e “Intercambiar” (cambios 1 por 1). También hay los tipos “Etapa” y “Elimina”, para crear nuevos registros y para desactivar otros de existentes, pero en general solo usamos estos últimos cuando introducimos un gran número de cambios de manera programada.
+	  </p>
+	  <p>Deberías hacer un cambio de taxón cada vez que quieras cambiar la taxonomía existente, p. ej. registrar el cambio de nombre de un taxón o convertirlo en sinónimo obsoleto de otro taxón. Puedes acceder a la página <a href="http://natusfera.gbif.es/taxon_changes/new">http://natusfera.gbif.es/taxon_changes/new</a> tecleando directamente el URL, o bien:
+	  </p>
+	  <ul>
+		<li>Busca la especie.</li>
+		<li>Abra su página.</li>
+		<li>En el menú de la izquierda, accede a los “Cambios taxonómicos” (apartado “Extras”).<br>
+		 <div class="box">
+		 <h4>Comprueba el taxón antes de hacer un cambio</h4>
+		 Antes de hacer un cambio taxonómico, comprueba que nadie ha hecho antes el mismo cambio que tú.
+		 </div></li>
+		<li>Haz clic en “Nuevo cambio taxonómico”, arriba a la derecha.</li>
+	  </ul>
+  <p class="center"><img src="/assets/wiki_images/es_2_new_taxon.png" style="width:700px;"/></p>
+      <p>
+      <strong>El origen de los cambios taxonómicos es importante</strong>. Aunque no sea obligatorio, preferimos que los cambios provengan de alguna publicación o de alguna autoridad taxonómica. La citación ideal es un artículo científico que introduzca el cambio, seguido de un URL que lleve al artículo pero, puesto que sin una amplia investigación eso a menudo resulta imposible, podéis adjudicar el origen a una web o base de datos. Te recomendamos que nombres la web general a la “Fuente”, y que copies el URL del lugar exacto donde se describe el cambio. El objetivo es asegurarse que cualquier persona que quiera saber por qué se ha hecho un cambio taxonómico pueda encontrar su fuente.
+      </p>
+      <p>¡Recuerda que la <strong>Encyclopedia of Life no es una de nuestras autoridades taxonómicas</strong>! Si la quieres citar, quizás porque una de nuestras autoridades no incluye un sinónimo antiguo, por favor adjunta directamente el URL del contenido relevante.
+      </p>
+      <p>Las cajas con los taxones de entrada y los de salida al principio pueden crear confusión. Todos los cambios taxonómicos tienen un taxón de entrada y uno de salida; p. ej. en sustituir <em>Pseudacris regilla</em> por <em>Hyla regilla</em>, <em>Pseudacris regilla</em> será el taxón de entrada (válido hasta la actualidad, a la izquierda) y <em>Hyla regilla</em> será el de salida (válido a partir de ahora, a la derecha). Para los cambios “Separar”, hay un taxón de entrada y muchos de salida, mientras que para los “Mezclar” hay muchos de entrada que se fusionan en un solo taxón de salida. “Eliminar” y “Etapa” solo tienen taxones de salida.
+      </p>
+      <p>Cada taxón de Natusfera representa un concepto, por lo que dos taxones pueden tener el mismo nombre aunque representar cosas distintas en el árbol taxonómico. Por este motivo es muy importante que tengan IDs y páginas taxonómicas diferentes. Por ejemplo, un cambio taxonómico que separe <em>Rhipidura fuliginosa</em> en <em>Rhipidura albiscapa</em> y <em>Rhipidura fuliginosa</em> provoca que <em>Rhipidura fuliginosa</em> tenga dos IDs y dos páginas diferentes con el mismo nombre: uno por el concepto antiguo y amplio (que queda automáticamente inactivo) y otro por el nuevo, vigente y de significado más concreto. Es importante, pues, que cuando hagas un cambio taxonómico primero crees el nuevo taxón con un nuevo ID.
+      </p>
+      <p>Cuando guardes el cambio taxonómico, inicialmente quedará en un estado de “No definitivo”. Desde la página del taxón podrás revisar qué observaciones quedaran afectadas por tu cambio y actualizar tu propio contenido en el “commit for user page”. Si no estás seguro de tu cambio, puedes solicitar ayuda con comentarios. Cuando estés a punto de ejecutar el cambio, haz clic en el botón “commit”. Automáticamente se desactivará el taxón de salida, se activará el de entrada y se intentarán actualizar todas las observaciones, identificaciones y listas que incluyan el taxón de entrada (solo cuando el cambio sea inequívoco, es decir, en los intercambios y mezclas).
+      </p>
+      <p>Ten presente que un cambio taxonómico representa un cambio en la taxonomía de Natusfera. Estos cambios se deberían hacer en la misma dirección que los cambios de las autoridades taxonómicas que seguimos en NS, pero de hecho no es obligatorio. Por ejemplo, si la autoridad A cree que <em>Vulpes vulpes</em> és válido, pero hay un artículo científico reciente que dice que lo deberíamos nombrar </em>Supervulpes vulpes</em> y alguien añade <em>Supervulpes vulpes</em> a nuestra taxonomía, sería mejor hacer un intercambio y volver <em>Supervulpes vulpes</em> a <em>Vulpes vulpes</em>, porque la autoridad A dice que es su nombre actual.
+      </p>
+        <div class="box">
+        <h4>Cuando usar la herramienta <em>Combina</em></h4>
+		En el extremo inferior izquierdo de la página de un taxón verás un cuadro de “Administración” con el enlace “Combina”. Ejecutar esta acción no es lo mismo que mezclar dos taxones: esta herramienta elimina el taxón que estás combinando y mueve todas sus fotografías, observaciones, etc. al otro taxón, sin dejar rastro alguno sobre quien ha hecho la combinación i porqué. Antiguamente lo utilizábamos para todas las modificaciones de taxones, hasta que introdujimos la página de <a href="#contenido4">Cambios Taxonómicos</a>, y ahora <strong>solo lo utilizamos cuando se han duplicado nombres taxonómicos por error</strong>.
+        </div>
+		
+  <h3><a name="contenido5">Políticas</a></h3>
+    <h4>Autoridades externas</h4>
+	  <p>La mayoría de nuestras clasificaciones taxonómicas vienen de nuestros proveedores de nombres externos, pero intentamos adherir algunos grupos desde diferentes autoridades. Las razones para hacer esto son las que siguen:
+	  </p>
+	  <ol>
+	    <li>
+		  <p><strong>La taxonomía es subjetiva y no todos los científicos están de acuerdo con todos los artículos que se publican.</strong></p>
+		  <p>Aunque parezca que dar un nombre y clasificar los organismos es un procedimiento formal y todos los científicos están de acuerdo con los nombres que los organismos deberían recibir, la realidad es muy distinta. Por mucho que existan patrones sobre cuándo y cómo se tiene que dar un nombre a un organismo, no se pueden aplicar a todos los taxones y no hay patrones universales para decidir cuándo dos grupos se tienen que considerar especies diferentes. Los biólogos nunca han sido capaces de ponerse de acuerdo en esta área; cada uno tiene su propia opinión, pero la mayoría de la gente tiende a seguir lo que dictan las autoridades (sean personas o grupos), que procuran tomar decisiones razonables sobre qué nombres se deberían usar. Así pues, utilizar nombres o clasificaciones solamente porque alguien lo ha propuesto así en un artículo puede no ser una buena idea, porque esto no demuestra que la comunidad científica lo apoye.</p>
+		</li>
+		<li>
+		  <p><strong>Natusfera no es un lugar para debatir taxonomía.</strong></p>
+		  <p>Siguiendo autoridades evitamons tener discusiones sobre taxonomía dentro de Natusfera. Podemos debatir qué autoridades seguir, pero no queremos tener problemas con cada artículo que se publique.</p>
+		</li>
+		<li>
+		  <p><strong>Las fuentes primarias quedan a menudo escondidas, mientras que las secundarias normalmente son públicas.</strong></p>
+		  <p>Natusfera es una gran comunidad de amateurs de la ciencia, y por  mucho que existan artículos científicos que se publican en revistas de libre acceso, la mayoría de literatura taxonómica es aún exageradamente cara para ser accesible a los inexpertor. Nosotros damos prioridad a las autoridades taxonómicas, lo que permite que todos los usuarios de NS puedan inspeccionar las fuentes (no solamente los que tienen acceso privilegiado a la literatura científica).</p>
+		</li>
+		<li>
+		  <p><strong>Seguir las autoridades estables promueve que se compartan nuestros datos con los investigadores.</strong></p>
+		  <p>“¿Qué taxonomía usas?” es una de las preguntas más frecuentes que nos hacen los investigadores interesados en utilizar nuestros datos. A menudo los investigadores encuentran nuestros datos gracias al GBIF. Si no utilizáramos la misma taxonomía, no los encontrarían. Seguir a las autoridades suaviza los cambios taxonómicos en nuestros datos y aumenta la probabilidad de que las personas que busquen datos nuestros mediante los nombres científicos de las especies encuentren lo que buscan.</p>
+		</li>
+	  </ol>
+	  <p>Pese a todo, en algunos casos no seguimos (o no podemos seguir) a dichas autoridades. Desgraciadamente, hay autoridades taxonómicas que son incompletas y/o se encuentran obsoletas, debido a estar mal financiadas, a tener poco personal trabajando en ellas, etc. Ciertamente, nuestra política sobre el seguimiento de las autoridades taxonómicas es un poco controvertida, concretamente con la gente que revisa grupos de organismos donde no hay autoridades o las que existen padecen de alguna de estas problemáticas.
+      </p>
+    <h4>Divisores contra fusionadores</h4>
+	  <p>Aunque nuestra tendencia general sea fusionar taxones buscando la simplicidad del sistema, lo primordial es maximizar la utilidad: si crees que algunos usuarios de NS (como tú) se agradecerán que se añada una subtribu al sistema, añádela (por ejemplo porque es el nivel taxonómico más bajo al que se puede identificar un insecto con una simple fotografía). No añadas niveles taxonómicos sin ningún otro objetivo que subdividir la taxonomía de NS.
+	  </p>
+	<h4>Híbridos</h4>
+	  <p>Los híbridos entre especies deberían de tener nombres científicos con el patrón GÉNERO ESPECIE1 × ESPECIE2, p. ej. <em>Picoides scalaris × nuttallii</em> es el híbrido entre <em>Picoides scalaris</em> y <em>Picoides nuttallii</em>. El rango taxonómico debería de ser “híbrido”. Recuerda usar el símbolo de la cruz “×” en vez de la letra equis “x”.
+      </p>
+	  <p>Los híbridos entre especies de diferentes géneros normalmente tienen un nombre genérico que consiste en una palabra compuesta con los dos géneros, seguido de un epíteto específico nuevo. El patrón de un género híbrido es “× NUEVO_GÉNERO,” p. ej. <em>× Chitalpa</em>, y tiene el rango de “género híbrido”. Es obligado que sus especies (p. ej. <em>× Chitalpa tashkentensis</em>) tengan el género híbrido como identificador padre.
+      </p>
+  <!--<h3><a name="contenido6">Hacer un seguimiento de los conceptos taxonómicos (Esquema taxonómico)</a></h3>!-->
+  <h3><a name="contenido7">Lugares</a></h3>
+      <p>Los <a href="http://natusfera.gbif.es/places">Lugares</a> de Natusfera representan espacios reales del mundo. Todos los usuarios de NS los pueden <a href="http://natusfera.gbif.es/places/new">crear</a>, pero solo los pueden editar su creador y los revisores de la web. En el extremo inferior derecho de la página de un Lugar se indica quién y cuándo lo creó. Aquí te damos algunos consejos sobre la gestión de los Lugares:
+	  </p>
+	  <ul>
+	    <li><strong>No fusiones o elimines los lugares que te parezcan duplicados</strong>. Por favor, antes de eliminar un lugar infórmate sobre quién lo creó, quién lo utiliza y por qué. A veces hay personas que crean lugares muy similares pero con límites ligeramente distintos y los utilizan en proyectos concretos.
+        </li>
+		<li>Los lugares nuevos no incluyen una lista de verificación por defecto, puesto que mantenerlas actualizadas es una de las tareas más costosas que hacemos, por lo que intentamos que el número de listas de verificación de NS no sea muy elevado. Si sencillamente quieres crear un lugar para colgar observaciones en él, <strong>no actives la creación de una lista de verificación</strong>.
+        </li>
+		<li>Los lugares importados desde Yahoo no tienen límites definidos. En consecuencia, su lista de verificación no se actualizará automáticamente por las observaciones con grado de investigación. Puedes añadir límites editando el lugar manualmente o cargando un archivo KML. Si quieres utilizar un KML, por favor, <strong>no hagas un polígono muy complejo</strong>. Si el polígono tiene miles de nodos, intenta simplificar su geometría antes de subirlo a la web.
+        </li>
+		<li>La herramienta de edición del mapa es muy básica. Usando ArcGIS o QGIS se conseguirían polígonos mejores. Fíjate que los límites de los polígonos se crean sin proyección de coordenadas de latitud y longitud.
+        </li>
+	  </ul>
+  <h3><a name="contenido8">Marcas</a></h3>
+      <p>Los usuarios de Natusfera pueden marcar taxones que piensen que necesitan ser revisados. Como revisor del sitio, puedes ver las marcas más recientes en la herramienta “Administración” de tu página de inicio (dentro de “tablero”) y los puedes analizar todos desde <a href="http://natusfera.gbif.es/taxa/curation">Taxones que necesitan revisión</a>. Intenta gestionar las marcas de los usuarios que puedas, y cuando lo hagas déjalas resueltas para que desaparezcan de la cola.
+	  </p>
+  <h3><a name="contenido9">Spam y contenido inapropiado</a></h3> 
+	  <p>En la página de Ayuda puedes leer qué es <a href="#inappropriate">contenido inapropiado</a> para Natusfera. Los revisores tienen permiso para eliminar comentarios que parezcan inapropiados, pero de momento no pueden eliminar ningún otro tipo de contenido. Si encuentras contenido inapropiado que no puedes eliminar de NS (descripciones de observaciones, proyectos, etc.) ponte en contacto con un <a href="http://natusfera.gbif.es/people/agustiescobar">administrador</a>.
+	  </p>
+  <h3><a name="contenido10">Editando este <em>Wiki</em></a></h3>
+      <p>Los revisores pueden editar las páginas <em>wiki</em> (como esta) haciendo clic en “Edita”, abajo a la derecha de la página. También puedes crear páginas nuevas yendo al URL que quieres crear (p. ej. "http://www.natusfera.gbif.es/pages/alguna_pagina").
+      </p>
+	  <p>Las páginas wiki se basan en HTML con formato <em>Markdown</em>. La caja de formateo te enseñará qué puedes crear en ellas.
+      </p>
+</div>
+</div>
