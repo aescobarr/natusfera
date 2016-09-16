@@ -4,6 +4,7 @@
 	<%= stylesheet_link_tag 'new_welcome' %> 
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Google maps include -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
@@ -40,6 +41,56 @@
 	    $('.subnavtab').removeClass('open');
 	  }
 	}
+
+  function getUpdatesCount() {
+    $.get('/users/updates_count', function(data) {
+      setUpdatesCount(data.count)
+    })
+  }
+
+  function setUpdatesCount(count, options) {
+    options = options || {}
+    if (count > 0) {
+      if (options.skipAnimation) {
+        $('#header .updates').addClass('alert')
+      } else {
+        $('#header .updates').switchClass('', 'alert')
+      }
+      $('#header .updates .count').html(count)
+    } else {
+      if (options.skipAnimation) {
+        $('#header .updates').removeClass('alert')
+      } else {
+        $('#header .updates').switchClass('alert', '')
+      }
+      $('#header .updates .count').html(0)
+    }
+  }
+
+  function setMessagesCount(count, options) {
+    options = options || {}
+    if (count > 0) {
+      if (options.skipAnimation) {
+        $('#header .messages').addClass('alert')
+      } else {
+        $('#header .messages').switchClass('', 'alert')
+      }
+      $('#header .messages .count').html(count)
+    } else {
+      if (options.skipAnimation) {
+        $('#header .messages').removeClass('alert')
+      } else {
+        $('#header .messages').switchClass('alert', '')
+      }
+      $('#header .messages .count').html(0)
+    }
+  }
+
+  function getMessagesCount() {
+    $.get('/messages/count', function(data) {
+      setMessagesCount(data.count)
+    })
+  }
 </script>
 <script>
 	$(document).ready(function(){
@@ -724,5 +775,13 @@
       <span><%= t :powered_by_inaturalist_open_source_software_html %></span>
     </div>
   </div>
+  <% if logged_in? -%>
+      <script type="text/javascript" charset="utf-8">
+        setUpdatesCount(<%= session[:updates_count].to_i %>)
+        setTimeout(getUpdatesCount, 1000)
+        setMessagesCount(<%= session[:messages_count].to_i %>)
+        setTimeout(getMessagesCount, 1000)
+      </script>
+  <% end -%>
 </body>
 </html>
