@@ -19,7 +19,7 @@ class WelcomeController < ApplicationController
                                       .limit(4)
                                       .order("observations.id DESC").scoped
           else
-            @observations = Observation.find([1050,1048,393,382])
+            @observations = Observation.find([382,393,1048,1050])
           end
           #if CONFIG.site_only_observations && params[:site].blank?
           #  @observations = @observations.where("observations.uri LIKE ?", "#{FakeView.root_url}%")
