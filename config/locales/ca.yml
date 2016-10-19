@@ -2787,7 +2787,7 @@ ca:
   user_invited_you_to_join_html: "%{user} t'ha convidat a unir-te"
   user_invited_you_to_join_this_project_on_date_html: "%{user} t'ha convidat a unir-te a aquest projecte el %{fecha}"
   user_invited_your_x_to_a_project_html: '%{user} ha convidat la teva %{x} a un projecte'
-  user_added_an_observation_field_html: 'El/La %{user} ha afegit un valor per a "%{nombre_campo}" a una observació de %{propietario}'
+  user_added_an_observation_field_html: 'El/La %{user} ha afegit un valor per a "%{field_name}" a una observació de %{owner}'
   user_is_a_naturalist: '%{user} és naturalista!'
   user_s: '%{model_name} de %{user}'
   user_s_id: '%{id} de %{user}'
