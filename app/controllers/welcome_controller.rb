@@ -19,7 +19,8 @@ class WelcomeController < ApplicationController
                                       .limit(4)
                                       .order("observations.id DESC").scoped
           else
-            @observations = Observation.find([382,393,1048,1050])
+            #@observations = Observation.find([382,393,1048,1050])
+            @observations = Observation.find([3577,3880,4177,3270])
 	    # sort by id desc
 	    @observations.sort! { |a,b| b.id <=> a.id }
           end
