@@ -522,7 +522,8 @@ a {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {		  
     /*height: 50%;*/
-    height: 600px;
+    /*height: 600px;*/
+    width: 100%;
     margin: auto;
 }
 div#map{
