@@ -83,8 +83,6 @@
 
 <% if @announcement -%>
   <div class="column span-24">
-    <%= @announcement.body %>
-    <%= @announcement.body.html_safe %>
     <%= render :partial => "announcements/announcement", :locals => { :announcement => @announcement } %>
   </div>
 <% end -%>

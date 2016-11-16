@@ -1,9 +1,9 @@
 <%- announcement ||= @announcement -%>
 <div>
-  <div class="announcement date">
-    <%= @announcement.created_at.strftime("%d/%m/%Y") %>
+  <div class="announcement date column span-4">
+    <h3><%= @announcement.created_at.strftime("%d/%m/%Y") %></h3>
   </div>
-  <div class="announcement body">
-    <%= @announcement.body.html_safe %>
-    <div>
+  <div class="announcement body column span-18">
+    <h3><%= @announcement.body.html_safe %></h3>
+  </div>
 </div>
