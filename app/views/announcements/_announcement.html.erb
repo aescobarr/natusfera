@@ -1,0 +1,9 @@
+<%- announcement ||= @announcement -%>
+<div>
+  <div class="announcement date">
+    <%= @announcement.created_at.strftime("%d/%m/%Y") %>
+  </div>
+  <div class="announcement body">
+    <%= @announcement.body.html_safe %>
+    <div>
+</div>
