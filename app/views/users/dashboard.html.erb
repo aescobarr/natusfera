@@ -8,6 +8,7 @@
 <%- content_for(:extrajs) do -%>
   <%= google_maps_js %>
   <%= javascript_include_tag 'map_bundle', "d3.min", 'calendars', 'observations/observation_fields' %>
+  <%= javascript_include_tag 'jquery.webticker.min' %>
   <script type="text/javascript" charset="utf-8">
     var CACHED_AT = new Date(<%= Time.now.to_i * 1000 %>)
     $(document).ready(function() {
@@ -77,14 +78,20 @@
         })
         return false
       })
+
+      $("#webTicker").webTicker();
     })
   </script>
 <%- end -%>
 
 <% if @announcement -%>
-  <div class="column span-24">
-    <%= render :partial => "announcements/announcement", :locals => { :announcement => @announcement } %>
-  </div>
+    <div class="column span-24">
+      <ul id="webTicker">
+        <% for ann in @announcement %>
+            <%= render :partial => "announcements/announcement", :locals => { :announcement => ann } %>
+        <% end %>
+      </ul>
+    </div>
 <% end -%>
 
 <div id="pageheader">
