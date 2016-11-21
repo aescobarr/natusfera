@@ -265,7 +265,7 @@ class UsersController < ApplicationController
   end
   
   def dashboard
-    @announcement = Announcement.where('placement = \'users/dashboard\' AND ? BETWEEN "start" AND "end"', Time.now.utc)
+    @announcement = Announcement.where('placement = \'users/dashboard\' AND ? BETWEEN "start" AND "end"', Time.now.utc).order("created_at DESC")
     @pagination_updates = current_user.updates.limit(50).order("id DESC").includes(:resource, :notifier, :subscriber, :resource_owner).scoped
     @pagination_updates = @pagination_updates.where("id < ?", params[:from].to_i) if params[:from]
     @pagination_updates = @pagination_updates.where(:notifier_type => params[:notifier_type]) unless params[:notifier_type].blank?
