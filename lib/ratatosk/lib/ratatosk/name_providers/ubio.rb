@@ -45,8 +45,11 @@ module Ratatosk
           rdfs = results.map do |r|
             @service.lsid(:namespace => 'namebank', :object => r[:namebankID])
           end.compact
-        rescue UBioConnectionError => e
-          raise NameProviderError, e.message
+        rescue Exception => eof
+          raise NameProviderError, eof.message
+        #rescue UBioConnectionError => e
+          # This exception isn't being correctly raised and ends up making the whale shark appear
+          #raise NameProviderError, e.message
         end
         
         taxon_names = rdfs.map do |rdf|
