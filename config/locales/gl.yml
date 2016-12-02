@@ -3527,18 +3527,19 @@ gl:
       short: '%d de %b'
       month_year: '%B %Y'
     month_names:
-      1: xaneiro
-      2: febreiro
-      3: marzo
-      4: abril
-      5: maio
-      6: xuño
-      7: xullo
-      8: agosto
-      9: setembro
-      10: outubro
-      11: novembro
-      12: decembro
+      -
+      - xaneiro
+      - febreiro
+      - marzo
+      - abril
+      - maio
+      - xuño
+      - xullo
+      - agosto
+      - setembro
+      - outubro
+      - novembro
+      - decembro
     order:
     - day
     - month

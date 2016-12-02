@@ -1,6 +1,6 @@
 class AnnouncementsController < ApplicationController
   before_filter :authenticate_user!
-  before_filter :admin_required
+  before_filter :announcer_required
   before_filter :load_announcement, :only => [:show, :edit, :update, :destroy]
   
   # GET /announcements

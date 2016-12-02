@@ -903,8 +903,7 @@ es:
     currentText: Hoy
     prevText: Anterior
     nextText: Siguiente
-    monthNames: '[''enero'', ''febrero'', ''marzo'', ''abril'', ''mayo'', ''junio'',
-      ''julio'', ''agosto'', ''septiembre'', ''octubre'', ''noviembre'', ''diciembre'']'
+    monthNames: "['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio','Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']"
     monthNamesShort: '[''ene'',''feb'',''mar'',''abr'', ''may'',''jun'',''jul'',''ago'',''sep'',
       ''oct'',''nov'',''dic'']'
     dayNames: '[''domingo'', ''lunes'', ''martes'', ''miércoles'', ''jueves'', ''viernes'',
@@ -4528,18 +4527,19 @@ es:
       month_year: '%B %Y'
       month_day_year: '%B %d, %Y'
     month_names:
-      1: enero
-      2: febrero
-      3: marzo
-      4: abril
-      5: mayo
-      6: junio
-      7: julio
-      8: agosto
-      9: septiembre
-      10: octubre
-      11: noviembre
-      12: diciembre
+      -
+      - enero
+      - febrero
+      - marzo
+      - abril
+      - mayo
+      - junio
+      - julio
+      - agosto
+      - septiembre
+      - octubre
+      - noviembre
+      - diciembre
     order:
     - :day
     - :month

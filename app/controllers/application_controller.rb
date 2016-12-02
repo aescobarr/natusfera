@@ -404,6 +404,25 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def announcer_required
+    unless logged_in? && current_user.has_role?('announcer')
+      msg = t(:only_administrators_may_access_that_page)
+      respond_to do |format|
+        format.html do
+          flash[:error] = msg
+          redirect_to observations_path
+        end
+        format.js do
+          render :status => :unprocessable_entity, :text => msg
+        end
+        format.json do
+          render :status => :unprocessable_entity, :json => {:error => msg}
+        end
+      end
+      return false
+    end
+  end
+
   def admin_required
     unless logged_in? && current_user.has_role?(:admin)
       msg = t(:only_administrators_may_access_that_page)
