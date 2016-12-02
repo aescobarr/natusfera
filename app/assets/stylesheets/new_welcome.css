@@ -1403,3 +1403,8 @@ div#bottom a {
 .calltoaction a{
     color: #FFF;
 }
+
+ul#webTicker li {
+    font-size: 16px;
+    font-family: "Myriad Pro Regular";
+}

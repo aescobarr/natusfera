@@ -8,6 +8,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Google maps include -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCeenRdnkY-eXliSSYWMykY8-AzO_z5aM" type="text/javascript"></script>
+  <%= javascript_include_tag 'jquery.webticker.min' %>
 	<%= javascript_include_tag 'isotope.pkgd.min' %>
 	<%= javascript_include_tag 'wax.g' %>
   <%= javascript_include_tag "i18n" %>
@@ -337,6 +338,8 @@
 
     $grid.isotope({ filter: '.func' });
 
+    $("#webTicker").webTicker();
+
   });
 
 </script>
@@ -374,6 +377,17 @@
     <a class="locale_link" id="locale_gl" href="/">GAL</a>
     </div>
   </div>
+
+  <% if @announcement -%>
+    <div class="row">
+      <ul id="webTicker">
+        <% for ann in @announcement %>
+          <%= render :partial => "announcements/announcement", :locals => { :announcement => ann } %>
+        <% end %>
+      </ul>
+    </div>
+  <% end -%>
+
 	<div class="row">	
 		<!--<div id="slider-container" class="col-md-6 nopadding">-->
 			<div id="obsCarousel" class="carousel slide" data-ride="carousel">
