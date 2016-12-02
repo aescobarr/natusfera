@@ -3951,7 +3951,7 @@ ca:
       - desembre
     order:
       - :day
-      - :mes
+      - :month
       - :year
   datetime:
     distance_in_words:
