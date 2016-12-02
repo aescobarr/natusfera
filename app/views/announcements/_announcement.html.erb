@@ -1,2 +1,2 @@
 <%- announcement ||= @announcement -%>
-<li>[<%= announcement.created_at.strftime("%d/%m/%Y") %>] - <%= announcement.body %></li>
+<li>[<%= announcement.created_at.strftime("%d/%m/%Y") %>] - <%= announcement.body.html_safe %></li>
