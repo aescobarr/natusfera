@@ -1,5 +1,8 @@
 #encoding: utf-8
 class Observation < ActiveRecord::Base
+
+  include ActsAsUUIDable
+
   has_subscribers :to => {
     :comments => {:notification => "activity", :include_owner => true},
     :identifications => {:notification => "activity", :include_owner => true}

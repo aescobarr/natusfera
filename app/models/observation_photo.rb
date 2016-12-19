@@ -1,4 +1,7 @@
 class ObservationPhoto < ActiveRecord::Base
+
+  include ActsAsUUIDable
+
   belongs_to :observation, :inverse_of => :observation_photos, :counter_cache => false
   belongs_to :photo
 
