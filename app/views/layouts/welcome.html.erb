@@ -233,7 +233,7 @@
       //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
       obs_userdata = obs_data_slider[observation.id];
       $("#bottom").html(data_slice_to_html(obs_userdata));
-      $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.large_url);
+      $("#item_" + id ).children("img").attr("src",observation.observation_photos[0].photo.slider_url);
       //$("#item_" + id ).children("img").attr("src","/attachments/local_photos/Voltor_tallat_slider.png");
       //http://localhost:4000/attachments/local_photos/Voltor_tallat_slider.png
       /*var capped_desc = "...";

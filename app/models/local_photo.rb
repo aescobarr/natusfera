@@ -91,7 +91,7 @@ class LocalPhoto < Photo
   end
   
   def set_urls
-    styles = %w(original large medium small thumb square)
+    styles = %w(original large slider medium small thumb square)
     updates = [styles.map{|s| "#{s}_url = ?"}.join(', ')]
     updates += styles.map do |s|
       url = file.url(s)
