@@ -19,12 +19,12 @@ class WelcomeController < ApplicationController
                                       .limit(4)
                                       .order("observations.id DESC").scoped
           else
-            #@observations = Observation.find([382,393,1048,1050])
-            #@observations = Observation.find([3577,3880,4177,3270])
-            #@observations = Observation.find([3577,4312,4177,3508])
-            @observations = Observation.find([3577,4312,5501,3508])
+            #@observations = Observation.find([3577,4312,5501,3508])
+            #@observations = Observation.find([1765,4312,5501,3508])
+            ids = CONFIG.slider_observations || [1765,5501,4312,3508]
+            @observations = find_ordered(ids)
 	          # sort by id desc
-	          @observations.sort! { |a,b| b.id <=> a.id }
+	          # @observations.sort! { |a,b| a.id <=> b.id }
           end
           #if CONFIG.site_only_observations && params[:site].blank?
           #  @observations = @observations.where("observations.uri LIKE ?", "#{FakeView.root_url}%")
@@ -52,6 +52,15 @@ class WelcomeController < ApplicationController
       end
       format.mobile
     end
+  end
+
+  def find_ordered(ids)
+    order_clause = "CASE id "
+    ids.each_with_index do |id, index|
+      order_clause << "WHEN %d THEN %d " % [id, index]
+    end
+    order_clause << "ELSE %d END" % [ids.length]
+    Observation.where(id: ids).order(order_clause)
   end
 
   def species_count()
