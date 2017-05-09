@@ -565,7 +565,9 @@ class ProjectsController < ApplicationController
   end
 
   def parent_total_project_users
-    ProjectUser.select(:user_id).where(:project_id => @project.children.pluck(:id)).distinct.count
+    #Try to avoid this -> https://github.com/rails/rails/issues/7399
+    #ProjectUser.select(:user_id).where(:project_id => @project.children.pluck(:id)).distinct.count
+    ProjectUser.where(:project_id => project.children.pluck(:id)).count(:user_id,distinct: true)
   end
 
   def parent_total_project_observations

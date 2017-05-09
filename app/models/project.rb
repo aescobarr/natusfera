@@ -266,8 +266,10 @@ FROM projects JOIN places ON projects.place_id = places.id", :as => :place_ids, 
     unless parent?
       project_observations
     else
-      t = ProjectObservation.arel_table
+      t = ProjectObservation.arel_table      
       results = ProjectObservation.where( t[:project_id].eq(id).or(t[:project_id].in(children.map{|f| f.id})) )
+      # we should not include observations in parent project, like this:
+      # results = ProjectObservation.where( t[:project_id].in(children.map{|f| f.id}) )
     end
   end
   
