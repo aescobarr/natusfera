@@ -592,6 +592,7 @@ protected
     scope = Identification.group("identifications.user_id").
       joins(:observation, :user).
       where("identifications.user_id != observations.user_id").
+      where("users.suspended_at is NULL").
       where("EXTRACT(YEAR FROM identifications.created_at) = ?", year).
       order('count_all desc').
       limit(5).scoped
