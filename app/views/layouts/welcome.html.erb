@@ -229,6 +229,15 @@
       map.panTo(marker.getPosition());            
     };
 
+    var getFirstPhoto = function(photos){
+        for(var i = 0; i < photos.length; i++){
+            if(photos[i].position && photos[i].position == 1){
+                return photos[i];
+            }
+        }
+        return photos[0];
+    };
+
     var fillSlide = function(id, observation){
       //$("#item_" + id ).children("div.carousel-caption").children("h3").text(observation.species_guess);
       obs_userdata = obs_data_slider[observation.id];
